@@ -12,8 +12,6 @@ class CongratsVC: UIViewController {
     @IBOutlet weak var imageV: UIImageView!
     @IBOutlet weak var continueBttn: UIButton!
     
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         imageV.loadGif(name: "fire")
