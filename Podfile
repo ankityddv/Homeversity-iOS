@@ -10,7 +10,8 @@ target 'HCI' do
     pod 'Firebase/Auth'
     pod 'Firebase/Storage'
     pod 'Firebase/Database'
-
+    pod 'FBSDKLoginKit'
+    
   target 'HCITests' do
     inherit! :search_paths
     # Pods for testing

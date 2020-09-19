@@ -9,8 +9,14 @@
 /* Begin PBXBuildFile section */
 		00508882B0A4CDC4CBBED6E1 /* Pods_HCITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD9405541C58F571F7D6EB8D /* Pods_HCITests.framework */; };
 		0BA82E85872C63A968F9911D /* Pods_HCI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08BC8F5D260F9AB8BC20A5EA /* Pods_HCI.framework */; };
-		BC1D7AC424ED9C2500D432B1 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1D7AC324ED9C2500D432B1 /* CustomTextField.swift */; };
 		BC1D7AC624ED9EE100D432B1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC1D7AC524ED9EE100D432B1 /* GoogleService-Info.plist */; };
+		BC43241225160E8A0084D3D3 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC43241125160E8A0084D3D3 /* SettingsVC.swift */; };
+		BC432414251614770084D3D3 /* AppIconService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC432413251614770084D3D3 /* AppIconService.swift */; };
+		BC43241C25161C7A0084D3D3 /* darkAppIcon in Resources */ = {isa = PBXBuildFile; fileRef = BC43241A25161C7A0084D3D3 /* darkAppIcon */; };
+		BC43241D25161C7A0084D3D3 /* neonAppIcon in Resources */ = {isa = PBXBuildFile; fileRef = BC43241B25161C7A0084D3D3 /* neonAppIcon */; };
+		BC4401CD250BCFAD00DD34E6 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4401CC250BCFAD00DD34E6 /* CustomTextField.swift */; };
+		BC44AD4E250BCE7700475867 /* CustomLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44AD4D250BCE7700475867 /* CustomLoader.swift */; };
+		BC44AD50250BCEEE00475867 /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44AD4F250BCEEE00475867 /* UIImage+Gif.swift */; };
 		BC51D3D424F0099F0076CA93 /* AddImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC51D3D324F0099F0076CA93 /* AddImageVC.swift */; };
 		BC7CB22224ED8B6F007B5DB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7CB22124ED8B6F007B5DB4 /* AppDelegate.swift */; };
 		BC7CB22424ED8B6F007B5DB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7CB22324ED8B6F007B5DB4 /* SceneDelegate.swift */; };
@@ -20,6 +26,10 @@
 		BC7CB22E24ED8B6F007B5DB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC7CB22C24ED8B6F007B5DB4 /* LaunchScreen.storyboard */; };
 		BC7CB23924ED8B6F007B5DB4 /* HCITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7CB23824ED8B6F007B5DB4 /* HCITests.swift */; };
 		BC7CB24424ED8B70007B5DB4 /* HCIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7CB24324ED8B70007B5DB4 /* HCIUITests.swift */; };
+		BCE0856F250BD5CE0035D2F7 /* fire.gif in Resources */ = {isa = PBXBuildFile; fileRef = BCE0856E250BD5CE0035D2F7 /* fire.gif */; };
+		BCE08571250BD7480035D2F7 /* CongratsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE08570250BD7480035D2F7 /* CongratsVC.swift */; };
+		BCE08577250BDB0D0035D2F7 /* loader.gif in Resources */ = {isa = PBXBuildFile; fileRef = BCE08576250BDB0D0035D2F7 /* loader.gif */; };
+		BCE08579250BDC9B0035D2F7 /* giphy.gif in Resources */ = {isa = PBXBuildFile; fileRef = BCE08578250BDC9B0035D2F7 /* giphy.gif */; };
 		D8497E72681341F41F8B17A9 /* Pods_HCI_HCIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49F74D2A192C8596AA8998FF /* Pods_HCI_HCIUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,8 +57,14 @@
 		4A8F4CBE337A6F6FB5876F18 /* Pods-HCI-HCIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HCI-HCIUITests.release.xcconfig"; path = "Target Support Files/Pods-HCI-HCIUITests/Pods-HCI-HCIUITests.release.xcconfig"; sourceTree = "<group>"; };
 		555DBA83AFED65ED93CC9118 /* Pods-HCI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HCI.debug.xcconfig"; path = "Target Support Files/Pods-HCI/Pods-HCI.debug.xcconfig"; sourceTree = "<group>"; };
 		7B5FC1C5230A0A5F37EA9C2E /* Pods-HCI-HCIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HCI-HCIUITests.debug.xcconfig"; path = "Target Support Files/Pods-HCI-HCIUITests/Pods-HCI-HCIUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		BC1D7AC324ED9C2500D432B1 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		BC1D7AC524ED9EE100D432B1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BC43241125160E8A0084D3D3 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		BC432413251614770084D3D3 /* AppIconService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconService.swift; sourceTree = "<group>"; };
+		BC43241A25161C7A0084D3D3 /* darkAppIcon */ = {isa = PBXFileReference; lastKnownFileType = folder; name = darkAppIcon; path = "../../../../.Trash/Alternate Icons/darkAppIcon"; sourceTree = "<group>"; };
+		BC43241B25161C7A0084D3D3 /* neonAppIcon */ = {isa = PBXFileReference; lastKnownFileType = folder; name = neonAppIcon; path = "../../../../.Trash/Alternate Icons/neonAppIcon"; sourceTree = "<group>"; };
+		BC4401CC250BCFAD00DD34E6 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		BC44AD4D250BCE7700475867 /* CustomLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoader.swift; sourceTree = "<group>"; };
+		BC44AD4F250BCEEE00475867 /* UIImage+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
 		BC51D3D324F0099F0076CA93 /* AddImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddImageVC.swift; sourceTree = "<group>"; };
 		BC7CB21E24ED8B6F007B5DB4 /* HCI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HCI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC7CB22124ED8B6F007B5DB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +80,10 @@
 		BC7CB23F24ED8B70007B5DB4 /* HCIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HCIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC7CB24324ED8B70007B5DB4 /* HCIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCIUITests.swift; sourceTree = "<group>"; };
 		BC7CB24524ED8B70007B5DB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCE0856E250BD5CE0035D2F7 /* fire.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = fire.gif; path = ../../../Downloads/fire.gif; sourceTree = "<group>"; };
+		BCE08570250BD7480035D2F7 /* CongratsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratsVC.swift; sourceTree = "<group>"; };
+		BCE08576250BDB0D0035D2F7 /* loader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = loader.gif; path = ../../../Downloads/loader.gif; sourceTree = "<group>"; };
+		BCE08578250BDC9B0035D2F7 /* giphy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = giphy.gif; path = ../../../Downloads/giphy.gif; sourceTree = "<group>"; };
 		BD9405541C58F571F7D6EB8D /* Pods_HCITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HCITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C19D882A7BD69DF80F2A1B6C /* Pods-HCITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HCITests.release.xcconfig"; path = "Target Support Files/Pods-HCITests/Pods-HCITests.release.xcconfig"; sourceTree = "<group>"; };
 		E961C51BD37AB39441E40E56 /* Pods-HCITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HCITests.debug.xcconfig"; path = "Target Support Files/Pods-HCITests/Pods-HCITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -120,6 +140,23 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		BC43241725161C400084D3D3 /* Alternate Icons */ = {
+			isa = PBXGroup;
+			children = (
+				BC43241A25161C7A0084D3D3 /* darkAppIcon */,
+				BC43241B25161C7A0084D3D3 /* neonAppIcon */,
+			);
+			path = "Alternate Icons";
+			sourceTree = "<group>";
+		};
+		BC43241E251621B80084D3D3 /* TabBarVC */ = {
+			isa = PBXGroup;
+			children = (
+				BC43241125160E8A0084D3D3 /* SettingsVC.swift */,
+			);
+			path = TabBarVC;
+			sourceTree = "<group>";
+		};
 		BC7CB21524ED8B6E007B5DB4 = {
 			isa = PBXGroup;
 			children = (
@@ -145,14 +182,23 @@
 		BC7CB22024ED8B6F007B5DB4 /* HCI */ = {
 			isa = PBXGroup;
 			children = (
+				BC43241725161C400084D3D3 /* Alternate Icons */,
 				BC7CB22124ED8B6F007B5DB4 /* AppDelegate.swift */,
 				BC7CB22324ED8B6F007B5DB4 /* SceneDelegate.swift */,
 				BC7CB22524ED8B6F007B5DB4 /* ViewController.swift */,
 				BC51D3D324F0099F0076CA93 /* AddImageVC.swift */,
+				BCE08570250BD7480035D2F7 /* CongratsVC.swift */,
 				BC7CB22724ED8B6F007B5DB4 /* Main.storyboard */,
-				BC1D7AC324ED9C2500D432B1 /* CustomTextField.swift */,
+				BC43241E251621B80084D3D3 /* TabBarVC */,
+				BC44AD4D250BCE7700475867 /* CustomLoader.swift */,
+				BC4401CC250BCFAD00DD34E6 /* CustomTextField.swift */,
+				BC432413251614770084D3D3 /* AppIconService.swift */,
+				BC44AD4F250BCEEE00475867 /* UIImage+Gif.swift */,
 				BC7CB22A24ED8B6F007B5DB4 /* Assets.xcassets */,
 				BC7CB22C24ED8B6F007B5DB4 /* LaunchScreen.storyboard */,
+				BCE08576250BDB0D0035D2F7 /* loader.gif */,
+				BCE08578250BDC9B0035D2F7 /* giphy.gif */,
+				BCE0856E250BD5CE0035D2F7 /* fire.gif */,
 				BC1D7AC524ED9EE100D432B1 /* GoogleService-Info.plist */,
 				BC7CB22F24ED8B6F007B5DB4 /* Info.plist */,
 			);
@@ -285,10 +331,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCE08579250BDC9B0035D2F7 /* giphy.gif in Resources */,
+				BCE0856F250BD5CE0035D2F7 /* fire.gif in Resources */,
 				BC7CB22E24ED8B6F007B5DB4 /* LaunchScreen.storyboard in Resources */,
+				BC43241D25161C7A0084D3D3 /* neonAppIcon in Resources */,
 				BC1D7AC624ED9EE100D432B1 /* GoogleService-Info.plist in Resources */,
 				BC7CB22B24ED8B6F007B5DB4 /* Assets.xcassets in Resources */,
 				BC7CB22924ED8B6F007B5DB4 /* Main.storyboard in Resources */,
+				BCE08577250BDB0D0035D2F7 /* loader.gif in Resources */,
+				BC43241C25161C7A0084D3D3 /* darkAppIcon in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,11 +467,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC1D7AC424ED9C2500D432B1 /* CustomTextField.swift in Sources */,
+				BC4401CD250BCFAD00DD34E6 /* CustomTextField.swift in Sources */,
 				BC7CB22624ED8B6F007B5DB4 /* ViewController.swift in Sources */,
+				BC44AD50250BCEEE00475867 /* UIImage+Gif.swift in Sources */,
 				BC7CB22224ED8B6F007B5DB4 /* AppDelegate.swift in Sources */,
+				BC432414251614770084D3D3 /* AppIconService.swift in Sources */,
 				BC51D3D424F0099F0076CA93 /* AddImageVC.swift in Sources */,
+				BCE08571250BD7480035D2F7 /* CongratsVC.swift in Sources */,
 				BC7CB22424ED8B6F007B5DB4 /* SceneDelegate.swift in Sources */,
+				BC44AD4E250BCE7700475867 /* CustomLoader.swift in Sources */,
+				BC43241225160E8A0084D3D3 /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

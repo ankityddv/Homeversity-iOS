@@ -23,6 +23,7 @@ class AddImageVC: UIViewController {
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var nameTextField: CustomTextField!
     @IBOutlet weak var contactTextField: CustomTextField!
+    @IBOutlet weak var addDetailsdash: UIView!
     
     @IBAction func continueBttnTapped(_ sender: Any) {
         updateProfileImage()
@@ -34,6 +35,7 @@ class AddImageVC: UIViewController {
         @objc func openImagePicker(_ sender:Any) {
             // Open Image Picker
             let pickerController = UIImagePickerController()
+            pickerController.allowsEditing = true
             pickerController.delegate = (self as UIImagePickerControllerDelegate & UINavigationControllerDelegate)
             present(pickerController, animated: true, completion: nil)
             
@@ -107,11 +109,13 @@ class AddImageVC: UIViewController {
         @objc func keyboardwilchange(notification: Notification){
             nameTextField.frame.origin.y = 402
             contactTextField.frame.origin.y = 478
-            profileImage.frame = CGRect(x: 9, y: 14, width: 115, height: 130 )
-            imageViewbg.frame = CGRect(x: 141, y: 115, width: 133, height:157 )
+            profileImage.frame = CGRect(x: 12.5, y: 12.7, width: 110, height: 110)
+            profileImage.layer.cornerRadius = 25
+            imageViewbg.frame = CGRect(x: 141, y: 115, width: 133, height:133 )
             bgImage.frame.origin.y = -85
             addDetailsLabel.frame.origin.y = 290
             fillDetailsLabel.frame.origin.y = 345
+            addDetailsdash.frame.origin.y = 330
             //uploadLabel.textColor = UIColor.black
             UIImageView.transition(with: bgImage, duration: 1.0,
                               options: .transitionCurlUp,
@@ -127,11 +131,13 @@ class AddImageVC: UIViewController {
             self.view.endEditing(true)
             nameTextField.frame.origin.y = 512
             contactTextField.frame.origin.y = 588
-            profileImage.frame = CGRect(x: 11, y: 14, width: 212, height: 250 )
+            profileImage.frame = CGRect(x: 17, y: 17, width: 200, height: 200 )
+            profileImage.layer.cornerRadius = 35
             bgImage.frame.origin.y = 0
-            imageViewbg.frame = CGRect(x: 90, y: 119, width: 235, height:278 )
+            imageViewbg.frame = CGRect(x: 90, y: 115, width: 235, height:235 )
             addDetailsLabel.frame.origin.y = 410
             fillDetailsLabel.frame.origin.y = 465
+            addDetailsdash.frame.origin.y = 440
                 //uploadLabel.textColor = UIColor.white
             UIImageView.transition(with: bgImage, duration: 0.6,
                               options: .transitionCrossDissolve,
@@ -182,7 +188,9 @@ extension UIView {
 // Image picker Extension
 extension AddImageVC: UIImagePickerControllerDelegate,UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage{
+        
+        
+        if let image = info[UIImagePickerController.InfoKey.editedImage] as? UIImage{
             selectedImage = image
             profileImage.image = image
         }
@@ -196,3 +204,4 @@ extension UIImage {
         return widthRatio
     }
 }
+

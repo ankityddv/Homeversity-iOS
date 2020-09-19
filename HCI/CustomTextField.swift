@@ -1,8 +1,9 @@
 //
 //  CustomTextField.swift
-//  HCI
+//  TaxiKing
 //
-//  Created by Ankit on 19/08/20.
+//  Created by ANKIT YADAV on 23/03/20.
+//  Copyright © 2020 ANKIT YADAV. All rights reserved.
 //
 
 import UIKit
@@ -75,3 +76,4 @@ class CustomTextField: UITextField {
         attributedPlaceholder = NSAttributedString(string: placeholder != nil ? placeholder! : "", attributes: [NSAttributedString.Key.foregroundColor:tintColor])
     }
 }
+

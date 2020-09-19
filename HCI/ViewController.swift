@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var bgImage: UIImageView!
     @IBOutlet weak var signUpLabel: UILabel!
     @IBOutlet weak var pleasecreateLabel: UILabel!
+    @IBOutlet weak var signupDashView: UIView!
     
     
     @IBAction func signUpBttn(_ sender: Any) {
@@ -35,9 +36,9 @@ class ViewController: UIViewController {
         
         //Set Up Heptic touch quick actions on home page
                 let firstIcon = UIApplicationShortcutIcon(type: UIApplicationShortcutIcon.IconType.search)
-                let firstItem = UIApplicationShortcutItem(type: "jhcbjh", localizedTitle: "Book a ride", localizedSubtitle: nil, icon: firstIcon, userInfo: nil)
+                let firstItem = UIApplicationShortcutItem(type: "jhcbjh", localizedTitle: "Room Clean", localizedSubtitle: nil, icon: firstIcon, userInfo: nil)
                 let secondIcon = UIApplicationShortcutIcon(type: UIApplicationShortcutIcon.IconType.love)
-                let secondItem = UIApplicationShortcutItem(type: "jhcbjh", localizedTitle: "Offer a ride", localizedSubtitle: nil, icon: secondIcon, userInfo: nil)
+                let secondItem = UIApplicationShortcutItem(type: "jhcbjh", localizedTitle: "Complain", localizedSubtitle: nil, icon: secondIcon, userInfo: nil)
                 UIApplication.shared.shortcutItems = [firstItem,secondItem]
         
         //Hide Keyboard
@@ -76,8 +77,13 @@ class ViewController: UIViewController {
                         self.present(alertController, animated: true, completion: nil)
                     }
                 }
-                //loader()
+                loader()
             }
+        }
+    
+    func loader(){
+            CustomLoader.instance.gifName = "giphy"
+            CustomLoader.instance.showLoaderView()
         }
     
     // MARK: - Code below this is for hiding keyboard
@@ -96,6 +102,7 @@ class ViewController: UIViewController {
             passwordTextField.frame.origin.y = 362
             continueBttn.frame.origin.y = 467
             forgotPasswordBttn.frame.origin.y = 429
+            signupDashView.frame.origin.y = 224
             //bgImage.isHidden = true
             UIImageView.transition(with: bgImage, duration: 1.0,
                               options: .transitionCurlUp,
@@ -116,6 +123,7 @@ class ViewController: UIViewController {
             passwordTextField.frame.origin.y = 482
             continueBttn.frame.origin.y = 587
             forgotPasswordBttn.frame.origin.y = 549
+            signupDashView.frame.origin.y = 334
             //bgImage.isHidden = false
             UIImageView.transition(with: bgImage, duration: 0.6,
                               options: .transitionCrossDissolve,
