@@ -32,12 +32,11 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
         //Set Up Heptic touch quick actions on home page
-                let firstIcon = UIApplicationShortcutIcon(type: UIApplicationShortcutIcon.IconType.search)
+        let firstIcon = UIApplicationShortcutIcon(type: UIApplicationShortcutIcon.IconType.update)
                 let firstItem = UIApplicationShortcutItem(type: "jhcbjh", localizedTitle: "Room Clean", localizedSubtitle: nil, icon: firstIcon, userInfo: nil)
-                let secondIcon = UIApplicationShortcutIcon(type: UIApplicationShortcutIcon.IconType.love)
+        let secondIcon = UIApplicationShortcutIcon(type: UIApplicationShortcutIcon.IconType.invitation)
                 let secondItem = UIApplicationShortcutItem(type: "jhcbjh", localizedTitle: "Complain", localizedSubtitle: nil, icon: secondIcon, userInfo: nil)
                 UIApplication.shared.shortcutItems = [firstItem,secondItem]
         
@@ -103,13 +102,11 @@ class ViewController: UIViewController {
             continueBttn.frame.origin.y = 467
             forgotPasswordBttn.frame.origin.y = 429
             signupDashView.frame.origin.y = 224
-            //bgImage.isHidden = true
             UIImageView.transition(with: bgImage, duration: 1.0,
                               options: .transitionCurlUp,
                               animations: { [self] in
                                 self.bgImage.isHidden = true
                           })
-            //forgotpasswordBttn.frame.origin.y = 457
         }
         func textFieldShouldReturn(_ textField: UITextField) -> Bool {
             hideKeyboard()
@@ -124,13 +121,11 @@ class ViewController: UIViewController {
             continueBttn.frame.origin.y = 587
             forgotPasswordBttn.frame.origin.y = 549
             signupDashView.frame.origin.y = 334
-            //bgImage.isHidden = false
             UIImageView.transition(with: bgImage, duration: 0.6,
                               options: .transitionCrossDissolve,
                               animations: { [self] in
                                 self.bgImage.isHidden = false
                           })
-            //forgotpasswordBttn.frame.origin.y = 464
         }
         
         

@@ -26,6 +26,7 @@
 		BC7CB22E24ED8B6F007B5DB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC7CB22C24ED8B6F007B5DB4 /* LaunchScreen.storyboard */; };
 		BC7CB23924ED8B6F007B5DB4 /* HCITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7CB23824ED8B6F007B5DB4 /* HCITests.swift */; };
 		BC7CB24424ED8B70007B5DB4 /* HCIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7CB24324ED8B70007B5DB4 /* HCIUITests.swift */; };
+		BCBA923D251695A70040FE24 /* CouncellingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBA923C251695A70040FE24 /* CouncellingVC.swift */; };
 		BCE08571250BD7480035D2F7 /* CongratsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE08570250BD7480035D2F7 /* CongratsVC.swift */; };
 		D8497E72681341F41F8B17A9 /* Pods_HCI_HCIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49F74D2A192C8596AA8998FF /* Pods_HCI_HCIUITests.framework */; };
 /* End PBXBuildFile section */
@@ -77,6 +78,7 @@
 		BC7CB23F24ED8B70007B5DB4 /* HCIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HCIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC7CB24324ED8B70007B5DB4 /* HCIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCIUITests.swift; sourceTree = "<group>"; };
 		BC7CB24524ED8B70007B5DB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCBA923C251695A70040FE24 /* CouncellingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouncellingVC.swift; sourceTree = "<group>"; };
 		BCE08570250BD7480035D2F7 /* CongratsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratsVC.swift; sourceTree = "<group>"; };
 		BD9405541C58F571F7D6EB8D /* Pods_HCITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HCITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C19D882A7BD69DF80F2A1B6C /* Pods-HCITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HCITests.release.xcconfig"; path = "Target Support Files/Pods-HCITests/Pods-HCITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 		BC43241E251621B80084D3D3 /* TabBarVC */ = {
 			isa = PBXGroup;
 			children = (
+				BCBA923C251695A70040FE24 /* CouncellingVC.swift */,
 				BC43241125160E8A0084D3D3 /* SettingsVC.swift */,
 			);
 			path = TabBarVC;
@@ -466,6 +469,7 @@
 				BC4401CD250BCFAD00DD34E6 /* CustomTextField.swift in Sources */,
 				BC7CB22624ED8B6F007B5DB4 /* ViewController.swift in Sources */,
 				BC44AD50250BCEEE00475867 /* UIImage+Gif.swift in Sources */,
+				BCBA923D251695A70040FE24 /* CouncellingVC.swift in Sources */,
 				BC7CB22224ED8B6F007B5DB4 /* AppDelegate.swift in Sources */,
 				BC432414251614770084D3D3 /* AppIconService.swift in Sources */,
 				BC51D3D424F0099F0076CA93 /* AddImageVC.swift in Sources */,
