@@ -26,6 +26,13 @@
 		BC7CB22E24ED8B6F007B5DB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC7CB22C24ED8B6F007B5DB4 /* LaunchScreen.storyboard */; };
 		BC7CB23924ED8B6F007B5DB4 /* HCITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7CB23824ED8B6F007B5DB4 /* HCITests.swift */; };
 		BC7CB24424ED8B70007B5DB4 /* HCIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7CB24324ED8B70007B5DB4 /* HCIUITests.swift */; };
+		BCB658D12517E8DC00C7F36F /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB658D02517E8DC00C7F36F /* WidgetKit.framework */; };
+		BCB658D32517E8DC00C7F36F /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB658D22517E8DC00C7F36F /* SwiftUI.framework */; };
+		BCB658D62517E8DC00C7F36F /* WidgetModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB658D52517E8DC00C7F36F /* WidgetModule.swift */; };
+		BCB658D92517E8E000C7F36F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCB658D82517E8E000C7F36F /* Assets.xcassets */; };
+		BCB658DB2517E8E000C7F36F /* WidgetModule.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = BCB658D72517E8DC00C7F36F /* WidgetModule.intentdefinition */; };
+		BCB658DC2517E8E000C7F36F /* WidgetModule.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = BCB658D72517E8DC00C7F36F /* WidgetModule.intentdefinition */; };
+		BCB658DF2517E8E000C7F36F /* WidgetModuleExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BCB658CF2517E8DC00C7F36F /* WidgetModuleExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BCBA923D251695A70040FE24 /* CouncellingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBA923C251695A70040FE24 /* CouncellingVC.swift */; };
 		BCE08571250BD7480035D2F7 /* CongratsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE08570250BD7480035D2F7 /* CongratsVC.swift */; };
 		D8497E72681341F41F8B17A9 /* Pods_HCI_HCIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49F74D2A192C8596AA8998FF /* Pods_HCI_HCIUITests.framework */; };
@@ -46,7 +53,28 @@
 			remoteGlobalIDString = BC7CB21D24ED8B6E007B5DB4;
 			remoteInfo = HCI;
 		};
+		BCB658DD2517E8E000C7F36F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC7CB21624ED8B6E007B5DB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCB658CE2517E8DC00C7F36F;
+			remoteInfo = WidgetModuleExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BCB658E02517E8E000C7F36F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BCB658DF2517E8E000C7F36F /* WidgetModuleExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		08BC8F5D260F9AB8BC20A5EA /* Pods_HCI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HCI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +106,13 @@
 		BC7CB23F24ED8B70007B5DB4 /* HCIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HCIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC7CB24324ED8B70007B5DB4 /* HCIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCIUITests.swift; sourceTree = "<group>"; };
 		BC7CB24524ED8B70007B5DB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCB658CF2517E8DC00C7F36F /* WidgetModuleExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetModuleExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCB658D02517E8DC00C7F36F /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		BCB658D22517E8DC00C7F36F /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		BCB658D52517E8DC00C7F36F /* WidgetModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetModule.swift; sourceTree = "<group>"; };
+		BCB658D72517E8DC00C7F36F /* WidgetModule.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = WidgetModule.intentdefinition; sourceTree = "<group>"; };
+		BCB658D82517E8E000C7F36F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCB658DA2517E8E000C7F36F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCBA923C251695A70040FE24 /* CouncellingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouncellingVC.swift; sourceTree = "<group>"; };
 		BCE08570250BD7480035D2F7 /* CongratsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratsVC.swift; sourceTree = "<group>"; };
 		BD9405541C58F571F7D6EB8D /* Pods_HCITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HCITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,6 +145,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BCB658CC2517E8DC00C7F36F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCB658D32517E8DC00C7F36F /* SwiftUI.framework in Frameworks */,
+				BCB658D12517E8DC00C7F36F /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -119,6 +163,8 @@
 				08BC8F5D260F9AB8BC20A5EA /* Pods_HCI.framework */,
 				49F74D2A192C8596AA8998FF /* Pods_HCI_HCIUITests.framework */,
 				BD9405541C58F571F7D6EB8D /* Pods_HCITests.framework */,
+				BCB658D02517E8DC00C7F36F /* WidgetKit.framework */,
+				BCB658D22517E8DC00C7F36F /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -169,6 +215,7 @@
 				BC7CB22024ED8B6F007B5DB4 /* HCI */,
 				BC7CB23724ED8B6F007B5DB4 /* HCITests */,
 				BC7CB24224ED8B70007B5DB4 /* HCIUITests */,
+				BCB658D42517E8DC00C7F36F /* WidgetModule */,
 				BC7CB21F24ED8B6F007B5DB4 /* Products */,
 				159BDB0FA7C1F0F064E66F18 /* Pods */,
 				0BDBD2A0AB30D4C768920385 /* Frameworks */,
@@ -181,6 +228,7 @@
 				BC7CB21E24ED8B6F007B5DB4 /* HCI.app */,
 				BC7CB23424ED8B6F007B5DB4 /* HCITests.xctest */,
 				BC7CB23F24ED8B70007B5DB4 /* HCIUITests.xctest */,
+				BCB658CF2517E8DC00C7F36F /* WidgetModuleExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -225,6 +273,17 @@
 			path = HCIUITests;
 			sourceTree = "<group>";
 		};
+		BCB658D42517E8DC00C7F36F /* WidgetModule */ = {
+			isa = PBXGroup;
+			children = (
+				BCB658D52517E8DC00C7F36F /* WidgetModule.swift */,
+				BCB658D72517E8DC00C7F36F /* WidgetModule.intentdefinition */,
+				BCB658D82517E8E000C7F36F /* Assets.xcassets */,
+				BCB658DA2517E8E000C7F36F /* Info.plist */,
+			);
+			path = WidgetModule;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -237,10 +296,12 @@
 				BC7CB21B24ED8B6E007B5DB4 /* Frameworks */,
 				BC7CB21C24ED8B6E007B5DB4 /* Resources */,
 				895B78E27011D74F88FA8AFB /* [CP] Embed Pods Frameworks */,
+				BCB658E02517E8E000C7F36F /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BCB658DE2517E8E000C7F36F /* PBXTargetDependency */,
 			);
 			name = HCI;
 			productName = HCI;
@@ -286,13 +347,30 @@
 			productReference = BC7CB23F24ED8B70007B5DB4 /* HCIUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		BCB658CE2517E8DC00C7F36F /* WidgetModuleExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCB658E32517E8E000C7F36F /* Build configuration list for PBXNativeTarget "WidgetModuleExtension" */;
+			buildPhases = (
+				BCB658CB2517E8DC00C7F36F /* Sources */,
+				BCB658CC2517E8DC00C7F36F /* Frameworks */,
+				BCB658CD2517E8DC00C7F36F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WidgetModuleExtension;
+			productName = WidgetModuleExtension;
+			productReference = BCB658CF2517E8DC00C7F36F /* WidgetModuleExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		BC7CB21624ED8B6E007B5DB4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1200;
+				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
 					BC7CB21D24ED8B6E007B5DB4 = {
@@ -305,6 +383,9 @@
 					BC7CB23E24ED8B70007B5DB4 = {
 						CreatedOnToolsVersion = 12.0;
 						TestTargetID = BC7CB21D24ED8B6E007B5DB4;
+					};
+					BCB658CE2517E8DC00C7F36F = {
+						CreatedOnToolsVersion = 12.2;
 					};
 				};
 			};
@@ -324,6 +405,7 @@
 				BC7CB21D24ED8B6E007B5DB4 /* HCI */,
 				BC7CB23324ED8B6F007B5DB4 /* HCITests */,
 				BC7CB23E24ED8B70007B5DB4 /* HCIUITests */,
+				BCB658CE2517E8DC00C7F36F /* WidgetModuleExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -353,6 +435,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCB658CD2517E8DC00C7F36F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCB658D92517E8E000C7F36F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +564,7 @@
 				BC432414251614770084D3D3 /* AppIconService.swift in Sources */,
 				BC51D3D424F0099F0076CA93 /* AddImageVC.swift in Sources */,
 				BCE08571250BD7480035D2F7 /* CongratsVC.swift in Sources */,
+				BCB658DC2517E8E000C7F36F /* WidgetModule.intentdefinition in Sources */,
 				BC7CB22424ED8B6F007B5DB4 /* SceneDelegate.swift in Sources */,
 				BC44AD4E250BCE7700475867 /* CustomLoader.swift in Sources */,
 				BC43241225160E8A0084D3D3 /* SettingsVC.swift in Sources */,
@@ -496,6 +587,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BCB658CB2517E8DC00C7F36F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCB658DB2517E8E000C7F36F /* WidgetModule.intentdefinition in Sources */,
+				BCB658D62517E8DC00C7F36F /* WidgetModule.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -508,6 +608,11 @@
 			isa = PBXTargetDependency;
 			target = BC7CB21D24ED8B6E007B5DB4 /* HCI */;
 			targetProxy = BC7CB24024ED8B70007B5DB4 /* PBXContainerItemProxy */;
+		};
+		BCB658DE2517E8E000C7F36F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCB658CE2517E8DC00C7F36F /* WidgetModuleExtension */;
+			targetProxy = BCB658DD2517E8E000C7F36F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -651,6 +756,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 555DBA83AFED65ED93CC9118 /* Pods-HCI.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -671,6 +777,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 471848561CAA4A20ACB6706E /* Pods-HCI.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -775,6 +882,50 @@
 			};
 			name = Release;
 		};
+		BCB658E12517E8E000C7F36F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JL7UZ93S3L;
+				INFOPLIST_FILE = WidgetModule/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tdc.HCI.WidgetModule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BCB658E22517E8E000C7F36F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JL7UZ93S3L;
+				INFOPLIST_FILE = WidgetModule/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tdc.HCI.WidgetModule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -810,6 +961,15 @@
 			buildConfigurations = (
 				BC7CB24F24ED8B70007B5DB4 /* Debug */,
 				BC7CB25024ED8B70007B5DB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCB658E32517E8E000C7F36F /* Build configuration list for PBXNativeTarget "WidgetModuleExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCB658E12517E8E000C7F36F /* Debug */,
+				BCB658E22517E8E000C7F36F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

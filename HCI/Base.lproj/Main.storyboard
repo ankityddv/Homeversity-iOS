@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17132" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ykB-dN-0MR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17503.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ykB-dN-0MR">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17105"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17502"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -659,16 +659,16 @@
     </scenes>
     <designables>
         <designable name="7fx-gv-aY6">
-            <size key="intrinsicContentSize" width="74.5" height="18.5"/>
+            <size key="intrinsicContentSize" width="34.5" height="18.5"/>
         </designable>
         <designable name="7rc-q1-It8">
-            <size key="intrinsicContentSize" width="102.5" height="17"/>
+            <size key="intrinsicContentSize" width="62.5" height="17"/>
         </designable>
         <designable name="BRr-NM-Aca">
-            <size key="intrinsicContentSize" width="117.5" height="18.5"/>
+            <size key="intrinsicContentSize" width="77.5" height="18.5"/>
         </designable>
         <designable name="iXK-RK-n71">
-            <size key="intrinsicContentSize" width="78" height="18.5"/>
+            <size key="intrinsicContentSize" width="38" height="18.5"/>
         </designable>
     </designables>
     <resources>
