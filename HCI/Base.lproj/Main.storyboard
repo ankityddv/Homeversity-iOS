@@ -49,11 +49,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pw5-9e-8AJ">
-                                <rect key="frame" x="-42" y="-29" width="459" height="925"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="bgColor"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please create your account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfT-KE-bXp">
                                 <rect key="frame" x="24" y="352" width="186" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -125,11 +120,6 @@
                                     <segue destination="I3r-5I-Vw0" kind="show" id="pTG-Ru-OSb"/>
                                 </connections>
                             </button>
-                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BYF-IB-Hb8">
-                                <rect key="frame" x="21" y="334" width="110" height="7"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
-                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="By signing up, you agree to our terms &amp; conditions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGd-2P-vyF">
                                 <rect key="frame" x="44" y="845" width="326" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -149,14 +139,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="bgImage" destination="Pw5-9e-8AJ" id="kzr-KI-00X"/>
                         <outlet property="continueBttn" destination="JdJ-Cp-ik1" id="JqL-i8-Ed7"/>
                         <outlet property="emailTextField" destination="7fx-gv-aY6" id="RZj-MT-QvY"/>
                         <outlet property="forgotPasswordBttn" destination="5mg-o1-PHV" id="j2z-Bm-pdk"/>
                         <outlet property="passwordTextField" destination="7rc-q1-It8" id="V8J-fG-Vm5"/>
                         <outlet property="pleasecreateLabel" destination="jfT-KE-bXp" id="ln8-Sg-NkK"/>
                         <outlet property="signUpLabel" destination="8wv-Gx-hfV" id="LAZ-eO-Pea"/>
-                        <outlet property="signupDashView" destination="BYF-IB-Hb8" id="tOo-Iq-9BX"/>
                         <segue destination="vYy-Mo-TQ9" kind="show" identifier="toInfoPage" id="JW1-pd-eEf"/>
                         <segue destination="Rkt-eZ-E8b" kind="show" identifier="get_started" id="WVR-nh-R03"/>
                     </connections>
@@ -248,11 +236,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gig-aP-bfd">
-                                <rect key="frame" x="20" y="440" width="169" height="8"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
-                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhe-S9-3fe">
                                 <rect key="frame" x="24" y="410" width="183" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -274,7 +257,6 @@
                     <navigationItem key="navigationItem" id="mpf-vR-Mcz"/>
                     <connections>
                         <outlet property="addDetailsLabel" destination="jhe-S9-3fe" id="2nr-aI-ARE"/>
-                        <outlet property="addDetailsdash" destination="gig-aP-bfd" id="lZg-8R-9Wg"/>
                         <outlet property="bgImage" destination="SII-FY-O67" id="4ed-Hk-4Bz"/>
                         <outlet property="contactTextField" destination="BRr-NM-Aca" id="liV-qc-XRB"/>
                         <outlet property="continueBttn" destination="LpL-Fr-j0E" id="Jig-Qk-AKE"/>
@@ -346,7 +328,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="4Bd-ht-OTr" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KSw-Yn-mBV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="QfR-J1-5cv"/>
                         <color key="backgroundColor" name="bgColor"/>
@@ -362,7 +344,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="Qz5-8b-Rj6" customClass="CouncellingVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U2U-18-pIG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="councelling_1" translatesAutoresizingMaskIntoConstraints="NO" id="YRs-Wu-gsy">
@@ -498,7 +480,7 @@
             <objects>
                 <viewController id="nnG-p5-lPC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Fk-bu-dUa">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="HEo-UL-Eu1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -514,7 +496,7 @@
             <objects>
                 <viewController id="0TT-2n-KvB" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3ms-Ed-RKT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="5ew-WB-JGf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -697,9 +679,6 @@
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

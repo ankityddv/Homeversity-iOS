@@ -23,7 +23,6 @@ class AddImageVC: UIViewController {
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var nameTextField: CustomTextField!
     @IBOutlet weak var contactTextField: CustomTextField!
-    @IBOutlet weak var addDetailsdash: UIView!
     
     @IBAction func continueBttnTapped(_ sender: Any) {
         updateProfileImage()
@@ -115,8 +114,6 @@ class AddImageVC: UIViewController {
             bgImage.frame.origin.y = -85
             addDetailsLabel.frame.origin.y = 290
             fillDetailsLabel.frame.origin.y = 345
-            addDetailsdash.frame.origin.y = 330
-            //uploadLabel.textColor = UIColor.black
             UIImageView.transition(with: bgImage, duration: 1.0,
                               options: .transitionCurlUp,
                               animations: { [self] in
@@ -137,7 +134,6 @@ class AddImageVC: UIViewController {
             imageViewbg.frame = CGRect(x: 90, y: 115, width: 235, height:235 )
             addDetailsLabel.frame.origin.y = 410
             fillDetailsLabel.frame.origin.y = 465
-            addDetailsdash.frame.origin.y = 440
                 //uploadLabel.textColor = UIColor.white
             UIImageView.transition(with: bgImage, duration: 0.6,
                               options: .transitionCrossDissolve,

@@ -33,6 +33,7 @@
 		BCB658DB2517E8E000C7F36F /* WidgetModule.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = BCB658D72517E8DC00C7F36F /* WidgetModule.intentdefinition */; };
 		BCB658DC2517E8E000C7F36F /* WidgetModule.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = BCB658D72517E8DC00C7F36F /* WidgetModule.intentdefinition */; };
 		BCB658DF2517E8E000C7F36F /* WidgetModuleExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BCB658CF2517E8DC00C7F36F /* WidgetModuleExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BCB658F22517EA9700C7F36F /* MyDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB658EC2517EA9200C7F36F /* MyDataProvider.swift */; };
 		BCBA923D251695A70040FE24 /* CouncellingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBA923C251695A70040FE24 /* CouncellingVC.swift */; };
 		BCE08571250BD7480035D2F7 /* CongratsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE08570250BD7480035D2F7 /* CongratsVC.swift */; };
 		D8497E72681341F41F8B17A9 /* Pods_HCI_HCIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49F74D2A192C8596AA8998FF /* Pods_HCI_HCIUITests.framework */; };
@@ -113,6 +114,7 @@
 		BCB658D72517E8DC00C7F36F /* WidgetModule.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = WidgetModule.intentdefinition; sourceTree = "<group>"; };
 		BCB658D82517E8E000C7F36F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCB658DA2517E8E000C7F36F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCB658EC2517EA9200C7F36F /* MyDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDataProvider.swift; sourceTree = "<group>"; };
 		BCBA923C251695A70040FE24 /* CouncellingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouncellingVC.swift; sourceTree = "<group>"; };
 		BCE08570250BD7480035D2F7 /* CongratsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratsVC.swift; sourceTree = "<group>"; };
 		BD9405541C58F571F7D6EB8D /* Pods_HCITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HCITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -277,6 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				BCB658D52517E8DC00C7F36F /* WidgetModule.swift */,
+				BCB658EC2517EA9200C7F36F /* MyDataProvider.swift */,
 				BCB658D72517E8DC00C7F36F /* WidgetModule.intentdefinition */,
 				BCB658D82517E8E000C7F36F /* Assets.xcassets */,
 				BCB658DA2517E8E000C7F36F /* Info.plist */,
@@ -593,6 +596,7 @@
 			files = (
 				BCB658DB2517E8E000C7F36F /* WidgetModule.intentdefinition in Sources */,
 				BCB658D62517E8DC00C7F36F /* WidgetModule.swift in Sources */,
+				BCB658F22517EA9700C7F36F /* MyDataProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,23 +10,27 @@ import WidgetKit
 import SwiftUI
 
 struct Provider: TimelineProvider {
+    
+    // Placeholder String
     func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date())
+        SimpleEntry(date: Date(), myString: "BANG ON")
     }
 
+    // Placeholder String
     func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> ()) {
-        let entry = SimpleEntry(date: Date())
+        let entry = SimpleEntry(date: Date(), myString: "BANG ON")
         completion(entry)
     }
 
+    //main logic
     func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
         var entries: [SimpleEntry] = []
 
         // Generate a timeline consisting of five entries an hour apart, starting from the current date.
         let currentDate = Date()
         for hourOffset in 0 ..< 5 {
-            let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(date: entryDate)
+            let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset * 10, to: currentDate)!
+            let entry = SimpleEntry(date: entryDate, myString: MyDataProvider.getRandomString())
             entries.append(entry)
         }
 
@@ -37,14 +41,23 @@ struct Provider: TimelineProvider {
 
 struct SimpleEntry: TimelineEntry {
     let date: Date
+    let myString: String
     //let configuration: ConfigurationIntent
 }
 
+//widget look
 struct TestWidgetEntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
-        Text(entry.date, style: .time)
+        ZStack{
+            Color.dynamicColor.edgesIgnoringSafeArea(.all)
+            Text(entry.myString)
+                
+                .font(.title)
+                .fontWeight(.black)
+                .multilineTextAlignment(.center)
+        }
     }
 }
 
@@ -61,9 +74,16 @@ struct TestWidget: Widget {
     }
 }
 
+// Preview
+
 struct TestWidget_Previews: PreviewProvider {
     static var previews: some View {
-        TestWidgetEntryView(entry: SimpleEntry(date: Date()))
+        TestWidgetEntryView(entry: SimpleEntry(date: Date(), myString: "LMAO NIGGA"))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
+}
+
+
+extension Color {
+    static let dynamicColor = Color(UIColor(red: 0.87, green: 0.97, blue: 0.30, alpha: 1.00))
 }

@@ -14,10 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var passwordTextField: CustomTextField!
     @IBOutlet weak var continueBttn: UIButton!
     @IBOutlet weak var forgotPasswordBttn: UIButton!
-    @IBOutlet weak var bgImage: UIImageView!
     @IBOutlet weak var signUpLabel: UILabel!
     @IBOutlet weak var pleasecreateLabel: UILabel!
-    @IBOutlet weak var signupDashView: UIView!
     
     
     @IBAction func signUpBttn(_ sender: Any) {
@@ -101,12 +99,11 @@ class ViewController: UIViewController {
             passwordTextField.frame.origin.y = 362
             continueBttn.frame.origin.y = 467
             forgotPasswordBttn.frame.origin.y = 429
-            signupDashView.frame.origin.y = 224
-            UIImageView.transition(with: bgImage, duration: 1.0,
-                              options: .transitionCurlUp,
-                              animations: { [self] in
-                                self.bgImage.isHidden = true
-                          })
+            //UIImageView.transition(with: bgImage, duration: 1.0,
+                             // options: .transitionCurlUp,
+                           //   animations: { [self] in
+                               // self.bgImage.isHidden = true
+                          //})
         }
         func textFieldShouldReturn(_ textField: UITextField) -> Bool {
             hideKeyboard()
@@ -120,12 +117,11 @@ class ViewController: UIViewController {
             passwordTextField.frame.origin.y = 482
             continueBttn.frame.origin.y = 587
             forgotPasswordBttn.frame.origin.y = 549
-            signupDashView.frame.origin.y = 334
-            UIImageView.transition(with: bgImage, duration: 0.6,
-                              options: .transitionCrossDissolve,
-                              animations: { [self] in
-                                self.bgImage.isHidden = false
-                          })
+            //UIImageView.transition(with: bgImage, duration: 0.6,
+                              //options: .transitionCrossDissolve,
+                              //animations: { [self] in
+                                //self.bgImage.isHidden = false
+                          //})
         }
         
         
