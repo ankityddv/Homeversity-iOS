@@ -15,7 +15,7 @@
       "scale" : "1x"
     },
     {
-      "filename" : "darklogo.png",
+      "filename" : "darklogo_ROUND.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
@@ -26,7 +26,7 @@
           "value" : "dark"
         }
       ],
-      "filename" : "Neonlogo.png",
+      "filename" : "Neon_round.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
@@ -48,8 +48,5 @@
   "info" : {
     "author" : "xcode",
     "version" : 1
-  },
-  "properties" : {
-    "template-rendering-intent" : "original"
   }
 }

@@ -47,7 +47,7 @@ class ViewController: UIViewController {
     }
     
     //Function to login In the User
-        func createUser(){
+    func createUser(){
             let email = emailTextField.text!
             let password = passwordTextField.text!
             if password.count < 6 && password.count >= 1 {

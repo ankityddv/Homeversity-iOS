@@ -112,7 +112,7 @@
             <dict>
                 <key>CFBundleIconFiles</key>
                 <array>
-                    <string>purpleIcon</string>
+                    <string>rainbowlogo</string>
                 </array>
             </dict>
             
@@ -120,7 +120,7 @@
             <dict>
                 <key>CFBundleIconFiles</key>
                 <array>
-                    <string>dark</string>
+                    <string>darklogo</string>
                 </array>
             </dict>
         </dict>
