@@ -17,14 +17,15 @@
 		BC4401CD250BCFAD00DD34E6 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4401CC250BCFAD00DD34E6 /* CustomTextField.swift */; };
 		BC44AD4E250BCE7700475867 /* CustomLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44AD4D250BCE7700475867 /* CustomLoader.swift */; };
 		BC44AD50250BCEEE00475867 /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44AD4F250BCEEE00475867 /* UIImage+Gif.swift */; };
+		BC464AC02518BA1500C9A1DF /* tncVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC464ABF2518BA1500C9A1DF /* tncVC.swift */; };
+		BC464AE72518CE4300C9A1DF /* FoundVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC464AE62518CE4300C9A1DF /* FoundVC.swift */; };
 		BC51D3D424F0099F0076CA93 /* AddImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC51D3D324F0099F0076CA93 /* AddImageVC.swift */; };
 		BC55431F25189BF20018ADB7 /* neonlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = BC55431D25189BF10018ADB7 /* neonlogo.png */; };
 		BC55432025189BF20018ADB7 /* darklogo.png in Resources */ = {isa = PBXBuildFile; fileRef = BC55431E25189BF20018ADB7 /* darklogo.png */; };
 		BC55432A25189EBE0018ADB7 /* rainbowlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = BC55432925189EBD0018ADB7 /* rainbowlogo.png */; };
-		BC55433A2518B3310018ADB7 /* SettingsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5543392518B3310018ADB7 /* SettingsTableVC.swift */; };
 		BC7CB22224ED8B6F007B5DB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7CB22124ED8B6F007B5DB4 /* AppDelegate.swift */; };
 		BC7CB22424ED8B6F007B5DB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7CB22324ED8B6F007B5DB4 /* SceneDelegate.swift */; };
-		BC7CB22624ED8B6F007B5DB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7CB22524ED8B6F007B5DB4 /* ViewController.swift */; };
+		BC7CB22624ED8B6F007B5DB4 /* signUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7CB22524ED8B6F007B5DB4 /* signUpVC.swift */; };
 		BC7CB22924ED8B6F007B5DB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC7CB22724ED8B6F007B5DB4 /* Main.storyboard */; };
 		BC7CB22B24ED8B6F007B5DB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC7CB22A24ED8B6F007B5DB4 /* Assets.xcassets */; };
 		BC7CB22E24ED8B6F007B5DB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC7CB22C24ED8B6F007B5DB4 /* LaunchScreen.storyboard */; };
@@ -96,15 +97,16 @@
 		BC4401CC250BCFAD00DD34E6 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		BC44AD4D250BCE7700475867 /* CustomLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoader.swift; sourceTree = "<group>"; };
 		BC44AD4F250BCEEE00475867 /* UIImage+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
+		BC464ABF2518BA1500C9A1DF /* tncVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tncVC.swift; sourceTree = "<group>"; };
+		BC464AE62518CE4300C9A1DF /* FoundVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundVC.swift; sourceTree = "<group>"; };
 		BC51D3D324F0099F0076CA93 /* AddImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddImageVC.swift; sourceTree = "<group>"; };
 		BC55431D25189BF10018ADB7 /* neonlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = neonlogo.png; path = ../../../../Downloads/neonlogo.png; sourceTree = "<group>"; };
 		BC55431E25189BF20018ADB7 /* darklogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = darklogo.png; path = ../../../../Downloads/darklogo.png; sourceTree = "<group>"; };
 		BC55432925189EBD0018ADB7 /* rainbowlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rainbowlogo.png; path = ../../../../Downloads/rainbowlogo.png; sourceTree = "<group>"; };
-		BC5543392518B3310018ADB7 /* SettingsTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableVC.swift; sourceTree = "<group>"; };
 		BC7CB21E24ED8B6F007B5DB4 /* HCI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HCI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC7CB22124ED8B6F007B5DB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC7CB22324ED8B6F007B5DB4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BC7CB22524ED8B6F007B5DB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BC7CB22524ED8B6F007B5DB4 /* signUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpVC.swift; sourceTree = "<group>"; };
 		BC7CB22824ED8B6F007B5DB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC7CB22A24ED8B6F007B5DB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC7CB22D24ED8B6F007B5DB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -217,10 +219,24 @@
 			isa = PBXGroup;
 			children = (
 				BCBA923C251695A70040FE24 /* CouncellingVC.swift */,
-				BC5543392518B3310018ADB7 /* SettingsTableVC.swift */,
-				BC43241125160E8A0084D3D3 /* appIconsVC.swift */,
 			);
 			path = TabBarVC;
+			sourceTree = "<group>";
+		};
+		BC464AC52518C1ED00C9A1DF /* SettingsSubVC */ = {
+			isa = PBXGroup;
+			children = (
+				BC43241125160E8A0084D3D3 /* appIconsVC.swift */,
+			);
+			path = SettingsSubVC;
+			sourceTree = "<group>";
+		};
+		BC464AE52518CE1800C9A1DF /* LostnFoundSubVC */ = {
+			isa = PBXGroup;
+			children = (
+				BC464AE62518CE4300C9A1DF /* FoundVC.swift */,
+			);
+			path = LostnFoundSubVC;
 			sourceTree = "<group>";
 		};
 		BC7CB21524ED8B6E007B5DB4 = {
@@ -252,10 +268,13 @@
 			children = (
 				BC7CB22124ED8B6F007B5DB4 /* AppDelegate.swift */,
 				BC7CB22324ED8B6F007B5DB4 /* SceneDelegate.swift */,
-				BC7CB22524ED8B6F007B5DB4 /* ViewController.swift */,
+				BC7CB22524ED8B6F007B5DB4 /* signUpVC.swift */,
 				BC51D3D324F0099F0076CA93 /* AddImageVC.swift */,
 				BCE08570250BD7480035D2F7 /* CongratsVC.swift */,
+				BC464ABF2518BA1500C9A1DF /* tncVC.swift */,
 				BC7CB22724ED8B6F007B5DB4 /* Main.storyboard */,
+				BC464AE52518CE1800C9A1DF /* LostnFoundSubVC */,
+				BC464AC52518C1ED00C9A1DF /* SettingsSubVC */,
 				BC43241E251621B80084D3D3 /* TabBarVC */,
 				BC423236251626EA00D05BF0 /* Custom Files */,
 				BC43241725161C400084D3D3 /* Alternate Icons */,
@@ -575,14 +594,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC4401CD250BCFAD00DD34E6 /* CustomTextField.swift in Sources */,
-				BC7CB22624ED8B6F007B5DB4 /* ViewController.swift in Sources */,
+				BC7CB22624ED8B6F007B5DB4 /* signUpVC.swift in Sources */,
+				BC464AC02518BA1500C9A1DF /* tncVC.swift in Sources */,
 				BC44AD50250BCEEE00475867 /* UIImage+Gif.swift in Sources */,
-				BC55433A2518B3310018ADB7 /* SettingsTableVC.swift in Sources */,
 				BCBA923D251695A70040FE24 /* CouncellingVC.swift in Sources */,
 				BC7CB22224ED8B6F007B5DB4 /* AppDelegate.swift in Sources */,
 				BC432414251614770084D3D3 /* AppIconService.swift in Sources */,
 				BC51D3D424F0099F0076CA93 /* AddImageVC.swift in Sources */,
 				BCE08571250BD7480035D2F7 /* CongratsVC.swift in Sources */,
+				BC464AE72518CE4300C9A1DF /* FoundVC.swift in Sources */,
 				BCB658DC2517E8E000C7F36F /* WidgetModule.intentdefinition in Sources */,
 				BC7CB22424ED8B6F007B5DB4 /* SceneDelegate.swift in Sources */,
 				BC44AD4E250BCE7700475867 /* CustomLoader.swift in Sources */,

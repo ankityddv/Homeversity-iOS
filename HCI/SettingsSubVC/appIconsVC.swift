@@ -12,7 +12,6 @@ class appIconsVC: UIViewController {
     @IBOutlet weak var icon1: UIButton!
     @IBOutlet weak var icon2: UIButton!
     @IBOutlet weak var icon3: UIButton!
-    @IBOutlet weak var icon4: UIButton!
     
 
     // To add app icon
@@ -38,7 +37,6 @@ class appIconsVC: UIViewController {
         icon1.imageView?.layer.cornerRadius = 20
         icon2.imageView?.layer.cornerRadius = 20
         icon3.imageView?.layer.cornerRadius = 20
-        icon4.imageView?.layer.cornerRadius = 20
     }
 
 }

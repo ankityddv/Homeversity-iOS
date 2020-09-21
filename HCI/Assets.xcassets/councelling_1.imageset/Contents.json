@@ -15,7 +15,7 @@
       "scale" : "1x"
     },
     {
-      "filename" : "councelling_1.png",
+      "filename" : "councelling.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
@@ -26,7 +26,7 @@
           "value" : "dark"
         }
       ],
-      "filename" : "councelling_2.png",
+      "filename" : "councelling-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
