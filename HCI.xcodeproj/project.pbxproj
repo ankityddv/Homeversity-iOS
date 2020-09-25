@@ -304,11 +304,7 @@
 			children = (
 				BC7CB22124ED8B6F007B5DB4 /* AppDelegate.swift */,
 				BC7CB22324ED8B6F007B5DB4 /* SceneDelegate.swift */,
-				BC7CB22524ED8B6F007B5DB4 /* signUpVC.swift */,
-				BC537FD2251E56CD00FCDA7E /* LogInVC.swift */,
-				BC51D3D324F0099F0076CA93 /* AddImageVC.swift */,
-				BCE08570250BD7480035D2F7 /* CongratsVC.swift */,
-				BC464ABF2518BA1500C9A1DF /* tncVC.swift */,
+				BCA1827D251E61DB0099A560 /* AuthVCs */,
 				BC7CB22724ED8B6F007B5DB4 /* Main.storyboard */,
 				BC586E53251C828B009230A1 /* ComplainRegisteredVC.swift */,
 				BC537FBE251E51FC00FCDA7E /* SubVCs */,
@@ -341,6 +337,18 @@
 				BC7CB24524ED8B70007B5DB4 /* Info.plist */,
 			);
 			path = HCIUITests;
+			sourceTree = "<group>";
+		};
+		BCA1827D251E61DB0099A560 /* AuthVCs */ = {
+			isa = PBXGroup;
+			children = (
+				BC7CB22524ED8B6F007B5DB4 /* signUpVC.swift */,
+				BC537FD2251E56CD00FCDA7E /* LogInVC.swift */,
+				BC51D3D324F0099F0076CA93 /* AddImageVC.swift */,
+				BCE08570250BD7480035D2F7 /* CongratsVC.swift */,
+				BC464ABF2518BA1500C9A1DF /* tncVC.swift */,
+			);
+			path = AuthVCs;
 			sourceTree = "<group>";
 		};
 		BCB658D42517E8DC00C7F36F /* WidgetModule */ = {

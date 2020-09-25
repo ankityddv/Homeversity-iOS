@@ -51,12 +51,21 @@ struct TestWidgetEntryView : View {
 
     var body: some View {
         ZStack{
-            Color.dynamicColor.edgesIgnoringSafeArea(.all)
-            Text(entry.myString)
-                
-                .font(.title)
-                .fontWeight(.black)
-                .multilineTextAlignment(.center)
+            //Color.dynamicColor.edgesIgnoringSafeArea(.all)
+            LinearGradient(gradient: Gradient(colors: [.blueOne, .blueTwo]), startPoint: .topLeading, endPoint: .bottomTrailing)
+            //Text(entry.myString)
+              //  .font(.title)
+                //.foregroundColor(Color.white)
+               // .fontWeight(.semibold)
+                //.offset(x: 30, y: 10)
+                //.multilineTextAlignment(.center)
+            Image("abusing")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: 60, height: 60, alignment: .center)
+                .border(Color.white, width: 2.0)
+                .cornerRadius(10)
+                .clipped()
         }
     }
 }
@@ -70,7 +79,7 @@ struct TestWidget: Widget {
             TestWidgetEntryView(entry: entry)
         }
         .configurationDisplayName("Message")
-        .description("This is an example widget.")
+        .description("Get some Daily Motivation.")
     }
 }
 
@@ -84,6 +93,11 @@ struct TestWidget_Previews: PreviewProvider {
 }
 
 
+
+
 extension Color {
-    static let dynamicColor = Color(UIColor(red: 0.87, green: 0.97, blue: 0.30, alpha: 1.00))
+    static let blueOne = Color(UIColor(red: 0.00, green: 0.78, blue: 1.00, alpha: 1.00))
+    static let blueTwo = Color(UIColor(red: 0.00, green: 0.45, blue: 1.00, alpha: 1.00))
+    
+    
 }
