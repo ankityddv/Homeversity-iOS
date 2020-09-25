@@ -13,7 +13,6 @@ class signUpVC: UIViewController {
     @IBOutlet weak var emailTextField: CustomTextField!
     @IBOutlet weak var passwordTextField: CustomTextField!
     @IBOutlet weak var continueBttn: UIButton!
-    @IBOutlet weak var forgotPasswordBttn: UIButton!
     @IBOutlet weak var signUpLabel: UILabel!
     @IBOutlet weak var pleasecreateLabel: UILabel!
     
@@ -98,7 +97,6 @@ class signUpVC: UIViewController {
             emailTextField.frame.origin.y = 284
             passwordTextField.frame.origin.y = 362
             continueBttn.frame.origin.y = 467
-            forgotPasswordBttn.frame.origin.y = 429
             //UIImageView.transition(with: bgImage, duration: 1.0,
                              // options: .transitionCurlUp,
                            //   animations: { [self] in
@@ -116,7 +114,6 @@ class signUpVC: UIViewController {
             emailTextField.frame.origin.y = 404
             passwordTextField.frame.origin.y = 482
             continueBttn.frame.origin.y = 587
-            forgotPasswordBttn.frame.origin.y = 549
             //UIImageView.transition(with: bgImage, duration: 0.6,
                               //options: .transitionCrossDissolve,
                               //animations: { [self] in

@@ -14,7 +14,7 @@
             <objects>
                 <viewController id="mnU-2n-jt9" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VNQ-tW-vth">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="k17-al-Wk0"/>
                         <color key="backgroundColor" name="bgColor"/>
@@ -30,7 +30,7 @@
             <objects>
                 <viewController id="6Zd-XQ-iXC" customClass="tncVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LP5-Je-lDu">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="786"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zut-uz-jWd">
@@ -146,16 +146,6 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                     <action selector="signUpBttn:" destination="ykB-dN-0MR" eventType="touchUpInside" id="va7-SZ-zLC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5mg-o1-PHV">
-                                <rect key="frame" x="267" y="545" width="123" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Forgot password?">
-                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="mnU-2n-jt9" kind="show" id="H2o-yQ-9uT"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXF-J3-dE2">
                                 <rect key="frame" x="276" y="666" width="40" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -196,10 +186,10 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                         <viewLayoutGuide key="safeArea" id="8Vc-ko-s3M"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="nWy-vn-EBA"/>
                     <connections>
                         <outlet property="continueBttn" destination="JdJ-Cp-ik1" id="JqL-i8-Ed7"/>
                         <outlet property="emailTextField" destination="7fx-gv-aY6" id="RZj-MT-QvY"/>
-                        <outlet property="forgotPasswordBttn" destination="5mg-o1-PHV" id="j2z-Bm-pdk"/>
                         <outlet property="passwordTextField" destination="7rc-q1-It8" id="V8J-fG-Vm5"/>
                         <outlet property="pleasecreateLabel" destination="jfT-KE-bXp" id="ln8-Sg-NkK"/>
                         <outlet property="signUpLabel" destination="8wv-Gx-hfV" id="LAZ-eO-Pea"/>
@@ -210,21 +200,123 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             </objects>
             <point key="canvasLocation" x="1650.7246376811595" y="95.758928571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--Log InVC-->
         <scene sceneID="P6U-8N-fxH">
             <objects>
-                <viewController id="I3r-5I-Vw0" sceneMemberID="viewController">
+                <viewController id="I3r-5I-Vw0" customClass="LogInVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wQj-BZ-AQm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please log into your account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pjC-xv-VpH">
+                                <rect key="frame" x="24" y="277" width="194" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" red="0.74509803919999995" green="0.73725490199999999" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wjX-qq-3gV">
+                                <rect key="frame" x="98" y="596" width="161" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" red="0.74509803919999995" green="0.73725490199999999" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h6G-LC-Iev" customClass="CustomTextField" customModule="HCI" customModuleProvider="target">
+                                <rect key="frame" x="24" y="329" width="366" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="textfieldColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRad">
+                                        <real key="value" value="13"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oj1-vv-TcY" customClass="CustomTextField" customModule="HCI" customModuleProvider="target">
+                                <rect key="frame" x="24" y="407" width="366" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="textfieldColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRad">
+                                        <real key="value" value="13"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TcI-FV-45h">
+                                <rect key="frame" x="24" y="512" width="366" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="button_colour"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" name="Neon bg"/>
+                                </state>
+                                <connections>
+                                    <action selector="continueBttnPressed:" destination="I3r-5I-Vw0" eventType="touchUpInside" id="rMq-CS-1Yc"/>
+                                    <action selector="signUpBttn:" destination="ykB-dN-0MR" eventType="touchUpInside" id="ntp-dC-OZF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NHj-WT-wJC">
+                                <rect key="frame" x="267" y="470" width="123" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Forgot password?">
+                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0MC-5Q-d8b">
+                                <rect key="frame" x="261" y="590" width="56" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="By signing up, you agree to our " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6b-r2-QVk">
+                                <rect key="frame" x="48" y="770" width="205" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" red="0.74509803919999995" green="0.73725490199999999" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Log In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="igy-My-FG8">
+                                <rect key="frame" x="24" y="227" width="99" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <color key="textColor" name="Neon_text_colour"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B0V-e6-5m5">
+                                <rect key="frame" x="251" y="764" width="128" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <state key="normal" title="terms &amp; conditions">
+                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Rkt-eZ-E8b" kind="show" id="3s1-dW-kKn"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ff7-8h-XkO"/>
                         <color key="backgroundColor" name="bgColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ocg-HA-BGi"/>
+                    <connections>
+                        <outlet property="continueBttn" destination="TcI-FV-45h" id="OPd-72-Cof"/>
+                        <outlet property="emailField" destination="h6G-LC-Iev" id="z4S-JI-BHZ"/>
+                        <outlet property="forgotPasswordBttn" destination="NHj-WT-wJC" id="ymy-Be-4ku"/>
+                        <outlet property="loginLabel" destination="igy-My-FG8" id="OAA-If-eFl"/>
+                        <outlet property="passwordField" destination="Oj1-vv-TcY" id="M6r-1G-yGv"/>
+                        <outlet property="pleasecreateLabel" destination="pjC-xv-VpH" id="sCZ-zU-uCe"/>
+                        <segue destination="fTq-Sl-GaG" kind="show" identifier="logIn" id="9xi-rn-vy9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FF0-ni-v4q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="741" y="899"/>
+            <point key="canvasLocation" x="1619" y="871"/>
         </scene>
         <!--Add ImageVC-->
         <scene sceneID="rRF-c8-55S">
@@ -334,7 +426,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <objects>
                 <viewController id="wAc-Ys-a7m" customClass="CongratsVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nr3-mz-jlC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hra-vs-hCh">
@@ -383,9 +475,9 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         <!--Lost & found-->
         <scene sceneID="Vvc-K3-9ZS">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="4Bd-ht-OTr" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="4Bd-ht-OTr" customClass="LnfVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KSw-Yn-mBV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lost" translatesAutoresizingMaskIntoConstraints="NO" id="BT4-LC-Baj">
@@ -393,19 +485,23 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Brs-NQ-jw1">
-                                <rect key="frame" x="39" y="501" width="150" height="150"/>
+                                <rect key="frame" x="20" y="451" width="367" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="Neon bg"/>
-                                <state key="normal" title="Lost"/>
+                                <color key="backgroundColor" name="Neon_text_colour"/>
+                                <state key="normal" title="Lost">
+                                    <color key="titleColor" name="Neon bg"/>
+                                </state>
                                 <connections>
                                     <segue destination="R6M-8W-KPl" kind="show" id="zea-pn-0k2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4z-3h-wdq">
-                                <rect key="frame" x="226" y="501" width="150" height="150"/>
+                                <rect key="frame" x="20" y="593" width="367" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="Neon bg"/>
-                                <state key="normal" title="Found"/>
+                                <color key="backgroundColor" name="Neon_text_colour"/>
+                                <state key="normal" title="Found">
+                                    <color key="titleColor" name="Neon bg"/>
+                                </state>
                                 <connections>
                                     <segue destination="zfw-xY-K8j" kind="show" id="d0L-U8-1CM"/>
                                 </connections>
@@ -415,6 +511,10 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                         <color key="backgroundColor" name="bgColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Lost &amp; found" id="26Y-HH-IzK"/>
+                    <connections>
+                        <outlet property="foundBttn" destination="A4z-3h-wdq" id="6xU-dv-Y4w"/>
+                        <outlet property="lostBttn" destination="Brs-NQ-jw1" id="ZXh-Kb-mIC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PLG-dF-ROV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -425,7 +525,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <objects>
                 <viewController hidesBottomBarWhenPushed="YES" id="R6M-8W-KPl" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6ZS-yF-P73">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="5VW-g9-h9T"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -441,7 +541,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <objects>
                 <viewController hidesBottomBarWhenPushed="YES" id="zfw-xY-K8j" customClass="FoundVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dRG-Wc-DcP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S10-vj-laK">
@@ -475,25 +575,39 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                 <color key="backgroundColor" name="textfieldColor"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter the items you found:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXr-Yq-LdF">
-                                <rect key="frame" x="20" y="156" width="200" height="21"/>
+                                <rect key="frame" x="20" y="156" width="181" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2E-rc-hQ2">
-                                <rect key="frame" x="20" y="446" width="92" height="21"/>
+                                <rect key="frame" x="20" y="446" width="83" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEm-so-Kch">
+                                <rect key="frame" x="24" y="716" width="366" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="button_colour"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" name="Neon bg"/>
+                                </state>
+                                <connections>
+                                    <action selector="continueBttnTapped:" destination="vYy-Mo-TQ9" eventType="touchUpInside" id="QTH-II-Az4"/>
+                                    <action selector="signUpBttn:" destination="ykB-dN-0MR" eventType="touchUpInside" id="a4L-br-DoX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="d88-L9-JIs"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Found" id="sry-1T-ZJ7"/>
                     <connections>
+                        <outlet property="continueBttn" destination="cEm-so-Kch" id="NwM-Qe-LtY"/>
                         <outlet property="descriptionInputView" destination="S10-vj-laK" id="a6j-OI-BG3"/>
                         <outlet property="foundItemsInputView" destination="2ar-rW-j42" id="cQg-PS-dhw"/>
                     </connections>
@@ -502,12 +616,44 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             </objects>
             <point key="canvasLocation" x="6815.9420289855079" y="550.44642857142856"/>
         </scene>
+        <!--Complain RegisteredVC-->
+        <scene sceneID="E1x-8Z-phe">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="7DX-nG-Xpb" customClass="ComplainRegisteredVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gke-xV-vov">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fire.gif" translatesAutoresizingMaskIntoConstraints="NO" id="rwt-Eu-QfJ">
+                                <rect key="frame" x="20" y="355" width="374" height="272"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Complain Registered!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7by-RU-UjF">
+                                <rect key="frame" x="40" y="172" width="346" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="33"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Pyh-4K-nXA"/>
+                        <color key="backgroundColor" red="0.057051040230000002" green="0.071311824019999998" blue="0.088294215499999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="AO5-Mb-gdD"/>
+                    <connections>
+                        <outlet property="gifImageView" destination="rwt-Eu-QfJ" id="jcD-1S-nZB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LMu-48-fBl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7700" y="897"/>
+        </scene>
         <!--Councelling-->
         <scene sceneID="vcc-id-74Q">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="Qz5-8b-Rj6" customClass="CouncellingVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U2U-18-pIG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="councelling_1" translatesAutoresizingMaskIntoConstraints="NO" id="YRs-Wu-gsy">
@@ -586,7 +732,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <objects>
                 <viewController modalPresentationStyle="fullScreen" hidesBottomBarWhenPushed="YES" id="9Dq-ia-KT9" customClass="appIconsVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dd8-vA-ZTH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HXN-2Y-Uvm">
@@ -641,15 +787,43 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         <!--Profile-->
         <scene sceneID="HNK-iG-TjG">
             <objects>
-                <tableViewController id="dt1-6n-9HH" sceneMemberID="viewController">
+                <tableViewController id="dt1-6n-9HH" customClass="AccountTVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="insetGrouped" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="h2c-Rc-r7K">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <sections>
+                            <tableViewSection headerTitle="" id="0If-7M-ZZq">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" textLabel="6WL-19-wXT" detailTextLabel="8Ru-Hw-NtV" style="IBUITableViewCellStyleSubtitle" id="Vif-RO-FXz">
+                                        <rect key="frame" x="20" y="39.5" width="374" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vif-RO-FXz" id="Gqj-10-hm1">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="ANKIT YADAV" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6WL-19-wXT">
+                                                    <rect key="frame" x="20" y="5" width="100.5" height="19.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" name="Black"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="yadavankit840@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8Ru-Hw-NtV">
+                                                    <rect key="frame" x="20" y="24.5" width="152.5" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                             <tableViewSection headerTitle="GENERAL" id="yzE-wg-tki">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="En1-E4-xTX" style="IBUITableViewCellStyleDefault" id="7xR-MV-6qT">
-                                        <rect key="frame" x="20" y="55.5" width="374" height="43.5"/>
+                                        <rect key="frame" x="20" y="139" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7xR-MV-6qT" id="IH2-1C-76g">
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
@@ -658,7 +832,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="App Icons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="En1-E4-xTX">
                                                     <rect key="frame" x="20" y="0.0" width="315" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -669,7 +843,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="PA8-wx-0vd" style="IBUITableViewCellStyleDefault" id="1zO-yk-tjm">
-                                        <rect key="frame" x="20" y="99" width="374" height="43.5"/>
+                                        <rect key="frame" x="20" y="182.5" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1zO-yk-tjm" id="PRw-Ke-lDr">
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
@@ -678,7 +852,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="App Theme" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PA8-wx-0vd">
                                                     <rect key="frame" x="20" y="0.0" width="315" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -693,7 +867,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                             <tableViewSection headerTitle="REACH US" id="CXF-fD-cFN">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="JHL-AU-3Sj" style="IBUITableViewCellStyleDefault" id="Uos-D1-oHw">
-                                        <rect key="frame" x="20" y="198.5" width="374" height="43.5"/>
+                                        <rect key="frame" x="20" y="282" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Uos-D1-oHw" id="kJ7-dP-XjI">
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
@@ -702,7 +876,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Contact Us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JHL-AU-3Sj">
                                                     <rect key="frame" x="20" y="0.0" width="315" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -710,7 +884,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="fP6-8s-XD6" style="IBUITableViewCellStyleDefault" id="qcG-jE-oAK">
-                                        <rect key="frame" x="20" y="242" width="374" height="43.5"/>
+                                        <rect key="frame" x="20" y="325.5" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qcG-jE-oAK" id="NZb-Xh-nTF">
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
@@ -719,7 +893,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Tweet us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fP6-8s-XD6">
                                                     <rect key="frame" x="20" y="0.0" width="315" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -727,7 +901,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="PTd-ex-JNN" style="IBUITableViewCellStyleDefault" id="SoA-Ru-WG8">
-                                        <rect key="frame" x="20" y="285.5" width="374" height="43.5"/>
+                                        <rect key="frame" x="20" y="369" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SoA-Ru-WG8" id="NyH-KC-dup">
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
@@ -736,8 +910,29 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Telegram" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PTd-ex-JNN">
                                                     <rect key="frame" x="20" y="0.0" width="315" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="" id="9EK-VM-Dtk">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="KoB-Qa-Sk4" style="IBUITableViewCellStyleDefault" id="K3b-be-rg5">
+                                        <rect key="frame" x="20" y="452.5" width="374" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="K3b-be-rg5" id="wkU-m1-Kxh">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Sign Out" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KoB-Qa-Sk4">
+                                                    <rect key="frame" x="20" y="0.0" width="334" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" systemColor="systemRedColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -752,6 +947,9 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Profile" id="ezQ-MY-WDI"/>
+                    <connections>
+                        <segue destination="ykB-dN-0MR" kind="show" identifier="loggedOut" id="MdB-6c-VjU"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pit-GY-hJE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -760,9 +958,9 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         <!--Set Theme-->
         <scene sceneID="6JA-jL-PfQ">
             <objects>
-                <tableViewController hidesBottomBarWhenPushed="YES" id="bHQ-BD-uA0" sceneMemberID="viewController">
+                <tableViewController hidesBottomBarWhenPushed="YES" id="bHQ-BD-uA0" customClass="SetThemeTVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="JsR-Xp-Tyk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <sections>
                             <tableViewSection headerTitle="Select" id="pb7-v7-Z3R">
@@ -835,9 +1033,9 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         <!--Cleaning-->
         <scene sceneID="nhR-Vg-8tN">
             <objects>
-                <viewController id="nnG-p5-lPC" sceneMemberID="viewController">
+                <viewController id="nnG-p5-lPC" customClass="CleaningVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Fk-bu-dUa">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cleanroom" translatesAutoresizingMaskIntoConstraints="NO" id="Vli-Xi-SMa">
@@ -849,7 +1047,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="textfieldColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardAppearance="alert"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRad">
                                         <real key="value" value="13"/>
@@ -861,18 +1059,34 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="textfieldColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardAppearance="alert"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRad">
                                         <real key="value" value="13"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ip2-Ap-IsL">
+                                <rect key="frame" x="24" y="622" width="366" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="button_colour"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" name="Neon bg"/>
+                                </state>
+                                <connections>
+                                    <action selector="continueBttnTapped:" destination="vYy-Mo-TQ9" eventType="touchUpInside" id="uds-av-RP0"/>
+                                    <action selector="signUpBttn:" destination="ykB-dN-0MR" eventType="touchUpInside" id="bBJ-K1-Pgp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HEo-UL-Eu1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Cleaning" id="gdK-Nl-j9L"/>
+                    <connections>
+                        <outlet property="continueBttn" destination="Ip2-Ap-IsL" id="ApW-7o-rOc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YOB-5p-4Hi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -881,20 +1095,61 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         <!--Complaint-->
         <scene sceneID="fM5-6P-r4Z">
             <objects>
-                <viewController id="0TT-2n-KvB" sceneMemberID="viewController">
+                <viewController id="0TT-2n-KvB" customClass="complainVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3ms-Ed-RKT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="complaint" translatesAutoresizingMaskIntoConstraints="NO" id="KoX-C6-L0n">
                                 <rect key="frame" x="44" y="183" width="326" height="210"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5ls-ar-Osf">
+                                <rect key="frame" x="20" y="466" width="374" height="215"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bcA-YE-Ixm">
+                                        <rect key="frame" x="4" y="4" width="366" height="207"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" name="textfieldColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" name="textfieldColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1F4-U0-DcD">
+                                <rect key="frame" x="24" y="699" width="366" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="button_colour"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Proceed">
+                                    <color key="titleColor" name="Neon bg"/>
+                                </state>
+                                <connections>
+                                    <action selector="continueBttnTapped:" destination="vYy-Mo-TQ9" eventType="touchUpInside" id="A7p-j2-uY9"/>
+                                    <action selector="signUpBttn:" destination="ykB-dN-0MR" eventType="touchUpInside" id="EH4-bq-YEq"/>
+                                    <segue destination="7DX-nG-Xpb" kind="show" id="ufR-qi-Hoz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter your complain here:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ve9-oT-sVK">
+                                <rect key="frame" x="20" y="434" width="176" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5ew-WB-JGf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Complaint" id="ZnZ-qq-NAp"/>
+                    <connections>
+                        <outlet property="complainTextView" destination="bcA-YE-Ixm" id="bjC-2D-6we"/>
+                        <outlet property="complainView" destination="5ls-ar-Osf" id="qzH-rq-QYI"/>
+                        <outlet property="proceedBttn" destination="1F4-U0-DcD" id="xmN-BP-5EU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ebV-Ta-1cx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -933,9 +1188,6 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="pUd-iv-3qP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <textAttributes key="largeTitleTextAttributes">
-                            <color key="textColor" name="Neon_text_colour"/>
-                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -955,9 +1207,6 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Dxo-br-Vd2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <textAttributes key="largeTitleTextAttributes">
-                            <color key="textColor" name="Neon_text_colour"/>
-                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -977,9 +1226,6 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="sgk-By-nxA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <textAttributes key="largeTitleTextAttributes">
-                            <color key="textColor" name="Neon_text_colour"/>
-                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -999,9 +1245,6 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="v85-2f-0yh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <textAttributes key="largeTitleTextAttributes">
-                            <color key="textColor" name="Neon_text_colour"/>
-                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1020,7 +1263,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                     <navigationItem key="navigationItem" title="Terms" id="i1e-AG-JV0"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="b9b-c9-VUH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1065,6 +1308,12 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         <designable name="BRr-NM-Aca">
             <size key="intrinsicContentSize" width="117.5" height="18.5"/>
         </designable>
+        <designable name="Oj1-vv-TcY">
+            <size key="intrinsicContentSize" width="102.5" height="17"/>
+        </designable>
+        <designable name="h6G-LC-Iev">
+            <size key="intrinsicContentSize" width="74.5" height="18.5"/>
+        </designable>
         <designable name="iXK-RK-n71">
             <size key="intrinsicContentSize" width="78" height="18.5"/>
         </designable>
@@ -1072,6 +1321,10 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <size key="intrinsicContentSize" width="76" height="18.5"/>
         </designable>
     </designables>
+    <inferredMetricsTieBreakers>
+        <segue reference="QOK-XN-Dd1"/>
+        <segue reference="9xi-rn-vy9"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" name="Black"/>
     <resources>
         <image name="BG_Image upload" width="1245" height="963"/>
@@ -1112,6 +1365,9 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
