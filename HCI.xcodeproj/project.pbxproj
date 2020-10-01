@@ -54,6 +54,13 @@
 		BCB658DF2517E8E000C7F36F /* WidgetModuleExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BCB658CF2517E8DC00C7F36F /* WidgetModuleExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BCB658F22517EA9700C7F36F /* MyDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB658EC2517EA9200C7F36F /* MyDataProvider.swift */; };
 		BCBA923D251695A70040FE24 /* CouncellingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBA923C251695A70040FE24 /* CouncellingVC.swift */; };
+		BCD2B615252664D800220EEE /* TopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCD2B614252664D800220EEE /* TopView.xib */; };
+		BCD2B61B252665B900220EEE /* BottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCD2B61A252665B900220EEE /* BottomView.xib */; };
+		BCD2B64225266A8500220EEE /* UnitBezier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD2B64125266A8500220EEE /* UnitBezier.swift */; };
+		BCD2B64C25266A9800220EEE /* ExpandButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD2B64B25266A9800220EEE /* ExpandButton.swift */; };
+		BCD2B65225266AA900220EEE /* TimingFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD2B65125266AA900220EEE /* TimingFunction.swift */; };
+		BCD2B65825266ABA00220EEE /* FluidCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD2B65725266ABA00220EEE /* FluidCardView.swift */; };
+		BCD2B65E25266AC800220EEE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD2B65D25266AC800220EEE /* Extensions.swift */; };
 		BCE08571250BD7480035D2F7 /* CongratsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE08570250BD7480035D2F7 /* CongratsVC.swift */; };
 		D8497E72681341F41F8B17A9 /* Pods_HCI_HCIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49F74D2A192C8596AA8998FF /* Pods_HCI_HCIUITests.framework */; };
 /* End PBXBuildFile section */
@@ -156,6 +163,13 @@
 		BCB658DA2517E8E000C7F36F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCB658EC2517EA9200C7F36F /* MyDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDataProvider.swift; sourceTree = "<group>"; };
 		BCBA923C251695A70040FE24 /* CouncellingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouncellingVC.swift; sourceTree = "<group>"; };
+		BCD2B614252664D800220EEE /* TopView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopView.xib; sourceTree = "<group>"; };
+		BCD2B61A252665B900220EEE /* BottomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomView.xib; sourceTree = "<group>"; };
+		BCD2B64125266A8500220EEE /* UnitBezier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitBezier.swift; sourceTree = "<group>"; };
+		BCD2B64B25266A9800220EEE /* ExpandButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandButton.swift; sourceTree = "<group>"; };
+		BCD2B65125266AA900220EEE /* TimingFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimingFunction.swift; sourceTree = "<group>"; };
+		BCD2B65725266ABA00220EEE /* FluidCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FluidCardView.swift; sourceTree = "<group>"; };
+		BCD2B65D25266AC800220EEE /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		BCE08570250BD7480035D2F7 /* CongratsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratsVC.swift; sourceTree = "<group>"; };
 		BD9405541C58F571F7D6EB8D /* Pods_HCITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HCITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C19D882A7BD69DF80F2A1B6C /* Pods-HCITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HCITests.release.xcconfig"; path = "Target Support Files/Pods-HCITests/Pods-HCITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -345,6 +359,9 @@
 				BCA1827D251E61DB0099A560 /* AuthVCs */,
 				BC7CB22724ED8B6F007B5DB4 /* Main.storyboard */,
 				BC586E53251C828B009230A1 /* ComplainRegisteredVC.swift */,
+				BCD2B614252664D800220EEE /* TopView.xib */,
+				BCD2B61A252665B900220EEE /* BottomView.xib */,
+				BCD2B64025266A6E00220EEE /* CustomFluidCard */,
 				BC43241E251621B80084D3D3 /* TabBarVC */,
 				BC537FBE251E51FC00FCDA7E /* SubVCs */,
 				BC7CB22A24ED8B6F007B5DB4 /* Assets.xcassets */,
@@ -402,6 +419,18 @@
 				BCB658DA2517E8E000C7F36F /* Info.plist */,
 			);
 			path = WidgetModule;
+			sourceTree = "<group>";
+		};
+		BCD2B64025266A6E00220EEE /* CustomFluidCard */ = {
+			isa = PBXGroup;
+			children = (
+				BCD2B64125266A8500220EEE /* UnitBezier.swift */,
+				BCD2B64B25266A9800220EEE /* ExpandButton.swift */,
+				BCD2B65125266AA900220EEE /* TimingFunction.swift */,
+				BCD2B65725266ABA00220EEE /* FluidCardView.swift */,
+				BCD2B65D25266AC800220EEE /* Extensions.swift */,
+			);
+			path = CustomFluidCard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -535,7 +564,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCD2B615252664D800220EEE /* TopView.xib in Resources */,
 				BC7CB22E24ED8B6F007B5DB4 /* LaunchScreen.storyboard in Resources */,
+				BCD2B61B252665B900220EEE /* BottomView.xib in Resources */,
 				BC2FF5052526021600B18926 /* redhlogo.png in Resources */,
 				BC2FF4EF2525FA8F00B18926 /* Gotham Bold.otf in Resources */,
 				BC2FF4FF2525FC1000B18926 /* HomepageBaukasten-Book.otf in Resources */,
@@ -682,11 +713,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCD2B64225266A8500220EEE /* UnitBezier.swift in Sources */,
 				BC4401CD250BCFAD00DD34E6 /* CustomTextField.swift in Sources */,
 				BC586E42251C7ADE009230A1 /* LnfVC.swift in Sources */,
 				BC2FF50F2526223D00B18926 /* ActualGradientButton.swift in Sources */,
 				BC7CB22624ED8B6F007B5DB4 /* signUpVC.swift in Sources */,
 				BC464AC02518BA1500C9A1DF /* tncVC.swift in Sources */,
+				BCD2B64C25266A9800220EEE /* ExpandButton.swift in Sources */,
 				BC44AD50250BCEEE00475867 /* UIImage+Gif.swift in Sources */,
 				BC2FF4DD2525EC0800B18926 /* BubbleTabBar.swift in Sources */,
 				BC586E54251C828B009230A1 /* ComplainRegisteredVC.swift in Sources */,
@@ -701,8 +734,11 @@
 				BC51D3D424F0099F0076CA93 /* AddImageVC.swift in Sources */,
 				BCE08571250BD7480035D2F7 /* CongratsVC.swift in Sources */,
 				BC2FF4DB2525EC0800B18926 /* BubbleTabBarController.swift in Sources */,
+				BCD2B65825266ABA00220EEE /* FluidCardView.swift in Sources */,
+				BCD2B65225266AA900220EEE /* TimingFunction.swift in Sources */,
 				BC464AE72518CE4300C9A1DF /* FoundVC.swift in Sources */,
 				BCB658DC2517E8E000C7F36F /* WidgetModule.intentdefinition in Sources */,
+				BCD2B65E25266AC800220EEE /* Extensions.swift in Sources */,
 				BC537FD3251E56CD00FCDA7E /* LogInVC.swift in Sources */,
 				BC7CB22424ED8B6F007B5DB4 /* SceneDelegate.swift in Sources */,
 				BC44AD4E250BCE7700475867 /* CustomLoader.swift in Sources */,
