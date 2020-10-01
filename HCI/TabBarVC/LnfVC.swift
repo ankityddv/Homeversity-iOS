@@ -16,8 +16,12 @@ class LnfVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        lostBttn.layer.cornerRadius = 10
-        foundBttn.layer.cornerRadius = 10
+        lostBttn.layer.cornerRadius = 18
+        foundBttn.layer.cornerRadius = 18
+        
+        // To hide the top line
+        self.tabBarController?.tabBar.shadowImage = UIImage()
+        self.tabBarController?.tabBar.backgroundImage = UIImage()
     }
 
 }

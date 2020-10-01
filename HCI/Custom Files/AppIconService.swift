@@ -15,6 +15,7 @@ class AppIConService {
         case primaryAppIcon
         case neonAppIcon
         case darkAppIcon
+        case redhlogo
     }
     
     func changeAppIcon(to appIcon: AppIcon) {

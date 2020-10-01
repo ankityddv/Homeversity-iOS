@@ -14,6 +14,9 @@ class AccountTVC: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // To hide the top line
+        self.tabBarController?.tabBar.shadowImage = UIImage()
+        self.tabBarController?.tabBar.backgroundImage = UIImage()
     }
     
     func showMailComposer(){
@@ -59,6 +62,11 @@ class AccountTVC: UITableViewController {
                     self.performSegue(withIdentifier: "loggedOut", sender: self)
         }
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        //navigationController?.setNavigationBarHidden(true, animated: animated)
     }
     
 

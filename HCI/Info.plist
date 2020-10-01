@@ -123,6 +123,15 @@
                     <string>darklogo</string>
                 </array>
             </dict>
+            
+            <key>redhlogo</key>
+            <dict>
+                <key>CFBundleIconFiles</key>
+                <array>
+                    <string>redhlogo</string>
+                </array>
+            </dict>
+            
         </dict>
     </dict>
     

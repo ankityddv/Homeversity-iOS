@@ -17,6 +17,10 @@ class complainVC: UIViewController {
         super.viewDidLoad()
         complainView.layer.cornerRadius = 15
         proceedBttn.layer.cornerRadius = 13
+        
+        // To hide the top line
+        self.tabBarController?.tabBar.shadowImage = UIImage()
+        self.tabBarController?.tabBar.backgroundImage = UIImage()
     }
     
     // MARK: - Code below this is for hiding keyboard

@@ -12,6 +12,7 @@ class appIconsVC: UIViewController {
     @IBOutlet weak var icon1: UIButton!
     @IBOutlet weak var icon2: UIButton!
     @IBOutlet weak var icon3: UIButton!
+    @IBOutlet weak var icon4: UIButton!
     
 
     // To add app icon
@@ -28,6 +29,11 @@ class appIconsVC: UIViewController {
     @IBAction func didTapDarkIcon()  {
         appIconService.changeAppIcon(to: .darkAppIcon)
     }
+    
+    @IBAction func didTapRedHIcon(_ sender: Any) {
+        appIconService.changeAppIcon(to: .redhlogo)
+    }
+    
     
 
     
