@@ -30,7 +30,7 @@
             <objects>
                 <viewController id="6Zd-XQ-iXC" customClass="tncVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LP5-Je-lDu">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="786"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zut-uz-jWd">
@@ -426,7 +426,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <objects>
                 <viewController id="wAc-Ys-a7m" customClass="CongratsVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nr3-mz-jlC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hra-vs-hCh">
@@ -1179,11 +1179,11 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             </objects>
             <point key="canvasLocation" x="4134.7826086956529" y="95.758928571428569"/>
         </scene>
-        <!--Councelling-->
+        <!--Navigation Controller-->
         <scene sceneID="dWr-kG-3FB">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vZd-5y-vrA" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Councelling" image="person.2.circle" catalog="system" id="VWG-cE-4Ip"/>
+                    <tabBarItem key="tabBarItem" title="" image="counciling_logo(100)" id="VWG-cE-4Ip"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="pUd-iv-3qP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
@@ -1198,11 +1198,11 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             </objects>
             <point key="canvasLocation" x="5028.985507246377" y="-520.3125"/>
         </scene>
-        <!--Lost & found-->
+        <!--Navigation Controller-->
         <scene sceneID="FYh-99-LWT">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5rT-we-xKU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Lost &amp; found" image="magnifyingglass" catalog="system" id="x0E-g1-nXP"/>
+                    <tabBarItem key="tabBarItem" title="" image="lostfound_logo(100)" id="x0E-g1-nXP"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Dxo-br-Vd2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
@@ -1217,11 +1217,11 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             </objects>
             <point key="canvasLocation" x="5028.985507246377" y="181.47321428571428"/>
         </scene>
-        <!--Complaint-->
+        <!--Navigation Controller-->
         <scene sceneID="gL8-no-qoS">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0fb-Z8-BXU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Complaint" image="pencil" catalog="system" id="taN-Fx-CH3"/>
+                    <tabBarItem key="tabBarItem" title="" image="complain_logo(100)" id="taN-Fx-CH3"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="sgk-By-nxA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
@@ -1236,11 +1236,11 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             </objects>
             <point key="canvasLocation" x="5029" y="871"/>
         </scene>
-        <!--Cleaning-->
+        <!--Navigation Controller-->
         <scene sceneID="hSP-NS-JYf">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jEX-6V-r51" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Cleaning" image="clear" catalog="system" id="ggx-s9-ZhE"/>
+                    <tabBarItem key="tabBarItem" title="" image="cleaning_logo(100)" id="ggx-s9-ZhE"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="v85-2f-0yh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
@@ -1263,7 +1263,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                     <navigationItem key="navigationItem" title="Terms" id="i1e-AG-JV0"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="b9b-c9-VUH">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1275,11 +1275,11 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             </objects>
             <point key="canvasLocation" x="-320.28985507246381" y="95.758928571428569"/>
         </scene>
-        <!--Profile-->
+        <!--Navigation Controller-->
         <scene sceneID="cgH-aV-LyW">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AKS-f0-Uw5" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="l6h-MU-VgJ"/>
+                    <tabBarItem key="tabBarItem" title="" image="user_logo(100)" id="l6h-MU-VgJ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="OJo-OJ-5Mt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
@@ -1322,26 +1322,27 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="QOK-XN-Dd1"/>
+        <segue reference="3s1-dW-kKn"/>
         <segue reference="9xi-rn-vy9"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" name="Black"/>
     <resources>
         <image name="BG_Image upload" width="1245" height="963"/>
+        <image name="cleaning_logo(100)" width="33.333332061767578" height="33.333332061767578"/>
         <image name="cleanroom" width="830" height="794"/>
-        <image name="clear" catalog="system" width="128" height="114"/>
+        <image name="complain_logo(100)" width="33.333332061767578" height="33.333332061767578"/>
         <image name="complaint" width="902" height="678"/>
         <image name="councelling_1" width="375" height="255"/>
+        <image name="counciling_logo(100)" width="33.333332061767578" height="33.333332061767578"/>
         <image name="darklogo.png" width="2048" height="2048"/>
         <image name="fire.gif" width="800" height="600"/>
         <image name="lost" width="853" height="911"/>
-        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="lostfound_logo(100)" width="33.333332061767578" height="33.333332061767578"/>
         <image name="neonlogo.png" width="2048" height="2048"/>
-        <image name="pencil" catalog="system" width="128" height="113"/>
-        <image name="person" catalog="system" width="128" height="117"/>
-        <image name="person.2.circle" catalog="system" width="128" height="121"/>
+        <image name="pencil" catalog="system" width="32" height="32"/>
         <image name="rainbowlogo.png" width="2048" height="2048"/>
         <image name="takePic" width="300" height="300"/>
+        <image name="user_logo(100)" width="33.333332061767578" height="33.333332061767578"/>
         <namedColor name="Black">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
