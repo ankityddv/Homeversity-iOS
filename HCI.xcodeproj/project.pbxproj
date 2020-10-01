@@ -11,6 +11,9 @@
 		0BA82E85872C63A968F9911D /* Pods_HCI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08BC8F5D260F9AB8BC20A5EA /* Pods_HCI.framework */; };
 		BC184B89251E4DF200B93D3F /* AccountTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC184B88251E4DF200B93D3F /* AccountTVC.swift */; };
 		BC1D7AC624ED9EE100D432B1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC1D7AC524ED9EE100D432B1 /* GoogleService-Info.plist */; };
+		BC2FF4DB2525EC0800B18926 /* BubbleTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2FF4D72525EC0800B18926 /* BubbleTabBarController.swift */; };
+		BC2FF4DC2525EC0800B18926 /* CBTabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2FF4D92525EC0800B18926 /* CBTabBarButton.swift */; };
+		BC2FF4DD2525EC0800B18926 /* BubbleTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2FF4DA2525EC0800B18926 /* BubbleTabBar.swift */; };
 		BC413F0725165236003AC8F9 /* fire.gif in Resources */ = {isa = PBXBuildFile; fileRef = BC413F0625165236003AC8F9 /* fire.gif */; };
 		BC413F0925165246003AC8F9 /* giphy.gif in Resources */ = {isa = PBXBuildFile; fileRef = BC413F0825165246003AC8F9 /* giphy.gif */; };
 		BC43241225160E8A0084D3D3 /* appIconsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC43241125160E8A0084D3D3 /* appIconsVC.swift */; };
@@ -98,6 +101,10 @@
 		7B5FC1C5230A0A5F37EA9C2E /* Pods-HCI-HCIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HCI-HCIUITests.debug.xcconfig"; path = "Target Support Files/Pods-HCI-HCIUITests/Pods-HCI-HCIUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BC184B88251E4DF200B93D3F /* AccountTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTVC.swift; sourceTree = "<group>"; };
 		BC1D7AC524ED9EE100D432B1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BC2FF4D72525EC0800B18926 /* BubbleTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BubbleTabBarController.swift; path = CustomTabBar/BubbleTabBarController.swift; sourceTree = SOURCE_ROOT; };
+		BC2FF4D82525EC0800B18926 /* CBFlashyTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBFlashyTabBarController.h; path = CustomTabBar/CBFlashyTabBarController.h; sourceTree = SOURCE_ROOT; };
+		BC2FF4D92525EC0800B18926 /* CBTabBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CBTabBarButton.swift; path = CustomTabBar/CBTabBarButton.swift; sourceTree = SOURCE_ROOT; };
+		BC2FF4DA2525EC0800B18926 /* BubbleTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BubbleTabBar.swift; path = CustomTabBar/BubbleTabBar.swift; sourceTree = SOURCE_ROOT; };
 		BC413F0625165236003AC8F9 /* fire.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = fire.gif; path = ../../../Downloads/fire.gif; sourceTree = "<group>"; };
 		BC413F0825165246003AC8F9 /* giphy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = giphy.gif; path = ../../../Downloads/giphy.gif; sourceTree = "<group>"; };
 		BC43241125160E8A0084D3D3 /* appIconsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appIconsVC.swift; sourceTree = "<group>"; };
@@ -208,6 +215,17 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		BC2FF4CA2525EBF200B18926 /* CustomBar */ = {
+			isa = PBXGroup;
+			children = (
+				BC2FF4DA2525EC0800B18926 /* BubbleTabBar.swift */,
+				BC2FF4D72525EC0800B18926 /* BubbleTabBarController.swift */,
+				BC2FF4D82525EC0800B18926 /* CBFlashyTabBarController.h */,
+				BC2FF4D92525EC0800B18926 /* CBTabBarButton.swift */,
+			);
+			path = CustomBar;
+			sourceTree = "<group>";
+		};
 		BC423236251626EA00D05BF0 /* Custom Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -307,6 +325,7 @@
 				BCA1827D251E61DB0099A560 /* AuthVCs */,
 				BC7CB22724ED8B6F007B5DB4 /* Main.storyboard */,
 				BC586E53251C828B009230A1 /* ComplainRegisteredVC.swift */,
+				BC2FF4CA2525EBF200B18926 /* CustomBar */,
 				BC537FBE251E51FC00FCDA7E /* SubVCs */,
 				BC43241E251621B80084D3D3 /* TabBarVC */,
 				BC423236251626EA00D05BF0 /* Custom Files */,
@@ -643,9 +662,11 @@
 				BC7CB22624ED8B6F007B5DB4 /* signUpVC.swift in Sources */,
 				BC464AC02518BA1500C9A1DF /* tncVC.swift in Sources */,
 				BC44AD50250BCEEE00475867 /* UIImage+Gif.swift in Sources */,
+				BC2FF4DD2525EC0800B18926 /* BubbleTabBar.swift in Sources */,
 				BC586E54251C828B009230A1 /* ComplainRegisteredVC.swift in Sources */,
 				BC586E48251C7CCD009230A1 /* CleaningVC.swift in Sources */,
 				BC586E4E251C80BB009230A1 /* complainVC.swift in Sources */,
+				BC2FF4DC2525EC0800B18926 /* CBTabBarButton.swift in Sources */,
 				BCBA923D251695A70040FE24 /* CouncellingVC.swift in Sources */,
 				BC7CB22224ED8B6F007B5DB4 /* AppDelegate.swift in Sources */,
 				BC184B89251E4DF200B93D3F /* AccountTVC.swift in Sources */,
@@ -653,6 +674,7 @@
 				BC537FC9251E525A00FCDA7E /* SetThemeTVC.swift in Sources */,
 				BC51D3D424F0099F0076CA93 /* AddImageVC.swift in Sources */,
 				BCE08571250BD7480035D2F7 /* CongratsVC.swift in Sources */,
+				BC2FF4DB2525EC0800B18926 /* BubbleTabBarController.swift in Sources */,
 				BC464AE72518CE4300C9A1DF /* FoundVC.swift in Sources */,
 				BCB658DC2517E8E000C7F36F /* WidgetModule.intentdefinition in Sources */,
 				BC537FD3251E56CD00FCDA7E /* LogInVC.swift in Sources */,

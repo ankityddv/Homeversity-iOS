@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17503.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ykB-dN-0MR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17503.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fTq-Sl-GaG">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17502"/>
@@ -93,7 +93,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <objects>
                 <viewController id="ykB-dN-0MR" customClass="signUpVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mwv-D7-bUc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please create your account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfT-KE-bXp">
@@ -323,7 +323,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="vYy-Mo-TQ9" customClass="AddImageVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ATJ-tC-d2l">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BG_Image upload" translatesAutoresizingMaskIntoConstraints="NO" id="SII-FY-O67">
@@ -426,7 +426,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <objects>
                 <viewController id="wAc-Ys-a7m" customClass="CongratsVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nr3-mz-jlC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hra-vs-hCh">
@@ -477,7 +477,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="4Bd-ht-OTr" customClass="LnfVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KSw-Yn-mBV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lost" translatesAutoresizingMaskIntoConstraints="NO" id="BT4-LC-Baj">
@@ -525,7 +525,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <objects>
                 <viewController hidesBottomBarWhenPushed="YES" id="R6M-8W-KPl" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6ZS-yF-P73">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="5VW-g9-h9T"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -541,7 +541,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <objects>
                 <viewController hidesBottomBarWhenPushed="YES" id="zfw-xY-K8j" customClass="FoundVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dRG-Wc-DcP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S10-vj-laK">
@@ -621,7 +621,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <objects>
                 <viewController hidesBottomBarWhenPushed="YES" id="7DX-nG-Xpb" customClass="ComplainRegisteredVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gke-xV-vov">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fire.gif" translatesAutoresizingMaskIntoConstraints="NO" id="rwt-Eu-QfJ">
@@ -653,7 +653,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="Qz5-8b-Rj6" customClass="CouncellingVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U2U-18-pIG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="councelling_1" translatesAutoresizingMaskIntoConstraints="NO" id="YRs-Wu-gsy">
@@ -732,7 +732,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <objects>
                 <viewController modalPresentationStyle="fullScreen" hidesBottomBarWhenPushed="YES" id="9Dq-ia-KT9" customClass="appIconsVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dd8-vA-ZTH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HXN-2Y-Uvm">
@@ -789,7 +789,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <objects>
                 <tableViewController id="dt1-6n-9HH" customClass="AccountTVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="insetGrouped" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="h2c-Rc-r7K">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <sections>
                             <tableViewSection headerTitle="" id="0If-7M-ZZq">
@@ -960,7 +960,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <objects>
                 <tableViewController hidesBottomBarWhenPushed="YES" id="bHQ-BD-uA0" customClass="SetThemeTVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="JsR-Xp-Tyk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <sections>
                             <tableViewSection headerTitle="Select" id="pb7-v7-Z3R">
@@ -1035,7 +1035,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <objects>
                 <viewController id="nnG-p5-lPC" customClass="CleaningVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Fk-bu-dUa">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cleanroom" translatesAutoresizingMaskIntoConstraints="NO" id="Vli-Xi-SMa">
@@ -1097,7 +1097,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <objects>
                 <viewController id="0TT-2n-KvB" customClass="complainVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3ms-Ed-RKT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="complaint" translatesAutoresizingMaskIntoConstraints="NO" id="KoX-C6-L0n">
@@ -1155,10 +1155,10 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             </objects>
             <point key="canvasLocation" x="5939" y="871"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Bubble Tab Bar Controller-->
         <scene sceneID="92O-fK-Zrs">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="fTq-Sl-GaG" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="fTq-Sl-GaG" customClass="BubbleTabBarController" customModule="HCI" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="sDh-xT-aFC"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="3eo-he-9Fx">
@@ -1179,11 +1179,17 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             </objects>
             <point key="canvasLocation" x="4134.7826086956529" y="95.758928571428569"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Cou-->
         <scene sceneID="dWr-kG-3FB">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vZd-5y-vrA" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="counciling_logo(100)" id="VWG-cE-4Ip"/>
+                    <tabBarItem key="tabBarItem" title="Cou" image="counciling_logo(100)" id="VWG-cE-4Ip" customClass="CBTabBarItem" customModule="HCI">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" systemColor="systemBlueColor"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="pUd-iv-3qP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
@@ -1198,11 +1204,17 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             </objects>
             <point key="canvasLocation" x="5028.985507246377" y="-520.3125"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Lost-->
         <scene sceneID="FYh-99-LWT">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5rT-we-xKU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="lostfound_logo(100)" id="x0E-g1-nXP"/>
+                    <tabBarItem key="tabBarItem" title="Lost" image="lostfound_logo(100)" id="x0E-g1-nXP" customClass="CBTabBarItem" customModule="HCI">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" systemColor="systemRedColor"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Dxo-br-Vd2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
@@ -1217,11 +1229,17 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             </objects>
             <point key="canvasLocation" x="5028.985507246377" y="181.47321428571428"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--comp-->
         <scene sceneID="gL8-no-qoS">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0fb-Z8-BXU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="complain_logo(100)" id="taN-Fx-CH3"/>
+                    <tabBarItem key="tabBarItem" title="comp" image="complain_logo(100)" id="taN-Fx-CH3" customClass="CBTabBarItem" customModule="HCI">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" systemColor="systemPinkColor"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="sgk-By-nxA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
@@ -1236,11 +1254,17 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             </objects>
             <point key="canvasLocation" x="5029" y="871"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--clean-->
         <scene sceneID="hSP-NS-JYf">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jEX-6V-r51" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="cleaning_logo(100)" id="ggx-s9-ZhE"/>
+                    <tabBarItem key="tabBarItem" title="clean" image="cleaning_logo(100)" id="ggx-s9-ZhE" customClass="CBTabBarItem" customModule="HCI">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" systemColor="systemPurpleColor"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="v85-2f-0yh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
@@ -1275,11 +1299,17 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             </objects>
             <point key="canvasLocation" x="-320.28985507246381" y="95.758928571428569"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Profile-->
         <scene sceneID="cgH-aV-LyW">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AKS-f0-Uw5" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="user_logo(100)" id="l6h-MU-VgJ"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="user_logo(100)" id="l6h-MU-VgJ" customClass="CBTabBarItem" customModule="HCI">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" systemColor="systemRedColor"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="OJo-OJ-5Mt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
@@ -1339,7 +1369,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         <image name="lost" width="853" height="911"/>
         <image name="lostfound_logo(100)" width="33.333332061767578" height="33.333332061767578"/>
         <image name="neonlogo.png" width="2048" height="2048"/>
-        <image name="pencil" catalog="system" width="32" height="32"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
         <image name="rainbowlogo.png" width="2048" height="2048"/>
         <image name="takePic" width="300" height="300"/>
         <image name="user_logo(100)" width="33.333332061767578" height="33.333332061767578"/>
@@ -1366,6 +1396,15 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
