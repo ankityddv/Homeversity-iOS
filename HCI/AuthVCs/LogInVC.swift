@@ -63,7 +63,7 @@ class LogInVC: UIViewController {
                 NotificationCenter.default.addObserver(self, selector: #selector(keyboardwilchange(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
                 NotificationCenter.default.addObserver(self, selector: #selector(keyboardwilchange(notification:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
         
-        continueBttn.layer.cornerRadius = 13
+        //continueBttn.layer.cornerRadius = 13
     }
     
     func loader(){
@@ -81,12 +81,7 @@ class LogInVC: UIViewController {
             view.resignFirstResponder()
         }
         @objc func keyboardwilchange(notification: Notification){
-            loginLabel.frame.origin.y = 143
-            pleasecreateLabel.frame.origin.y = 192
-            emailField.frame.origin.y = 244
-            passwordField.frame.origin.y = 322
-            continueBttn.frame.origin.y = 427
-            forgotPasswordBttn.frame.origin.y = 389
+            //continueBttn.frame.origin.y = 427
             
         }
         func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -95,12 +90,7 @@ class LogInVC: UIViewController {
         }
         override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
             self.view.endEditing(true)
-            loginLabel.frame.origin.y = 227
-            pleasecreateLabel.frame.origin.y = 277
-            emailField.frame.origin.y = 329
-            passwordField.frame.origin.y = 407
-            continueBttn.frame.origin.y = 512
-            forgotPasswordBttn.frame.origin.y = 470
+            
             
         }
     

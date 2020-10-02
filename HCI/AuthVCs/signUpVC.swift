@@ -42,7 +42,7 @@ class signUpVC: UIViewController {
                 NotificationCenter.default.addObserver(self, selector: #selector(keyboardwilchange(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
                 NotificationCenter.default.addObserver(self, selector: #selector(keyboardwilchange(notification:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
         
-        continueBttn.layer.cornerRadius = 13
+        //continueBttn.layer.cornerRadius = 13
     }
     
     //Function to login In the User
@@ -92,16 +92,8 @@ class signUpVC: UIViewController {
             view.resignFirstResponder()
         }
         @objc func keyboardwilchange(notification: Notification){
-            signUpLabel.frame.origin.y = 183
-            pleasecreateLabel.frame.origin.y = 232
-            emailTextField.frame.origin.y = 284
-            passwordTextField.frame.origin.y = 362
-            continueBttn.frame.origin.y = 467
-            //UIImageView.transition(with: bgImage, duration: 1.0,
-                             // options: .transitionCurlUp,
-                           //   animations: { [self] in
-                               // self.bgImage.isHidden = true
-                          //})
+            // when textfield pressed
+            continueBttn.frame.origin.y = 587
         }
         func textFieldShouldReturn(_ textField: UITextField) -> Bool {
             hideKeyboard()
@@ -109,16 +101,8 @@ class signUpVC: UIViewController {
         }
         override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
             self.view.endEditing(true)
-            signUpLabel.frame.origin.y = 303
-            pleasecreateLabel.frame.origin.y = 352
-            emailTextField.frame.origin.y = 404
-            passwordTextField.frame.origin.y = 482
+            // when textfield rests
             continueBttn.frame.origin.y = 587
-            //UIImageView.transition(with: bgImage, duration: 0.6,
-                              //options: .transitionCrossDissolve,
-                              //animations: { [self] in
-                                //self.bgImage.isHidden = false
-                          //})
         }
         
         
