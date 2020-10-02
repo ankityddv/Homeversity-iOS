@@ -29,7 +29,7 @@ class ExpandButton: UIButton {
     let markView = UIView()
 
     private func configure() {
-        layer.cornerRadius = 19.0
+        layer.cornerRadius = 22.0
         backgroundColor = .systemBlue
         layer.shadowColor = UIColor.black.withAlphaComponent(0.14) .cgColor
         layer.shadowOpacity = 1.0

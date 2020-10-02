@@ -27,6 +27,7 @@
 		BC44AD50250BCEEE00475867 /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44AD4F250BCEEE00475867 /* UIImage+Gif.swift */; };
 		BC464AC02518BA1500C9A1DF /* tncVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC464ABF2518BA1500C9A1DF /* tncVC.swift */; };
 		BC464AE72518CE4300C9A1DF /* FoundVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC464AE62518CE4300C9A1DF /* FoundVC.swift */; };
+		BC4D0733252726CF006B3FA4 /* GetStartedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4D0732252726CF006B3FA4 /* GetStartedVC.swift */; };
 		BC51D3D424F0099F0076CA93 /* AddImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC51D3D324F0099F0076CA93 /* AddImageVC.swift */; };
 		BC537FC9251E525A00FCDA7E /* SetThemeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC537FC8251E525A00FCDA7E /* SetThemeTVC.swift */; };
 		BC537FD3251E56CD00FCDA7E /* LogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC537FD2251E56CD00FCDA7E /* LogInVC.swift */; };
@@ -130,6 +131,7 @@
 		BC44AD4F250BCEEE00475867 /* UIImage+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
 		BC464ABF2518BA1500C9A1DF /* tncVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tncVC.swift; sourceTree = "<group>"; };
 		BC464AE62518CE4300C9A1DF /* FoundVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundVC.swift; sourceTree = "<group>"; };
+		BC4D0732252726CF006B3FA4 /* GetStartedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedVC.swift; sourceTree = "<group>"; };
 		BC51D3D324F0099F0076CA93 /* AddImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddImageVC.swift; sourceTree = "<group>"; };
 		BC537FC8251E525A00FCDA7E /* SetThemeTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetThemeTVC.swift; sourceTree = "<group>"; };
 		BC537FD2251E56CD00FCDA7E /* LogInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInVC.swift; sourceTree = "<group>"; };
@@ -285,9 +287,9 @@
 			isa = PBXGroup;
 			children = (
 				BCBA923C251695A70040FE24 /* CouncellingVC.swift */,
+				BC586E41251C7ADE009230A1 /* LnfVC.swift */,
 				BC586E4D251C80BB009230A1 /* complainVC.swift */,
 				BC586E47251C7CCD009230A1 /* CleaningVC.swift */,
-				BC586E41251C7ADE009230A1 /* LnfVC.swift */,
 				BC184B88251E4DF200B93D3F /* AccountTVC.swift */,
 			);
 			path = TabBarVC;
@@ -358,6 +360,7 @@
 				BC7CB22324ED8B6F007B5DB4 /* SceneDelegate.swift */,
 				BCA1827D251E61DB0099A560 /* AuthVCs */,
 				BC7CB22724ED8B6F007B5DB4 /* Main.storyboard */,
+				BC4D0732252726CF006B3FA4 /* GetStartedVC.swift */,
 				BC586E53251C828B009230A1 /* ComplainRegisteredVC.swift */,
 				BCD2B614252664D800220EEE /* TopView.xib */,
 				BCD2B61A252665B900220EEE /* BottomView.xib */,
@@ -715,6 +718,7 @@
 			files = (
 				BCD2B64225266A8500220EEE /* UnitBezier.swift in Sources */,
 				BC4401CD250BCFAD00DD34E6 /* CustomTextField.swift in Sources */,
+				BC4D0733252726CF006B3FA4 /* GetStartedVC.swift in Sources */,
 				BC586E42251C7ADE009230A1 /* LnfVC.swift in Sources */,
 				BC2FF50F2526223D00B18926 /* ActualGradientButton.swift in Sources */,
 				BC7CB22624ED8B6F007B5DB4 /* signUpVC.swift in Sources */,

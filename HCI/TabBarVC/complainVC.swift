@@ -33,7 +33,7 @@ class complainVC: UIViewController {
             view.resignFirstResponder()
         }
         @objc func keyboardwilchange(notification: Notification){
-            
+            //proceedBttn.frame.origin.y = 292
         }
         func textFieldShouldReturn(_ textField: UITextField) -> Bool {
             hideKeyboard()
@@ -41,7 +41,7 @@ class complainVC: UIViewController {
         }
         override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
             self.view.endEditing(true)
-            
+            //proceedBttn.frame.origin.y = 752
         }
 
 }

@@ -10,6 +10,7 @@ target 'HCI' do
     pod 'Firebase/Auth'
     pod 'Firebase/Storage'
     pod 'Firebase/Database'
+    pod 'liquid-swipe'
     
   target 'HCITests' do
     inherit! :search_paths

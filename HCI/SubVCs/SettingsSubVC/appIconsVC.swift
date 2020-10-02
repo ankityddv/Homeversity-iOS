@@ -43,6 +43,7 @@ class appIconsVC: UIViewController {
         icon1.imageView?.layer.cornerRadius = 20
         icon2.imageView?.layer.cornerRadius = 20
         icon3.imageView?.layer.cornerRadius = 20
+        icon4.imageView?.layer.cornerRadius = 20
     }
 
 }

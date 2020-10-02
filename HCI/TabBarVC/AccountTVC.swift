@@ -57,7 +57,7 @@ class AccountTVC: UITableViewController {
                }
         }
         // Sign Out Section
-        else if indexPath.section == 3 && indexPath.row == 0{
+        else if indexPath.section == 4 && indexPath.row == 0{
             try!Auth.auth().signOut()
                     self.performSegue(withIdentifier: "loggedOut", sender: self)
         }

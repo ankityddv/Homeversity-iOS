@@ -14,7 +14,7 @@ class FluidCardView: UIView {
     var expandDuration: TimeInterval = 0.6
     var collapseDuration: TimeInterval = 0.35
 
-    private let cornerRadius: CGFloat = 20.0
+    private let cornerRadius: CGFloat = 18.0
     private var collapsedHeight: CGFloat {
         return topHeight + 51.0
     }
@@ -277,7 +277,7 @@ class FluidCardView: UIView {
             }
             overlay.frame = CGRect(x: 0, y: topView.frame.minY, width: bounds.width, height: bottomView.frame.maxY)
 
-            let cornerRadius: CGFloat = 20
+            let cornerRadius: CGFloat = 30
             let curveOffset: CGFloat = cornerRadius / 4.0 * (1 - curveProgress)
 
             let pt1 = CGPoint(x: bounds.width, y: topView.frame.maxY).offsetBy(dy: -cornerRadius)
@@ -372,7 +372,7 @@ class FluidCardView: UIView {
         bottomContentConstaints = css
 
 
-        let cornerRadius: CGFloat = 20
+        let cornerRadius: CGFloat = 50
         let rightCurveOffsetMultiplier: CGFloat = 1.0
         let leftCurveOffsetMultiplier: CGFloat = 1.8
         let curveOffset = (cornerRadius) * progress / 1.2

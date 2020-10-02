@@ -5,9 +5,43 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>Hostler OP</string>
+	<string>Homeversity</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIcons</key>
+	<dict>
+		<key>CFBundleAlternateIcons</key>
+		<dict>
+			<key>darkAppIcon</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>darklogo</string>
+				</array>
+			</dict>
+			<key>neonAppIcon</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>rainbowlogo</string>
+				</array>
+			</dict>
+			<key>redhlogo</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>redhlogo</string>
+				</array>
+			</dict>
+		</dict>
+		<key>CFBundlePrimaryIcon</key>
+		<dict>
+			<key>CFBundleIconFiles</key>
+			<array>
+				<string>Icon-App</string>
+			</array>
+		</dict>
+	</dict>
 	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -95,47 +129,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-    
-    <key>CFBundleIcons</key>
-    <dict>
-        <key>CFBundlePrimaryIcon</key>
-        <dict>
-            <key>CFBundleIconFiles</key>
-            <array>
-                <string>Icon-App</string>
-            </array>
-        </dict>
-        
-        <key>CFBundleAlternateIcons</key>
-        <dict>
-            <key>neonAppIcon</key>
-            <dict>
-                <key>CFBundleIconFiles</key>
-                <array>
-                    <string>rainbowlogo</string>
-                </array>
-            </dict>
-            
-            <key>darkAppIcon</key>
-            <dict>
-                <key>CFBundleIconFiles</key>
-                <array>
-                    <string>darklogo</string>
-                </array>
-            </dict>
-            
-            <key>redhlogo</key>
-            <dict>
-                <key>CFBundleIconFiles</key>
-                <array>
-                    <string>redhlogo</string>
-                </array>
-            </dict>
-            
-        </dict>
-    </dict>
-    
-    
-    
 </dict>
 </plist>
