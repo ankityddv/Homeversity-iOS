@@ -19,6 +19,7 @@
 					<string>darklogo</string>
 				</array>
 			</dict>
+            
 			<key>neonAppIcon</key>
 			<dict>
 				<key>CFBundleIconFiles</key>
@@ -26,6 +27,7 @@
 					<string>rainbowlogo</string>
 				</array>
 			</dict>
+            
 			<key>redhlogo</key>
 			<dict>
 				<key>CFBundleIconFiles</key>
@@ -33,6 +35,24 @@
 					<string>redhlogo</string>
 				</array>
 			</dict>
+            
+            <key>pridehlogo1</key>
+            <dict>
+                <key>CFBundleIconFiles</key>
+                <array>
+                    <string>pridehlogo1</string>
+                </array>
+            </dict>
+            
+            <key>bluehlogo</key>
+            <dict>
+                <key>CFBundleIconFiles</key>
+                <array>
+                    <string>bluehlogo</string>
+                </array>
+            </dict>
+            
+            
 		</dict>
 		<key>CFBundlePrimaryIcon</key>
 		<dict>

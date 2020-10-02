@@ -16,7 +16,6 @@
 		BC2FF4DD2525EC0800B18926 /* BubbleTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2FF4DA2525EC0800B18926 /* BubbleTabBar.swift */; };
 		BC2FF4EF2525FA8F00B18926 /* Gotham Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC2FF4EE2525FA7B00B18926 /* Gotham Bold.otf */; };
 		BC2FF4FF2525FC1000B18926 /* HomepageBaukasten-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC2FF4FE2525FC0900B18926 /* HomepageBaukasten-Book.otf */; };
-		BC2FF5052526021600B18926 /* redhlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2FF5042526021600B18926 /* redhlogo.png */; };
 		BC2FF50F2526223D00B18926 /* ActualGradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2FF50E2526223D00B18926 /* ActualGradientButton.swift */; };
 		BC413F0725165236003AC8F9 /* fire.gif in Resources */ = {isa = PBXBuildFile; fileRef = BC413F0625165236003AC8F9 /* fire.gif */; };
 		BC413F0925165246003AC8F9 /* giphy.gif in Resources */ = {isa = PBXBuildFile; fileRef = BC413F0825165246003AC8F9 /* giphy.gif */; };
@@ -28,6 +27,10 @@
 		BC464AC02518BA1500C9A1DF /* tncVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC464ABF2518BA1500C9A1DF /* tncVC.swift */; };
 		BC464AE72518CE4300C9A1DF /* FoundVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC464AE62518CE4300C9A1DF /* FoundVC.swift */; };
 		BC4D0733252726CF006B3FA4 /* GetStartedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4D0732252726CF006B3FA4 /* GetStartedVC.swift */; };
+		BC4D07542527355A006B3FA4 /* bluehlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = BC4D07532527355A006B3FA4 /* bluehlogo.png */; };
+		BC4D075E25273578006B3FA4 /* redhlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = BC4D075D25273578006B3FA4 /* redhlogo.png */; };
+		BC4D07642527362B006B3FA4 /* pridehlogo1.png in Resources */ = {isa = PBXBuildFile; fileRef = BC4D07632527362B006B3FA4 /* pridehlogo1.png */; };
+		BC4D077425274B55006B3FA4 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4D077325274B55006B3FA4 /* RoundButton.swift */; };
 		BC51D3D424F0099F0076CA93 /* AddImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC51D3D324F0099F0076CA93 /* AddImageVC.swift */; };
 		BC537FC9251E525A00FCDA7E /* SetThemeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC537FC8251E525A00FCDA7E /* SetThemeTVC.swift */; };
 		BC537FD3251E56CD00FCDA7E /* LogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC537FD2251E56CD00FCDA7E /* LogInVC.swift */; };
@@ -120,7 +123,6 @@
 		BC2FF4E82525FA2800B18926 /* Gotham Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham Bold.otf"; path = "../../../Downloads/Gotham Bold/Gotham Bold.otf"; sourceTree = "<group>"; };
 		BC2FF4EE2525FA7B00B18926 /* Gotham Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham Bold.otf"; sourceTree = "<group>"; };
 		BC2FF4FE2525FC0900B18926 /* HomepageBaukasten-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "HomepageBaukasten-Book.otf"; path = "../../../../Downloads/HomepageBaukasten/BOOK/HomepageBaukasten-Book.otf"; sourceTree = "<group>"; };
-		BC2FF5042526021600B18926 /* redhlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = redhlogo.png; path = ../../../../Downloads/redhlogo.png; sourceTree = "<group>"; };
 		BC2FF50E2526223D00B18926 /* ActualGradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActualGradientButton.swift; sourceTree = "<group>"; };
 		BC413F0625165236003AC8F9 /* fire.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = fire.gif; path = ../../../Downloads/fire.gif; sourceTree = "<group>"; };
 		BC413F0825165246003AC8F9 /* giphy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = giphy.gif; path = ../../../Downloads/giphy.gif; sourceTree = "<group>"; };
@@ -132,6 +134,10 @@
 		BC464ABF2518BA1500C9A1DF /* tncVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tncVC.swift; sourceTree = "<group>"; };
 		BC464AE62518CE4300C9A1DF /* FoundVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundVC.swift; sourceTree = "<group>"; };
 		BC4D0732252726CF006B3FA4 /* GetStartedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedVC.swift; sourceTree = "<group>"; };
+		BC4D07532527355A006B3FA4 /* bluehlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bluehlogo.png; path = ../../../../Downloads/bluehlogo.png; sourceTree = "<group>"; };
+		BC4D075D25273578006B3FA4 /* redhlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = redhlogo.png; path = ../../../../Downloads/redhlogo.png; sourceTree = "<group>"; };
+		BC4D07632527362B006B3FA4 /* pridehlogo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pridehlogo1.png; path = ../../../../Downloads/pridehlogo1.png; sourceTree = "<group>"; };
+		BC4D077325274B55006B3FA4 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		BC51D3D324F0099F0076CA93 /* AddImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddImageVC.swift; sourceTree = "<group>"; };
 		BC537FC8251E525A00FCDA7E /* SetThemeTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetThemeTVC.swift; sourceTree = "<group>"; };
 		BC537FD2251E56CD00FCDA7E /* LogInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInVC.swift; sourceTree = "<group>"; };
@@ -264,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				BC44AD4D250BCE7700475867 /* CustomLoader.swift */,
+				BC4D077325274B55006B3FA4 /* RoundButton.swift */,
 				BC4401CC250BCFAD00DD34E6 /* CustomTextField.swift */,
 				BC432413251614770084D3D3 /* AppIconService.swift */,
 				BC44AD4F250BCEEE00475867 /* UIImage+Gif.swift */,
@@ -276,8 +283,10 @@
 			isa = PBXGroup;
 			children = (
 				BC55431E25189BF20018ADB7 /* darklogo.png */,
+				BC4D07532527355A006B3FA4 /* bluehlogo.png */,
+				BC4D07632527362B006B3FA4 /* pridehlogo1.png */,
+				BC4D075D25273578006B3FA4 /* redhlogo.png */,
 				BC55432925189EBD0018ADB7 /* rainbowlogo.png */,
-				BC2FF5042526021600B18926 /* redhlogo.png */,
 				BC55431D25189BF10018ADB7 /* neonlogo.png */,
 			);
 			path = "Alternate Icons";
@@ -567,16 +576,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC4D07642527362B006B3FA4 /* pridehlogo1.png in Resources */,
 				BCD2B615252664D800220EEE /* TopView.xib in Resources */,
 				BC7CB22E24ED8B6F007B5DB4 /* LaunchScreen.storyboard in Resources */,
 				BCD2B61B252665B900220EEE /* BottomView.xib in Resources */,
-				BC2FF5052526021600B18926 /* redhlogo.png in Resources */,
 				BC2FF4EF2525FA8F00B18926 /* Gotham Bold.otf in Resources */,
+				BC4D07542527355A006B3FA4 /* bluehlogo.png in Resources */,
 				BC2FF4FF2525FC1000B18926 /* HomepageBaukasten-Book.otf in Resources */,
 				BC413F0925165246003AC8F9 /* giphy.gif in Resources */,
 				BC55432025189BF20018ADB7 /* darklogo.png in Resources */,
 				BC55432A25189EBE0018ADB7 /* rainbowlogo.png in Resources */,
 				BC55431F25189BF20018ADB7 /* neonlogo.png in Resources */,
+				BC4D075E25273578006B3FA4 /* redhlogo.png in Resources */,
 				BC1D7AC624ED9EE100D432B1 /* GoogleService-Info.plist in Resources */,
 				BC7CB22B24ED8B6F007B5DB4 /* Assets.xcassets in Resources */,
 				BC7CB22924ED8B6F007B5DB4 /* Main.storyboard in Resources */,
@@ -732,6 +743,7 @@
 				BC2FF4DC2525EC0800B18926 /* CBTabBarButton.swift in Sources */,
 				BCBA923D251695A70040FE24 /* CouncellingVC.swift in Sources */,
 				BC7CB22224ED8B6F007B5DB4 /* AppDelegate.swift in Sources */,
+				BC4D077425274B55006B3FA4 /* RoundButton.swift in Sources */,
 				BC184B89251E4DF200B93D3F /* AccountTVC.swift in Sources */,
 				BC432414251614770084D3D3 /* AppIconService.swift in Sources */,
 				BC537FC9251E525A00FCDA7E /* SetThemeTVC.swift in Sources */,
