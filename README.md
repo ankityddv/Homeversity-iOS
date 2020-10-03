@@ -6,8 +6,8 @@ Added iOS 14 Widgets.
 Homeversity allows to book councelling appointments, lost and found, lodge complaint, room cleaning servieces via the iOS app.
 
 <h3 align="center">
-<img src="image1.png" alt="Screenshot of Taxi King for iOS" />
-<img src="video1.gif" alt="Screenshot of Taxi King for iOS" />
+<img src="ss1.png" alt="Screenshot of Homeversity" />
+<img src="video1.gif" alt="Screenshot of Homeversity" />
 </h3>
 
 ## What you will get in this project
