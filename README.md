@@ -1,4 +1,8 @@
 # Homeversity
+
+[![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/Cuberto/liquid-swipe/master/LICENSE)
+[![Swift 4.2](https://img.shields.io/badge/Swift-4.2-green.svg?style=flat)](https://developer.apple.com/swift/)
+
 (HCI Project)
 Developed the application as a project for HCI. 
 Added iOS 14 Widgets.
@@ -7,6 +11,7 @@ Homeversity allows to book councelling appointments, lost and found, lodge compl
 
 <h3 align="center">
 <img src="ss1.png" alt="Screenshot of Homeversity" />
+  ![Homeversity App](https://github.com/ankityddv/Homeversity/blob/main/Screenshots/ss1.png?raw=true)
 <img src="video1.gif" alt="Screenshot of Homeversity" />
 </h3>
 
