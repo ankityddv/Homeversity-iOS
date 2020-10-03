@@ -10,8 +10,7 @@ Added iOS 14 Widgets.
 Homeversity allows to book councelling appointments, lost and found, lodge complaint, room cleaning servieces via the iOS app.
 
 <h3 align="center">
-<img src="ss1.png" alt="Screenshot of Homeversity" />
-  ![Homeversity App](https://github.com/ankityddv/Homeversity/blob/main/Screenshots/ss1.png?raw=true)
+<img src="ss1.png" alt="Homeversity App" />
 <img src="video1.gif" alt="Screenshot of Homeversity" />
 </h3>
 
