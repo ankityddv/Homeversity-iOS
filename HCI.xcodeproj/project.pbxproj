@@ -19,7 +19,6 @@
 		BC2FF50F2526223D00B18926 /* ActualGradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2FF50E2526223D00B18926 /* ActualGradientButton.swift */; };
 		BC413F0725165236003AC8F9 /* fire.gif in Resources */ = {isa = PBXBuildFile; fileRef = BC413F0625165236003AC8F9 /* fire.gif */; };
 		BC413F0925165246003AC8F9 /* giphy.gif in Resources */ = {isa = PBXBuildFile; fileRef = BC413F0825165246003AC8F9 /* giphy.gif */; };
-		BC43241225160E8A0084D3D3 /* appIconsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC43241125160E8A0084D3D3 /* appIconsVC.swift */; };
 		BC432414251614770084D3D3 /* AppIconService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC432413251614770084D3D3 /* AppIconService.swift */; };
 		BC4401CD250BCFAD00DD34E6 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4401CC250BCFAD00DD34E6 /* CustomTextField.swift */; };
 		BC44AD4E250BCE7700475867 /* CustomLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44AD4D250BCE7700475867 /* CustomLoader.swift */; };
@@ -49,6 +48,12 @@
 		BC7CB22E24ED8B6F007B5DB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC7CB22C24ED8B6F007B5DB4 /* LaunchScreen.storyboard */; };
 		BC7CB23924ED8B6F007B5DB4 /* HCITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7CB23824ED8B6F007B5DB4 /* HCITests.swift */; };
 		BC7CB24424ED8B70007B5DB4 /* HCIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7CB24324ED8B70007B5DB4 /* HCIUITests.swift */; };
+		BC7F2E982528359000F33581 /* AppIconTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7F2E972528359000F33581 /* AppIconTableViewCell.swift */; };
+		BC7F2EBF25283FB200F33581 /* AppIconVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7F2EBE25283FB100F33581 /* AppIconVC.swift */; };
+		BC7F2ED1252849AC00F33581 /* pridehlogo2.png in Resources */ = {isa = PBXBuildFile; fileRef = BC7F2ED0252849AC00F33581 /* pridehlogo2.png */; };
+		BC7F2ED7252849B700F33581 /* pridehlogo3.png in Resources */ = {isa = PBXBuildFile; fileRef = BC7F2ED6252849B700F33581 /* pridehlogo3.png */; };
+		BC7F2EDD252849BE00F33581 /* pridehlogo4.png in Resources */ = {isa = PBXBuildFile; fileRef = BC7F2EDC252849BE00F33581 /* pridehlogo4.png */; };
+		BC7F2EE3252849C500F33581 /* pridehlogo5.png in Resources */ = {isa = PBXBuildFile; fileRef = BC7F2EE2252849C500F33581 /* pridehlogo5.png */; };
 		BCB658D12517E8DC00C7F36F /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB658D02517E8DC00C7F36F /* WidgetKit.framework */; };
 		BCB658D32517E8DC00C7F36F /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB658D22517E8DC00C7F36F /* SwiftUI.framework */; };
 		BCB658D62517E8DC00C7F36F /* WidgetModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB658D52517E8DC00C7F36F /* WidgetModule.swift */; };
@@ -126,7 +131,6 @@
 		BC2FF50E2526223D00B18926 /* ActualGradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActualGradientButton.swift; sourceTree = "<group>"; };
 		BC413F0625165236003AC8F9 /* fire.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = fire.gif; path = ../../../Downloads/fire.gif; sourceTree = "<group>"; };
 		BC413F0825165246003AC8F9 /* giphy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = giphy.gif; path = ../../../Downloads/giphy.gif; sourceTree = "<group>"; };
-		BC43241125160E8A0084D3D3 /* appIconsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appIconsVC.swift; sourceTree = "<group>"; };
 		BC432413251614770084D3D3 /* AppIconService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconService.swift; sourceTree = "<group>"; };
 		BC4401CC250BCFAD00DD34E6 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		BC44AD4D250BCE7700475867 /* CustomLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoader.swift; sourceTree = "<group>"; };
@@ -162,6 +166,12 @@
 		BC7CB23F24ED8B70007B5DB4 /* HCIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HCIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC7CB24324ED8B70007B5DB4 /* HCIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCIUITests.swift; sourceTree = "<group>"; };
 		BC7CB24524ED8B70007B5DB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC7F2E972528359000F33581 /* AppIconTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconTableViewCell.swift; sourceTree = "<group>"; };
+		BC7F2EBE25283FB100F33581 /* AppIconVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconVC.swift; sourceTree = "<group>"; };
+		BC7F2ED0252849AC00F33581 /* pridehlogo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pridehlogo2.png; path = ../../../../Downloads/pridehlogo2.png; sourceTree = "<group>"; };
+		BC7F2ED6252849B700F33581 /* pridehlogo3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pridehlogo3.png; path = ../../../../Downloads/pridehlogo3.png; sourceTree = "<group>"; };
+		BC7F2EDC252849BE00F33581 /* pridehlogo4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pridehlogo4.png; path = ../../../../Downloads/pridehlogo4.png; sourceTree = "<group>"; };
+		BC7F2EE2252849C500F33581 /* pridehlogo5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pridehlogo5.png; path = ../../../../Downloads/pridehlogo5.png; sourceTree = "<group>"; };
 		BCB658CF2517E8DC00C7F36F /* WidgetModuleExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetModuleExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCB658D02517E8DC00C7F36F /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		BCB658D22517E8DC00C7F36F /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -282,12 +292,16 @@
 		BC43241725161C400084D3D3 /* Alternate Icons */ = {
 			isa = PBXGroup;
 			children = (
+				BC55431D25189BF10018ADB7 /* neonlogo.png */,
+				BC55432925189EBD0018ADB7 /* rainbowlogo.png */,
 				BC55431E25189BF20018ADB7 /* darklogo.png */,
+				BC4D075D25273578006B3FA4 /* redhlogo.png */,
 				BC4D07532527355A006B3FA4 /* bluehlogo.png */,
 				BC4D07632527362B006B3FA4 /* pridehlogo1.png */,
-				BC4D075D25273578006B3FA4 /* redhlogo.png */,
-				BC55432925189EBD0018ADB7 /* rainbowlogo.png */,
-				BC55431D25189BF10018ADB7 /* neonlogo.png */,
+				BC7F2ED0252849AC00F33581 /* pridehlogo2.png */,
+				BC7F2ED6252849B700F33581 /* pridehlogo3.png */,
+				BC7F2EDC252849BE00F33581 /* pridehlogo4.png */,
+				BC7F2EE2252849C500F33581 /* pridehlogo5.png */,
 			);
 			path = "Alternate Icons";
 			sourceTree = "<group>";
@@ -307,7 +321,8 @@
 		BC464AC52518C1ED00C9A1DF /* SettingsSubVC */ = {
 			isa = PBXGroup;
 			children = (
-				BC43241125160E8A0084D3D3 /* appIconsVC.swift */,
+				BC7F2EBE25283FB100F33581 /* AppIconVC.swift */,
+				BC7F2E972528359000F33581 /* AppIconTableViewCell.swift */,
 			);
 			path = SettingsSubVC;
 			sourceTree = "<group>";
@@ -578,7 +593,9 @@
 			files = (
 				BC4D07642527362B006B3FA4 /* pridehlogo1.png in Resources */,
 				BCD2B615252664D800220EEE /* TopView.xib in Resources */,
+				BC7F2ED7252849B700F33581 /* pridehlogo3.png in Resources */,
 				BC7CB22E24ED8B6F007B5DB4 /* LaunchScreen.storyboard in Resources */,
+				BC7F2ED1252849AC00F33581 /* pridehlogo2.png in Resources */,
 				BCD2B61B252665B900220EEE /* BottomView.xib in Resources */,
 				BC2FF4EF2525FA8F00B18926 /* Gotham Bold.otf in Resources */,
 				BC4D07542527355A006B3FA4 /* bluehlogo.png in Resources */,
@@ -588,7 +605,9 @@
 				BC55432A25189EBE0018ADB7 /* rainbowlogo.png in Resources */,
 				BC55431F25189BF20018ADB7 /* neonlogo.png in Resources */,
 				BC4D075E25273578006B3FA4 /* redhlogo.png in Resources */,
+				BC7F2EDD252849BE00F33581 /* pridehlogo4.png in Resources */,
 				BC1D7AC624ED9EE100D432B1 /* GoogleService-Info.plist in Resources */,
+				BC7F2EE3252849C500F33581 /* pridehlogo5.png in Resources */,
 				BC7CB22B24ED8B6F007B5DB4 /* Assets.xcassets in Resources */,
 				BC7CB22924ED8B6F007B5DB4 /* Main.storyboard in Resources */,
 				BC413F0725165236003AC8F9 /* fire.gif in Resources */,
@@ -733,6 +752,7 @@
 				BC586E42251C7ADE009230A1 /* LnfVC.swift in Sources */,
 				BC2FF50F2526223D00B18926 /* ActualGradientButton.swift in Sources */,
 				BC7CB22624ED8B6F007B5DB4 /* signUpVC.swift in Sources */,
+				BC7F2E982528359000F33581 /* AppIconTableViewCell.swift in Sources */,
 				BC464AC02518BA1500C9A1DF /* tncVC.swift in Sources */,
 				BCD2B64C25266A9800220EEE /* ExpandButton.swift in Sources */,
 				BC44AD50250BCEEE00475867 /* UIImage+Gif.swift in Sources */,
@@ -742,6 +762,7 @@
 				BC586E4E251C80BB009230A1 /* complainVC.swift in Sources */,
 				BC2FF4DC2525EC0800B18926 /* CBTabBarButton.swift in Sources */,
 				BCBA923D251695A70040FE24 /* CouncellingVC.swift in Sources */,
+				BC7F2EBF25283FB200F33581 /* AppIconVC.swift in Sources */,
 				BC7CB22224ED8B6F007B5DB4 /* AppDelegate.swift in Sources */,
 				BC4D077425274B55006B3FA4 /* RoundButton.swift in Sources */,
 				BC184B89251E4DF200B93D3F /* AccountTVC.swift in Sources */,
@@ -758,7 +779,6 @@
 				BC537FD3251E56CD00FCDA7E /* LogInVC.swift in Sources */,
 				BC7CB22424ED8B6F007B5DB4 /* SceneDelegate.swift in Sources */,
 				BC44AD4E250BCE7700475867 /* CustomLoader.swift in Sources */,
-				BC43241225160E8A0084D3D3 /* appIconsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

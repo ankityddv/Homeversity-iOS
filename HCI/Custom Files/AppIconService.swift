@@ -13,11 +13,15 @@ class AppIConService {
     
     enum AppIcon: String {
         case primaryAppIcon
-        case neonAppIcon
+        case rainbowAppIcon
         case darkAppIcon
         case redhlogo
-        case pridehlogo1
         case bluehlogo
+        case pridehIcon1
+        case pridehIcon2
+        case pridehIcon3
+        case pridehIcon4
+        case pridehIcon5
     }
     
     func changeAppIcon(to appIcon: AppIcon) {

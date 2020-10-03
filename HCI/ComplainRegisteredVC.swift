@@ -6,7 +6,6 @@
 //
 
 import UIKit
-//Test
 
 class ComplainRegisteredVC: UIViewController {
     @IBOutlet weak var gifImageView: UIImageView!

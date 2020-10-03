@@ -12,6 +12,15 @@
 	<dict>
 		<key>CFBundleAlternateIcons</key>
 		<dict>
+            
+            <key>rainbowAppIcon</key>
+            <dict>
+                <key>CFBundleIconFiles</key>
+                <array>
+                    <string>rainbowlogo</string>
+                </array>
+            </dict>
+            
 			<key>darkAppIcon</key>
 			<dict>
 				<key>CFBundleIconFiles</key>
@@ -20,13 +29,6 @@
 				</array>
 			</dict>
             
-			<key>neonAppIcon</key>
-			<dict>
-				<key>CFBundleIconFiles</key>
-				<array>
-					<string>rainbowlogo</string>
-				</array>
-			</dict>
             
 			<key>redhlogo</key>
 			<dict>
@@ -36,14 +38,6 @@
 				</array>
 			</dict>
             
-            <key>pridehlogo1</key>
-            <dict>
-                <key>CFBundleIconFiles</key>
-                <array>
-                    <string>pridehlogo1</string>
-                </array>
-            </dict>
-            
             <key>bluehlogo</key>
             <dict>
                 <key>CFBundleIconFiles</key>
@@ -51,6 +45,48 @@
                     <string>bluehlogo</string>
                 </array>
             </dict>
+            
+            <key>pridehIcon1</key>
+            <dict>
+                <key>CFBundleIconFiles</key>
+                <array>
+                    <string>pridehlogo1</string>
+                </array>
+            </dict>
+            
+            <key>pridehIcon2</key>
+            <dict>
+                <key>CFBundleIconFiles</key>
+                <array>
+                    <string>pridehlogo2</string>
+                </array>
+            </dict>
+            
+            <key>pridehIcon3</key>
+            <dict>
+                <key>CFBundleIconFiles</key>
+                <array>
+                    <string>pridehlogo3</string>
+                </array>
+            </dict>
+            
+            <key>pridehIcon4</key>
+            <dict>
+                <key>CFBundleIconFiles</key>
+                <array>
+                    <string>pridehlogo4</string>
+                </array>
+            </dict>
+            
+            <key>pridehIcon5</key>
+            <dict>
+                <key>CFBundleIconFiles</key>
+                <array>
+                    <string>pridehlogo5</string>
+                </array>
+            </dict>
+            
+            
             
             
 		</dict>
