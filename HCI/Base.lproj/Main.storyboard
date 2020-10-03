@@ -486,12 +486,12 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             </objects>
             <point key="canvasLocation" x="3344.9275362318845" y="95.758928571428569"/>
         </scene>
-        <!--LnfVC-->
+        <!--Dislodge-->
         <scene sceneID="Vvc-K3-9ZS">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="4Bd-ht-OTr" customClass="LnfVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KSw-Yn-mBV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hlogo" translatesAutoresizingMaskIntoConstraints="NO" id="BT4-LC-Baj">
@@ -533,6 +533,13 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                         <viewLayoutGuide key="safeArea" id="QfR-J1-5cv"/>
                         <color key="backgroundColor" name="gray_bg_color"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Dislodge" image="clock" id="nBH-LJ-Q8G" customClass="CBTabBarItem" customModule="HCI" customModuleProvider="target">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" systemColor="systemYellowColor"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" id="26Y-HH-IzK"/>
                     <connections>
                         <outlet property="foundBttn" destination="A4z-3h-wdq" id="6xU-dv-Y4w"/>
@@ -548,7 +555,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <objects>
                 <viewController hidesBottomBarWhenPushed="YES" id="R6M-8W-KPl" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6ZS-yF-P73">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="5VW-g9-h9T"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -564,7 +571,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <objects>
                 <viewController hidesBottomBarWhenPushed="YES" id="zfw-xY-K8j" customClass="FoundVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dRG-Wc-DcP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S10-vj-laK">
@@ -637,46 +644,54 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zfw-Xk-AvU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9380" y="-537"/>
+            <point key="canvasLocation" x="9314" y="-788"/>
         </scene>
         <!--Complain RegisteredVC-->
         <scene sceneID="E1x-8Z-phe">
             <objects>
                 <viewController hidesBottomBarWhenPushed="YES" id="7DX-nG-Xpb" customClass="ComplainRegisteredVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gke-xV-vov">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fire.gif" translatesAutoresizingMaskIntoConstraints="NO" id="rwt-Eu-QfJ">
-                                <rect key="frame" x="20" y="355" width="374" height="272"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tsa-L7-RFd">
+                                <rect key="frame" x="0.0" y="412" width="414" height="430"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Complain Registered!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7by-RU-UjF">
-                                <rect key="frame" x="40" y="172" width="346" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="33"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </label>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fire.gif" translatesAutoresizingMaskIntoConstraints="NO" id="rwt-Eu-QfJ">
+                                        <rect key="frame" x="16" y="111" width="374" height="272"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="COMPLAINT REGISTERED!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7by-RU-UjF">
+                                        <rect key="frame" x="31" y="77" width="353" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham" pointSize="26"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.057051040230000002" green="0.071311824019999998" blue="0.088294215499999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Pyh-4K-nXA"/>
-                        <color key="backgroundColor" red="0.057051040230000002" green="0.071311824019999998" blue="0.088294215499999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" id="AO5-Mb-gdD"/>
                     <connections>
+                        <outlet property="cardView" destination="Tsa-L7-RFd" id="pgH-4G-doo"/>
                         <outlet property="gifImageView" destination="rwt-Eu-QfJ" id="jcD-1S-nZB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LMu-48-fBl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7545" y="185"/>
+            <point key="canvasLocation" x="7544.9275362318849" y="184.82142857142856"/>
         </scene>
-        <!--CouncellingVC-->
+        <!--Home-->
         <scene sceneID="vcc-id-74Q">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="Qz5-8b-Rj6" customClass="CouncellingVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U2U-18-pIG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dp" translatesAutoresizingMaskIntoConstraints="NO" id="YRs-Wu-gsy">
@@ -719,6 +734,13 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                         <viewLayoutGuide key="safeArea" id="qsH-xf-tvc"/>
                         <color key="backgroundColor" name="gray_bg_color"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="dashboard" id="33n-Tb-hhl" customClass="CBTabBarItem" customModule="HCI" customModuleProvider="target">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" systemColor="linkColor"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" id="cvU-3z-B51"/>
                     <connections>
                         <outlet property="fluidCard" destination="1g5-Do-im0" id="qeg-Fl-JeQ"/>
@@ -734,12 +756,22 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <objects>
                 <viewController id="pu6-0g-0j1" customClass="BookAppointmentVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TXu-zC-Oif">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NmC-hy-bhW">
+                                <rect key="frame" x="0.0" y="412" width="414" height="430"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="gray_bg_color"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Dhb-75-DuS"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" id="Etm-XG-eWx"/>
+                    <connections>
+                        <outlet property="cardView" destination="NmC-hy-bhW" id="xSs-vy-J92"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NmA-Xe-uIn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -750,13 +782,12 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <objects>
                 <viewController hidesBottomBarWhenPushed="YES" id="81J-HP-2aq" customClass="AppIconVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="slU-JT-ZkM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="w2l-6Z-Ox9">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="w2l-6Z-Ox9">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="gray_bg_color"/>
                                 <inset key="separatorInset" minX="96" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AppIconTableViewCell" rowHeight="80" id="heN-1J-RvS" customClass="AppIconTableViewCell" customModule="HCI" customModuleProvider="target">
@@ -798,14 +829,14 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EGX-fp-qkG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7403" y="2162"/>
+            <point key="canvasLocation" x="7691" y="1538"/>
         </scene>
-        <!--AccountTVC-->
+        <!--Menu-->
         <scene sceneID="HNK-iG-TjG">
             <objects>
                 <tableViewController id="dt1-6n-9HH" customClass="AccountTVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="insetGrouped" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="h2c-Rc-r7K">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <sections>
                             <tableViewSection headerTitle="" id="0If-7M-ZZq">
@@ -983,21 +1014,28 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                             <outlet property="delegate" destination="dt1-6n-9HH" id="bUb-ur-riD"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Menu" image="menu" id="Ccl-9U-ACo" customClass="CBTabBarItem" customModule="HCI" customModuleProvider="target">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" systemColor="systemRedColor"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" id="ezQ-MY-WDI"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pit-GY-hJE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5938" y="2372"/>
+            <point key="canvasLocation" x="5938" y="1538"/>
         </scene>
         <!--Apperance-->
         <scene sceneID="6JA-jL-PfQ">
             <objects>
                 <tableViewController hidesBottomBarWhenPushed="YES" id="bHQ-BD-uA0" customClass="SetThemeTVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="JsR-Xp-Tyk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <sections>
-                            <tableViewSection headerTitle="Select" id="pb7-v7-Z3R">
+                            <tableViewSection headerTitle="APPERANCE" id="pdd-2q-0Zr">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="FBA-CE-q1B" style="IBUITableViewCellStyleDefault" id="cAS-VM-1qA">
                                         <rect key="frame" x="20" y="55.5" width="374" height="43.5"/>
@@ -1062,14 +1100,14 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uXQ-9U-uYd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7403" y="2831"/>
+            <point key="canvasLocation" x="6648" y="2198"/>
         </scene>
-        <!--CleaningVC-->
+        <!--Clean-->
         <scene sceneID="nhR-Vg-8tN">
             <objects>
                 <viewController id="nnG-p5-lPC" customClass="CleaningVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Fk-bu-dUa">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Block, Room No. (G723)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uq7-Dh-r24" customClass="CustomTextField" customModule="HCI" customModuleProvider="target">
@@ -1133,6 +1171,13 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                         <viewLayoutGuide key="safeArea" id="HEo-UL-Eu1"/>
                         <color key="backgroundColor" name="gray_bg_color"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Clean" image="clran" id="hKc-e0-vVK" customClass="CBTabBarItem" customModule="HCI" customModuleProvider="target">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" systemColor="systemGreenColor"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" id="gdK-Nl-j9L"/>
                     <connections>
                         <outlet property="continueBttn" destination="Ip2-Ap-IsL" id="ApW-7o-rOc"/>
@@ -1140,14 +1185,14 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YOB-5p-4Hi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5937.68115942029" y="1062.7232142857142"/>
+            <point key="canvasLocation" x="5938" y="871"/>
         </scene>
-        <!--ComplainVC-->
+        <!--Complaint-->
         <scene sceneID="fM5-6P-r4Z">
             <objects>
                 <viewController id="0TT-2n-KvB" customClass="complainVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3ms-Ed-RKT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TITLE:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ve9-oT-sVK">
@@ -1208,6 +1253,13 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                         <viewLayoutGuide key="safeArea" id="5ew-WB-JGf"/>
                         <color key="backgroundColor" name="gray_bg_color"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Complaint" image="complaint" id="Nai-XN-39O" customClass="CBTabBarItem" customModule="HCI" customModuleProvider="target">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" systemColor="systemPurpleColor"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" id="ZnZ-qq-NAp"/>
                     <connections>
                         <outlet property="complainTextView" destination="bcA-YE-Ixm" id="bjC-2D-6we"/>
@@ -1232,116 +1284,16 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                         <color key="selectedImageTintColor" name="Neon_text_colour"/>
                     </tabBar>
                     <connections>
-                        <segue destination="vZd-5y-vrA" kind="relationship" relationship="viewControllers" id="ANA-iF-1Rq"/>
-                        <segue destination="5rT-we-xKU" kind="relationship" relationship="viewControllers" id="nxt-Yq-3AZ"/>
-                        <segue destination="0fb-Z8-BXU" kind="relationship" relationship="viewControllers" id="O4v-nJ-vdw"/>
-                        <segue destination="jEX-6V-r51" kind="relationship" relationship="viewControllers" id="Koc-FF-EUf"/>
-                        <segue destination="AKS-f0-Uw5" kind="relationship" relationship="viewControllers" id="OpL-bN-3vC"/>
+                        <segue destination="Qz5-8b-Rj6" kind="relationship" relationship="viewControllers" id="HMO-Tu-6a4"/>
+                        <segue destination="4Bd-ht-OTr" kind="relationship" relationship="viewControllers" id="kBu-WM-42g"/>
+                        <segue destination="0TT-2n-KvB" kind="relationship" relationship="viewControllers" id="dLy-Uh-dTO"/>
+                        <segue destination="nnG-p5-lPC" kind="relationship" relationship="viewControllers" id="n1K-2W-lgj"/>
+                        <segue destination="dt1-6n-9HH" kind="relationship" relationship="viewControllers" id="flD-5I-3mb"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o9B-rT-eYp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4134.7826086956529" y="95.758928571428569"/>
-        </scene>
-        <!--Home-->
-        <scene sceneID="dWr-kG-3FB">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vZd-5y-vrA" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="dashboard" id="VWG-cE-4Ip" customClass="CBTabBarItem" customModule="HCI">
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
-                                <color key="value" systemColor="systemBlueColor"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
-                    </tabBarItem>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="pUd-iv-3qP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Qz5-8b-Rj6" kind="relationship" relationship="rootViewController" id="pEO-Xy-f4g"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QBh-qH-7ja" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5029" y="-1234"/>
-        </scene>
-        <!--Dislodge-->
-        <scene sceneID="FYh-99-LWT">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5rT-we-xKU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Dislodge" image="clock" id="x0E-g1-nXP" customClass="CBTabBarItem" customModule="HCI">
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
-                                <color key="value" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
-                    </tabBarItem>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Dxo-br-Vd2">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="4Bd-ht-OTr" kind="relationship" relationship="rootViewController" id="L5w-pF-5hH"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Z0O-CV-m4M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5029" y="-537"/>
-        </scene>
-        <!--Complaint-->
-        <scene sceneID="gL8-no-qoS">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0fb-Z8-BXU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Complaint" image="complaint" id="taN-Fx-CH3" customClass="CBTabBarItem" customModule="HCI">
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
-                                <color key="value" systemColor="systemGreenColor"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
-                    </tabBarItem>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="sgk-By-nxA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="0TT-2n-KvB" kind="relationship" relationship="rootViewController" id="5hh-MK-BRe"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AQQ-11-Luf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5029" y="186"/>
-        </scene>
-        <!--Clean-->
-        <scene sceneID="hSP-NS-JYf">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jEX-6V-r51" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Clean" image="clran" id="ggx-s9-ZhE" customClass="CBTabBarItem" customModule="HCI">
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
-                                <color key="value" systemColor="systemPurpleColor"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
-                    </tabBarItem>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="v85-2f-0yh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="nnG-p5-lPC" kind="relationship" relationship="rootViewController" id="uSO-Gx-2S8"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aNV-eS-Wkf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5029" y="1063"/>
         </scene>
         <!--Get StartedVC-->
         <scene sceneID="eZK-Ab-U8f">
@@ -1528,31 +1480,6 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             </objects>
             <point key="canvasLocation" x="-320.28985507246381" y="95.758928571428569"/>
         </scene>
-        <!--Menu-->
-        <scene sceneID="cgH-aV-LyW">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AKS-f0-Uw5" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Menu" image="menu" id="l6h-MU-VgJ" customClass="CBTabBarItem" customModule="HCI">
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
-                                <color key="value" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
-                    </tabBarItem>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="OJo-OJ-5Mt">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="dt1-6n-9HH" kind="relationship" relationship="rootViewController" id="NAF-z3-iI6"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SCe-W9-MEi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5029" y="2372"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="tT5-g7-4U7">
             <objects>
@@ -1663,7 +1590,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
     </designables>
     <inferredMetricsTieBreakers>
         <segue reference="QOK-XN-Dd1"/>
-        <segue reference="9xi-rn-vy9"/>
+        <segue reference="JlZ-ap-A6Z"/>
         <segue reference="pWh-cb-kxa"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" name="Black"/>
@@ -1714,11 +1641,11 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1728,6 +1655,9 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

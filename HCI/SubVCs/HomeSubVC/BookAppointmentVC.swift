@@ -9,13 +9,11 @@ import UIKit
 
 class BookAppointmentVC: UIViewController {
     
-
+    @IBOutlet weak var cardView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        navigationItem.hidesBackButton = true
-        navigationController?.navigationBar.isUserInteractionEnabled = false
-        navigationController?.navigationBar.tintColor = UIColor.lightGray
+        cardView.layer.cornerRadius = 20
     }
 
 }
