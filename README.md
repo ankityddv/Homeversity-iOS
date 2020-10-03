@@ -11,6 +11,7 @@ Homeversity allows to book councelling appointments, lost and found, lodge compl
 
 <h3 align="center">
 <img src="ss1.png" alt="Screenshot of Homeversity" />
+  ![Homeversity App](https://github.com/ankityddv/Homeversity/blob/main/Screenshots/ss1.png?raw=true)
 <img src="video1.gif" alt="Screenshot of Homeversity" />
 </h3>
 
