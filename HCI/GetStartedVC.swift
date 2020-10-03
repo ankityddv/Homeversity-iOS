@@ -52,4 +52,8 @@ class GetStartedVC: LiquidSwipeContainerController, LiquidSwipeContainerDataSour
         return viewControllers[index]
     }
     
+    override var prefersStatusBarHidden: Bool{
+        return true
+    }
+    
 }

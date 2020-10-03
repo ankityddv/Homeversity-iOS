@@ -93,7 +93,7 @@ class signUpVC: UIViewController {
         }
         @objc func keyboardwilchange(notification: Notification){
             // when textfield pressed
-            continueBttn.frame.origin.y = 587
+            //continueBttn.frame.origin.y = 587
         }
         func textFieldShouldReturn(_ textField: UITextField) -> Bool {
             hideKeyboard()
@@ -102,14 +102,14 @@ class signUpVC: UIViewController {
         override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
             self.view.endEditing(true)
             // when textfield rests
-            continueBttn.frame.origin.y = 587
+            //continueBttn.frame.origin.y = 587
         }
         
         
         // to hide the status bar(time and battery) on top
         override var prefersStatusBarHidden: Bool{
-        return false
-    }
+            return false
+        }
 
 
 

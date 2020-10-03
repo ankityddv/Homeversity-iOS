@@ -40,6 +40,7 @@
 		BC586E48251C7CCD009230A1 /* CleaningVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC586E47251C7CCD009230A1 /* CleaningVC.swift */; };
 		BC586E4E251C80BB009230A1 /* complainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC586E4D251C80BB009230A1 /* complainVC.swift */; };
 		BC586E54251C828B009230A1 /* ComplainRegisteredVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC586E53251C828B009230A1 /* ComplainRegisteredVC.swift */; };
+		BC68BE852528760A009FB20A /* BookAppointmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC68BE842528760A009FB20A /* BookAppointmentVC.swift */; };
 		BC7CB22224ED8B6F007B5DB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7CB22124ED8B6F007B5DB4 /* AppDelegate.swift */; };
 		BC7CB22424ED8B6F007B5DB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7CB22324ED8B6F007B5DB4 /* SceneDelegate.swift */; };
 		BC7CB22624ED8B6F007B5DB4 /* signUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7CB22524ED8B6F007B5DB4 /* signUpVC.swift */; };
@@ -152,6 +153,7 @@
 		BC586E47251C7CCD009230A1 /* CleaningVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleaningVC.swift; sourceTree = "<group>"; };
 		BC586E4D251C80BB009230A1 /* complainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = complainVC.swift; sourceTree = "<group>"; };
 		BC586E53251C828B009230A1 /* ComplainRegisteredVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplainRegisteredVC.swift; sourceTree = "<group>"; };
+		BC68BE842528760A009FB20A /* BookAppointmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAppointmentVC.swift; sourceTree = "<group>"; };
 		BC7CB21E24ED8B6F007B5DB4 /* HCI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HCI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC7CB22124ED8B6F007B5DB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC7CB22324ED8B6F007B5DB4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -338,6 +340,7 @@
 		BC537FBE251E51FC00FCDA7E /* SubVCs */ = {
 			isa = PBXGroup;
 			children = (
+				BC68BE83252875E3009FB20A /* HomeSubVC */,
 				BC537FC7251E523F00FCDA7E /* AccountSubVC */,
 				BC464AC52518C1ED00C9A1DF /* SettingsSubVC */,
 				BC464AE52518CE1800C9A1DF /* LostnFoundSubVC */,
@@ -351,6 +354,14 @@
 				BC537FC8251E525A00FCDA7E /* SetThemeTVC.swift */,
 			);
 			path = AccountSubVC;
+			sourceTree = "<group>";
+		};
+		BC68BE83252875E3009FB20A /* HomeSubVC */ = {
+			isa = PBXGroup;
+			children = (
+				BC68BE842528760A009FB20A /* BookAppointmentVC.swift */,
+			);
+			path = HomeSubVC;
 			sourceTree = "<group>";
 		};
 		BC7CB21524ED8B6E007B5DB4 = {
@@ -777,6 +788,7 @@
 				BCB658DC2517E8E000C7F36F /* WidgetModule.intentdefinition in Sources */,
 				BCD2B65E25266AC800220EEE /* Extensions.swift in Sources */,
 				BC537FD3251E56CD00FCDA7E /* LogInVC.swift in Sources */,
+				BC68BE852528760A009FB20A /* BookAppointmentVC.swift in Sources */,
 				BC7CB22424ED8B6F007B5DB4 /* SceneDelegate.swift in Sources */,
 				BC44AD4E250BCE7700475867 /* CustomLoader.swift in Sources */,
 			);
