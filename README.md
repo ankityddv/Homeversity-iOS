@@ -11,7 +11,7 @@ Homeversity allows to book councelling appointments, lost and found, lodge compl
 
 <h3 align="center">
 <img src="ss1.png" alt="Homeversity App" />
-<img src="video1.gif" alt="Screenshot of Homeversity" />
+<img src="Promotional Poster" alt="Promotional Poster of Homeversity" />
 </h3>
 
 ## What you will get in this project
