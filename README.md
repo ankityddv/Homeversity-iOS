@@ -1,4 +1,8 @@
 # Homeversity
+
+[![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/Cuberto/liquid-swipe/master/LICENSE)
+[![Swift 4.2](https://img.shields.io/badge/Swift-4.2-green.svg?style=flat)](https://developer.apple.com/swift/)
+
 (HCI Project)
 Developed the application as a project for HCI. 
 Added iOS 14 Widgets.
