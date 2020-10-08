@@ -15,7 +15,6 @@ class ComplainRegisteredVC: UIViewController {
         super.viewDidLoad()
         gifImageView.loadGif(name: "fire")
         cardView.layer.cornerRadius = 20
-        // Do any additional setup after loading the view.
     }
 
 }

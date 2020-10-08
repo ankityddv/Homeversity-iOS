@@ -12,23 +12,17 @@ class AppIconVC: UIViewController,UITableViewDelegate,UITableViewDataSource{
     //MARK:- To add app icon
     let appIconService = AppIConService()
 
-    
     let imageArr = ["neonlogo","rainbowlogo","darklogo","redhlogo","bluehlogo","pridehlogo1","pridehlogo2","pridehlogo3","pridehlogo4","pridehlogo5"]
     let iconNameArr = ["Default","Rainbow","Dark","Red H","Blue H","Rainbow 1","Rainbow 2","Rainbow 3","Rainbow 4","Rainbow 5"]
-    
-    
+        
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (iconNameArr.count)
     }
-    
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Configure the cell...
         let cell:AppIconTableViewCell = tableView.dequeueReusableCell(withIdentifier: "AppIconTableViewCell", for: indexPath) as! AppIconTableViewCell
         cell.logoImageView?.image = UIImage(named: imageArr[indexPath.row])
         cell.iconTitile.text = iconNameArr[indexPath.row]
-        
-
         return (cell)
     }
     
@@ -67,14 +61,11 @@ class AppIconVC: UIViewController,UITableViewDelegate,UITableViewDataSource{
         else if indexPath.row == 9{
             appIconService.changeAppIcon(to: .pridehIcon5)
         }
-        
     }
-   
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
 
 }

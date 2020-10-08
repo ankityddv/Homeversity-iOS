@@ -27,7 +27,6 @@ class tncVC: UIViewController {
         composer.setToRecipients(["yadavankit840@gmail.com"])
         composer.setSubject("Support!")
         composer.setMessageBody("I love this app, but ", isHTML: false)
-        
         present(composer, animated: true)
     }
     
@@ -41,19 +40,19 @@ class tncVC: UIViewController {
 extension tncVC: MFMailComposeViewControllerDelegate {
     
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
-        if let _ = error {
+            if let _ = error {
+                controller.dismiss(animated: true)
+            }
+            switch result {
+            case .cancelled:
+                print("Cancelled")
+            case .failed:
+                print("Failed to send")
+            case .saved:
+                print("Saved")
+            case .sent:
+                print("Email Sent")
+            }
             controller.dismiss(animated: true)
-        }
-        switch result {
-        case .cancelled:
-            print("Cancelled")
-        case .failed:
-            print("Failed to send")
-        case .saved:
-            print("Saved")
-        case .sent:
-            print("Email Sent")
-        }
-        controller.dismiss(animated: true)
     }
 }

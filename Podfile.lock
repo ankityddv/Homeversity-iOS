@@ -87,6 +87,7 @@ PODS:
   - nanopb/encode (1.30905.0)
   - pop (1.0.12)
   - PromisesObjC (1.2.10)
+  - TDCRoundButton (0.1.4)
 
 DEPENDENCIES:
   - Firebase
@@ -94,6 +95,7 @@ DEPENDENCIES:
   - Firebase/Database
   - Firebase/Storage
   - liquid-swipe
+  - TDCRoundButton
 
 SPEC REPOS:
   trunk:
@@ -114,6 +116,7 @@ SPEC REPOS:
     - nanopb
     - pop
     - PromisesObjC
+    - TDCRoundButton
 
 SPEC CHECKSUMS:
   Firebase: 210f41ca352067d83b1ba4fd2e7fb49a0c017397
@@ -133,7 +136,8 @@ SPEC CHECKSUMS:
   nanopb: c43f40fadfe79e8b8db116583945847910cbabc9
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   PromisesObjC: b14b1c6b68e306650688599de8a45e49fae81151
+  TDCRoundButton: e62175861daca33f6d780f3718505747fe4db70a
 
-PODFILE CHECKSUM: 154934fa2b00a9b364f33f61c980c522841a28fb
+PODFILE CHECKSUM: ff82844396c005d0e4d4b6694f1f2f86352cb13b
 
 COCOAPODS: 1.9.3

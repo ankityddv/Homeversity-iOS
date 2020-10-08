@@ -14,7 +14,6 @@ class CleaningVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         continueBttn.layer.cornerRadius = 13
-        
         // To hide the top line
         self.tabBarController?.tabBar.shadowImage = UIImage()
         self.tabBarController?.tabBar.backgroundImage = UIImage()

@@ -11,6 +11,7 @@ target 'HCI' do
     pod 'Firebase/Storage'
     pod 'Firebase/Database'
     pod 'liquid-swipe'
+    pod 'TDCRoundButton'
     
   target 'HCITests' do
     inherit! :search_paths

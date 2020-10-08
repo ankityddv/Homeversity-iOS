@@ -13,31 +13,25 @@ class AccountTVC: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // To hide the top line
         self.tabBarController?.tabBar.shadowImage = UIImage()
         self.tabBarController?.tabBar.backgroundImage = UIImage()
     }
     
     func showMailComposer(){
-        
         guard MFMailComposeViewController.canSendMail() else {
             return
         }
-        
         let composer = MFMailComposeViewController()
         composer.mailComposeDelegate = self
         composer.setToRecipients(["yadavankit840@gmail.com"])
         composer.setSubject("Support!")
         composer.setMessageBody("I love this app, but ", isHTML: false)
-        
         present(composer, animated: true)
     }
-
+    
     // MARK: - Table view data source
     
-    
-
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //Reach Us Section
         if indexPath.section == 2 && indexPath.row == 0 {
@@ -45,35 +39,29 @@ class AccountTVC: UITableViewController {
         }
         else if indexPath.section == 2 && indexPath.row == 1{
             let screenName =  "ankityddv"
-               let appURL = NSURL(string: "twitter://user?screen_name=\(screenName)")!
-               let webURL = NSURL(string: "https://twitter.com/\(screenName)")!
+            let appURL = NSURL(string: "twitter://user?screen_name=\(screenName)")!
+            let webURL = NSURL(string: "https://twitter.com/\(screenName)")!
 
-               let application = UIApplication.shared
+            let application = UIApplication.shared
 
-               if application.canOpenURL(appURL as URL) {
-                    application.open(appURL as URL)
-               } else {
-                    application.open(webURL as URL)
-               }
+            if application.canOpenURL(appURL as URL) {
+                application.open(appURL as URL)
+            } else {
+                application.open(webURL as URL)
+            }
         }
         // Sign Out Section
         else if indexPath.section == 4 && indexPath.row == 0{
             try!Auth.auth().signOut()
-                    self.performSegue(withIdentifier: "loggedOut", sender: self)
+            self.performSegue(withIdentifier: "loggedOut", sender: self)
         }
         
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        //navigationController?.setNavigationBarHidden(true, animated: animated)
+        
     }
-    
-
-    
-
-  
-
 }
 
 extension AccountTVC: MFMailComposeViewControllerDelegate {

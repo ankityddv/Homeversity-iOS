@@ -19,10 +19,9 @@ class signUpVC: UIViewController {
     
     @IBAction func signUpBttn(_ sender: Any) {
         createUser()
-                
-                //Heptic touch
-                let generator = UINotificationFeedbackGenerator()
-                generator.notificationOccurred(.success)
+        //Heptic touch
+        let generator = UINotificationFeedbackGenerator()
+        generator.notificationOccurred(.success)
     }
     
     
@@ -38,80 +37,78 @@ class signUpVC: UIViewController {
                 UIApplication.shared.shortcutItems = [firstItem,secondItem]
         
         //Hide Keyboard
-                NotificationCenter.default.addObserver(self, selector: #selector(keyboardwilchange(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
-                NotificationCenter.default.addObserver(self, selector: #selector(keyboardwilchange(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
-                NotificationCenter.default.addObserver(self, selector: #selector(keyboardwilchange(notification:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardwilchange(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardwilchange(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardwilchange(notification:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
         
         //continueBttn.layer.cornerRadius = 13
     }
     
     //Function to login In the User
     func createUser(){
-            let email = emailTextField.text!
-            let password = passwordTextField.text!
-            if password.count < 6 && password.count >= 1 {
-                let alertController = UIAlertController(title: "Password Invalid!", message: "Password must be greater than 6 characters!", preferredStyle: .alert)
-                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        let email = emailTextField.text!
+        let password = passwordTextField.text!
+        if password.count < 6 && password.count >= 1 {
+            let alertController = UIAlertController(title: "Password Invalid!", message: "Password must be greater than 6 characters!", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                 
-                alertController.addAction(defaultAction)
-                self.present(alertController, animated: true, completion: nil)
+            alertController.addAction(defaultAction)
+            self.present(alertController, animated: true, completion: nil)
                 
-                //heptic error
-                let generator = UINotificationFeedbackGenerator()
-                generator.notificationOccurred(.error)
-            }
-            else{
-                Auth.auth().createUser(withEmail: email, password: password){ (user, error) in
-                    if error == nil {
-                        self.performSegue(withIdentifier: "toInfoPage", sender: nil)
-                    }
-                    else{
-                        let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
-                        let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-                        
-                        alertController.addAction(defaultAction)
-                        self.present(alertController, animated: true, completion: nil)
-                    }
-                }
-                loader()
-            }
+            //heptic error
+            let generator = UINotificationFeedbackGenerator()
+            generator.notificationOccurred(.error)
         }
+        else{
+            Auth.auth().createUser(withEmail: email, password: password){ (user, error) in
+                if error == nil {
+                    self.performSegue(withIdentifier: "toInfoPage", sender: nil)
+                }
+                else{
+                    let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+                    let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                        
+                    alertController.addAction(defaultAction)
+                    self.present(alertController, animated: true, completion: nil)
+                }
+            }
+            loader()
+        }
+    }
     
     func loader(){
-            CustomLoader.instance.gifName = "giphy"
-            CustomLoader.instance.showLoaderView()
-        }
+        CustomLoader.instance.gifName = "giphy"
+        CustomLoader.instance.showLoaderView()
+    }
     
     // MARK: - Code below this is for hiding keyboard
-        deinit {
-            NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
-            NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
-            NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
-        }
-        func hideKeyboard(){
-            view.resignFirstResponder()
-        }
-        @objc func keyboardwilchange(notification: Notification){
-            // when textfield pressed
-            //continueBttn.frame.origin.y = 587
-        }
-        func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-            hideKeyboard()
-            return true
-        }
-        override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-            self.view.endEditing(true)
-            // when textfield rests
-            //continueBttn.frame.origin.y = 587
-        }
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
+    }
+    func hideKeyboard(){
+        view.resignFirstResponder()
+    }
+    @objc func keyboardwilchange(notification: Notification){
+        // when textfield pressed
+        //continueBttn.frame.origin.y = 587
+    }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        hideKeyboard()
+        return true
+    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+        // when textfield rests
+        //continueBttn.frame.origin.y = 587
+    }
         
         
-        // to hide the status bar(time and battery) on top
-        override var prefersStatusBarHidden: Bool{
-            return false
+    // to hide the status bar(time and battery) on top
+    override var prefersStatusBarHidden: Bool{
+        return false
         }
-
-
-
+    
 }
 

@@ -8,27 +8,16 @@
 import UIKit
 
 class CouncellingVC: UIViewController {
-
-    //@IBOutlet weak var cardView: UIView!
-    
-    //@IBOutlet weak var VideoThumbnail: UIImageView!
     
     @IBOutlet weak var profileImage: UIImageView!
-    
     @IBOutlet weak var fluidCard: FluidCardView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       // cardView.layer.cornerRadius = 10
         profileImage.layer.cornerRadius = 45
-        //VideoThumbnail.layer.cornerRadius = 15
-        
         // To hide the top line
         self.tabBarController?.tabBar.shadowImage = UIImage()
         self.tabBarController?.tabBar.backgroundImage = UIImage()
-        //self.tabBarController?.tabBar.clipToBounds = true
-        
-        //
         let topNib = UINib(nibName: "TopView", bundle: nil)
         let topView = topNib.instantiate(withOwner: self, options: nil).first as! UIView
         let bottomNib = UINib(nibName: "BottomView", bundle: nil)

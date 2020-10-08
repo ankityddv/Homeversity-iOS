@@ -10,7 +10,6 @@ import UIKit
 class BookAppointmentVC: UIViewController {
     
     @IBOutlet weak var cardView: UIView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         cardView.layer.cornerRadius = 20
