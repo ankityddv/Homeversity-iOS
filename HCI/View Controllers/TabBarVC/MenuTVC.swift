@@ -1,5 +1,5 @@
 //
-//  AccountTVC.swift
+//  MenuTVC.swift
 //  HCI
 //
 //  Created by Ankit on 25/09/20.
@@ -9,13 +9,14 @@ import UIKit
 import MessageUI
 import FirebaseAuth
 
-class AccountTVC: UITableViewController {
+class MenuTVC: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // To hide the top line
         self.tabBarController?.tabBar.shadowImage = UIImage()
         self.tabBarController?.tabBar.backgroundImage = UIImage()
+      //  self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
     
     func showMailComposer(){
@@ -31,6 +32,18 @@ class AccountTVC: UITableViewController {
     }
     
     // MARK: - Table view data source
+    //UserTVC
+    
+    
+/*
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell:UserTVC = tableView.dequeueReusableCell(withIdentifier: "UserTVC", for: indexPath) as! UserTVC
+        cell.textLabel?.text = "Lol"
+        cell.detailTextLabel?.text = "BSDk"
+        
+        return (cell)
+    }
+*/
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //Reach Us Section
@@ -52,10 +65,18 @@ class AccountTVC: UITableViewController {
         }
         // Sign Out Section
         else if indexPath.section == 4 && indexPath.row == 0{
-            try!Auth.auth().signOut()
-            self.performSegue(withIdentifier: "loggedOut", sender: self)
+            
+            if Auth.auth().currentUser != nil {
+                do {
+                    try Auth.auth().signOut()
+                    let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "signUp")
+                    present(vc, animated: true, completion: nil)
+                    
+                } catch let error as NSError {
+                    print(error.localizedDescription)
+                }
+            }
         }
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -64,7 +85,7 @@ class AccountTVC: UITableViewController {
     }
 }
 
-extension AccountTVC: MFMailComposeViewControllerDelegate {
+extension MenuTVC: MFMailComposeViewControllerDelegate {
     
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
         if let _ = error {

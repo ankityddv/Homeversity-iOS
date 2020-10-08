@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17503.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fTq-Sl-GaG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17503.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="z77-3Q-Pc6">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17502"/>
@@ -75,7 +75,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pq9-bk-gck"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="bg_Color"/>
                     </view>
                     <navigationItem key="navigationItem" title="Terms &amp; Conditions" id="hqS-Xg-Hj9"/>
                     <connections>
@@ -89,7 +89,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         <!--Sign UpVC-->
         <scene sceneID="f50-Pa-TbE">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="ykB-dN-0MR" customClass="signUpVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="signUp" modalPresentationStyle="fullScreen" id="ykB-dN-0MR" customClass="SignUpVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mwv-D7-bUc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -398,10 +398,10 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             </objects>
             <point key="canvasLocation" x="1618.840579710145" y="870.53571428571422"/>
         </scene>
-        <!--Add ImageVC-->
+        <!--Update InfoVC-->
         <scene sceneID="rRF-c8-55S">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="vYy-Mo-TQ9" customClass="AddImageVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="vYy-Mo-TQ9" customClass="UpdateInfoVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ATJ-tC-d2l">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -565,7 +565,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         <!--Dislodge-->
         <scene sceneID="Vvc-K3-9ZS">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="4Bd-ht-OTr" customClass="LnfVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="4Bd-ht-OTr" customClass="DislodgeVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KSw-Yn-mBV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -629,18 +629,51 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         <!--Lost-->
         <scene sceneID="rMf-uE-ZIf">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="R6M-8W-KPl" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="R6M-8W-KPl" customClass="DataVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6ZS-yF-P73">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tg7-cu-SV7">
+                                <rect key="frame" x="58" y="441" width="246" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vub-L3-Msm">
+                                <rect key="frame" x="58" y="497" width="246" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nhF-Wa-LuU">
+                                <rect key="frame" x="58" y="552" width="246" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fgo-3G-hkN">
+                                <rect key="frame" x="57" y="98" width="301" height="227"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="5VW-g9-h9T"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Lost" id="rdU-Pb-z66"/>
+                    <connections>
+                        <outlet property="PhoneLabel" destination="nhF-Wa-LuU" id="DXL-C8-mkj"/>
+                        <outlet property="dpImageView" destination="Fgo-3G-hkN" id="WZ1-cv-oKx"/>
+                        <outlet property="emailLabel" destination="vub-L3-Msm" id="IcB-w3-OXV"/>
+                        <outlet property="nameLabel" destination="Tg7-cu-SV7" id="OZ3-D1-QoN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3tn-VJ-MXK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8332" y="-1083"/>
+            <point key="canvasLocation" x="8331.8840579710159" y="-1083.4821428571429"/>
         </scene>
         <!--Found-->
         <scene sceneID="cIG-W7-52e">
@@ -765,7 +798,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         <!--Home-->
         <scene sceneID="vcc-id-74Q">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Qz5-8b-Rj6" customClass="CouncellingVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Qz5-8b-Rj6" customClass="HomeVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U2U-18-pIG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -823,7 +856,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                     <tabBarItem key="tabBarItem" title="Home" image="dashboard" id="33n-Tb-hhl" customClass="CBTabBarItem" customModule="HCI" customModuleProvider="target">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
-                                <color key="value" name="bttn_grad1"/>
+                                <color key="value" name="blueLiquidViewColor"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </tabBarItem>
@@ -923,29 +956,30 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         <!--Menu-->
         <scene sceneID="HNK-iG-TjG">
             <objects>
-                <tableViewController id="dt1-6n-9HH" customClass="AccountTVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="dt1-6n-9HH" customClass="MenuTVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="insetGrouped" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="h2c-Rc-r7K">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="gray_bg_color"/>
                         <sections>
                             <tableViewSection headerTitle="" id="0If-7M-ZZq">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" textLabel="6WL-19-wXT" detailTextLabel="8Ru-Hw-NtV" style="IBUITableViewCellStyleSubtitle" id="Vif-RO-FXz">
-                                        <rect key="frame" x="20" y="39.5" width="374" height="43.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="UserTVC" textLabel="6WL-19-wXT" detailTextLabel="8Ru-Hw-NtV" rowHeight="83" style="IBUITableViewCellStyleSubtitle" id="Vif-RO-FXz" customClass="UserTVC" customModule="HCI" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="39.5" width="374" height="83"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vif-RO-FXz" id="Gqj-10-hm1">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="83"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="ANKIT YADAV" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6WL-19-wXT">
-                                                    <rect key="frame" x="20" y="5" width="100.5" height="19.5"/>
+                                                    <rect key="frame" x="20" y="22" width="100.5" height="19.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" name="Black"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="yadavankit840@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8Ru-Hw-NtV">
-                                                    <rect key="frame" x="20" y="24.5" width="152.5" height="14.5"/>
+                                                    <rect key="frame" x="20" y="44.5" width="152.5" height="14.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
@@ -959,7 +993,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                             <tableViewSection headerTitle="GENERAL" id="yzE-wg-tki">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="En1-E4-xTX" style="IBUITableViewCellStyleDefault" id="7xR-MV-6qT">
-                                        <rect key="frame" x="20" y="139" width="374" height="43.5"/>
+                                        <rect key="frame" x="20" y="178.5" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7xR-MV-6qT" id="IH2-1C-76g">
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
@@ -979,7 +1013,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="PA8-wx-0vd" style="IBUITableViewCellStyleDefault" id="1zO-yk-tjm">
-                                        <rect key="frame" x="20" y="182.5" width="374" height="43.5"/>
+                                        <rect key="frame" x="20" y="222" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1zO-yk-tjm" id="PRw-Ke-lDr">
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
@@ -1003,7 +1037,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                             <tableViewSection headerTitle="REACH US" id="CXF-fD-cFN">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="JHL-AU-3Sj" style="IBUITableViewCellStyleDefault" id="Uos-D1-oHw">
-                                        <rect key="frame" x="20" y="282" width="374" height="43.5"/>
+                                        <rect key="frame" x="20" y="321.5" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Uos-D1-oHw" id="kJ7-dP-XjI">
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
@@ -1020,7 +1054,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="fP6-8s-XD6" style="IBUITableViewCellStyleDefault" id="qcG-jE-oAK">
-                                        <rect key="frame" x="20" y="325.5" width="374" height="43.5"/>
+                                        <rect key="frame" x="20" y="365" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qcG-jE-oAK" id="NZb-Xh-nTF">
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
@@ -1037,7 +1071,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="PTd-ex-JNN" style="IBUITableViewCellStyleDefault" id="SoA-Ru-WG8">
-                                        <rect key="frame" x="20" y="369" width="374" height="43.5"/>
+                                        <rect key="frame" x="20" y="408.5" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SoA-Ru-WG8" id="NyH-KC-dup">
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
@@ -1058,7 +1092,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                             <tableViewSection headerTitle="" id="9qK-Kq-7cH">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" textLabel="Vdn-mi-mWS" style="IBUITableViewCellStyleDefault" id="wGx-84-jED">
-                                        <rect key="frame" x="20" y="452.5" width="374" height="43.5"/>
+                                        <rect key="frame" x="20" y="492" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wGx-84-jED" id="TIh-rP-zeI">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
@@ -1079,7 +1113,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                             <tableViewSection headerTitle="" id="9EK-VM-Dtk">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="KoB-Qa-Sk4" style="IBUITableViewCellStyleDefault" id="K3b-be-rg5">
-                                        <rect key="frame" x="20" y="536" width="374" height="43.5"/>
+                                        <rect key="frame" x="20" y="575.5" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="K3b-be-rg5" id="wkU-m1-Kxh">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
@@ -1114,7 +1148,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pit-GY-hJE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5938" y="1538"/>
+            <point key="canvasLocation" x="5937.68115942029" y="1537.5"/>
         </scene>
         <!--Apperance-->
         <scene sceneID="6JA-jL-PfQ">
@@ -1197,7 +1231,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         <!--Clean-->
         <scene sceneID="nhR-Vg-8tN">
             <objects>
-                <viewController id="nnG-p5-lPC" customClass="CleaningVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="nnG-p5-lPC" customClass="CleanVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Fk-bu-dUa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1289,7 +1323,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         <!--Complaint-->
         <scene sceneID="fM5-6P-r4Z">
             <objects>
-                <viewController id="0TT-2n-KvB" customClass="complainVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0TT-2n-KvB" customClass="ComplaintVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3ms-Ed-RKT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1380,7 +1414,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         <!--Bubble Tab Bar Controller-->
         <scene sceneID="92O-fK-Zrs">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="fTq-Sl-GaG" customClass="BubbleTabBarController" customModule="HCI" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="Home" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="fTq-Sl-GaG" customClass="BubbleTabBarController" customModule="HCI" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="sDh-xT-aFC"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="3eo-he-9Fx">
@@ -1404,7 +1438,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         <!--Get StartedVC-->
         <scene sceneID="eZK-Ab-U8f">
             <objects>
-                <viewController id="z77-3Q-Pc6" customClass="GetStartedVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GetStarted" id="z77-3Q-Pc6" customClass="GetStartedVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XwB-Wr-28r">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1591,7 +1625,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         <!--View Controller-->
         <scene sceneID="tT5-g7-4U7">
             <objects>
-                <viewController storyboardIdentifier="page1" id="cOW-Ez-mxb" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="page1" modalPresentationStyle="fullScreen" id="cOW-Ez-mxb" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AeC-ho-Swn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1712,8 +1746,8 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="QOK-XN-Dd1"/>
-        <segue reference="JlZ-ap-A6Z"/>
+        <segue reference="3s1-dW-kKn"/>
+        <segue reference="9xi-rn-vy9"/>
         <segue reference="hki-nG-sD3"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" name="Black"/>
@@ -1744,16 +1778,16 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <color red="0.10199999809265137" green="0.18000000715255737" blue="0.23100000619888306" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="PinkLiquidViewColor">
-            <color red="1" green="0.18431372549019609" blue="0.5725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.18400000035762787" blue="0.57300001382827759" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="bg_Color">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="blueLiquidViewColor">
-            <color red="0.33333333333333331" green="0.34509803921568627" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.33300000429153442" green="0.3449999988079071" blue="0.9649999737739563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="bttn_grad1">
-            <color red="0.33333333333333331" green="0.34509803921568627" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.33300000429153442" green="0.3449999988079071" blue="0.9649999737739563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="button_colour">
             <color red="0.10199999809265137" green="0.18000000715255737" blue="0.23100000619888306" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1762,7 +1796,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <color red="0.94900000095367432" green="0.94900000095367432" blue="0.96899998188018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="shadow_color">
-            <color red="0.097999997437000275" green="0.097999997437000275" blue="0.097999997437000275" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.097999997437000275" green="0.097999997437000275" blue="0.097999997437000275" alpha="0.40000000596046448" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="text_Color">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

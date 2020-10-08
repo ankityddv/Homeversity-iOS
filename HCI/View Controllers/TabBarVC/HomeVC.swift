@@ -6,11 +6,13 @@
 //
 
 import UIKit
+import FirebaseAuth
 
-class CouncellingVC: UIViewController {
+class HomeVC: UIViewController {
     
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var fluidCard: FluidCardView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

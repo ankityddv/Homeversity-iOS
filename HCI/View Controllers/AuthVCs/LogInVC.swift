@@ -29,6 +29,8 @@ class LogInVC: UIViewController {
         let password = passwordField.text!
             
         if email.count == 0 && password.count == 0 {
+            //Alert to tell the user that there was an error because they didn't fill anything in the textfields because they didn't fill anything in
+            
             // create the alert
             let alert = UIAlertController(title: "Invalid!!!", message: "Please enter the email and password!", preferredStyle: UIAlertController.Style.alert)
                 
@@ -50,9 +52,11 @@ class LogInVC: UIViewController {
                     
                     alertController.addAction(defaultAction)
                     self.present(alertController, animated: true, completion: nil)
+                    
+                    self.stoploader()
                 }
             }
-            loader()
+            startloader()
         }
     }
     
@@ -66,9 +70,13 @@ class LogInVC: UIViewController {
         //continueBttn.layer.cornerRadius = 13
     }
     
-    func loader(){
+    func startloader(){
         CustomLoader.instance.gifName = "giphy"
         CustomLoader.instance.showLoaderView()
+    }
+    
+    func stoploader(){
+        CustomLoader.instance.hideLoaderView()
     }
     
     // MARK: - Code below this is for hiding keyboard

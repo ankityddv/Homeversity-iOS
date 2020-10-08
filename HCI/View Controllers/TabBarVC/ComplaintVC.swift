@@ -1,5 +1,5 @@
 //
-//  CleaningVC.swift
+//  complainVC.swift
 //  HCI
 //
 //  Created by Ankit on 24/09/20.
@@ -7,13 +7,16 @@
 
 import UIKit
 
-class CleaningVC: UIViewController {
-
-    @IBOutlet weak var continueBttn: UIButton!
+class ComplaintVC: UIViewController {
+    
+    @IBOutlet weak var complainView: UIView!
+    @IBOutlet weak var complainTextView: UITextView!
+    @IBOutlet weak var proceedBttn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        continueBttn.layer.cornerRadius = 13
+        complainView.layer.cornerRadius = 15
+        proceedBttn.layer.cornerRadius = 13
         // To hide the top line
         self.tabBarController?.tabBar.shadowImage = UIImage()
         self.tabBarController?.tabBar.backgroundImage = UIImage()

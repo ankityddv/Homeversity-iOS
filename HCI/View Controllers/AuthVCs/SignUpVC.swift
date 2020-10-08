@@ -8,7 +8,7 @@
 import UIKit
 import Firebase
 
-class signUpVC: UIViewController {
+class SignUpVC: UIViewController {
 
     @IBOutlet weak var emailTextField: CustomTextField!
     @IBOutlet weak var passwordTextField: CustomTextField!
@@ -51,10 +51,12 @@ class signUpVC: UIViewController {
         let email = emailTextField.text!
         let password = passwordTextField.text!
         if password.count < 6 && password.count >= 1 {
+            
             let alertController = UIAlertController(title: "Password Invalid!", message: "Password must be greater than 6 characters!", preferredStyle: .alert)
+            
             let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-                
             alertController.addAction(defaultAction)
+            
             self.present(alertController, animated: true, completion: nil)
                 
             //heptic error
@@ -62,7 +64,7 @@ class signUpVC: UIViewController {
             generator.notificationOccurred(.error)
         }
         else{
-            Auth.auth().createUser(withEmail: email, password: password){ (user, error) in
+            Auth.auth().createUser(withEmail: email, password: password){ [self] (user, error) in
                 if error == nil {
                     self.performSegue(withIdentifier: "toInfoPage", sender: nil)
                 }
@@ -72,15 +74,21 @@ class signUpVC: UIViewController {
                         
                     alertController.addAction(defaultAction)
                     self.present(alertController, animated: true, completion: nil)
+                    
+                    stoploader()
                 }
             }
-            loader()
+            startloader()
         }
     }
     
-    func loader(){
+    func startloader(){
         CustomLoader.instance.gifName = "giphy"
         CustomLoader.instance.showLoaderView()
+    }
+    
+    func stoploader(){
+        CustomLoader.instance.hideLoaderView()
     }
     
     // MARK: - Code below this is for hiding keyboard

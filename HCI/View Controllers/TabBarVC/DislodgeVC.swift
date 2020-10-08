@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LnfVC: UIViewController {
+class DislodgeVC: UIViewController {
 
     @IBOutlet weak var lostBttn: UIButton!
     @IBOutlet weak var foundBttn: UIButton!
