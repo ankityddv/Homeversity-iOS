@@ -10,13 +10,13 @@ import FirebaseAuth
 
 class LogInVC: UIViewController {
 
-    @IBOutlet weak var loginLabel: UILabel!
     @IBOutlet weak var emailField: CustomTextField!
     @IBOutlet weak var passwordField: CustomTextField!
     @IBOutlet weak var continueBttn: UIButton!
-    @IBOutlet weak var pleasecreateLabel: UILabel!
     @IBOutlet weak var forgotPasswordBttn: UIButton!
+    @IBOutlet weak var labelView: UIView!
     
+    @IBOutlet weak var cardView: ShadowView!
     @IBAction func continueBttnPressed(_ sender: Any) {
         loginUser()
         //Heptic touch
@@ -81,7 +81,10 @@ class LogInVC: UIViewController {
         view.resignFirstResponder()
     }
     @objc func keyboardwilchange(notification: Notification){
-        //continueBttn.frame.origin.y = 427
+        // when textfield pressed
+        labelView.isHidden = true
+        cardView.frame.origin.y = 60
+        
     }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         hideKeyboard()
@@ -89,6 +92,9 @@ class LogInVC: UIViewController {
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
+        // when textfield rests
+        labelView.isHidden = false
+        cardView.frame.origin.y = 269
     }
     
 }

@@ -294,6 +294,7 @@
 			isa = PBXGroup;
 			children = (
 				BC4D0732252726CF006B3FA4 /* GetStartedVC.swift */,
+				BC464ABF2518BA1500C9A1DF /* tncVC.swift */,
 				BCA1827D251E61DB0099A560 /* AuthVCs */,
 				BC43241E251621B80084D3D3 /* TabBarVC */,
 				BC537FBE251E51FC00FCDA7E /* SubVCs */,
@@ -410,7 +411,6 @@
 				BC7CB22324ED8B6F007B5DB4 /* SceneDelegate.swift */,
 				BC7CB22A24ED8B6F007B5DB4 /* Assets.xcassets */,
 				BC58A1E7252F630B006C46D0 /* GoogleService-Info.plist */,
-				BC7CB22F24ED8B6F007B5DB4 /* Info.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -454,6 +454,7 @@
 				BC3FF4CF252F5ED00033D2F3 /* Storyboards */,
 				BC3FF4E1252F5F6C0033D2F3 /* Custom Files */,
 				BC58A1E6252F630A006C46D0 /* Supporting Files */,
+				BC7CB22F24ED8B6F007B5DB4 /* Info.plist */,
 				BC1D7AC524ED9EE100D432B1 /* GoogleService-Info.plist */,
 			);
 			path = HCI;
@@ -484,7 +485,6 @@
 				BC537FD2251E56CD00FCDA7E /* LogInVC.swift */,
 				BC51D3D324F0099F0076CA93 /* AddImageVC.swift */,
 				BCE08570250BD7480035D2F7 /* CongratsVC.swift */,
-				BC464ABF2518BA1500C9A1DF /* tncVC.swift */,
 			);
 			path = AuthVCs;
 			sourceTree = "<group>";

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17503.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="z77-3Q-Pc6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17503.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fTq-Sl-GaG">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17502"/>
@@ -58,18 +58,13 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jhe-CB-69U" customClass="RoundBttn" customModule="TDCRoundButton">
                                 <rect key="frame" x="24" y="660" width="366" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="bttn_grad1"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Contact Us">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="verticalGradient" value="NO"/>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
-                                        <color key="value" red="0.12156862745098039" green="0.63529411764705879" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
-                                        <color key="value" red="0.070588235294117646" green="0.84705882352941175" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="13"/>
                                     </userDefinedRuntimeAttribute>
@@ -221,7 +216,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -233,8 +228,10 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                     </view>
                     <navigationItem key="navigationItem" id="nWy-vn-EBA"/>
                     <connections>
+                        <outlet property="cardView" destination="mSH-V5-fir" id="Ttm-0u-Wh7"/>
                         <outlet property="continueBttn" destination="JdJ-Cp-ik1" id="JqL-i8-Ed7"/>
                         <outlet property="emailTextField" destination="7fx-gv-aY6" id="RZj-MT-QvY"/>
+                        <outlet property="labelView" destination="6YL-Yk-BLy" id="VgU-yQ-N10"/>
                         <outlet property="passwordTextField" destination="7rc-q1-It8" id="V8J-fG-Vm5"/>
                         <outlet property="pleasecreateLabel" destination="jfT-KE-bXp" id="ln8-Sg-NkK"/>
                         <outlet property="signUpLabel" destination="8wv-Gx-hfV" id="LAZ-eO-Pea"/>
@@ -388,9 +385,11 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                     </view>
                     <navigationItem key="navigationItem" id="Ocg-HA-BGi"/>
                     <connections>
+                        <outlet property="cardView" destination="sjr-Ke-yoP" id="ORw-RG-Mlv"/>
                         <outlet property="continueBttn" destination="TcI-FV-45h" id="OPd-72-Cof"/>
                         <outlet property="emailField" destination="h6G-LC-Iev" id="z4S-JI-BHZ"/>
                         <outlet property="forgotPasswordBttn" destination="NHj-WT-wJC" id="ymy-Be-4ku"/>
+                        <outlet property="labelView" destination="Zqw-97-wCN" id="7oW-cA-G1z"/>
                         <outlet property="passwordField" destination="Oj1-vv-TcY" id="M6r-1G-yGv"/>
                         <segue destination="fTq-Sl-GaG" kind="show" identifier="logIn" id="9xi-rn-vy9"/>
                     </connections>
@@ -792,17 +791,12 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzx-ld-adT" customClass="RoundBttn" customModule="TDCRoundButton">
                                 <rect key="frame" x="230" y="288" width="164" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="bttn_grad1"/>
                                 <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham" pointSize="12"/>
                                 <state key="normal" title="BOOK APPOINTMENT">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
-                                        <color key="value" name="bttn_grad1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
-                                        <color key="value" name="bttn_grad2"/>
-                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="verticalGradient" value="NO"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="0.0"/>
@@ -829,7 +823,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                     <tabBarItem key="tabBarItem" title="Home" image="dashboard" id="33n-Tb-hhl" customClass="CBTabBarItem" customModule="HCI" customModuleProvider="target">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
-                                <color key="value" systemColor="linkColor"/>
+                                <color key="value" name="bttn_grad1"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </tabBarItem>
@@ -882,7 +876,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="separatorInset" minX="96" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AppIconTableViewCell" rowHeight="80" id="heN-1J-RvS" customClass="AppIconTableViewCell" customModule="HCI" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AppIconTableViewCell" editingAccessoryType="checkmark" rowHeight="80" id="heN-1J-RvS" customClass="AppIconTableViewCell" customModule="HCI" customModuleProvider="target">
                                         <rect key="frame" x="20" y="55.5" width="374" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="heN-1J-RvS" id="VBD-VT-si0">
@@ -918,6 +912,9 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" title="App Icons" id="NBq-OO-nre"/>
+                    <connections>
+                        <outlet property="myTableView" destination="w2l-6Z-Ox9" id="sl9-0R-edS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EGX-fp-qkG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1060,7 +1057,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                             </tableViewSection>
                             <tableViewSection headerTitle="" id="9qK-Kq-7cH">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="Vdn-mi-mWS" style="IBUITableViewCellStyleDefault" id="wGx-84-jED">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" textLabel="Vdn-mi-mWS" style="IBUITableViewCellStyleDefault" id="wGx-84-jED">
                                         <rect key="frame" x="20" y="452.5" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wGx-84-jED" id="TIh-rP-zeI">
@@ -1123,13 +1120,13 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         <scene sceneID="6JA-jL-PfQ">
             <objects>
                 <tableViewController hidesBottomBarWhenPushed="YES" id="bHQ-BD-uA0" customClass="SetThemeTVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="JsR-Xp-Tyk">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="insetGrouped" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="JsR-Xp-Tyk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <sections>
                             <tableViewSection headerTitle="APPERANCE" id="pdd-2q-0Zr">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="FBA-CE-q1B" style="IBUITableViewCellStyleDefault" id="cAS-VM-1qA">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" textLabel="FBA-CE-q1B" style="IBUITableViewCellStyleDefault" id="cAS-VM-1qA">
                                         <rect key="frame" x="20" y="55.5" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cAS-VM-1qA" id="qd8-Ly-XVy">
@@ -1146,7 +1143,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="UhI-Yf-Ha8" style="IBUITableViewCellStyleDefault" id="PbJ-ai-ja2">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" textLabel="UhI-Yf-Ha8" style="IBUITableViewCellStyleDefault" id="PbJ-ai-ja2">
                                         <rect key="frame" x="20" y="99" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PbJ-ai-ja2" id="Clt-yj-zck">
@@ -1163,7 +1160,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="G0Q-R6-4pb" style="IBUITableViewCellStyleDefault" id="FVp-a0-QW0">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" textLabel="G0Q-R6-4pb" style="IBUITableViewCellStyleDefault" id="FVp-a0-QW0">
                                         <rect key="frame" x="20" y="142.5" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FVp-a0-QW0" id="uCd-J7-Hrw">
@@ -1189,6 +1186,9 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Apperance" id="afu-ul-xto"/>
+                    <connections>
+                        <outlet property="myTableView" destination="JsR-Xp-Tyk" id="Csw-dR-18C"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uXQ-9U-uYd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1428,7 +1428,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                 <rect key="frame" x="30" y="72" width="96" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.84313725490196079" green="0.53725490196078429" blue="0.84313725490196079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9RW-ae-Qhd">
@@ -1439,7 +1439,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                         <rect key="frame" x="0.0" y="20" width="75" height="57"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="47"/>
-                                        <color key="textColor" red="0.84313725490196079" green="0.53725490196078429" blue="0.84313725490196079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MESS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IfH-sm-Z4A">
@@ -1455,7 +1455,9 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O1r-e1-yUT">
                                 <rect key="frame" x="331" y="67" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Skip"/>
+                                <state key="normal" title="Skip">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="ykB-dN-0MR" kind="show" id="pWh-cb-kxa"/>
                                 </connections>
@@ -1478,7 +1480,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XwJ-dk-ATb"/>
-                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <color key="backgroundColor" name="blueLiquidViewColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RQd-hf-4zO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1559,7 +1561,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Hp3-rT-feK"/>
-                        <color key="backgroundColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="PinkLiquidViewColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xBu-Pc-I27" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1648,7 +1650,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6kh-kU-MFZ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="whiteliquidViewColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HUJ-16-T6I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1726,7 +1728,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         <image name="fire.gif" width="800" height="600"/>
         <image name="getStartedIllustration" width="4462" height="3040"/>
         <image name="getStartedIllustration2" width="4462" height="3042"/>
-        <image name="hlogo" width="10004" height="9508"/>
+        <image name="hlogo" width="4228" height="4068"/>
         <image name="menu" width="17" height="8"/>
         <image name="segment1" width="94" height="18"/>
         <image name="segment2" width="49" height="9"/>
@@ -1741,14 +1743,17 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         <namedColor name="Neon_text_colour">
             <color red="0.10199999809265137" green="0.18000000715255737" blue="0.23100000619888306" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="PinkLiquidViewColor">
+            <color red="1" green="0.18431372549019609" blue="0.5725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="bg_Color">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="bttn_grad1">
-            <color red="0.12200000137090683" green="0.63499999046325684" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="blueLiquidViewColor">
+            <color red="0.33333333333333331" green="0.34509803921568627" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="bttn_grad2">
-            <color red="0.071000002324581146" green="0.84700000286102295" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="bttn_grad1">
+            <color red="0.33333333333333331" green="0.34509803921568627" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="button_colour">
             <color red="0.10199999809265137" green="0.18000000715255737" blue="0.23100000619888306" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1757,7 +1762,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <color red="0.94900000095367432" green="0.94900000095367432" blue="0.96899998188018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="shadow_color">
-            <color red="0.097999997437000275" green="0.097999997437000275" blue="0.097999997437000275" alpha="0.74900001287460327" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.097999997437000275" green="0.097999997437000275" blue="0.097999997437000275" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="text_Color">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1765,11 +1770,11 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         <namedColor name="textfieldColor">
             <color red="0.92199999094009399" green="0.92199999094009399" blue="0.92199999094009399" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="whiteliquidViewColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

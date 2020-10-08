@@ -15,6 +15,8 @@ class signUpVC: UIViewController {
     @IBOutlet weak var continueBttn: UIButton!
     @IBOutlet weak var signUpLabel: UILabel!
     @IBOutlet weak var pleasecreateLabel: UILabel!
+    @IBOutlet weak var cardView: ShadowView!
+    @IBOutlet weak var labelView: UIView!
     
     
     @IBAction func signUpBttn(_ sender: Any) {
@@ -23,8 +25,6 @@ class signUpVC: UIViewController {
         let generator = UINotificationFeedbackGenerator()
         generator.notificationOccurred(.success)
     }
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -94,7 +94,8 @@ class signUpVC: UIViewController {
     }
     @objc func keyboardwilchange(notification: Notification){
         // when textfield pressed
-        //continueBttn.frame.origin.y = 587
+        labelView.isHidden = true
+        cardView.frame.origin.y = 130
     }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         hideKeyboard()
@@ -103,7 +104,9 @@ class signUpVC: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
         // when textfield rests
-        //continueBttn.frame.origin.y = 587
+        
+        labelView.isHidden = false
+        cardView.frame.origin.y = 314
     }
     
     // Set Background Image
@@ -124,7 +127,7 @@ class signUpVC: UIViewController {
     // to hide the status bar(time and battery) on top
     override var prefersStatusBarHidden: Bool{
         return false
-        }
+    }
     
 }
 

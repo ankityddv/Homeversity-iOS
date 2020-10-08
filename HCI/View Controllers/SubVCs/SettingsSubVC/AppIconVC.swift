@@ -14,7 +14,8 @@ class AppIconVC: UIViewController,UITableViewDelegate,UITableViewDataSource{
 
     let imageArr = ["neonlogo","rainbowlogo","darklogo","redhlogo","bluehlogo","pridehlogo1","pridehlogo2","pridehlogo3","pridehlogo4","pridehlogo5"]
     let iconNameArr = ["Default","Rainbow","Dark","Red H","Blue H","Rainbow 1","Rainbow 2","Rainbow 3","Rainbow 4","Rainbow 5"]
-        
+    @IBOutlet weak var myTableView: UITableView!
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (iconNameArr.count)
     }
@@ -61,6 +62,17 @@ class AppIconVC: UIViewController,UITableViewDelegate,UITableViewDataSource{
         else if indexPath.row == 9{
             appIconService.changeAppIcon(to: .pridehIcon5)
         }
+        
+        myTableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
+    }
+    
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        tableView.cellForRow(at: indexPath)?.accessoryType = .none
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection
+                                section: Int) -> String? {
+       return "App Icons"
     }
     
     override func viewDidLoad() {
