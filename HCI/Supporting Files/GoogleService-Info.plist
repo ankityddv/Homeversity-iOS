@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>300317099884-h84odd1lnile11la76bn5mt13tmiacut.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.300317099884-h84odd1lnile11la76bn5mt13tmiacut</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBz2Z2Vs_1dLthl2OwhYtG0PtgwD2a4CZs</string>
+	<key>GCM_SENDER_ID</key>
+	<string>300317099884</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>tdc.HCI</string>
+	<key>PROJECT_ID</key>
+	<string>hci-app-ee33e</string>
+	<key>STORAGE_BUCKET</key>
+	<string>hci-app-ee33e.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:300317099884:ios:b667d19274ef5f5afb5549</string>
+	<key>DATABASE_URL</key>
+	<string>https://hci-app-ee33e.firebaseio.com</string>
+</dict>
+</plist>

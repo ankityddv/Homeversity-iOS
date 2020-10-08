@@ -152,6 +152,7 @@
 		BC586E47251C7CCD009230A1 /* CleaningVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleaningVC.swift; sourceTree = "<group>"; };
 		BC586E4D251C80BB009230A1 /* complainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = complainVC.swift; sourceTree = "<group>"; };
 		BC586E53251C828B009230A1 /* ComplainRegisteredVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplainRegisteredVC.swift; sourceTree = "<group>"; };
+		BC58A1E7252F630B006C46D0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BC68BE842528760A009FB20A /* BookAppointmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAppointmentVC.swift; sourceTree = "<group>"; };
 		BC7CB21E24ED8B6F007B5DB4 /* HCI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HCI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC7CB22124ED8B6F007B5DB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -402,6 +403,18 @@
 			path = AccountSubVC;
 			sourceTree = "<group>";
 		};
+		BC58A1E6252F630A006C46D0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC7CB22124ED8B6F007B5DB4 /* AppDelegate.swift */,
+				BC7CB22324ED8B6F007B5DB4 /* SceneDelegate.swift */,
+				BC7CB22A24ED8B6F007B5DB4 /* Assets.xcassets */,
+				BC58A1E7252F630B006C46D0 /* GoogleService-Info.plist */,
+				BC7CB22F24ED8B6F007B5DB4 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		BC68BE83252875E3009FB20A /* HomeSubVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -437,14 +450,11 @@
 		BC7CB22024ED8B6F007B5DB4 /* HCI */ = {
 			isa = PBXGroup;
 			children = (
-				BC7CB22124ED8B6F007B5DB4 /* AppDelegate.swift */,
-				BC7CB22324ED8B6F007B5DB4 /* SceneDelegate.swift */,
 				BC3FF4C2252F5EA90033D2F3 /* View Controllers */,
 				BC3FF4CF252F5ED00033D2F3 /* Storyboards */,
 				BC3FF4E1252F5F6C0033D2F3 /* Custom Files */,
-				BC7CB22A24ED8B6F007B5DB4 /* Assets.xcassets */,
+				BC58A1E6252F630A006C46D0 /* Supporting Files */,
 				BC1D7AC524ED9EE100D432B1 /* GoogleService-Info.plist */,
-				BC7CB22F24ED8B6F007B5DB4 /* Info.plist */,
 			);
 			path = HCI;
 			sourceTree = "<group>";
