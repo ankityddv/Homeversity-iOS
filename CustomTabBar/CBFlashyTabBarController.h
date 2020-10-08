@@ -2,9 +2,9 @@
 //  CBFlashyTabBarController.h
 //  CBFlashyTabBarController
 //
-//  Created by Anton Skopin on 04/12/2018.
-//  Copyright © 2018 cuberto. All rights reserved.
+//  Created by Ankit on 02/10/20.
 //
+
 
 #import <UIKit/UIKit.h>
 

@@ -258,7 +258,7 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		BC2FF4CA2525EBF200B18926 /* CustomBar */ = {
+		BC2FF4CA2525EBF200B18926 /* CustomTabBar */ = {
 			isa = PBXGroup;
 			children = (
 				BC2FF4DA2525EC0800B18926 /* BubbleTabBar.swift */,
@@ -266,7 +266,7 @@
 				BC2FF4D82525EC0800B18926 /* CBFlashyTabBarController.h */,
 				BC2FF4D92525EC0800B18926 /* CBTabBarButton.swift */,
 			);
-			path = CustomBar;
+			path = CustomTabBar;
 			sourceTree = "<group>";
 		};
 		BC2FF4ED2525FA7B00B18926 /* Custom Fonts */ = {
@@ -405,7 +405,7 @@
 				BC7CB22A24ED8B6F007B5DB4 /* Assets.xcassets */,
 				BC7CB22C24ED8B6F007B5DB4 /* LaunchScreen.storyboard */,
 				BC423236251626EA00D05BF0 /* Custom Files */,
-				BC2FF4CA2525EBF200B18926 /* CustomBar */,
+				BC2FF4CA2525EBF200B18926 /* CustomTabBar */,
 				BC2FF4ED2525FA7B00B18926 /* Custom Fonts */,
 				BC43241725161C400084D3D3 /* Alternate Icons */,
 				BC1D7AC524ED9EE100D432B1 /* GoogleService-Info.plist */,

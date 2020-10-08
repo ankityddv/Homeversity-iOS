@@ -1558,34 +1558,34 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <size key="intrinsicContentSize" width="12.5" height="22"/>
         </designable>
         <designable name="7TS-G4-gug">
-            <size key="intrinsicContentSize" width="6" height="18.5"/>
+            <size key="intrinsicContentSize" width="46" height="18.5"/>
         </designable>
         <designable name="7fx-gv-aY6">
-            <size key="intrinsicContentSize" width="34.5" height="18.5"/>
+            <size key="intrinsicContentSize" width="74.5" height="18.5"/>
         </designable>
         <designable name="7rc-q1-It8">
-            <size key="intrinsicContentSize" width="62.5" height="17"/>
+            <size key="intrinsicContentSize" width="102.5" height="17"/>
         </designable>
         <designable name="BRr-NM-Aca">
-            <size key="intrinsicContentSize" width="77.5" height="18.5"/>
+            <size key="intrinsicContentSize" width="117.5" height="18.5"/>
         </designable>
         <designable name="JdJ-Cp-ik1">
             <size key="intrinsicContentSize" width="12.5" height="22"/>
         </designable>
         <designable name="Oj1-vv-TcY">
-            <size key="intrinsicContentSize" width="62.5" height="17"/>
+            <size key="intrinsicContentSize" width="102.5" height="17"/>
         </designable>
         <designable name="TcI-FV-45h">
             <size key="intrinsicContentSize" width="12.5" height="22"/>
         </designable>
         <designable name="h6G-LC-Iev">
-            <size key="intrinsicContentSize" width="34.5" height="18.5"/>
+            <size key="intrinsicContentSize" width="74.5" height="18.5"/>
         </designable>
         <designable name="iXK-RK-n71">
-            <size key="intrinsicContentSize" width="38" height="18.5"/>
+            <size key="intrinsicContentSize" width="78" height="18.5"/>
         </designable>
         <designable name="uq7-Dh-r24">
-            <size key="intrinsicContentSize" width="202.5" height="18.5"/>
+            <size key="intrinsicContentSize" width="242.5" height="18.5"/>
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
