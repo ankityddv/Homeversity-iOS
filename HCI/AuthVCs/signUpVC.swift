@@ -29,6 +29,8 @@ class signUpVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setImageBackground()
+        
         //Set Up Heptic touch quick actions on home page
         let firstIcon = UIApplicationShortcutIcon(type: UIApplicationShortcutIcon.IconType.update)
                 let firstItem = UIApplicationShortcutItem(type: "jhcbjh", localizedTitle: "Room Clean", localizedSubtitle: nil, icon: firstIcon, userInfo: nil)
@@ -102,6 +104,20 @@ class signUpVC: UIViewController {
         self.view.endEditing(true)
         // when textfield rests
         //continueBttn.frame.origin.y = 587
+    }
+    
+    // Set Background Image
+    func setImageBackground(){
+        let background = UIImage(named: "BG")
+        
+        var imageView : UIImageView!
+        imageView = UIImageView(frame: view.bounds)
+        imageView.contentMode =  UIView.ContentMode.scaleAspectFill
+        imageView.clipsToBounds = true
+        imageView.image = background
+        imageView.center = view.center
+        view.addSubview(imageView)
+        self.view.sendSubviewToBack(imageView)
     }
         
         
