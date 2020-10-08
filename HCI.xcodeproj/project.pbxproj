@@ -25,15 +25,9 @@
 		BC464AC02518BA1500C9A1DF /* tncVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC464ABF2518BA1500C9A1DF /* tncVC.swift */; };
 		BC464AE72518CE4300C9A1DF /* FoundVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC464AE62518CE4300C9A1DF /* FoundVC.swift */; };
 		BC4D0733252726CF006B3FA4 /* GetStartedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4D0732252726CF006B3FA4 /* GetStartedVC.swift */; };
-		BC4D07542527355A006B3FA4 /* bluehlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = BC4D07532527355A006B3FA4 /* bluehlogo.png */; };
-		BC4D075E25273578006B3FA4 /* redhlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = BC4D075D25273578006B3FA4 /* redhlogo.png */; };
-		BC4D07642527362B006B3FA4 /* pridehlogo1.png in Resources */ = {isa = PBXBuildFile; fileRef = BC4D07632527362B006B3FA4 /* pridehlogo1.png */; };
 		BC51D3D424F0099F0076CA93 /* AddImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC51D3D324F0099F0076CA93 /* AddImageVC.swift */; };
 		BC537FC9251E525A00FCDA7E /* SetThemeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC537FC8251E525A00FCDA7E /* SetThemeTVC.swift */; };
 		BC537FD3251E56CD00FCDA7E /* LogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC537FD2251E56CD00FCDA7E /* LogInVC.swift */; };
-		BC55431F25189BF20018ADB7 /* neonlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = BC55431D25189BF10018ADB7 /* neonlogo.png */; };
-		BC55432025189BF20018ADB7 /* darklogo.png in Resources */ = {isa = PBXBuildFile; fileRef = BC55431E25189BF20018ADB7 /* darklogo.png */; };
-		BC55432A25189EBE0018ADB7 /* rainbowlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = BC55432925189EBD0018ADB7 /* rainbowlogo.png */; };
 		BC586E42251C7ADE009230A1 /* LnfVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC586E41251C7ADE009230A1 /* LnfVC.swift */; };
 		BC586E48251C7CCD009230A1 /* CleaningVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC586E47251C7CCD009230A1 /* CleaningVC.swift */; };
 		BC586E4E251C80BB009230A1 /* complainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC586E4D251C80BB009230A1 /* complainVC.swift */; };
@@ -49,10 +43,6 @@
 		BC7CB24424ED8B70007B5DB4 /* HCIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7CB24324ED8B70007B5DB4 /* HCIUITests.swift */; };
 		BC7F2E982528359000F33581 /* AppIconTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7F2E972528359000F33581 /* AppIconTableViewCell.swift */; };
 		BC7F2EBF25283FB200F33581 /* AppIconVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7F2EBE25283FB100F33581 /* AppIconVC.swift */; };
-		BC7F2ED1252849AC00F33581 /* pridehlogo2.png in Resources */ = {isa = PBXBuildFile; fileRef = BC7F2ED0252849AC00F33581 /* pridehlogo2.png */; };
-		BC7F2ED7252849B700F33581 /* pridehlogo3.png in Resources */ = {isa = PBXBuildFile; fileRef = BC7F2ED6252849B700F33581 /* pridehlogo3.png */; };
-		BC7F2EDD252849BE00F33581 /* pridehlogo4.png in Resources */ = {isa = PBXBuildFile; fileRef = BC7F2EDC252849BE00F33581 /* pridehlogo4.png */; };
-		BC7F2EE3252849C500F33581 /* pridehlogo5.png in Resources */ = {isa = PBXBuildFile; fileRef = BC7F2EE2252849C500F33581 /* pridehlogo5.png */; };
 		BCB658D12517E8DC00C7F36F /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB658D02517E8DC00C7F36F /* WidgetKit.framework */; };
 		BCB658D32517E8DC00C7F36F /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB658D22517E8DC00C7F36F /* SwiftUI.framework */; };
 		BCB658D62517E8DC00C7F36F /* WidgetModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB658D52517E8DC00C7F36F /* WidgetModule.swift */; };
@@ -62,6 +52,7 @@
 		BCB658DF2517E8E000C7F36F /* WidgetModuleExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BCB658CF2517E8DC00C7F36F /* WidgetModuleExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BCB658F22517EA9700C7F36F /* MyDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB658EC2517EA9200C7F36F /* MyDataProvider.swift */; };
 		BCBA923D251695A70040FE24 /* CouncellingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBA923C251695A70040FE24 /* CouncellingVC.swift */; };
+		BCD18102252F321200894EAC /* Alternate Icons in Resources */ = {isa = PBXBuildFile; fileRef = BCD18101252F321200894EAC /* Alternate Icons */; };
 		BCD2B615252664D800220EEE /* TopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCD2B614252664D800220EEE /* TopView.xib */; };
 		BCD2B61B252665B900220EEE /* BottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCD2B61A252665B900220EEE /* BottomView.xib */; };
 		BCD2B64225266A8500220EEE /* UnitBezier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD2B64125266A8500220EEE /* UnitBezier.swift */; };
@@ -136,15 +127,9 @@
 		BC464ABF2518BA1500C9A1DF /* tncVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tncVC.swift; sourceTree = "<group>"; };
 		BC464AE62518CE4300C9A1DF /* FoundVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundVC.swift; sourceTree = "<group>"; };
 		BC4D0732252726CF006B3FA4 /* GetStartedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedVC.swift; sourceTree = "<group>"; };
-		BC4D07532527355A006B3FA4 /* bluehlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bluehlogo.png; path = ../../../../Downloads/bluehlogo.png; sourceTree = "<group>"; };
-		BC4D075D25273578006B3FA4 /* redhlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = redhlogo.png; path = ../../../../Downloads/redhlogo.png; sourceTree = "<group>"; };
-		BC4D07632527362B006B3FA4 /* pridehlogo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pridehlogo1.png; path = ../../../../Downloads/pridehlogo1.png; sourceTree = "<group>"; };
 		BC51D3D324F0099F0076CA93 /* AddImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddImageVC.swift; sourceTree = "<group>"; };
 		BC537FC8251E525A00FCDA7E /* SetThemeTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetThemeTVC.swift; sourceTree = "<group>"; };
 		BC537FD2251E56CD00FCDA7E /* LogInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInVC.swift; sourceTree = "<group>"; };
-		BC55431D25189BF10018ADB7 /* neonlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = neonlogo.png; path = ../../../../Downloads/neonlogo.png; sourceTree = "<group>"; };
-		BC55431E25189BF20018ADB7 /* darklogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = darklogo.png; path = ../../../../Downloads/darklogo.png; sourceTree = "<group>"; };
-		BC55432925189EBD0018ADB7 /* rainbowlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rainbowlogo.png; path = ../../../../Downloads/rainbowlogo.png; sourceTree = "<group>"; };
 		BC586E41251C7ADE009230A1 /* LnfVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LnfVC.swift; sourceTree = "<group>"; };
 		BC586E47251C7CCD009230A1 /* CleaningVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleaningVC.swift; sourceTree = "<group>"; };
 		BC586E4D251C80BB009230A1 /* complainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = complainVC.swift; sourceTree = "<group>"; };
@@ -166,10 +151,6 @@
 		BC7CB24524ED8B70007B5DB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC7F2E972528359000F33581 /* AppIconTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconTableViewCell.swift; sourceTree = "<group>"; };
 		BC7F2EBE25283FB100F33581 /* AppIconVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconVC.swift; sourceTree = "<group>"; };
-		BC7F2ED0252849AC00F33581 /* pridehlogo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pridehlogo2.png; path = ../../../../Downloads/pridehlogo2.png; sourceTree = "<group>"; };
-		BC7F2ED6252849B700F33581 /* pridehlogo3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pridehlogo3.png; path = ../../../../Downloads/pridehlogo3.png; sourceTree = "<group>"; };
-		BC7F2EDC252849BE00F33581 /* pridehlogo4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pridehlogo4.png; path = ../../../../Downloads/pridehlogo4.png; sourceTree = "<group>"; };
-		BC7F2EE2252849C500F33581 /* pridehlogo5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pridehlogo5.png; path = ../../../../Downloads/pridehlogo5.png; sourceTree = "<group>"; };
 		BCB658CF2517E8DC00C7F36F /* WidgetModuleExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetModuleExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCB658D02517E8DC00C7F36F /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		BCB658D22517E8DC00C7F36F /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -179,6 +160,7 @@
 		BCB658DA2517E8E000C7F36F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCB658EC2517EA9200C7F36F /* MyDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDataProvider.swift; sourceTree = "<group>"; };
 		BCBA923C251695A70040FE24 /* CouncellingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouncellingVC.swift; sourceTree = "<group>"; };
+		BCD18101252F321200894EAC /* Alternate Icons */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; name = "Alternate Icons"; path = "HCI/Alternate Icons"; sourceTree = SOURCE_ROOT; };
 		BCD2B614252664D800220EEE /* TopView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopView.xib; sourceTree = "<group>"; };
 		BCD2B61A252665B900220EEE /* BottomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomView.xib; sourceTree = "<group>"; };
 		BCD2B64125266A8500220EEE /* UnitBezier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitBezier.swift; sourceTree = "<group>"; };
@@ -285,23 +267,6 @@
 			path = "Custom Files";
 			sourceTree = "<group>";
 		};
-		BC43241725161C400084D3D3 /* Alternate Icons */ = {
-			isa = PBXGroup;
-			children = (
-				BC55431D25189BF10018ADB7 /* neonlogo.png */,
-				BC55432925189EBD0018ADB7 /* rainbowlogo.png */,
-				BC55431E25189BF20018ADB7 /* darklogo.png */,
-				BC4D075D25273578006B3FA4 /* redhlogo.png */,
-				BC4D07532527355A006B3FA4 /* bluehlogo.png */,
-				BC4D07632527362B006B3FA4 /* pridehlogo1.png */,
-				BC7F2ED0252849AC00F33581 /* pridehlogo2.png */,
-				BC7F2ED6252849B700F33581 /* pridehlogo3.png */,
-				BC7F2EDC252849BE00F33581 /* pridehlogo4.png */,
-				BC7F2EE2252849C500F33581 /* pridehlogo5.png */,
-			);
-			path = "Alternate Icons";
-			sourceTree = "<group>";
-		};
 		BC43241E251621B80084D3D3 /* TabBarVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -401,9 +366,9 @@
 				BC423236251626EA00D05BF0 /* Custom Files */,
 				BC2FF4CA2525EBF200B18926 /* CustomTabBar */,
 				BC2FF4ED2525FA7B00B18926 /* Custom Fonts */,
-				BC43241725161C400084D3D3 /* Alternate Icons */,
 				BC1D7AC524ED9EE100D432B1 /* GoogleService-Info.plist */,
 				BC413F0825165246003AC8F9 /* giphy.gif */,
+				BCD18101252F321200894EAC /* Alternate Icons */,
 				BC413F0625165236003AC8F9 /* fire.gif */,
 				BC2FF4E82525FA2800B18926 /* Gotham Bold.otf */,
 				BC7CB22F24ED8B6F007B5DB4 /* Info.plist */,
@@ -596,25 +561,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC4D07642527362B006B3FA4 /* pridehlogo1.png in Resources */,
 				BCD2B615252664D800220EEE /* TopView.xib in Resources */,
-				BC7F2ED7252849B700F33581 /* pridehlogo3.png in Resources */,
 				BC7CB22E24ED8B6F007B5DB4 /* LaunchScreen.storyboard in Resources */,
-				BC7F2ED1252849AC00F33581 /* pridehlogo2.png in Resources */,
 				BCD2B61B252665B900220EEE /* BottomView.xib in Resources */,
 				BC2FF4EF2525FA8F00B18926 /* Gotham Bold.otf in Resources */,
-				BC4D07542527355A006B3FA4 /* bluehlogo.png in Resources */,
 				BC2FF4FF2525FC1000B18926 /* HomepageBaukasten-Book.otf in Resources */,
 				BC413F0925165246003AC8F9 /* giphy.gif in Resources */,
-				BC55432025189BF20018ADB7 /* darklogo.png in Resources */,
-				BC55432A25189EBE0018ADB7 /* rainbowlogo.png in Resources */,
-				BC55431F25189BF20018ADB7 /* neonlogo.png in Resources */,
-				BC4D075E25273578006B3FA4 /* redhlogo.png in Resources */,
-				BC7F2EDD252849BE00F33581 /* pridehlogo4.png in Resources */,
 				BC1D7AC624ED9EE100D432B1 /* GoogleService-Info.plist in Resources */,
-				BC7F2EE3252849C500F33581 /* pridehlogo5.png in Resources */,
 				BC7CB22B24ED8B6F007B5DB4 /* Assets.xcassets in Resources */,
 				BC7CB22924ED8B6F007B5DB4 /* Main.storyboard in Resources */,
+				BCD18102252F321200894EAC /* Alternate Icons in Resources */,
 				BC413F0725165236003AC8F9 /* fire.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
