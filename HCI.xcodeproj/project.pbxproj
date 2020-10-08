@@ -15,7 +15,6 @@
 		BC2FF4DC2525EC0800B18926 /* CBTabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2FF4D92525EC0800B18926 /* CBTabBarButton.swift */; };
 		BC2FF4DD2525EC0800B18926 /* BubbleTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2FF4DA2525EC0800B18926 /* BubbleTabBar.swift */; };
 		BC2FF4EF2525FA8F00B18926 /* Gotham Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC2FF4EE2525FA7B00B18926 /* Gotham Bold.otf */; };
-		BC2FF4FF2525FC1000B18926 /* HomepageBaukasten-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC2FF4FE2525FC0900B18926 /* HomepageBaukasten-Book.otf */; };
 		BC398C6C252F35400013D0A6 /* darklogo.png in Resources */ = {isa = PBXBuildFile; fileRef = BC398C62252F353F0013D0A6 /* darklogo.png */; };
 		BC398C6D252F35400013D0A6 /* pridehlogo2.png in Resources */ = {isa = PBXBuildFile; fileRef = BC398C63252F353F0013D0A6 /* pridehlogo2.png */; };
 		BC398C6E252F35400013D0A6 /* pridehlogo5.png in Resources */ = {isa = PBXBuildFile; fileRef = BC398C64252F353F0013D0A6 /* pridehlogo5.png */; };
@@ -27,8 +26,8 @@
 		BC398C74252F35400013D0A6 /* pridehlogo3.png in Resources */ = {isa = PBXBuildFile; fileRef = BC398C6A252F35400013D0A6 /* pridehlogo3.png */; };
 		BC398C75252F35400013D0A6 /* neonlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = BC398C6B252F35400013D0A6 /* neonlogo.png */; };
 		BC398C85252F3CAD0013D0A6 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC398C84252F3CAD0013D0A6 /* ShadowView.swift */; };
-		BC413F0725165236003AC8F9 /* fire.gif in Resources */ = {isa = PBXBuildFile; fileRef = BC413F0625165236003AC8F9 /* fire.gif */; };
-		BC413F0925165246003AC8F9 /* giphy.gif in Resources */ = {isa = PBXBuildFile; fileRef = BC413F0825165246003AC8F9 /* giphy.gif */; };
+		BC3FF4F4252F60500033D2F3 /* fire.gif in Resources */ = {isa = PBXBuildFile; fileRef = BC3FF4F3252F604E0033D2F3 /* fire.gif */; };
+		BC3FF4FA252F60560033D2F3 /* giphy.gif in Resources */ = {isa = PBXBuildFile; fileRef = BC3FF4F9252F60560033D2F3 /* giphy.gif */; };
 		BC432414251614770084D3D3 /* AppIconService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC432413251614770084D3D3 /* AppIconService.swift */; };
 		BC4401CD250BCFAD00DD34E6 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4401CC250BCFAD00DD34E6 /* CustomTextField.swift */; };
 		BC44AD4E250BCE7700475867 /* CustomLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44AD4D250BCE7700475867 /* CustomLoader.swift */; };
@@ -125,9 +124,7 @@
 		BC2FF4D82525EC0800B18926 /* CBFlashyTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBFlashyTabBarController.h; path = CustomTabBar/CBFlashyTabBarController.h; sourceTree = SOURCE_ROOT; };
 		BC2FF4D92525EC0800B18926 /* CBTabBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CBTabBarButton.swift; path = CustomTabBar/CBTabBarButton.swift; sourceTree = SOURCE_ROOT; };
 		BC2FF4DA2525EC0800B18926 /* BubbleTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BubbleTabBar.swift; path = CustomTabBar/BubbleTabBar.swift; sourceTree = SOURCE_ROOT; };
-		BC2FF4E82525FA2800B18926 /* Gotham Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham Bold.otf"; path = "../../../Downloads/Gotham Bold/Gotham Bold.otf"; sourceTree = "<group>"; };
 		BC2FF4EE2525FA7B00B18926 /* Gotham Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham Bold.otf"; sourceTree = "<group>"; };
-		BC2FF4FE2525FC0900B18926 /* HomepageBaukasten-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "HomepageBaukasten-Book.otf"; path = "../../../../Downloads/HomepageBaukasten/BOOK/HomepageBaukasten-Book.otf"; sourceTree = "<group>"; };
 		BC398C62252F353F0013D0A6 /* darklogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = darklogo.png; sourceTree = "<group>"; };
 		BC398C63252F353F0013D0A6 /* pridehlogo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pridehlogo2.png; sourceTree = "<group>"; };
 		BC398C64252F353F0013D0A6 /* pridehlogo5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pridehlogo5.png; sourceTree = "<group>"; };
@@ -139,8 +136,8 @@
 		BC398C6A252F35400013D0A6 /* pridehlogo3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pridehlogo3.png; sourceTree = "<group>"; };
 		BC398C6B252F35400013D0A6 /* neonlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = neonlogo.png; sourceTree = "<group>"; };
 		BC398C84252F3CAD0013D0A6 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
-		BC413F0625165236003AC8F9 /* fire.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = fire.gif; path = ../../../Downloads/fire.gif; sourceTree = "<group>"; };
-		BC413F0825165246003AC8F9 /* giphy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = giphy.gif; path = ../../../Downloads/giphy.gif; sourceTree = "<group>"; };
+		BC3FF4F3252F604E0033D2F3 /* fire.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = fire.gif; path = GIF/fire.gif; sourceTree = SOURCE_ROOT; };
+		BC3FF4F9252F60560033D2F3 /* giphy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = giphy.gif; path = GIF/giphy.gif; sourceTree = SOURCE_ROOT; };
 		BC432413251614770084D3D3 /* AppIconService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconService.swift; sourceTree = "<group>"; };
 		BC4401CC250BCFAD00DD34E6 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		BC44AD4D250BCE7700475867 /* CustomLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoader.swift; sourceTree = "<group>"; };
@@ -271,7 +268,6 @@
 			isa = PBXGroup;
 			children = (
 				BC2FF4EE2525FA7B00B18926 /* Gotham Bold.otf */,
-				BC2FF4FE2525FC0900B18926 /* HomepageBaukasten-Book.otf */,
 			);
 			path = "Custom Fonts";
 			sourceTree = "<group>";
@@ -293,14 +289,67 @@
 			path = Icons;
 			sourceTree = "<group>";
 		};
-		BC423236251626EA00D05BF0 /* Custom Files */ = {
+		BC3FF4C2252F5EA90033D2F3 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BC4D0732252726CF006B3FA4 /* GetStartedVC.swift */,
+				BCA1827D251E61DB0099A560 /* AuthVCs */,
+				BC43241E251621B80084D3D3 /* TabBarVC */,
+				BC537FBE251E51FC00FCDA7E /* SubVCs */,
+				BC586E53251C828B009230A1 /* ComplainRegisteredVC.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		BC3FF4CF252F5ED00033D2F3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BC7CB22724ED8B6F007B5DB4 /* Main.storyboard */,
+				BC7CB22C24ED8B6F007B5DB4 /* LaunchScreen.storyboard */,
+				BCD2B614252664D800220EEE /* TopView.xib */,
+				BCD2B61A252665B900220EEE /* BottomView.xib */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		BC3FF4D4252F5F330033D2F3 /* Custom Loader */ = {
 			isa = PBXGroup;
 			children = (
 				BC44AD4D250BCE7700475867 /* CustomLoader.swift */,
+				BC44AD4F250BCEEE00475867 /* UIImage+Gif.swift */,
+			);
+			path = "Custom Loader";
+			sourceTree = "<group>";
+		};
+		BC3FF4E1252F5F6C0033D2F3 /* Custom Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC3FF4EE252F60280033D2F3 /* Custom GIFs */,
+				BCD2B64025266A6E00220EEE /* CustomFluidCard */,
+				BC423236251626EA00D05BF0 /* Custom Files */,
+				BC2FF4CA2525EBF200B18926 /* CustomTabBar */,
+				BC2FF4ED2525FA7B00B18926 /* Custom Fonts */,
+				BC398C7A252F354B0013D0A6 /* Icons */,
+			);
+			path = "Custom Files";
+			sourceTree = "<group>";
+		};
+		BC3FF4EE252F60280033D2F3 /* Custom GIFs */ = {
+			isa = PBXGroup;
+			children = (
+				BC3FF4F9252F60560033D2F3 /* giphy.gif */,
+				BC3FF4F3252F604E0033D2F3 /* fire.gif */,
+			);
+			path = "Custom GIFs";
+			sourceTree = "<group>";
+		};
+		BC423236251626EA00D05BF0 /* Custom Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC432413251614770084D3D3 /* AppIconService.swift */,
 				BC4401CC250BCFAD00DD34E6 /* CustomTextField.swift */,
 				BC398C84252F3CAD0013D0A6 /* ShadowView.swift */,
-				BC432413251614770084D3D3 /* AppIconService.swift */,
-				BC44AD4F250BCEEE00475867 /* UIImage+Gif.swift */,
+				BC3FF4D4252F5F330033D2F3 /* Custom Loader */,
 			);
 			path = "Custom Files";
 			sourceTree = "<group>";
@@ -390,25 +439,11 @@
 			children = (
 				BC7CB22124ED8B6F007B5DB4 /* AppDelegate.swift */,
 				BC7CB22324ED8B6F007B5DB4 /* SceneDelegate.swift */,
-				BCA1827D251E61DB0099A560 /* AuthVCs */,
-				BC7CB22724ED8B6F007B5DB4 /* Main.storyboard */,
-				BC4D0732252726CF006B3FA4 /* GetStartedVC.swift */,
-				BC586E53251C828B009230A1 /* ComplainRegisteredVC.swift */,
-				BCD2B614252664D800220EEE /* TopView.xib */,
-				BCD2B61A252665B900220EEE /* BottomView.xib */,
-				BCD2B64025266A6E00220EEE /* CustomFluidCard */,
-				BC43241E251621B80084D3D3 /* TabBarVC */,
-				BC537FBE251E51FC00FCDA7E /* SubVCs */,
+				BC3FF4C2252F5EA90033D2F3 /* View Controllers */,
+				BC3FF4CF252F5ED00033D2F3 /* Storyboards */,
+				BC3FF4E1252F5F6C0033D2F3 /* Custom Files */,
 				BC7CB22A24ED8B6F007B5DB4 /* Assets.xcassets */,
-				BC7CB22C24ED8B6F007B5DB4 /* LaunchScreen.storyboard */,
-				BC423236251626EA00D05BF0 /* Custom Files */,
-				BC2FF4CA2525EBF200B18926 /* CustomTabBar */,
-				BC2FF4ED2525FA7B00B18926 /* Custom Fonts */,
 				BC1D7AC524ED9EE100D432B1 /* GoogleService-Info.plist */,
-				BC398C7A252F354B0013D0A6 /* Icons */,
-				BC413F0825165246003AC8F9 /* giphy.gif */,
-				BC413F0625165236003AC8F9 /* fire.gif */,
-				BC2FF4E82525FA2800B18926 /* Gotham Bold.otf */,
 				BC7CB22F24ED8B6F007B5DB4 /* Info.plist */,
 			);
 			path = HCI;
@@ -601,6 +636,7 @@
 			files = (
 				BC398C6C252F35400013D0A6 /* darklogo.png in Resources */,
 				BCD2B615252664D800220EEE /* TopView.xib in Resources */,
+				BC3FF4F4252F60500033D2F3 /* fire.gif in Resources */,
 				BC398C70252F35400013D0A6 /* pridehlogo4.png in Resources */,
 				BC398C71252F35400013D0A6 /* redhlogo.png in Resources */,
 				BC398C75252F35400013D0A6 /* neonlogo.png in Resources */,
@@ -608,17 +644,15 @@
 				BC398C73252F35400013D0A6 /* bluehlogo.png in Resources */,
 				BCD2B61B252665B900220EEE /* BottomView.xib in Resources */,
 				BC2FF4EF2525FA8F00B18926 /* Gotham Bold.otf in Resources */,
+				BC3FF4FA252F60560033D2F3 /* giphy.gif in Resources */,
 				BC398C6D252F35400013D0A6 /* pridehlogo2.png in Resources */,
 				BC398C6E252F35400013D0A6 /* pridehlogo5.png in Resources */,
-				BC2FF4FF2525FC1000B18926 /* HomepageBaukasten-Book.otf in Resources */,
-				BC413F0925165246003AC8F9 /* giphy.gif in Resources */,
 				BC398C74252F35400013D0A6 /* pridehlogo3.png in Resources */,
 				BC398C6F252F35400013D0A6 /* rainbowlogo.png in Resources */,
 				BC1D7AC624ED9EE100D432B1 /* GoogleService-Info.plist in Resources */,
 				BC398C72252F35400013D0A6 /* pridehlogo1.png in Resources */,
 				BC7CB22B24ED8B6F007B5DB4 /* Assets.xcassets in Resources */,
 				BC7CB22924ED8B6F007B5DB4 /* Main.storyboard in Resources */,
-				BC413F0725165236003AC8F9 /* fire.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
