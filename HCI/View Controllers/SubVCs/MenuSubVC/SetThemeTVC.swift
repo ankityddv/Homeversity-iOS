@@ -13,10 +13,28 @@ class SetThemeTVC: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
+    
 
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 0 {
+            // change theme programatically 
+            UIApplication.shared.windows.forEach { window in
+                window.overrideUserInterfaceStyle = .unspecified
+            }
+        }
+        if indexPath.row == 1 {
+            UIApplication.shared.windows.forEach { window in
+                window.overrideUserInterfaceStyle = .light
+            }
+        }
+        else if indexPath.row == 2 {
+            UIApplication.shared.windows.forEach { window in
+                window.overrideUserInterfaceStyle = .dark
+            }
+        }
         myTableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
     }
     

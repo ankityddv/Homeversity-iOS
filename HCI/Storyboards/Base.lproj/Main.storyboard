@@ -992,7 +992,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                             </tableViewSection>
                             <tableViewSection headerTitle="GENERAL" id="yzE-wg-tki">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="En1-E4-xTX" style="IBUITableViewCellStyleDefault" id="7xR-MV-6qT">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="En1-E4-xTX" imageView="Ji3-XX-cet" style="IBUITableViewCellStyleDefault" id="7xR-MV-6qT">
                                         <rect key="frame" x="20" y="178.5" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7xR-MV-6qT" id="IH2-1C-76g">
@@ -1000,19 +1000,23 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="App Icons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="En1-E4-xTX">
-                                                    <rect key="frame" x="20" y="0.0" width="315" height="43.5"/>
+                                                    <rect key="frame" x="49" y="0.0" width="286" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="dashboard" id="Ji3-XX-cet">
+                                                    <rect key="frame" x="20" y="15" width="14" height="13"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="81J-HP-2aq" kind="show" id="nqw-3j-w82"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="PA8-wx-0vd" style="IBUITableViewCellStyleDefault" id="1zO-yk-tjm">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="PA8-wx-0vd" imageView="Ooy-3R-Xgq" style="IBUITableViewCellStyleDefault" id="1zO-yk-tjm">
                                         <rect key="frame" x="20" y="222" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1zO-yk-tjm" id="PRw-Ke-lDr">
@@ -1020,12 +1024,16 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Appearance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PA8-wx-0vd">
-                                                    <rect key="frame" x="20" y="0.0" width="315" height="43.5"/>
+                                                    <rect key="frame" x="55" y="0.0" width="280" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="clock" id="Ooy-3R-Xgq">
+                                                    <rect key="frame" x="20" y="12" width="20" height="19"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
@@ -1694,7 +1702,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
     </scenes>
     <designables>
         <designable name="1F4-U0-DcD">
-            <size key="intrinsicContentSize" width="57" height="26"/>
+            <size key="intrinsicContentSize" width="62" height="24"/>
         </designable>
         <designable name="1g5-Do-im0">
             <size key="intrinsicContentSize" width="295" height="115"/>
@@ -1715,7 +1723,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <size key="intrinsicContentSize" width="73" height="34"/>
         </designable>
         <designable name="Ip2-Ap-IsL">
-            <size key="intrinsicContentSize" width="62" height="26"/>
+            <size key="intrinsicContentSize" width="67" height="24"/>
         </designable>
         <designable name="JdJ-Cp-ik1">
             <size key="intrinsicContentSize" width="64" height="34"/>
@@ -1742,7 +1750,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <size key="intrinsicContentSize" width="242.5" height="18.5"/>
         </designable>
         <designable name="uzx-ld-adT">
-            <size key="intrinsicContentSize" width="123" height="26"/>
+            <size key="intrinsicContentSize" width="135" height="24"/>
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
