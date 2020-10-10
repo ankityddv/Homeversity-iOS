@@ -68,6 +68,8 @@ class LogInVC: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardwilchange(notification:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
         
         //continueBttn.layer.cornerRadius = 13
+        
+            
     }
     
     func startloader(){

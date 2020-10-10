@@ -14,6 +14,8 @@ class SetThemeTVC: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
     }
     
 
@@ -24,6 +26,7 @@ class SetThemeTVC: UITableViewController {
             UIApplication.shared.windows.forEach { window in
                 window.overrideUserInterfaceStyle = .unspecified
             }
+            let defaults = UserDefaults.standard
         }
         if indexPath.row == 1 {
             UIApplication.shared.windows.forEach { window in
