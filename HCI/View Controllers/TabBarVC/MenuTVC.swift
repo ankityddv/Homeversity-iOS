@@ -47,12 +47,14 @@ class MenuTVC: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        // MARK: - General Settings (SECTION 1)
+        
         if indexPath.section == 1 && indexPath.row == 0 {
             let appIconsVC =  self.storyboard!.instantiateViewController(withIdentifier: "appicons") as! AppIconVC
             self.present(appIconsVC, animated: true, completion: nil)
         }
         
-        //Reach Us Section
+        // MARK: - Reach Us (SECTION 2)
         if indexPath.section == 2 && indexPath.row == 0 {
             showMailComposer()
         }
@@ -69,8 +71,26 @@ class MenuTVC: UITableViewController {
                 application.open(webURL as URL)
             }
         }
-        // Sign Out Section
+        
+        // MARK: - App settings (SECTION 4)
+        else if indexPath.section == 4 && indexPath.row == 0{
+            let EditProfileVC =  self.storyboard!.instantiateViewController(withIdentifier: "EditProfileVC") as! EditProfileVC
+            self.present(EditProfileVC, animated: true, completion: nil)
+        }
+        
+        else if indexPath.section == 4 && indexPath.row == 1{
+            let resetVC =  self.storyboard!.instantiateViewController(withIdentifier: "ResetVC") as! ResetVC
+            self.present(resetVC, animated: true, completion: nil)
+        }
+        
+        // MARK: - Reset pssword (SECTION 5)
         else if indexPath.section == 5 && indexPath.row == 0{
+            let BookAppointmentVC =  self.storyboard!.instantiateViewController(withIdentifier: "BookAppointmentVC") as! BookAppointmentVC
+            self.present(BookAppointmentVC, animated: true, completion: nil)
+        }
+        
+        // MARK: - Sign Out (SECTION 6)
+        else if indexPath.section == 6 && indexPath.row == 0{
             
             if Auth.auth().currentUser != nil {
                 do {
@@ -83,11 +103,7 @@ class MenuTVC: UITableViewController {
                 }
             }
         }
-        // reset pssword
-        else if indexPath.section == 4 && indexPath.row == 0{
-            let resetVC =  self.storyboard!.instantiateViewController(withIdentifier: "ResetVC") as! ResetVC
-            self.present(resetVC, animated: true, completion: nil)
-        }
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {

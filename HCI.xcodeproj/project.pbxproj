@@ -76,6 +76,7 @@
 		BCD2B65825266ABA00220EEE /* FluidCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD2B65725266ABA00220EEE /* FluidCardView.swift */; };
 		BCD2B65E25266AC800220EEE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD2B65D25266AC800220EEE /* Extensions.swift */; };
 		BCE08571250BD7480035D2F7 /* CongratsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE08570250BD7480035D2F7 /* CongratsVC.swift */; };
+		BCF16ED225323638000A9939 /* EditProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF16ED125323638000A9939 /* EditProfileVC.swift */; };
 		D8497E72681341F41F8B17A9 /* Pods_HCI_HCIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49F74D2A192C8596AA8998FF /* Pods_HCI_HCIUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -199,6 +200,7 @@
 		BCD2B65725266ABA00220EEE /* FluidCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FluidCardView.swift; sourceTree = "<group>"; };
 		BCD2B65D25266AC800220EEE /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		BCE08570250BD7480035D2F7 /* CongratsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratsVC.swift; sourceTree = "<group>"; };
+		BCF16ED125323638000A9939 /* EditProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileVC.swift; sourceTree = "<group>"; };
 		BD9405541C58F571F7D6EB8D /* Pods_HCITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HCITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C19D882A7BD69DF80F2A1B6C /* Pods-HCITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HCITests.release.xcconfig"; path = "Target Support Files/Pods-HCITests/Pods-HCITests.release.xcconfig"; sourceTree = "<group>"; };
 		E961C51BD37AB39441E40E56 /* Pods-HCITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HCITests.debug.xcconfig"; path = "Target Support Files/Pods-HCITests/Pods-HCITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -387,11 +389,12 @@
 		BC464AC52518C1ED00C9A1DF /* MenuSubVC */ = {
 			isa = PBXGroup;
 			children = (
-				BC58A25C252F9405006C46D0 /* UserTVC.swift */,
-				BC1A9DB42531FF1500368447 /* ResetVC.swift */,
-				BC537FC8251E525A00FCDA7E /* SetThemeTVC.swift */,
 				BC7F2EBE25283FB100F33581 /* AppIconVC.swift */,
 				BC7F2E972528359000F33581 /* AppIconTableViewCell.swift */,
+				BC537FC8251E525A00FCDA7E /* SetThemeTVC.swift */,
+				BC1A9DB42531FF1500368447 /* ResetVC.swift */,
+				BCF16ED125323638000A9939 /* EditProfileVC.swift */,
+				BC58A25C252F9405006C46D0 /* UserTVC.swift */,
 			);
 			path = MenuSubVC;
 			sourceTree = "<group>";
@@ -830,6 +833,7 @@
 				BC58A25D252F9405006C46D0 /* UserTVC.swift in Sources */,
 				BCBA923D251695A70040FE24 /* HomeVC.swift in Sources */,
 				BC7F2EBF25283FB200F33581 /* AppIconVC.swift in Sources */,
+				BCF16ED225323638000A9939 /* EditProfileVC.swift in Sources */,
 				BC7CB22224ED8B6F007B5DB4 /* AppDelegate.swift in Sources */,
 				BC184B89251E4DF200B93D3F /* MenuTVC.swift in Sources */,
 				BC432414251614770084D3D3 /* AppIconService.swift in Sources */,

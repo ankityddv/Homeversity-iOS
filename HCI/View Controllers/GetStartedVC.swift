@@ -18,25 +18,6 @@ class ColoredController: UIViewController {
         }
     }
     
-    var handle: AuthStateDidChangeListenerHandle?
-
-      override func viewWillAppear(_ animated: Bool) {
-        handle = Auth.auth().addStateDidChangeListener({ (auth, user) in
-            if Auth.auth().currentUser != nil{
-          // go to main screen
-          let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Home")
-          self.present(vc, animated: true, completion: nil)
-          }else{
-
-          // go to login screen
-          let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SignUpVC")
-            self.present(vc, animated: true, completion: nil)
-         }
-
-        })
-
-      }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = viewColor

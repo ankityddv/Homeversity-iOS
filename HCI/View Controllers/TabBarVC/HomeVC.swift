@@ -6,21 +6,48 @@
 //
 
 import UIKit
+import FirebaseDatabase
 import FirebaseAuth
+import FirebaseStorage
 
 class HomeVC: UIViewController {
     
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var fluidCard: FluidCardView!
+    @IBOutlet weak var nameLabel: UILabel!
     
-    @IBAction func bookAppointmentBttnTapped(_ sender: Any) {
-        let BookAppointmentVC =  self.storyboard!.instantiateViewController(withIdentifier: "BookAppointmentVC") as! BookAppointmentVC
-        self.present(BookAppointmentVC, animated: true, completion: nil)
+    func fetchName(){
+        let userID = Auth.auth().currentUser?.uid
+        let ref = Database.database().reference()
+        ref.child("USER").child(userID ?? "0").observeSingleEvent(of: .value, with: { (snapshot) in
+            // Get user value
+            let value = snapshot.value as? NSDictionary
+            let username = value?["Name"] as? String ?? ""
+            self.nameLabel.text = "Hi \(username)!"
+        }) { (error) in
+            print(error.localizedDescription)
+        }
     }
-    
+    func fetchProfileImage(){
+        //retrive image
+        guard let uid = Auth.auth().currentUser?.uid else { return }
+        let storageRef = Storage.storage().reference().child("user/profile_images")
+        let imageRef = storageRef.child("\(uid).png")
+        imageRef.getData(maxSize: 1*1000*1000) { (data,error) in
+            if error == nil{
+                print(data ?? Data.self)
+                self.profileImage.image = UIImage(data: data!)
+            }
+            else{
+                print(error?.localizedDescription ?? error as Any)
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        fetchName()
+        fetchProfileImage()
         profileImage.layer.cornerRadius = 45
         // To hide the top line
         self.tabBarController?.tabBar.shadowImage = UIImage()
