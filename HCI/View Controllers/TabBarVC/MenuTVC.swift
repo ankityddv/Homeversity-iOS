@@ -64,18 +64,22 @@ class MenuTVC: UITableViewController {
             }
         }
         // Sign Out Section
-        else if indexPath.section == 4 && indexPath.row == 0{
+        else if indexPath.section == 5 && indexPath.row == 0{
             
             if Auth.auth().currentUser != nil {
                 do {
                     try Auth.auth().signOut()
                     let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "signUp")
                     present(vc, animated: true, completion: nil)
-                    
+                    //UserDefaults.standard.setValue(false, forKey: "isloggedIn")
                 } catch let error as NSError {
                     print(error.localizedDescription)
                 }
             }
+        }
+        // reset pssword
+        else if indexPath.section == 4 && indexPath.row == 0{
+            
         }
     }
     

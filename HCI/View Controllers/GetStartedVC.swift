@@ -10,6 +10,7 @@ import UIKit
 import liquid_swipe
 import Firebase
 
+
 class ColoredController: UIViewController {
     var viewColor: UIColor = .white {
         didSet {
@@ -35,7 +36,6 @@ class ColoredController: UIViewController {
         })
 
       }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

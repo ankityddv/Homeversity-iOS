@@ -24,12 +24,23 @@ class LogInVC: UIViewController {
         generator.notificationOccurred(.success)
     }
     
+    @IBAction func forgotPasswordTapped(_ sender: Any) {
+        let resetVC =  self.storyboard!.instantiateViewController(withIdentifier: "ResetVC") as! ResetVC
+        self.present(resetVC, animated: true, completion: nil)
+    }
+    
+    @IBAction func signUpTapped(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    
+    
     func loginUser() {
         let email = emailField.text!
         let password = passwordField.text!
             
         if email.count == 0 && password.count == 0 {
-            //Alert to tell the user that there was an error because they didn't fill anything in the textfields because they didn't fill anything in
+            //Alert to tell the user that there was an error because they didn't fill anything in the textfields because they didn't fill anything in.
             
             // create the alert
             let alert = UIAlertController(title: "Invalid!!!", message: "Please enter the email and password!", preferredStyle: UIAlertController.Style.alert)
@@ -44,7 +55,13 @@ class LogInVC: UIViewController {
         {
             Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
                 if error == nil{
+                    
+                    //MARK:-
                     self.performSegue(withIdentifier: "logIn", sender: nil)
+                    /*
+                    let homeVC = self.storyboard?.instantiateViewController(identifier: "Home") as! HomeVC
+                    self.navigationController?.pushViewController(homeVC, animated: true)
+                    */
                 }
                 else{
                     let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
@@ -67,9 +84,7 @@ class LogInVC: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardwilchange(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardwilchange(notification:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
         
-        //continueBttn.layer.cornerRadius = 13
-        
-            
+        //MARK:-
     }
     
     func startloader(){
@@ -108,3 +123,8 @@ class LogInVC: UIViewController {
     }
     
 }
+
+/*
+ 
+ 
+ */

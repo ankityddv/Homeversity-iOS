@@ -161,7 +161,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="I3r-5I-Vw0" kind="show" id="pTG-Ru-OSb"/>
+                                            <segue destination="I3r-5I-Vw0" kind="show" id="xhy-x0-EFZ"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign up to continue." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfT-KE-bXp">
@@ -329,6 +329,9 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                         <state key="normal" title="Sign Up"/>
+                                        <connections>
+                                            <action selector="signUpTapped:" destination="I3r-5I-Vw0" eventType="touchUpInside" id="DH5-hw-zKa"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Log in to continue." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKQ-IH-W7l">
                                         <rect key="frame" x="106" y="28" width="130" height="18"/>
@@ -343,6 +346,9 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                         <state key="normal" title="Forgot password?">
                                             <color key="titleColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="forgotPasswordTapped:" destination="I3r-5I-Vw0" eventType="touchUpInside" id="cBo-97-2IK"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -396,7 +402,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FF0-ni-v4q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1618.840579710145" y="870.53571428571422"/>
+            <point key="canvasLocation" x="1651" y="816"/>
         </scene>
         <!--Update InfoVC-->
         <scene sceneID="rRF-c8-55S">
@@ -624,7 +630,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PLG-dF-ROV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5980" y="-537"/>
+            <point key="canvasLocation" x="6889.8550724637689" y="-537.05357142857144"/>
         </scene>
         <!--Lost-->
         <scene sceneID="rMf-uE-ZIf">
@@ -673,7 +679,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3tn-VJ-MXK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8331.8840579710159" y="-1083.4821428571429"/>
+            <point key="canvasLocation" x="9242.0289855072479" y="-1083.4821428571429"/>
         </scene>
         <!--Found-->
         <scene sceneID="cIG-W7-52e">
@@ -753,7 +759,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zfw-Xk-AvU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8332" y="-431"/>
+            <point key="canvasLocation" x="9242.0289855072479" y="-431.25"/>
         </scene>
         <!--Complain RegisteredVC-->
         <scene sceneID="E1x-8Z-phe">
@@ -798,7 +804,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         <!--Home-->
         <scene sceneID="vcc-id-74Q">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Qz5-8b-Rj6" customClass="HomeVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Home" modalPresentationStyle="fullScreen" id="Qz5-8b-Rj6" customClass="HomeVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U2U-18-pIG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -868,7 +874,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4zM-nr-obx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5979.7101449275369" y="-1234.1517857142856"/>
+            <point key="canvasLocation" x="6889.8550724637689" y="-1234.1517857142856"/>
         </scene>
         <!--Book AppointmentVC-->
         <scene sceneID="I8A-QB-w0Y">
@@ -894,7 +900,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NmA-Xe-uIn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6780" y="-1234"/>
+            <point key="canvasLocation" x="7689.8550724637689" y="-1234.1517857142856"/>
         </scene>
         <!--App Icons-->
         <scene sceneID="IUl-Av-dWS">
@@ -952,6 +958,62 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EGX-fp-qkG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="7691" y="1538"/>
+        </scene>
+        <!--ResetVC-->
+        <scene sceneID="Ulr-1p-SZF">
+            <objects>
+                <viewController storyboardIdentifier="ResetVC" id="6lZ-oW-IyY" customClass="ResetVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2gI-Hd-Wgg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SUO-c7-DWS" customClass="RoundBttn" customModule="TDCRoundButton">
+                                <rect key="frame" x="20" y="259" width="374" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="bttn_grad1"/>
+                                <state key="normal" title="Reset Password">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="13"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="resetpasswordBttn:" destination="6lZ-oW-IyY" eventType="touchUpInside" id="LvU-4F-d3P"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uWk-wR-U3v" customClass="CustomTextField" customModule="HCI" customModuleProvider="target">
+                                <rect key="frame" x="20" y="179" width="374" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="whiteTextFieldColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRad">
+                                        <real key="value" value="13"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reset Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hY2-uP-jcU">
+                                <rect key="frame" x="20" y="68" width="232" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Qc0-8l-m61"/>
+                        <color key="backgroundColor" name="gray_bg_color"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dmz-FE-cqm"/>
+                    <connections>
+                        <outlet property="emailField" destination="uWk-wR-U3v" id="Gwf-3b-Tgw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="get-6u-Qvu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4907.2463768115949" y="1736.3839285714284"/>
         </scene>
         <!--Menu-->
         <scene sceneID="HNK-iG-TjG">
@@ -1130,10 +1192,34 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection headerTitle="App settings" id="vu6-l1-bdC">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="Y3Q-Sa-RYu" style="IBUITableViewCellStyleDefault" id="p3V-wq-CqM">
+                                        <rect key="frame" x="20" y="591.5" width="374" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="p3V-wq-CqM" id="dST-NG-pd9">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Reset password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Y3Q-Sa-RYu">
+                                                    <rect key="frame" x="20" y="0.0" width="334" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="6lZ-oW-IyY" kind="show" id="3bT-SG-3i9"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                             <tableViewSection headerTitle="" footerTitle="Homeversity - Version 1.0.0" id="9EK-VM-Dtk">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="KoB-Qa-Sk4" style="IBUITableViewCellStyleDefault" id="K3b-be-rg5">
-                                        <rect key="frame" x="20" y="583" width="374" height="43.5"/>
+                                        <rect key="frame" x="20" y="682.5" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="K3b-be-rg5" id="wkU-m1-Kxh">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
@@ -1338,7 +1424,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YOB-5p-4Hi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5938" y="871"/>
+            <point key="canvasLocation" x="7757.971014492754" y="870.53571428571422"/>
         </scene>
         <!--Complaint-->
         <scene sceneID="fM5-6P-r4Z">
@@ -1434,7 +1520,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         <!--Bubble Tab Bar Controller-->
         <scene sceneID="92O-fK-Zrs">
             <objects>
-                <tabBarController storyboardIdentifier="Home" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="fTq-Sl-GaG" customClass="BubbleTabBarController" customModule="HCI" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tab_bar" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="fTq-Sl-GaG" customClass="BubbleTabBarController" customModule="HCI" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="sDh-xT-aFC"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="3eo-he-9Fx">
@@ -1465,10 +1551,14 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                         <viewLayoutGuide key="safeArea" id="yMg-cb-d5d"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="anE-Ws-H6c"/>
+                    <connections>
+                        <segue destination="ykB-dN-0MR" kind="show" identifier="test" id="13Q-iF-2km"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kg0-g5-wRc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2433" y="-693"/>
+            <point key="canvasLocation" x="-1523.1884057971015" y="-693.08035714285711"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="pdQ-gs-Am6">
@@ -1539,7 +1629,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RQd-hf-4zO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-807" y="-693"/>
+            <point key="canvasLocation" x="102.89855072463769" y="-693.08035714285711"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Axg-Cb-PbF">
@@ -1620,7 +1710,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xBu-Pc-I27" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-36.231884057971016" y="-693.08035714285711"/>
+            <point key="canvasLocation" x="873.91304347826099" y="-693.08035714285711"/>
         </scene>
         <!--Terms-->
         <scene sceneID="RkG-wB-CsH">
@@ -1709,12 +1799,12 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HUJ-16-T6I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1590" y="-693"/>
+            <point key="canvasLocation" x="-681.15942028985512" y="-693.08035714285711"/>
         </scene>
     </scenes>
     <designables>
         <designable name="1F4-U0-DcD">
-            <size key="intrinsicContentSize" width="62" height="24"/>
+            <size key="intrinsicContentSize" width="57" height="26"/>
         </designable>
         <designable name="1g5-Do-im0">
             <size key="intrinsicContentSize" width="295" height="115"/>
@@ -1735,7 +1825,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <size key="intrinsicContentSize" width="73" height="34"/>
         </designable>
         <designable name="Ip2-Ap-IsL">
-            <size key="intrinsicContentSize" width="67" height="24"/>
+            <size key="intrinsicContentSize" width="62" height="26"/>
         </designable>
         <designable name="JdJ-Cp-ik1">
             <size key="intrinsicContentSize" width="64" height="34"/>
@@ -1749,6 +1839,9 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         <designable name="Oj1-vv-TcY">
             <size key="intrinsicContentSize" width="102.5" height="17"/>
         </designable>
+        <designable name="SUO-c7-DWS">
+            <size key="intrinsicContentSize" width="109" height="30"/>
+        </designable>
         <designable name="TcI-FV-45h">
             <size key="intrinsicContentSize" width="73" height="34"/>
         </designable>
@@ -1758,17 +1851,20 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         <designable name="iXK-RK-n71">
             <size key="intrinsicContentSize" width="78" height="18.5"/>
         </designable>
+        <designable name="uWk-wR-U3v">
+            <size key="intrinsicContentSize" width="74.5" height="18.5"/>
+        </designable>
         <designable name="uq7-Dh-r24">
             <size key="intrinsicContentSize" width="242.5" height="18.5"/>
         </designable>
         <designable name="uzx-ld-adT">
-            <size key="intrinsicContentSize" width="135" height="24"/>
+            <size key="intrinsicContentSize" width="123" height="26"/>
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
         <segue reference="3s1-dW-kKn"/>
-        <segue reference="JlZ-ap-A6Z"/>
-        <segue reference="hki-nG-sD3"/>
+        <segue reference="9xi-rn-vy9"/>
+        <segue reference="13Q-iF-2km"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" name="Black"/>
     <resources>
@@ -1827,6 +1923,9 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         </namedColor>
         <namedColor name="textfieldColor">
             <color red="0.92199999094009399" green="0.92199999094009399" blue="0.92199999094009399" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="whiteTextFieldColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="whiteliquidViewColor">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

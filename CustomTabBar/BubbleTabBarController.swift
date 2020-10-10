@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 open class BubbleTabBarController: UITabBarController {
 
@@ -42,6 +43,17 @@ open class BubbleTabBarController: UITabBarController {
         super.viewDidLoad()
         let tabBar = BubbleTabBar()
         self.setValue(tabBar, forKey: "tabBar")
+        /*
+        if Auth.auth().currentUser?.uid != nil {
+
+           //user is logged in
+            print("lol")
+
+            }else{
+             //user is not logged in
+                self.performSegue(withIdentifier: "testyyy", sender: nil)
+            }
+ */
     }
 
     open override func viewDidAppear(_ animated: Bool) {

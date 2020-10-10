@@ -62,6 +62,13 @@ class DataVC: UIViewController {
         fetchName()
         fetchPhone()
         fetchProfileImage()
+        
+        if Auth.auth().currentUser != nil {
+            emailLabel.text = "Ha bhsodike yahi hu."
+        }
+        else{
+            emailLabel.text = "Nahi krta use bol bc."
+        }
     }
 
 }

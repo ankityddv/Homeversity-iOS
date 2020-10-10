@@ -13,12 +13,8 @@ class SetThemeTVC: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        
     }
     
-
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0 {
@@ -26,7 +22,6 @@ class SetThemeTVC: UITableViewController {
             UIApplication.shared.windows.forEach { window in
                 window.overrideUserInterfaceStyle = .unspecified
             }
-            let defaults = UserDefaults.standard
         }
         if indexPath.row == 1 {
             UIApplication.shared.windows.forEach { window in

@@ -10,6 +10,7 @@
 		00508882B0A4CDC4CBBED6E1 /* Pods_HCITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD9405541C58F571F7D6EB8D /* Pods_HCITests.framework */; };
 		0BA82E85872C63A968F9911D /* Pods_HCI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08BC8F5D260F9AB8BC20A5EA /* Pods_HCI.framework */; };
 		BC184B89251E4DF200B93D3F /* MenuTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC184B88251E4DF200B93D3F /* MenuTVC.swift */; };
+		BC1A9DB52531FF1500368447 /* ResetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1A9DB42531FF1500368447 /* ResetVC.swift */; };
 		BC1D7AC624ED9EE100D432B1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC1D7AC524ED9EE100D432B1 /* GoogleService-Info.plist */; };
 		BC2FF4DB2525EC0800B18926 /* BubbleTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2FF4D72525EC0800B18926 /* BubbleTabBarController.swift */; };
 		BC2FF4DC2525EC0800B18926 /* CBTabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2FF4D92525EC0800B18926 /* CBTabBarButton.swift */; };
@@ -121,6 +122,7 @@
 		555DBA83AFED65ED93CC9118 /* Pods-HCI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HCI.debug.xcconfig"; path = "Target Support Files/Pods-HCI/Pods-HCI.debug.xcconfig"; sourceTree = "<group>"; };
 		7B5FC1C5230A0A5F37EA9C2E /* Pods-HCI-HCIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HCI-HCIUITests.debug.xcconfig"; path = "Target Support Files/Pods-HCI-HCIUITests/Pods-HCI-HCIUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BC184B88251E4DF200B93D3F /* MenuTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTVC.swift; sourceTree = "<group>"; };
+		BC1A9DB42531FF1500368447 /* ResetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetVC.swift; sourceTree = "<group>"; };
 		BC1D7AC524ED9EE100D432B1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BC2FF4D72525EC0800B18926 /* BubbleTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BubbleTabBarController.swift; path = CustomTabBar/BubbleTabBarController.swift; sourceTree = SOURCE_ROOT; };
 		BC2FF4D82525EC0800B18926 /* CBFlashyTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBFlashyTabBarController.h; path = CustomTabBar/CBFlashyTabBarController.h; sourceTree = SOURCE_ROOT; };
@@ -377,6 +379,7 @@
 			isa = PBXGroup;
 			children = (
 				BC58A25C252F9405006C46D0 /* UserTVC.swift */,
+				BC1A9DB42531FF1500368447 /* ResetVC.swift */,
 				BC537FC8251E525A00FCDA7E /* SetThemeTVC.swift */,
 				BC7F2EBE25283FB100F33581 /* AppIconVC.swift */,
 				BC7F2E972528359000F33581 /* AppIconTableViewCell.swift */,
@@ -800,6 +803,7 @@
 				BC4401CD250BCFAD00DD34E6 /* CustomTextField.swift in Sources */,
 				BC4D0733252726CF006B3FA4 /* GetStartedVC.swift in Sources */,
 				BC586E42251C7ADE009230A1 /* DislodgeVC.swift in Sources */,
+				BC1A9DB52531FF1500368447 /* ResetVC.swift in Sources */,
 				BC7CB22624ED8B6F007B5DB4 /* SignUpVC.swift in Sources */,
 				BC7F2E982528359000F33581 /* AppIconTableViewCell.swift in Sources */,
 				BC464AC02518BA1500C9A1DF /* tncVC.swift in Sources */,
