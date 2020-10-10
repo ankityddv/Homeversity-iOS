@@ -35,9 +35,8 @@ class ResetVC: UIViewController {
                     title = "Error!"
                     message = (error?.localizedDescription)!
                 } else {
-                    title = "Success!"
-                    message = "Password reset email sent."
-                    self.emailField.text = ""
+                    let emailSentVC =  self.storyboard!.instantiateViewController(withIdentifier: "Emailsent") as! EmailsentVC
+                    self.present(emailSentVC, animated: true, completion: nil)
                 }
                 
                 let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)

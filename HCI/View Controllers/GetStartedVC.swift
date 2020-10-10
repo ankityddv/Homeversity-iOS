@@ -29,7 +29,7 @@ class ColoredController: UIViewController {
           }else{
 
           // go to login screen
-          let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "signUp")
+          let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SignUpVC")
             self.present(vc, animated: true, completion: nil)
          }
 

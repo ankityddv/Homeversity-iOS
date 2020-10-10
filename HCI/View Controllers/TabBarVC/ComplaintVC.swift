@@ -13,6 +13,12 @@ class ComplaintVC: UIViewController {
     @IBOutlet weak var complainTextView: UITextView!
     @IBOutlet weak var proceedBttn: UIButton!
     
+    @IBAction func confirmedBttnTapped(_ sender: Any) {
+        let complaintVC =  self.storyboard!.instantiateViewController(withIdentifier: "complaintVC") as! ComplainRegisteredVC
+        self.present(complaintVC, animated: true, completion: nil)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         complainView.layer.cornerRadius = 15

@@ -26,6 +26,17 @@ class SignUpVC: UIViewController {
         generator.notificationOccurred(.success)
     }
     
+    @IBAction func signUpTapped(_ sender: Any) {
+        let LogInVC =  self.storyboard!.instantiateViewController(withIdentifier: "LogInVC") as! LogInVC
+        self.present(LogInVC, animated: true, completion: nil)
+    }
+    
+    
+    @IBAction func tncTapped(_ sender: Any) {
+        let tncVC =  self.storyboard!.instantiateViewController(withIdentifier: "tnc") as! tncVC
+        self.present(tncVC, animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -66,7 +77,8 @@ class SignUpVC: UIViewController {
         else{
             Auth.auth().createUser(withEmail: email, password: password){ [self] (user, error) in
                 if error == nil {
-                    self.performSegue(withIdentifier: "toInfoPage", sender: nil)
+                    let updateInfoVC =  self.storyboard!.instantiateViewController(withIdentifier: "updateInfo") as! UpdateInfoVC
+                    self.present(updateInfoVC, animated: true, completion: nil)
                 }
                 else{
                     let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)

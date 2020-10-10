@@ -28,7 +28,8 @@ class UpdateInfoVC: UIViewController {
     @IBAction func continueBttnTapped(_ sender: Any) {
         updateProfileImage()
         updateData()
-        self.performSegue(withIdentifier: "gotoHome", sender: nil)
+        let congratsVC =  self.storyboard!.instantiateViewController(withIdentifier: "congrats") as! CongratsVC
+        self.present(congratsVC, animated: true, completion: nil)
     }
     
     // To open imagePicker

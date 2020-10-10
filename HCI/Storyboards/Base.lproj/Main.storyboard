@@ -20,13 +20,13 @@
         <!--Terms & Conditions-->
         <scene sceneID="i59-GT-22G">
             <objects>
-                <viewController id="6Zd-XQ-iXC" customClass="tncVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="tnc" id="6Zd-XQ-iXC" customClass="tncVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LP5-Je-lDu">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="786"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zut-uz-jWd">
-                                <rect key="frame" x="16" y="42" width="382" height="58"/>
+                                <rect key="frame" x="16" y="167" width="382" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">We collect absolutely nothing.
 Everything you do is saved to your iCloud and is synced across your devices using the same iCloud account.</string>
@@ -35,28 +35,35 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="If you have any questions at all, about your data or any other query, kindly contact us. We are happy to answer everything!" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQU-2J-UR7">
-                                <rect key="frame" x="16" y="152" width="382" height="61"/>
+                                <rect key="frame" x="16" y="277" width="382" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PERSONAL DATA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q2L-oq-wOv">
-                                <rect key="frame" x="16" y="24" width="151" height="17"/>
+                                <rect key="frame" x="16" y="149" width="151" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Terms &amp; Conditions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JiY-Dk-IB7">
+                                <rect key="frame" x="16" y="83" width="382" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ANY QUESTIONS?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1FJ-d2-PHo">
-                                <rect key="frame" x="16" y="137" width="159" height="17"/>
+                                <rect key="frame" x="16" y="262" width="159" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jhe-CB-69U" customClass="RoundBttn" customModule="TDCRoundButton">
-                                <rect key="frame" x="24" y="660" width="366" height="50"/>
+                                <rect key="frame" x="24" y="720" width="366" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="bttn_grad1"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -84,12 +91,12 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="94r-n6-ae0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="589.85507246376812" y="95.758928571428569"/>
+            <point key="canvasLocation" x="1692.753623188406" y="-693.08035714285711"/>
         </scene>
         <!--Sign UpVC-->
         <scene sceneID="f50-Pa-TbE">
             <objects>
-                <viewController storyboardIdentifier="signUp" modalPresentationStyle="fullScreen" id="ykB-dN-0MR" customClass="SignUpVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpVC" modalPresentationStyle="fullScreen" id="ykB-dN-0MR" customClass="SignUpVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mwv-D7-bUc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -161,7 +168,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="I3r-5I-Vw0" kind="show" id="xhy-x0-EFZ"/>
+                                            <action selector="signUpTapped:" destination="ykB-dN-0MR" eventType="touchUpInside" id="dQ0-gx-wuw"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign up to continue." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfT-KE-bXp">
@@ -204,7 +211,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                 <state key="normal" title="terms &amp; conditions"/>
                                 <connections>
-                                    <segue destination="Rkt-eZ-E8b" kind="show" id="QOK-XN-Dd1"/>
+                                    <action selector="tncTapped:" destination="ykB-dN-0MR" eventType="touchUpInside" id="SD9-gT-Sc5"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6YL-Yk-BLy">
@@ -235,29 +242,28 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                         <outlet property="passwordTextField" destination="7rc-q1-It8" id="V8J-fG-Vm5"/>
                         <outlet property="pleasecreateLabel" destination="jfT-KE-bXp" id="ln8-Sg-NkK"/>
                         <outlet property="signUpLabel" destination="8wv-Gx-hfV" id="LAZ-eO-Pea"/>
-                        <segue destination="vYy-Mo-TQ9" kind="show" identifier="toInfoPage" id="JW1-pd-eEf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yi5-PL-0nz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1650.7246376811595" y="95.758928571428569"/>
+            <point key="canvasLocation" x="-681" y="96"/>
         </scene>
         <!--Log InVC-->
         <scene sceneID="P6U-8N-fxH">
             <objects>
-                <viewController id="I3r-5I-Vw0" customClass="LogInVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LogInVC" id="I3r-5I-Vw0" customClass="LogInVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wQj-BZ-AQm">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="By signing up, you agree to our " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6b-r2-QVk">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="By signing up, you agree to our " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6b-r2-QVk">
                                 <rect key="frame" x="48" y="770" width="205" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" red="0.74509803919999995" green="0.73725490199999999" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B0V-e6-5m5">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B0V-e6-5m5">
                                 <rect key="frame" x="251" y="764" width="128" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
@@ -265,7 +271,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                     <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Rkt-eZ-E8b" kind="show" id="3s1-dW-kKn"/>
+                                    <action selector="tncTapped:" destination="I3r-5I-Vw0" eventType="touchUpInside" id="zP5-4Z-3Qv"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sjr-Ke-yoP" customClass="ShadowView" customModule="HCI" customModuleProvider="target">
@@ -387,7 +393,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ff7-8h-XkO"/>
-                        <color key="backgroundColor" name="bg_Color"/>
+                        <color key="backgroundColor" name="White"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ocg-HA-BGi"/>
                     <connections>
@@ -397,17 +403,16 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                         <outlet property="forgotPasswordBttn" destination="NHj-WT-wJC" id="ymy-Be-4ku"/>
                         <outlet property="labelView" destination="Zqw-97-wCN" id="7oW-cA-G1z"/>
                         <outlet property="passwordField" destination="Oj1-vv-TcY" id="M6r-1G-yGv"/>
-                        <segue destination="fTq-Sl-GaG" kind="show" identifier="logIn" id="9xi-rn-vy9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FF0-ni-v4q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1651" y="816"/>
+            <point key="canvasLocation" x="103" y="96"/>
         </scene>
         <!--Update InfoVC-->
         <scene sceneID="rRF-c8-55S">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="vYy-Mo-TQ9" customClass="UpdateInfoVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="updateInfo" modalPresentationStyle="fullScreen" id="vYy-Mo-TQ9" customClass="UpdateInfoVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ATJ-tC-d2l">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -505,19 +510,18 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                         <outlet property="nameTextField" destination="iXK-RK-n71" id="8Np-4V-Zl5"/>
                         <outlet property="profileImage" destination="b4x-QX-4yR" id="cAY-oP-moU"/>
                         <outlet property="uploadLabel" destination="QVd-CA-ZZp" id="eGl-y5-4ps"/>
-                        <segue destination="wAc-Ys-a7m" kind="show" identifier="gotoHome" id="Hm1-dq-8ol"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tfs-dM-oof" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2452.1739130434785" y="95.758928571428569"/>
+            <point key="canvasLocation" x="874" y="96"/>
         </scene>
         <!--CongratsVC-->
         <scene sceneID="2Sy-xK-IHO">
             <objects>
-                <viewController id="wAc-Ys-a7m" customClass="CongratsVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="congrats" id="wAc-Ys-a7m" customClass="CongratsVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nr3-mz-jlC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hra-vs-hCh" customClass="RoundBttn" customModule="TDCRoundButton">
@@ -566,7 +570,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2rl-CZ-e9V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3344.9275362318845" y="95.758928571428569"/>
+            <point key="canvasLocation" x="3426" y="96"/>
         </scene>
         <!--Dislodge-->
         <scene sceneID="Vvc-K3-9ZS">
@@ -589,7 +593,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                     <color key="titleColor" name="text_Color"/>
                                 </state>
                                 <connections>
-                                    <segue destination="R6M-8W-KPl" kind="show" id="zea-pn-0k2"/>
+                                    <action selector="lostBttnTapped:" destination="4Bd-ht-OTr" eventType="touchUpInside" id="zJI-Ih-cYd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4z-3h-wdq">
@@ -601,7 +605,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                     <color key="titleColor" name="text_Color"/>
                                 </state>
                                 <connections>
-                                    <segue destination="zfw-xY-K8j" kind="show" id="d0L-U8-1CM"/>
+                                    <action selector="foundBttnTapped:" destination="4Bd-ht-OTr" eventType="touchUpInside" id="NJJ-YC-xHW"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How can we help you today?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqA-Cf-R2E">
@@ -630,14 +634,14 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PLG-dF-ROV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6889.8550724637689" y="-537.05357142857144"/>
+            <point key="canvasLocation" x="5938" y="-537"/>
         </scene>
         <!--Lost-->
         <scene sceneID="rMf-uE-ZIf">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="R6M-8W-KPl" customClass="DataVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DataVC" hidesBottomBarWhenPushed="YES" id="R6M-8W-KPl" customClass="DataVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6ZS-yF-P73">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tg7-cu-SV7">
@@ -679,14 +683,14 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3tn-VJ-MXK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9242.0289855072479" y="-1083.4821428571429"/>
+            <point key="canvasLocation" x="6619" y="-537"/>
         </scene>
         <!--Found-->
         <scene sceneID="cIG-W7-52e">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="zfw-xY-K8j" customClass="FoundVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="foundVC" hidesBottomBarWhenPushed="YES" id="zfw-xY-K8j" customClass="FoundVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dRG-Wc-DcP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S10-vj-laK">
@@ -733,14 +737,19 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEm-so-Kch">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEm-so-Kch" customClass="RoundBttn" customModule="TDCRoundButton">
                                 <rect key="frame" x="24" y="716" width="366" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="button_colour"/>
+                                <color key="backgroundColor" name="bttn_grad1"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Continue">
-                                    <color key="titleColor" name="Neon bg"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="13"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="continueBttnTapped:" destination="vYy-Mo-TQ9" eventType="touchUpInside" id="QTH-II-Az4"/>
                                     <action selector="signUpBttn:" destination="ykB-dN-0MR" eventType="touchUpInside" id="a4L-br-DoX"/>
@@ -759,14 +768,14 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zfw-Xk-AvU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9242.0289855072479" y="-431.25"/>
+            <point key="canvasLocation" x="7313" y="-537"/>
         </scene>
         <!--Complain RegisteredVC-->
         <scene sceneID="E1x-8Z-phe">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="7DX-nG-Xpb" customClass="ComplainRegisteredVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="complaintVC" hidesBottomBarWhenPushed="YES" id="7DX-nG-Xpb" customClass="ComplainRegisteredVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gke-xV-vov">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tsa-L7-RFd">
@@ -799,7 +808,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LMu-48-fBl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7544.9275362318849" y="184.82142857142856"/>
+            <point key="canvasLocation" x="6619" y="185"/>
         </scene>
         <!--Home-->
         <scene sceneID="vcc-id-74Q">
@@ -845,9 +854,9 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="bookAppointmentBttnTapped:" destination="Qz5-8b-Rj6" eventType="touchUpInside" id="3Db-Do-yOD"/>
                                     <action selector="continueBttnTapped:" destination="vYy-Mo-TQ9" eventType="touchUpInside" id="3Wf-Fa-n8i"/>
                                     <action selector="signUpBttn:" destination="ykB-dN-0MR" eventType="touchUpInside" id="805-2y-ORD"/>
-                                    <segue destination="pu6-0g-0j1" kind="show" id="XxB-tT-jHW"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1g5-Do-im0" customClass="FluidCardView" customModule="HCI">
@@ -874,18 +883,18 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4zM-nr-obx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6889.8550724637689" y="-1234.1517857142856"/>
+            <point key="canvasLocation" x="5938" y="-1234"/>
         </scene>
         <!--Book AppointmentVC-->
         <scene sceneID="I8A-QB-w0Y">
             <objects>
-                <viewController id="pu6-0g-0j1" customClass="BookAppointmentVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BookAppointmentVC" id="pu6-0g-0j1" customClass="BookAppointmentVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TXu-zC-Oif">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NmC-hy-bhW">
-                                <rect key="frame" x="0.0" y="412" width="414" height="430"/>
+                                <rect key="frame" x="0.0" y="412" width="414" height="484"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="gray_bg_color"/>
                             </view>
@@ -900,14 +909,14 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NmA-Xe-uIn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7689.8550724637689" y="-1234.1517857142856"/>
+            <point key="canvasLocation" x="6619" y="-1234"/>
         </scene>
         <!--App Icons-->
         <scene sceneID="IUl-Av-dWS">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="81J-HP-2aq" customClass="AppIconVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="appicons" hidesBottomBarWhenPushed="YES" id="81J-HP-2aq" customClass="AppIconVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="slU-JT-ZkM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="w2l-6Z-Ox9">
@@ -957,14 +966,14 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EGX-fp-qkG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7691" y="1538"/>
+            <point key="canvasLocation" x="6619" y="1538"/>
         </scene>
         <!--ResetVC-->
         <scene sceneID="Ulr-1p-SZF">
             <objects>
                 <viewController storyboardIdentifier="ResetVC" id="6lZ-oW-IyY" customClass="ResetVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2gI-Hd-Wgg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SUO-c7-DWS" customClass="RoundBttn" customModule="TDCRoundButton">
@@ -988,7 +997,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="whiteTextFieldColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRad">
                                         <real key="value" value="13"/>
@@ -1013,7 +1022,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="get-6u-Qvu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4907.2463768115949" y="1736.3839285714284"/>
+            <point key="canvasLocation" x="7997" y="1538"/>
         </scene>
         <!--Menu-->
         <scene sceneID="HNK-iG-TjG">
@@ -1074,9 +1083,6 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="81J-HP-2aq" kind="show" id="nqw-3j-w82"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="PA8-wx-0vd" imageView="Ooy-3R-Xgq" style="IBUITableViewCellStyleDefault" id="1zO-yk-tjm">
                                         <rect key="frame" x="20" y="222" width="374" height="43.5"/>
@@ -1099,7 +1105,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="bHQ-BD-uA0" kind="show" id="ryO-PC-raO"/>
+                                            <segue destination="bHQ-BD-uA0" kind="show" id="ejL-Je-4Uf"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -1210,9 +1216,6 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="6lZ-oW-IyY" kind="show" id="3bT-SG-3i9"/>
-                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -1259,7 +1262,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         <!--Apperance-->
         <scene sceneID="6JA-jL-PfQ">
             <objects>
-                <tableViewController hidesBottomBarWhenPushed="YES" id="bHQ-BD-uA0" customClass="SetThemeTVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="setTheme" hidesBottomBarWhenPushed="YES" id="bHQ-BD-uA0" customClass="SetThemeTVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="insetGrouped" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="JsR-Xp-Tyk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1332,7 +1335,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uXQ-9U-uYd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7690" y="2234"/>
+            <point key="canvasLocation" x="7312" y="1538"/>
         </scene>
         <!--Clean-->
         <scene sceneID="nhR-Vg-8tN">
@@ -1424,7 +1427,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YOB-5p-4Hi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7757.971014492754" y="870.53571428571422"/>
+            <point key="canvasLocation" x="5938" y="871"/>
         </scene>
         <!--Complaint-->
         <scene sceneID="fM5-6P-r4Z">
@@ -1463,9 +1466,9 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="confirmedBttnTapped:" destination="0TT-2n-KvB" eventType="touchUpInside" id="QhL-Qi-2rI"/>
                                     <action selector="continueBttnTapped:" destination="vYy-Mo-TQ9" eventType="touchUpInside" id="A7p-j2-uY9"/>
                                     <action selector="signUpBttn:" destination="ykB-dN-0MR" eventType="touchUpInside" id="EH4-bq-YEq"/>
-                                    <segue destination="7DX-nG-Xpb" kind="show" id="ufR-qi-Hoz"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7TS-G4-gug" customClass="CustomTextField" customModule="HCI" customModuleProvider="target">
@@ -1539,7 +1542,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o9B-rT-eYp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4134.7826086956529" y="95.758928571428569"/>
+            <point key="canvasLocation" x="4333" y="96"/>
         </scene>
         <!--Get StartedVC-->
         <scene sceneID="eZK-Ab-U8f">
@@ -1552,9 +1555,6 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="anE-Ws-H6c"/>
-                    <connections>
-                        <segue destination="ykB-dN-0MR" kind="show" identifier="test" id="13Q-iF-2km"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kg0-g5-wRc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1712,25 +1712,77 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             </objects>
             <point key="canvasLocation" x="873.91304347826099" y="-693.08035714285711"/>
         </scene>
-        <!--Terms-->
-        <scene sceneID="RkG-wB-CsH">
+        <!--EmailsentVC-->
+        <scene sceneID="xzf-lk-ZD9">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Rkt-eZ-E8b" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Terms" id="i1e-AG-JV0"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="b9b-c9-VUH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
+                <viewController storyboardIdentifier="Emailsent" id="Ilt-bL-scs" customClass="EmailsentVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tm2-9V-8jF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xS1-jx-4IM">
+                                <rect key="frame" x="0.0" y="376" width="414" height="520"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="verified.gif" translatesAutoresizingMaskIntoConstraints="NO" id="Nez-oM-a7D">
+                                        <rect key="frame" x="39" y="7" width="336" height="179"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Check your mail" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQd-K5-xAf">
+                                        <rect key="frame" x="96" y="213" width="223" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="We've sent a password recover instruction to your mail." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHq-TC-clo">
+                                        <rect key="frame" x="31" y="250" width="352" height="17"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0c8-LA-nF8" customClass="RoundBttn" customModule="TDCRoundButton">
+                                        <rect key="frame" x="20" y="300" width="374" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" name="bttn_grad1"/>
+                                        <state key="normal" title="Open Mail app">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="13"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="openMailApptapped:" destination="Ilt-bL-scs" eventType="touchUpInside" id="7q2-Sj-idM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DHL-A9-8QN">
+                                        <rect key="frame" x="147" y="366" width="121" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="I will confirm later">
+                                            <color key="titleColor" name="bttn_grad1"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="confirmLatertapped:" destination="Ilt-bL-scs" eventType="touchUpInside" id="5a9-4X-dF0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ADj-JN-pTf"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
                     <connections>
-                        <segue destination="6Zd-XQ-iXC" kind="relationship" relationship="rootViewController" id="poK-eV-Rsb"/>
+                        <outlet property="cardView" destination="xS1-jx-4IM" id="dEL-WM-YXF"/>
+                        <outlet property="gifView" destination="Nez-oM-a7D" id="YEN-xu-BGD"/>
                     </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vaP-Kp-02K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d26-a5-XcD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-320.28985507246381" y="95.758928571428569"/>
+            <point key="canvasLocation" x="2535" y="-693"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tT5-g7-4U7">
@@ -1803,6 +1855,9 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         </scene>
     </scenes>
     <designables>
+        <designable name="0c8-LA-nF8">
+            <size key="intrinsicContentSize" width="99" height="30"/>
+        </designable>
         <designable name="1F4-U0-DcD">
             <size key="intrinsicContentSize" width="57" height="26"/>
         </designable>
@@ -1845,6 +1900,9 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         <designable name="TcI-FV-45h">
             <size key="intrinsicContentSize" width="73" height="34"/>
         </designable>
+        <designable name="cEm-so-Kch">
+            <size key="intrinsicContentSize" width="73" height="34"/>
+        </designable>
         <designable name="h6G-LC-Iev">
             <size key="intrinsicContentSize" width="74.5" height="18.5"/>
         </designable>
@@ -1862,9 +1920,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="3s1-dW-kKn"/>
-        <segue reference="9xi-rn-vy9"/>
-        <segue reference="13Q-iF-2km"/>
+        <segue reference="pWh-cb-kxa"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" name="Black"/>
     <resources>
@@ -1888,6 +1944,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         <image name="segment3" width="94" height="18"/>
         <image name="takepic" width="300" height="300"/>
         <image name="theme" width="19" height="16"/>
+        <image name="verified.gif" width="726" height="726"/>
         <namedColor name="Black">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -1900,6 +1957,9 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         <namedColor name="PinkLiquidViewColor">
             <color red="1" green="0.18400000035762787" blue="0.57300001382827759" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="bg_Color">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -1908,9 +1968,6 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         </namedColor>
         <namedColor name="bttn_grad1">
             <color red="0.33300000429153442" green="0.3449999988079071" blue="0.9649999737739563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="button_colour">
-            <color red="0.10199999809265137" green="0.18000000715255737" blue="0.23100000619888306" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="gray_bg_color">
             <color red="0.94900000095367432" green="0.94900000095367432" blue="0.96899998188018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

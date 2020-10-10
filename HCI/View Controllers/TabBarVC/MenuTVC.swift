@@ -46,6 +46,12 @@ class MenuTVC: UITableViewController {
 */
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if indexPath.section == 1 && indexPath.row == 0 {
+            let appIconsVC =  self.storyboard!.instantiateViewController(withIdentifier: "appicons") as! AppIconVC
+            self.present(appIconsVC, animated: true, completion: nil)
+        }
+        
         //Reach Us Section
         if indexPath.section == 2 && indexPath.row == 0 {
             showMailComposer()
@@ -79,7 +85,8 @@ class MenuTVC: UITableViewController {
         }
         // reset pssword
         else if indexPath.section == 4 && indexPath.row == 0{
-            
+            let resetVC =  self.storyboard!.instantiateViewController(withIdentifier: "ResetVC") as! ResetVC
+            self.present(resetVC, animated: true, completion: nil)
         }
     }
     

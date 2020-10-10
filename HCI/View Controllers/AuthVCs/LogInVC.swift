@@ -33,6 +33,10 @@ class LogInVC: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func tncTapped(_ sender: Any) {
+        let tncVC =  self.storyboard!.instantiateViewController(withIdentifier: "tnc") as! tncVC
+        self.present(tncVC, animated: true, completion: nil)
+    }
     
     
     func loginUser() {
@@ -57,11 +61,8 @@ class LogInVC: UIViewController {
                 if error == nil{
                     
                     //MARK:-
-                    self.performSegue(withIdentifier: "logIn", sender: nil)
-                    /*
-                    let homeVC = self.storyboard?.instantiateViewController(identifier: "Home") as! HomeVC
-                    self.navigationController?.pushViewController(homeVC, animated: true)
-                    */
+                    let homeVC =  self.storyboard!.instantiateViewController(withIdentifier: "tab_bar") as! BubbleTabBarController
+                    self.present(homeVC, animated: true, completion: nil)
                 }
                 else{
                     let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)

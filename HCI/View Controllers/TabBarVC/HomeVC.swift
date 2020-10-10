@@ -13,6 +13,11 @@ class HomeVC: UIViewController {
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var fluidCard: FluidCardView!
     
+    @IBAction func bookAppointmentBttnTapped(_ sender: Any) {
+        let BookAppointmentVC =  self.storyboard!.instantiateViewController(withIdentifier: "BookAppointmentVC") as! BookAppointmentVC
+        self.present(BookAppointmentVC, animated: true, completion: nil)
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
