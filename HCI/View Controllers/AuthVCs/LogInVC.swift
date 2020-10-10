@@ -34,7 +34,7 @@ class LogInVC: UIViewController {
     }
     
     @IBAction func tncTapped(_ sender: Any) {
-        let tncVC =  self.storyboard!.instantiateViewController(withIdentifier: "tnc") as! tncVC
+        let tncVC =  self.storyboard!.instantiateViewController(withIdentifier: "tncVC") as! tncVC
         self.present(tncVC, animated: true, completion: nil)
     }
     

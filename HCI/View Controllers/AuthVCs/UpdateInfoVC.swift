@@ -28,8 +28,8 @@ class UpdateInfoVC: UIViewController {
     @IBAction func continueBttnTapped(_ sender: Any) {
         updateProfileImage()
         updateData()
-        let congratsVC =  self.storyboard!.instantiateViewController(withIdentifier: "congrats") as! CongratsVC
-        self.present(congratsVC, animated: true, completion: nil)
+        let CongratsVC =  self.storyboard!.instantiateViewController(withIdentifier: "CongratsVC") as! CongratsVC
+        self.present(CongratsVC, animated: true, completion: nil)
     }
     
     // To open imagePicker
@@ -136,7 +136,6 @@ class UpdateInfoVC: UIViewController {
         imageViewbg.frame = CGRect(x: 90, y: 115, width: 235, height:235 )
         addDetailsLabel.frame.origin.y = 410
         fillDetailsLabel.frame.origin.y = 465
-        //uploadLabel.textColor = UIColor.white
         UIImageView.transition(with: bgImage, duration: 0.6,
                             options: .transitionCrossDissolve,
                             animations: { [self] in

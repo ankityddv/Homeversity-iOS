@@ -33,7 +33,7 @@ class SignUpVC: UIViewController {
     
     
     @IBAction func tncTapped(_ sender: Any) {
-        let tncVC =  self.storyboard!.instantiateViewController(withIdentifier: "tnc") as! tncVC
+        let tncVC =  self.storyboard!.instantiateViewController(withIdentifier: "tncVC") as! tncVC
         self.present(tncVC, animated: true, completion: nil)
     }
     
@@ -77,8 +77,8 @@ class SignUpVC: UIViewController {
         else{
             Auth.auth().createUser(withEmail: email, password: password){ [self] (user, error) in
                 if error == nil {
-                    let updateInfoVC =  self.storyboard!.instantiateViewController(withIdentifier: "updateInfo") as! UpdateInfoVC
-                    self.present(updateInfoVC, animated: true, completion: nil)
+                    let UpdateInfoVC =  self.storyboard!.instantiateViewController(withIdentifier: "UpdateInfoVC") as! UpdateInfoVC
+                    self.present(UpdateInfoVC, animated: true, completion: nil)
                 }
                 else{
                     let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)

@@ -14,8 +14,8 @@ class ComplaintVC: UIViewController {
     @IBOutlet weak var proceedBttn: UIButton!
     
     @IBAction func confirmedBttnTapped(_ sender: Any) {
-        let complaintVC =  self.storyboard!.instantiateViewController(withIdentifier: "complaintVC") as! ComplainRegisteredVC
-        self.present(complaintVC, animated: true, completion: nil)
+        let ComplainRegisteredVC =  self.storyboard!.instantiateViewController(withIdentifier: "ComplainRegisteredVC") as! ComplainRegisteredVC
+        self.present(ComplainRegisteredVC, animated: true, completion: nil)
     }
     
     

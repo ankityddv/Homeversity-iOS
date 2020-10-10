@@ -20,7 +20,7 @@
         <!--Terms & Conditions-->
         <scene sceneID="i59-GT-22G">
             <objects>
-                <viewController storyboardIdentifier="tnc" id="6Zd-XQ-iXC" customClass="tncVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="tncVC" id="6Zd-XQ-iXC" customClass="tncVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LP5-Je-lDu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -412,7 +412,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         <!--Update InfoVC-->
         <scene sceneID="rRF-c8-55S">
             <objects>
-                <viewController storyboardIdentifier="updateInfo" modalPresentationStyle="fullScreen" id="vYy-Mo-TQ9" customClass="UpdateInfoVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UpdateInfoVC" modalPresentationStyle="fullScreen" id="vYy-Mo-TQ9" customClass="UpdateInfoVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ATJ-tC-d2l">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -519,7 +519,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         <!--CongratsVC-->
         <scene sceneID="2Sy-xK-IHO">
             <objects>
-                <viewController storyboardIdentifier="congrats" id="wAc-Ys-a7m" customClass="CongratsVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CongratsVC" id="wAc-Ys-a7m" customClass="CongratsVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nr3-mz-jlC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -688,7 +688,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         <!--Found-->
         <scene sceneID="cIG-W7-52e">
             <objects>
-                <viewController storyboardIdentifier="foundVC" hidesBottomBarWhenPushed="YES" id="zfw-xY-K8j" customClass="FoundVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FoundVC" hidesBottomBarWhenPushed="YES" id="zfw-xY-K8j" customClass="FoundVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dRG-Wc-DcP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -773,7 +773,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         <!--Complain RegisteredVC-->
         <scene sceneID="E1x-8Z-phe">
             <objects>
-                <viewController storyboardIdentifier="complaintVC" hidesBottomBarWhenPushed="YES" id="7DX-nG-Xpb" customClass="ComplainRegisteredVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ComplainRegisteredVC" hidesBottomBarWhenPushed="YES" id="7DX-nG-Xpb" customClass="ComplainRegisteredVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gke-xV-vov">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1715,7 +1715,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         <!--EmailsentVC-->
         <scene sceneID="xzf-lk-ZD9">
             <objects>
-                <viewController storyboardIdentifier="Emailsent" id="Ilt-bL-scs" customClass="EmailsentVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EmailsentVC" id="Ilt-bL-scs" customClass="EmailsentVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tm2-9V-8jF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1920,7 +1920,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="pWh-cb-kxa"/>
+        <segue reference="hki-nG-sD3"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" name="Black"/>
     <resources>

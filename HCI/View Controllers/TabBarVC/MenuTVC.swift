@@ -75,7 +75,7 @@ class MenuTVC: UITableViewController {
             if Auth.auth().currentUser != nil {
                 do {
                     try Auth.auth().signOut()
-                    let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "signUp")
+                    let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SignUpVC")
                     present(vc, animated: true, completion: nil)
                     //UserDefaults.standard.setValue(false, forKey: "isloggedIn")
                 } catch let error as NSError {

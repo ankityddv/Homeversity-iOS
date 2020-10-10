@@ -17,7 +17,7 @@ class DislodgeVC: UIViewController {
         self.present(DataVC, animated: true, completion: nil)
     }
     @IBAction func foundBttnTapped(_ sender: Any) {
-        let FoundVC =  self.storyboard!.instantiateViewController(withIdentifier: "foundVC") as! FoundVC
+        let FoundVC =  self.storyboard!.instantiateViewController(withIdentifier: "FoundVC") as! FoundVC
         self.present(FoundVC, animated: true, completion: nil)
     }
     
