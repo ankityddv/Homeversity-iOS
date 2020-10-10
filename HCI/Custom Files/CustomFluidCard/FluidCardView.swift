@@ -425,8 +425,8 @@ class FluidCardView: UIView {
         h3br.x = max(h3br.x, hole3CenterX + borderOffset)
 
         if collapseProgress > 0 {
-            h1tl = h1tl.offsetBy(dy: -(h1tl.y - pt2.y) * collapseProgress)
-            h1tr = h1tr.offsetBy(dy: -(h1tr.y - pt2.y) * collapseProgress)
+            h1tl = h1tl.offsetBy(dy: (h1tl.y - pt2.y) * collapseProgress)
+            h1tr = h1tr.offsetBy(dy: (h1tr.y - pt2.y) * collapseProgress)
             h1bl = h1bl.offsetBy(dy: (pt3.y - h1bl.y) * collapseProgress)
             h1br = h1br.offsetBy(dy: (pt3.y - h1br.y) * collapseProgress)
 
