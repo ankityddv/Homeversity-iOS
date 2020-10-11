@@ -49,6 +49,7 @@
 		BC58A257252F908B006C46D0 /* DataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC58A256252F908B006C46D0 /* DataVC.swift */; };
 		BC58A25D252F9405006C46D0 /* UserTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC58A25C252F9405006C46D0 /* UserTVC.swift */; };
 		BC68BE852528760A009FB20A /* BookAppointmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC68BE842528760A009FB20A /* BookAppointmentVC.swift */; };
+		BC6F23DF25332D4F005B410E /* InitialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6F23DE25332D4F005B410E /* InitialVC.swift */; };
 		BC7CB22224ED8B6F007B5DB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7CB22124ED8B6F007B5DB4 /* AppDelegate.swift */; };
 		BC7CB22424ED8B6F007B5DB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7CB22324ED8B6F007B5DB4 /* SceneDelegate.swift */; };
 		BC7CB22624ED8B6F007B5DB4 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7CB22524ED8B6F007B5DB4 /* SignUpVC.swift */; };
@@ -167,6 +168,7 @@
 		BC58A256252F908B006C46D0 /* DataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataVC.swift; sourceTree = "<group>"; };
 		BC58A25C252F9405006C46D0 /* UserTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTVC.swift; sourceTree = "<group>"; };
 		BC68BE842528760A009FB20A /* BookAppointmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAppointmentVC.swift; sourceTree = "<group>"; };
+		BC6F23DE25332D4F005B410E /* InitialVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialVC.swift; sourceTree = "<group>"; };
 		BC7CB21E24ED8B6F007B5DB4 /* HCI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HCI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC7CB22124ED8B6F007B5DB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC7CB22324ED8B6F007B5DB4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -307,6 +309,7 @@
 		BC3FF4C2252F5EA90033D2F3 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BC6F23DE25332D4F005B410E /* InitialVC.swift */,
 				BC4D0732252726CF006B3FA4 /* GetStartedVC.swift */,
 				BC464ABF2518BA1500C9A1DF /* tncVC.swift */,
 				BC58A256252F908B006C46D0 /* DataVC.swift */,
@@ -813,6 +816,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC6F23DF25332D4F005B410E /* InitialVC.swift in Sources */,
 				BCD2B64225266A8500220EEE /* UnitBezier.swift in Sources */,
 				BC4401CD250BCFAD00DD34E6 /* CustomTextField.swift in Sources */,
 				BC4D0733252726CF006B3FA4 /* GetStartedVC.swift in Sources */,

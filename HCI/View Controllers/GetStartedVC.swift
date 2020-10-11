@@ -38,16 +38,7 @@ class GetStartedVC: LiquidSwipeContainerController, LiquidSwipeContainerDataSour
         super.viewDidLoad()
         datasource = self
         
-        //MARK:-
-        Auth.auth().addStateDidChangeListener { auth, user in
-          if user != nil {
-            let homeVC =  self.storyboard!.instantiateViewController(withIdentifier: "tab_bar") as! BubbleTabBarController
-            self.present(homeVC, animated: false, completion: nil)
-          } else {
-            let SignUpVC =  self.storyboard!.instantiateViewController(withIdentifier: "SignUpVC") as! SignUpVC
-            self.present(SignUpVC, animated: true, completion: nil)
-          }
-        }
+        
     }
 
     func numberOfControllersInLiquidSwipeContainer(_ liquidSwipeContainer: LiquidSwipeContainerController) -> Int {
