@@ -1056,7 +1056,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                             </tableViewSection>
                             <tableViewSection headerTitle="GENERAL" id="yzE-wg-tki">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="En1-E4-xTX" imageView="Ji3-XX-cet" style="IBUITableViewCellStyleDefault" id="7xR-MV-6qT">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="En1-E4-xTX" style="IBUITableViewCellStyleDefault" id="7xR-MV-6qT">
                                         <rect key="frame" x="20" y="178.5" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7xR-MV-6qT" id="IH2-1C-76g">
@@ -1064,20 +1064,16 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="App Icons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="En1-E4-xTX">
-                                                    <rect key="frame" x="49" y="0.0" width="286" height="43.5"/>
+                                                    <rect key="frame" x="20" y="0.0" width="315" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="dashboard" id="Ji3-XX-cet">
-                                                    <rect key="frame" x="20" y="15" width="14" height="13"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="PA8-wx-0vd" imageView="Ooy-3R-Xgq" style="IBUITableViewCellStyleDefault" id="1zO-yk-tjm">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="PA8-wx-0vd" style="IBUITableViewCellStyleDefault" id="1zO-yk-tjm">
                                         <rect key="frame" x="20" y="222" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1zO-yk-tjm" id="PRw-Ke-lDr">
@@ -1085,16 +1081,12 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Appearance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PA8-wx-0vd">
-                                                    <rect key="frame" x="54" y="0.0" width="281" height="43.5"/>
+                                                    <rect key="frame" x="20" y="0.0" width="315" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="theme" id="Ooy-3R-Xgq">
-                                                    <rect key="frame" x="20" y="13.5" width="19" height="16"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
@@ -1105,7 +1097,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                             </tableViewSection>
                             <tableViewSection headerTitle="REACH US" id="CXF-fD-cFN">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="JHL-AU-3Sj" imageView="Gxv-u9-HF6" style="IBUITableViewCellStyleDefault" id="Uos-D1-oHw">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="JHL-AU-3Sj" style="IBUITableViewCellStyleDefault" id="Uos-D1-oHw">
                                         <rect key="frame" x="20" y="321.5" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Uos-D1-oHw" id="kJ7-dP-XjI">
@@ -1113,20 +1105,16 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Contact Us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JHL-AU-3Sj">
-                                                    <rect key="frame" x="55" y="0.0" width="280" height="43.5"/>
+                                                    <rect key="frame" x="20" y="0.0" width="315" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="Contact us" id="Gxv-u9-HF6">
-                                                    <rect key="frame" x="20" y="13" width="20" height="17"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="fP6-8s-XD6" imageView="3bs-VG-Puz" style="IBUITableViewCellStyleDefault" id="qcG-jE-oAK">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="fP6-8s-XD6" style="IBUITableViewCellStyleDefault" id="qcG-jE-oAK">
                                         <rect key="frame" x="20" y="365" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qcG-jE-oAK" id="NZb-Xh-nTF">
@@ -1134,20 +1122,16 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Tweet us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fP6-8s-XD6">
-                                                    <rect key="frame" x="58" y="0.0" width="277" height="43.5"/>
+                                                    <rect key="frame" x="20" y="0.0" width="315" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="Twitter" id="3bs-VG-Puz">
-                                                    <rect key="frame" x="20" y="13" width="23" height="17"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="PTd-ex-JNN" imageView="sl3-VN-Ywh" style="IBUITableViewCellStyleDefault" id="SoA-Ru-WG8">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="PTd-ex-JNN" style="IBUITableViewCellStyleDefault" id="SoA-Ru-WG8">
                                         <rect key="frame" x="20" y="408.5" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SoA-Ru-WG8" id="NyH-KC-dup">
@@ -1155,16 +1139,12 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Telegram" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PTd-ex-JNN">
-                                                    <rect key="frame" x="56" y="0.0" width="279" height="43.5"/>
+                                                    <rect key="frame" x="20" y="0.0" width="315" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="Telegram" id="sl3-VN-Ywh">
-                                                    <rect key="frame" x="20" y="12" width="21" height="19"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -1575,10 +1555,25 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             </objects>
             <point key="canvasLocation" x="5087" y="185"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="7JJ-Nb-qtm">
+            <objects>
+                <viewController id="GEh-bp-roM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NAg-Tq-2cM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6t8-hi-zN9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k1f-gg-teN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2734" y="-720"/>
+        </scene>
         <!--Get StartedVC-->
         <scene sceneID="eZK-Ab-U8f">
             <objects>
-                <viewController storyboardIdentifier="GetStarted" id="z77-3Q-Pc6" customClass="GetStartedVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GetStartedVC" id="z77-3Q-Pc6" customClass="GetStartedVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XwB-Wr-28r">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1890,7 +1885,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <size key="intrinsicContentSize" width="99" height="30"/>
         </designable>
         <designable name="1F4-U0-DcD">
-            <size key="intrinsicContentSize" width="57" height="26"/>
+            <size key="intrinsicContentSize" width="62" height="24"/>
         </designable>
         <designable name="1g5-Do-im0">
             <size key="intrinsicContentSize" width="295" height="115"/>
@@ -1899,19 +1894,19 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <size key="intrinsicContentSize" width="46" height="18.5"/>
         </designable>
         <designable name="7fx-gv-aY6">
-            <size key="intrinsicContentSize" width="74.5" height="18.5"/>
+            <size key="intrinsicContentSize" width="34.5" height="18.5"/>
         </designable>
         <designable name="7rc-q1-It8">
-            <size key="intrinsicContentSize" width="102.5" height="17"/>
+            <size key="intrinsicContentSize" width="62.5" height="17"/>
         </designable>
         <designable name="BRr-NM-Aca">
-            <size key="intrinsicContentSize" width="117.5" height="18.5"/>
+            <size key="intrinsicContentSize" width="77.5" height="18.5"/>
         </designable>
         <designable name="Hra-vs-hCh">
             <size key="intrinsicContentSize" width="73" height="34"/>
         </designable>
         <designable name="Ip2-Ap-IsL">
-            <size key="intrinsicContentSize" width="62" height="26"/>
+            <size key="intrinsicContentSize" width="67" height="24"/>
         </designable>
         <designable name="JdJ-Cp-ik1">
             <size key="intrinsicContentSize" width="64" height="34"/>
@@ -1938,10 +1933,10 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <size key="intrinsicContentSize" width="74.5" height="18.5"/>
         </designable>
         <designable name="iXK-RK-n71">
-            <size key="intrinsicContentSize" width="78" height="18.5"/>
+            <size key="intrinsicContentSize" width="38" height="18.5"/>
         </designable>
         <designable name="uWk-wR-U3v">
-            <size key="intrinsicContentSize" width="74.5" height="18.5"/>
+            <size key="intrinsicContentSize" width="34.5" height="18.5"/>
         </designable>
         <designable name="uq7-Dh-r24">
             <size key="intrinsicContentSize" width="242.5" height="18.5"/>
@@ -1953,9 +1948,6 @@ Everything you do is saved to your iCloud and is synced across your devices usin
     <color key="tintColor" name="Black"/>
     <resources>
         <image name="BG_Image upload" width="1245" height="963"/>
-        <image name="Contact us" width="20" height="17"/>
-        <image name="Telegram" width="21" height="19"/>
-        <image name="Twitter" width="23" height="17"/>
         <image name="chevron.right" catalog="system" width="96" height="128"/>
         <image name="clock" width="20" height="19"/>
         <image name="clran" width="16" height="19"/>
@@ -1970,7 +1962,6 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         <image name="segment2" width="49" height="9"/>
         <image name="segment3" width="94" height="18"/>
         <image name="takepic" width="300" height="300"/>
-        <image name="theme" width="19" height="16"/>
         <image name="verified.gif" width="726" height="726"/>
         <namedColor name="Black">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
