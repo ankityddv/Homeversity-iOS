@@ -3,22 +3,78 @@
 //  HCI
 //
 //  Created by Ankit on 25/09/20.
-//
+//  Give me suggestion on twitter @ankityddv (www.twitter.com/ankityddv)
 
 import UIKit
 import MessageUI
-import FirebaseAuth
+import Firebase
 
 class MenuTVC: UITableViewController {
-
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var profileImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // To hide the top line
         self.tabBarController?.tabBar.shadowImage = UIImage()
         self.tabBarController?.tabBar.backgroundImage = UIImage()
-      //  self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        profileImage.layer.cornerRadius = 22.5
+        fetchName()
+        fetchEmail()
+        fetchProfileImage()
     }
     
+    //MARK:- To userfetch info
+    func fetchName(){
+        let userID = Auth.auth().currentUser?.uid
+        let ref = Database.database().reference()
+        ref.child("USER").child(userID ?? "0").observeSingleEvent(of: .value, with: { (snapshot) in
+            // Get user value
+            let value = snapshot.value as? NSDictionary
+            let username = value?["Name"] as? String ?? ""
+            self.nameLabel.text = username
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+    }
+    
+    func fetchEmail(){
+        let userEmail = Auth.auth().currentUser?.email
+        self.emailLabel.text = userEmail
+    }
+    
+    func fetchPhone(){
+        let userID = Auth.auth().currentUser?.uid
+        let ref = Database.database().reference()
+        ref.child("USER").child(userID ?? "0").observeSingleEvent(of: .value, with: { (snapshot) in
+            // Get user value
+            let value = snapshot.value as? NSDictionary
+            let phone = value?["Phone"] as? String ?? ""
+            //self.PhoneLabel.text = phone
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+    }
+    
+    func fetchProfileImage(){
+        //retrive image
+        guard let uid = Auth.auth().currentUser?.uid else { return }
+        let storageRef = Storage.storage().reference().child("user/profile_images")
+        let imageRef = storageRef.child("\(uid).png")
+        imageRef.getData(maxSize: 1*1000*1000) { (data,error) in
+            if error == nil{
+                print(data ?? Data.self)
+                self.profileImage.image = UIImage(data: data!)
+            }
+            else{
+                print(error?.localizedDescription ?? error as Any)
+            }
+        }
+    }
+    
+    //MARK:- Open Mail VC
     func showMailComposer(){
         guard MFMailComposeViewController.canSendMail() else {
             return
@@ -32,24 +88,17 @@ class MenuTVC: UITableViewController {
     }
     
     // MARK: - Table view data source
-    //UserTVC
-    
-    
-/*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell:UserTVC = tableView.dequeueReusableCell(withIdentifier: "UserTVC", for: indexPath) as! UserTVC
-        cell.textLabel?.text = "Lol"
-        cell.detailTextLabel?.text = "BSDk"
-        
-        return (cell)
-    }
-*/
-    
+
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        // MARK: - General Settings (SECTION 1)
+        // MARK: - Profile Settings (SECTION 0)
+        if indexPath.section == 0 && indexPath.row == 0{
+            let EditProfileVC =  self.storyboard!.instantiateViewController(withIdentifier: "EditProfileVC") as! EditProfileVC
+            self.present(EditProfileVC, animated: true, completion: nil)
+        }
         
-        if indexPath.section == 1 && indexPath.row == 0 {
+        // MARK: - General Settings (SECTION 1)
+        else if indexPath.section == 1 && indexPath.row == 0 {
             let appIconsVC =  self.storyboard!.instantiateViewController(withIdentifier: "appicons") as! AppIconVC
             self.present(appIconsVC, animated: true, completion: nil)
         }
@@ -74,11 +123,6 @@ class MenuTVC: UITableViewController {
         
         // MARK: - App settings (SECTION 4)
         else if indexPath.section == 4 && indexPath.row == 0{
-            let EditProfileVC =  self.storyboard!.instantiateViewController(withIdentifier: "EditProfileVC") as! EditProfileVC
-            self.present(EditProfileVC, animated: true, completion: nil)
-        }
-        
-        else if indexPath.section == 4 && indexPath.row == 1{
             let resetVC =  self.storyboard!.instantiateViewController(withIdentifier: "ResetVC") as! ResetVC
             self.present(resetVC, animated: true, completion: nil)
         }

@@ -3,7 +3,7 @@
 //  HCI
 //
 //  Created by Ankit on 10/10/20.
-//
+//  Give me suggestion on twitter @ankityddv (www.twitter.com/ankityddv)
 
 import UIKit
 import Firebase
@@ -16,6 +16,12 @@ class ResetVC: UIViewController {
         resetUserPassword()
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
+    
+    //MARK:- Function to reset User password.
     func resetUserPassword(){
         if self.emailField.text == "" {
             let alertController = UIAlertController(title: "Oops!", message: "Please enter an email.", preferredStyle: .alert)
@@ -49,9 +55,4 @@ class ResetVC: UIViewController {
         }
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
-
 }

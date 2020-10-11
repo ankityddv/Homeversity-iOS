@@ -3,6 +3,7 @@
 //  HCI
 //
 //  Created by Ankit on 02/10/20.
+//  Give me suggestion on twitter @ankityddv (www.twitter.com/ankityddv)
 //
 // VC to operate the liquid swipe operations
 
@@ -10,8 +11,8 @@ import UIKit
 import liquid_swipe
 import Firebase
 
-
 class ColoredController: UIViewController {
+    
     var viewColor: UIColor = .white {
         didSet {
             viewIfLoaded?.backgroundColor = viewColor
@@ -25,8 +26,8 @@ class ColoredController: UIViewController {
 }
 
 class GetStartedVC: LiquidSwipeContainerController, LiquidSwipeContainerDataSource {
-
-        var viewControllers: [UIViewController] = {
+    // Add identifiers of VCs which are to be presented.
+    var viewControllers: [UIViewController] = {
         let firstPageVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "page1")
         let secondPageVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "page2")
         let thirdPageVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "page3")
@@ -37,8 +38,6 @@ class GetStartedVC: LiquidSwipeContainerController, LiquidSwipeContainerDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         datasource = self
-        
-        
     }
 
     func numberOfControllersInLiquidSwipeContainer(_ liquidSwipeContainer: LiquidSwipeContainerController) -> Int {

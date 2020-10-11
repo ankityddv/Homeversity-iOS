@@ -3,7 +3,7 @@
 //  HCI
 //
 //  Created by Ankit on 20/09/20.
-//
+//  Give me suggestion on twitter @ankityddv (www.twitter.com/ankityddv)
 
 import UIKit
 import FirebaseDatabase
@@ -16,6 +16,23 @@ class HomeVC: UIViewController {
     @IBOutlet weak var fluidCard: FluidCardView!
     @IBOutlet weak var nameLabel: UILabel!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        fetchName()
+        fetchProfileImage()
+        profileImage.layer.cornerRadius = 45
+        // To hide the top line
+        self.tabBarController?.tabBar.shadowImage = UIImage()
+        self.tabBarController?.tabBar.backgroundImage = UIImage()
+        let topNib = UINib(nibName: "TopView", bundle: nil)
+        let topView = topNib.instantiate(withOwner: self, options: nil).first as! UIView
+        let bottomNib = UINib(nibName: "BottomView", bundle: nil)
+        let bottomView = bottomNib.instantiate(withOwner: self, options: nil).first as! UIView
+        fluidCard.topContentView = topView
+        fluidCard.bottomContentView = bottomView
+    }
+    
+    //MARK:- To userfetch info
     func fetchName(){
         let userID = Auth.auth().currentUser?.uid
         let ref = Database.database().reference()
@@ -42,22 +59,6 @@ class HomeVC: UIViewController {
                 print(error?.localizedDescription ?? error as Any)
             }
         }
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        fetchName()
-        fetchProfileImage()
-        profileImage.layer.cornerRadius = 45
-        // To hide the top line
-        self.tabBarController?.tabBar.shadowImage = UIImage()
-        self.tabBarController?.tabBar.backgroundImage = UIImage()
-        let topNib = UINib(nibName: "TopView", bundle: nil)
-        let topView = topNib.instantiate(withOwner: self, options: nil).first as! UIView
-        let bottomNib = UINib(nibName: "BottomView", bundle: nil)
-        let bottomView = bottomNib.instantiate(withOwner: self, options: nil).first as! UIView
-        fluidCard.topContentView = topView
-        fluidCard.bottomContentView = bottomView
     }
 
 }

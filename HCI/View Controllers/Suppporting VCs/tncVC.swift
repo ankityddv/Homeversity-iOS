@@ -3,7 +3,7 @@
 //  HCI
 //
 //  Created by Ankit on 21/09/20.
-//
+//  Give me suggestion on twitter @ankityddv (www.twitter.com/ankityddv)
 
 import UIKit
 import MessageUI
@@ -16,6 +16,12 @@ class tncVC: UIViewController {
         showMailComposer()
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        contactUsBttn.layer.cornerRadius = 13
+    }
+    
+    //MARK:- Open Mail VC
     func showMailComposer(){
         
         guard MFMailComposeViewController.canSendMail() else {
@@ -30,12 +36,6 @@ class tncVC: UIViewController {
         present(composer, animated: true)
     }
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        contactUsBttn.layer.cornerRadius = 13
-    }
-
 }
 extension tncVC: MFMailComposeViewControllerDelegate {
     

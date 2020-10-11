@@ -46,8 +46,6 @@
 		BC586E48251C7CCD009230A1 /* CleanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC586E47251C7CCD009230A1 /* CleanVC.swift */; };
 		BC586E4E251C80BB009230A1 /* ComplaintVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC586E4D251C80BB009230A1 /* ComplaintVC.swift */; };
 		BC586E54251C828B009230A1 /* ComplainRegisteredVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC586E53251C828B009230A1 /* ComplainRegisteredVC.swift */; };
-		BC58A257252F908B006C46D0 /* DataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC58A256252F908B006C46D0 /* DataVC.swift */; };
-		BC58A25D252F9405006C46D0 /* UserTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC58A25C252F9405006C46D0 /* UserTVC.swift */; };
 		BC68BE852528760A009FB20A /* BookAppointmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC68BE842528760A009FB20A /* BookAppointmentVC.swift */; };
 		BC6F23DF25332D4F005B410E /* InitialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6F23DE25332D4F005B410E /* InitialVC.swift */; };
 		BC7CB22224ED8B6F007B5DB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7CB22124ED8B6F007B5DB4 /* AppDelegate.swift */; };
@@ -165,8 +163,6 @@
 		BC586E4D251C80BB009230A1 /* ComplaintVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplaintVC.swift; sourceTree = "<group>"; };
 		BC586E53251C828B009230A1 /* ComplainRegisteredVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplainRegisteredVC.swift; sourceTree = "<group>"; };
 		BC58A1E7252F630B006C46D0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		BC58A256252F908B006C46D0 /* DataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataVC.swift; sourceTree = "<group>"; };
-		BC58A25C252F9405006C46D0 /* UserTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTVC.swift; sourceTree = "<group>"; };
 		BC68BE842528760A009FB20A /* BookAppointmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAppointmentVC.swift; sourceTree = "<group>"; };
 		BC6F23DE25332D4F005B410E /* InitialVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialVC.swift; sourceTree = "<group>"; };
 		BC7CB21E24ED8B6F007B5DB4 /* HCI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HCI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -309,15 +305,9 @@
 		BC3FF4C2252F5EA90033D2F3 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				BC6F23DE25332D4F005B410E /* InitialVC.swift */,
-				BC4D0732252726CF006B3FA4 /* GetStartedVC.swift */,
-				BC464ABF2518BA1500C9A1DF /* tncVC.swift */,
-				BC58A256252F908B006C46D0 /* DataVC.swift */,
-				BC1A9DBA25320CC800368447 /* EmailsentVC.swift */,
+				BCD97D772533301C00D4F505 /* Suppporting VCs */,
 				BCA1827D251E61DB0099A560 /* AuthVCs */,
 				BC43241E251621B80084D3D3 /* TabBarVC */,
-				BC537FBE251E51FC00FCDA7E /* SubVCs */,
-				BC586E53251C828B009230A1 /* ComplainRegisteredVC.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -382,9 +372,12 @@
 			children = (
 				BCBA923C251695A70040FE24 /* HomeVC.swift */,
 				BC586E41251C7ADE009230A1 /* DislodgeVC.swift */,
+				BC464AE52518CE1800C9A1DF /* DislodgeSubVC */,
 				BC586E4D251C80BB009230A1 /* ComplaintVC.swift */,
+				BCD97D7C253331BD00D4F505 /* ComplaintSubVC */,
 				BC586E47251C7CCD009230A1 /* CleanVC.swift */,
 				BC184B88251E4DF200B93D3F /* MenuTVC.swift */,
+				BC464AC52518C1ED00C9A1DF /* MenuSubVC */,
 			);
 			path = TabBarVC;
 			sourceTree = "<group>";
@@ -395,9 +388,9 @@
 				BC7F2EBE25283FB100F33581 /* AppIconVC.swift */,
 				BC7F2E972528359000F33581 /* AppIconTableViewCell.swift */,
 				BC537FC8251E525A00FCDA7E /* SetThemeTVC.swift */,
-				BC1A9DB42531FF1500368447 /* ResetVC.swift */,
 				BCF16ED125323638000A9939 /* EditProfileVC.swift */,
-				BC58A25C252F9405006C46D0 /* UserTVC.swift */,
+				BC1A9DB42531FF1500368447 /* ResetVC.swift */,
+				BC68BE842528760A009FB20A /* BookAppointmentVC.swift */,
 			);
 			path = MenuSubVC;
 			sourceTree = "<group>";
@@ -410,16 +403,6 @@
 			path = DislodgeSubVC;
 			sourceTree = "<group>";
 		};
-		BC537FBE251E51FC00FCDA7E /* SubVCs */ = {
-			isa = PBXGroup;
-			children = (
-				BC68BE83252875E3009FB20A /* HomeSubVC */,
-				BC464AE52518CE1800C9A1DF /* DislodgeSubVC */,
-				BC464AC52518C1ED00C9A1DF /* MenuSubVC */,
-			);
-			path = SubVCs;
-			sourceTree = "<group>";
-		};
 		BC58A1E6252F630A006C46D0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -429,14 +412,6 @@
 				BC58A1E7252F630B006C46D0 /* GoogleService-Info.plist */,
 			);
 			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		BC68BE83252875E3009FB20A /* HomeSubVC */ = {
-			isa = PBXGroup;
-			children = (
-				BC68BE842528760A009FB20A /* BookAppointmentVC.swift */,
-			);
-			path = HomeSubVC;
 			sourceTree = "<group>";
 		};
 		BC7CB21524ED8B6E007B5DB4 = {
@@ -500,7 +475,6 @@
 				BC7CB22524ED8B6F007B5DB4 /* SignUpVC.swift */,
 				BC537FD2251E56CD00FCDA7E /* LogInVC.swift */,
 				BC51D3D324F0099F0076CA93 /* UpdateInfoVC.swift */,
-				BCE08570250BD7480035D2F7 /* CongratsVC.swift */,
 			);
 			path = AuthVCs;
 			sourceTree = "<group>";
@@ -527,6 +501,26 @@
 				BCD2B65D25266AC800220EEE /* Extensions.swift */,
 			);
 			path = CustomFluidCard;
+			sourceTree = "<group>";
+		};
+		BCD97D772533301C00D4F505 /* Suppporting VCs */ = {
+			isa = PBXGroup;
+			children = (
+				BC6F23DE25332D4F005B410E /* InitialVC.swift */,
+				BC4D0732252726CF006B3FA4 /* GetStartedVC.swift */,
+				BC464ABF2518BA1500C9A1DF /* tncVC.swift */,
+				BC1A9DBA25320CC800368447 /* EmailsentVC.swift */,
+				BCE08570250BD7480035D2F7 /* CongratsVC.swift */,
+			);
+			path = "Suppporting VCs";
+			sourceTree = "<group>";
+		};
+		BCD97D7C253331BD00D4F505 /* ComplaintSubVC */ = {
+			isa = PBXGroup;
+			children = (
+				BC586E53251C828B009230A1 /* ComplainRegisteredVC.swift */,
+			);
+			path = ComplaintSubVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -834,7 +828,6 @@
 				BC398C85252F3CAD0013D0A6 /* ShadowView.swift in Sources */,
 				BC586E4E251C80BB009230A1 /* ComplaintVC.swift in Sources */,
 				BC2FF4DC2525EC0800B18926 /* CBTabBarButton.swift in Sources */,
-				BC58A25D252F9405006C46D0 /* UserTVC.swift in Sources */,
 				BCBA923D251695A70040FE24 /* HomeVC.swift in Sources */,
 				BC7F2EBF25283FB200F33581 /* AppIconVC.swift in Sources */,
 				BCF16ED225323638000A9939 /* EditProfileVC.swift in Sources */,
@@ -845,7 +838,6 @@
 				BC51D3D424F0099F0076CA93 /* UpdateInfoVC.swift in Sources */,
 				BCE08571250BD7480035D2F7 /* CongratsVC.swift in Sources */,
 				BC2FF4DB2525EC0800B18926 /* BubbleTabBarController.swift in Sources */,
-				BC58A257252F908B006C46D0 /* DataVC.swift in Sources */,
 				BCD2B65825266ABA00220EEE /* FluidCardView.swift in Sources */,
 				BCD2B65225266AA900220EEE /* TimingFunction.swift in Sources */,
 				BC464AE72518CE4300C9A1DF /* FoundVC.swift in Sources */,

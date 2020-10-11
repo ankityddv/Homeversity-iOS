@@ -3,7 +3,7 @@
 //  HCI
 //
 //  Created by Ankit on 24/09/20.
-//
+//  Give me suggestion on twitter @ankityddv (www.twitter.com/ankityddv)
 
 import UIKit
 
@@ -13,14 +13,11 @@ class DislodgeVC: UIViewController {
     @IBOutlet weak var foundBttn: UIButton!
     
     @IBAction func lostBttnTapped(_ sender: Any) {
-        let DataVC =  self.storyboard!.instantiateViewController(withIdentifier: "DataVC") as! DataVC
-        self.present(DataVC, animated: true, completion: nil)
     }
     @IBAction func foundBttnTapped(_ sender: Any) {
         let FoundVC =  self.storyboard!.instantiateViewController(withIdentifier: "FoundVC") as! FoundVC
         self.present(FoundVC, animated: true, completion: nil)
     }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

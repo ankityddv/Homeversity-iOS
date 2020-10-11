@@ -3,7 +3,7 @@
 //  HCI
 //
 //  Created by Ankit on 19/08/20.
-//
+//  Give me suggestion on twitter @ankityddv (www.twitter.com/ankityddv)
 
 import UIKit
 import Firebase
@@ -18,20 +18,16 @@ class SignUpVC: UIViewController {
     @IBOutlet weak var cardView: ShadowView!
     @IBOutlet weak var labelView: UIView!
     
-    
     @IBAction func signUpBttn(_ sender: Any) {
         createUser()
-        //Heptic touch
+        //Heptic touch feedback
         let generator = UINotificationFeedbackGenerator()
         generator.notificationOccurred(.success)
     }
-    
     @IBAction func signUpTapped(_ sender: Any) {
         let LogInVC =  self.storyboard!.instantiateViewController(withIdentifier: "LogInVC") as! LogInVC
         self.present(LogInVC, animated: true, completion: nil)
     }
-    
-    
     @IBAction func tncTapped(_ sender: Any) {
         let tncVC =  self.storyboard!.instantiateViewController(withIdentifier: "tncVC") as! tncVC
         self.present(tncVC, animated: true, completion: nil)
@@ -39,7 +35,6 @@ class SignUpVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setImageBackground()
         
         //Set Up Heptic touch quick actions on home page
@@ -53,21 +48,21 @@ class SignUpVC: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardwilchange(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardwilchange(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardwilchange(notification:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
-        
-        //continueBttn.layer.cornerRadius = 13
     }
     
-    //Function to login In the User
+    //MAKR:-Function to login In the User
     func createUser(){
         let email = emailTextField.text!
         let password = passwordTextField.text!
         if password.count < 6 && password.count >= 1 {
-            
+            // create the alert
             let alertController = UIAlertController(title: "Password Invalid!", message: "Password must be greater than 6 characters!", preferredStyle: .alert)
             
+            // add an action (button)
             let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
             alertController.addAction(defaultAction)
             
+            // show the alert
             self.present(alertController, animated: true, completion: nil)
                 
             //heptic error
@@ -94,6 +89,7 @@ class SignUpVC: UIViewController {
         }
     }
     
+    //MARK:- Start and stop custom activity indicator
     func startloader(){
         CustomLoader.instance.gifName = "giphy"
         CustomLoader.instance.showLoaderView()
@@ -109,18 +105,22 @@ class SignUpVC: UIViewController {
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
     }
+    
     func hideKeyboard(){
         view.resignFirstResponder()
     }
+    
     @objc func keyboardwilchange(notification: Notification){
         // when textfield pressed
         labelView.isHidden = true
         cardView.frame.origin.y = 130
     }
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         hideKeyboard()
         return true
     }
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
         // when textfield rests
@@ -129,7 +129,7 @@ class SignUpVC: UIViewController {
         cardView.frame.origin.y = 314
     }
     
-    // Set Background Image
+    //MARK:- Set Background Image
     func setImageBackground(){
         let background = UIImage(named: "BG")
         
@@ -143,11 +143,9 @@ class SignUpVC: UIViewController {
         self.view.sendSubviewToBack(imageView)
     }
         
-        
     // to hide the status bar(time and battery) on top
     override var prefersStatusBarHidden: Bool{
         return false
     }
     
 }
-

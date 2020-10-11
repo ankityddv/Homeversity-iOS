@@ -3,7 +3,7 @@
 //  HCI
 //
 //  Created by Ankit on 21/08/20.
-//
+//  Give me suggestion on twitter @ankityddv (www.twitter.com/ankityddv)
 
 import UIKit
 import Firebase
@@ -24,7 +24,6 @@ class UpdateInfoVC: UIViewController {
     @IBOutlet weak var nameTextField: CustomTextField!
     @IBOutlet weak var contactTextField: CustomTextField!
     
-    // Tap actions
     @IBAction func continueBttnTapped(_ sender: Any) {
         updateProfileImage()
         updateData()
@@ -32,7 +31,25 @@ class UpdateInfoVC: UIViewController {
         self.present(CongratsVC, animated: true, completion: nil)
     }
     
-    // To open imagePicker
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        let imageTap = UITapGestureRecognizer(target: self, action: #selector(openImagePicker))
+        profileImage.isUserInteractionEnabled = true
+        profileImage.addGestureRecognizer(imageTap)
+        profileImage.layer.cornerRadius = 35
+        profileImage.clipsToBounds = true
+        imageViewbg.layer.cornerRadius = 40
+        imageViewbg.dropShadow(color: .black, opacity: 0.25, offSet: CGSize(width: 0, height: 1), radius: 40, scale: true)
+        continueBttn.layer.cornerRadius = 13
+        profileImage.layer.cornerRadius = 10
+        
+        //Hide Keyboard
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardwilchange(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardwilchange(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardwilchange(notification:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
+    }
+    
+    //MARK:- To open imagePicker
     @objc func openImagePicker(_ sender:Any) {
         // Open Image Picker
         let pickerController = UIImagePickerController()
@@ -42,9 +59,8 @@ class UpdateInfoVC: UIViewController {
             
     }
     
-    // To update the user details
+    //MARK:- To update the user details to database
     func updateProfileImage(){
-        
         let storageRef = Storage.storage().reference().child("user/profile_images")
         let profileImg = self.selectedImage
             
@@ -79,34 +95,17 @@ class UpdateInfoVC: UIViewController {
         }
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        let imageTap = UITapGestureRecognizer(target: self, action: #selector(openImagePicker))
-        profileImage.isUserInteractionEnabled = true
-        profileImage.addGestureRecognizer(imageTap)
-        profileImage.layer.cornerRadius = 35
-        profileImage.clipsToBounds = true
-        imageViewbg.layer.cornerRadius = 40
-        imageViewbg.dropShadow(color: .black, opacity: 0.25, offSet: CGSize(width: 0, height: 1), radius: 40, scale: true)
-        continueBttn.layer.cornerRadius = 13
-        profileImage.layer.cornerRadius = 10
-        
-        //Hide Keyboard
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardwilchange(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardwilchange(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardwilchange(notification:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
-        
-    }
-    
     // MARK: - Code below this is for hiding keyboard
     deinit {
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
     }
+    
     func hideKeyboard(){
         view.resignFirstResponder()
     }
+    
     @objc func keyboardwilchange(notification: Notification){
         nameTextField.frame.origin.y = 402
         contactTextField.frame.origin.y = 478
@@ -122,10 +121,12 @@ class UpdateInfoVC: UIViewController {
                             self.bgImage.isHidden = true
                         })
     }
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         hideKeyboard()
         return true
     }
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
         nameTextField.frame.origin.y = 512
@@ -143,13 +144,11 @@ class UpdateInfoVC: UIViewController {
                         })
     }
         
-        
-    // to hide the status bar(time and battery) on top
+    // to hide the status bar (time and battery) on top
     override var prefersStatusBarHidden: Bool{
         return false
     }
-        
-
+    
 }
 extension UIView {
 
@@ -180,7 +179,6 @@ extension UIView {
     
 }
 
-
 // Image picker Extension
 extension UpdateInfoVC: UIImagePickerControllerDelegate,UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
@@ -191,7 +189,6 @@ extension UpdateInfoVC: UIImagePickerControllerDelegate,UINavigationControllerDe
         dismiss(animated: true, completion: nil)
     }
 }
-
 
 // Image crop Extension
 extension UIImage {

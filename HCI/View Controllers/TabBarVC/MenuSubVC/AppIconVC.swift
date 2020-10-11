@@ -3,7 +3,7 @@
 //  HCI
 //
 //  Created by Ankit on 03/10/20.
-//
+//  Give me suggestion on twitter @ankityddv (www.twitter.com/ankityddv)
 
 import UIKit
 
@@ -11,11 +11,17 @@ class AppIconVC: UIViewController,UITableViewDelegate,UITableViewDataSource{
     
     //MARK:- To add app icon
     let appIconService = AppIConService()
-
     let imageArr = ["neonlogo","rainbowlogo","darklogo","redhlogo","bluehlogo","pridehlogo1","pridehlogo2","pridehlogo3","pridehlogo4","pridehlogo5"]
     let iconNameArr = ["Default","Rainbow","Dark","Red H","Blue H","Rainbow 1","Rainbow 2","Rainbow 3","Rainbow 4","Rainbow 5"]
+    
     @IBOutlet weak var myTableView: UITableView!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
+    
+    // MARK: - Table view data source
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (iconNameArr.count)
     }
@@ -73,11 +79,6 @@ class AppIconVC: UIViewController,UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, titleForHeaderInSection
                                 section: Int) -> String? {
        return "App Icons"
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
     }
 
 }
