@@ -12,6 +12,7 @@ target 'HCI' do
     pod 'Firebase/Database'
     pod 'liquid-swipe'
     pod 'TDCRoundButton'
+    pod 'FSCalendar'
     
   target 'HCITests' do
     inherit! :search_paths

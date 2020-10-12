@@ -42,7 +42,6 @@ struct Provider: TimelineProvider {
 struct SimpleEntry: TimelineEntry {
     let date: Date
     let myString: String
-    //let configuration: ConfigurationIntent
 }
 
 //widget look
@@ -50,23 +49,21 @@ struct TestWidgetEntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
-        ZStack{
-            //Color.dynamicColor.edgesIgnoringSafeArea(.all)
-            LinearGradient(gradient: Gradient(colors: [.blueOne, .blueTwo]), startPoint: .topLeading, endPoint: .bottomTrailing)
-            //Text(entry.myString)
-              //  .font(.title)
-                //.foregroundColor(Color.white)
-               // .fontWeight(.semibold)
-                //.offset(x: 30, y: 10)
-                //.multilineTextAlignment(.center)
-            Image("abusing")
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width: 60, height: 60, alignment: .center)
-                .border(Color.white, width: 2.0)
-                .cornerRadius(10)
-                .clipped()
-        }
+        VStack(alignment: .leading) {
+                    HStack{
+                        Image("amaya")
+                            .resizable()
+                            .frame(width: 50, height: 50)
+                            .foregroundColor(.red)
+                        Text("Lol")
+                            .font(.headline)
+                    }
+                    Text("Bruh").font(.title)
+                        .layoutPriority(1)
+                    Text("Damn").font(.body)
+                    Spacer()
+                }
+                .padding(5)
     }
 }
 
@@ -90,11 +87,6 @@ struct TestWidget_Previews: PreviewProvider {
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }
-
-
-
-
 extension Color {
-    static let blueOne = Color(UIColor(red: 0.00, green: 0.78, blue: 1.00, alpha: 1.00))
-    static let blueTwo = Color(UIColor(red: 0.00, green: 0.45, blue: 1.00, alpha: 1.00))
+    static var bgcolor = Color(UIColor(named: "WidgetBackground")!)
 }

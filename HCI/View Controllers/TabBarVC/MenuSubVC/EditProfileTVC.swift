@@ -51,7 +51,6 @@ class EditProfileTVC: UITableViewController {
             }
         }
     }
-
     
     //MARK:- To open imagePicker
     @objc func openImagePicker(_ sender:Any) {
@@ -122,7 +121,7 @@ class EditProfileTVC: UITableViewController {
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 0 && indexPath.row == 0 {
-            
+            openImagePicker(self)
         }
         else if indexPath.section == 1 && indexPath.row == 0 {
             
