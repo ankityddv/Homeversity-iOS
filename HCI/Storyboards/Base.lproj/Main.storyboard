@@ -978,7 +978,52 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NmC-hy-bhW">
                                 <rect key="frame" x="0.0" y="412" width="414" height="484"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="gray_bg_color"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mop-L4-nga" customClass="RoundBttn" customModule="TDCRoundButton">
+                                        <rect key="frame" x="20" y="317" width="375" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" name="bttn_grad1"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Continue"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="13"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="continueTapped:" destination="pu6-0g-0j1" eventType="touchUpInside" id="1af-iq-aVG"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Luc-Xa-aqn" customClass="FSCalendar">
+                                        <rect key="frame" x="0.0" y="18" width="414" height="281"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" name="bg_Color"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="todayColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="weekdayTextColor">
+                                                <color key="value" red="0.33333333329999998" green="0.34509803919999998" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="headerTitleColor">
+                                                <color key="value" name="Black"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="weekdayHeight">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectionColor">
+                                                <color key="value" red="0.33333333329999998" green="0.34509803919999998" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="titleDefaultColor">
+                                                <color key="value" name="Black"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="titleWeekendColor">
+                                                <color key="value" systemColor="systemRedColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" name="bg_Color"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Dhb-75-DuS"/>
@@ -986,6 +1031,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                     </view>
                     <navigationItem key="navigationItem" id="Etm-XG-eWx"/>
                     <connections>
+                        <outlet property="calendar" destination="Luc-Xa-aqn" id="9ne-wu-T2d"/>
                         <outlet property="cardView" destination="NmC-hy-bhW" id="xSs-vy-J92"/>
                     </connections>
                 </viewController>
@@ -1992,7 +2038,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <size key="intrinsicContentSize" width="99" height="30"/>
         </designable>
         <designable name="1F4-U0-DcD">
-            <size key="intrinsicContentSize" width="57" height="26"/>
+            <size key="intrinsicContentSize" width="62" height="24"/>
         </designable>
         <designable name="1g5-Do-im0">
             <size key="intrinsicContentSize" width="295" height="115"/>
@@ -2013,7 +2059,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <size key="intrinsicContentSize" width="73" height="34"/>
         </designable>
         <designable name="Ip2-Ap-IsL">
-            <size key="intrinsicContentSize" width="62" height="26"/>
+            <size key="intrinsicContentSize" width="67" height="24"/>
         </designable>
         <designable name="JdJ-Cp-ik1">
             <size key="intrinsicContentSize" width="64" height="34"/>
@@ -2023,6 +2069,9 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         </designable>
         <designable name="LpL-Fr-j0E">
             <size key="intrinsicContentSize" width="73" height="34"/>
+        </designable>
+        <designable name="Mop-L4-nga">
+            <size key="intrinsicContentSize" width="62" height="30"/>
         </designable>
         <designable name="Oj1-vv-TcY">
             <size key="intrinsicContentSize" width="102.5" height="17"/>

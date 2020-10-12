@@ -49,6 +49,15 @@ struct TestWidgetEntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
+        
+        ZStack {
+                Image("widgetView")
+                    .resizable()
+                    .scaledToFill()
+                    .edgesIgnoringSafeArea(.all)
+            }
+        
+        /*
         VStack(alignment: .leading) {
                     HStack{
                         Image("amaya")
@@ -64,6 +73,7 @@ struct TestWidgetEntryView : View {
                     Spacer()
                 }
                 .padding(5)
+        */
     }
 }
 
