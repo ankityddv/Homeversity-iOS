@@ -18,7 +18,10 @@ class ResetVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //Hide Keyboard
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardwilchange(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardwilchange(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardwilchange(notification:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
     }
     
     //MARK:- Function to reset User password.
@@ -54,5 +57,31 @@ class ResetVC: UIViewController {
             })
         }
     }
+    
+    // MARK: - Code below this is for hiding keyboard
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
+    }
+    
+    func hideKeyboard(){
+        view.resignFirstResponder()
+    }
+    
+    @objc func keyboardwilchange(notification: Notification){
+        // when textfield pressed
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        hideKeyboard()
+        return true
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+        // when textfield rests
+    }
+    
     
 }

@@ -3,7 +3,7 @@
 //  WidgetModule
 //
 //  Created by Ankit on 21/09/20.
-//
+//  Give me suggestion on twitter @ankityddv (www.twitter.com/ankityddv)
 
 
 import WidgetKit
@@ -84,7 +84,6 @@ struct TestWidget: Widget {
 }
 
 // Preview
-
 struct TestWidget_Previews: PreviewProvider {
     static var previews: some View {
         TestWidgetEntryView(entry: SimpleEntry(date: Date(), myString: "LMAO NIGGA"))
@@ -98,6 +97,4 @@ struct TestWidget_Previews: PreviewProvider {
 extension Color {
     static let blueOne = Color(UIColor(red: 0.00, green: 0.78, blue: 1.00, alpha: 1.00))
     static let blueTwo = Color(UIColor(red: 0.00, green: 0.45, blue: 1.00, alpha: 1.00))
-    
-    
 }

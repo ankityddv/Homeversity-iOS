@@ -18,7 +18,6 @@ class AppIconVC: UIViewController,UITableViewDelegate,UITableViewDataSource{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     // MARK: - Table view data source
@@ -78,7 +77,7 @@ class AppIconVC: UIViewController,UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection
                                 section: Int) -> String? {
-       return "App Icons"
+       return "Select"
     }
 
 }
