@@ -82,7 +82,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pq9-bk-gck"/>
-                        <color key="backgroundColor" name="bg_Color"/>
+                        <color key="backgroundColor" name="gray_bg_color"/>
                     </view>
                     <navigationItem key="navigationItem" title="Terms &amp; Conditions" id="hqS-Xg-Hj9"/>
                     <connections>
@@ -497,7 +497,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="aus-bj-XGY"/>
-                        <color key="backgroundColor" name="bg_Color"/>
+                        <color key="backgroundColor" name="gray_bg_color"/>
                     </view>
                     <navigationItem key="navigationItem" id="mpf-vR-Mcz"/>
                     <connections>
@@ -587,7 +587,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Brs-NQ-jw1">
                                 <rect key="frame" x="42" y="542" width="150" height="176"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="bg_Color"/>
+                                <color key="backgroundColor" name="textfieldColor"/>
                                 <fontDescription key="fontDescription" name="HomepageBaukasten-Book" family="HomepageBaukasten" pointSize="17"/>
                                 <state key="normal" title="Lost">
                                     <color key="titleColor" name="text_Color"/>
@@ -599,7 +599,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4z-3h-wdq">
                                 <rect key="frame" x="222" y="542" width="150" height="177"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="bg_Color"/>
+                                <color key="backgroundColor" name="textfieldColor"/>
                                 <fontDescription key="fontDescription" name="HomepageBaukasten-Book" family="HomepageBaukasten" pointSize="17"/>
                                 <state key="normal" title="Found">
                                     <color key="titleColor" name="text_Color"/>
@@ -837,6 +837,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="4Wx-Id-9h9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="gray_bg_color"/>
                         <sections>
                             <tableViewSection id="TvB-6a-cH9">
                                 <cells>
@@ -860,6 +861,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" name="textfieldColor"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -894,6 +896,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" name="textfieldColor"/>
                                         <inset key="separatorInset" minX="147" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" id="15m-8P-OQX">
@@ -919,6 +922,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" name="textfieldColor"/>
                                         <inset key="separatorInset" minX="147" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" id="IAg-6f-N3b">
@@ -944,6 +948,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" name="textfieldColor"/>
                                         <inset key="separatorInset" minX="147" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
                                 </cells>
@@ -976,11 +981,11 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NmC-hy-bhW">
-                                <rect key="frame" x="0.0" y="412" width="414" height="484"/>
+                                <rect key="frame" x="6" y="374" width="403" height="458"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mop-L4-nga" customClass="RoundBttn" customModule="TDCRoundButton">
-                                        <rect key="frame" x="20" y="317" width="375" height="50"/>
+                                        <rect key="frame" x="20" y="353" width="353" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" name="bttn_grad1"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -995,9 +1000,9 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Luc-Xa-aqn" customClass="FSCalendar">
-                                        <rect key="frame" x="0.0" y="18" width="414" height="281"/>
+                                        <rect key="frame" x="8" y="25" width="387" height="296"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" name="bg_Color"/>
+                                        <color key="backgroundColor" name="gray_bg_color"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="todayColor">
                                                 <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1020,10 +1025,21 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                             <userDefinedRuntimeAttribute type="color" keyPath="titleWeekendColor">
                                                 <color key="value" systemColor="systemRedColor"/>
                                             </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="headerMinimumDissolvedAlpha">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CGd-MU-6bf">
+                                        <rect key="frame" x="355" y="12" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="xmark.circle.fill" catalog="system">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
                                 </subviews>
-                                <color key="backgroundColor" name="bg_Color"/>
+                                <color key="backgroundColor" name="gray_bg_color"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Dhb-75-DuS"/>
@@ -1037,7 +1053,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NmA-Xe-uIn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10302.898550724638" y="1537.5"/>
+            <point key="canvasLocation" x="10288" y="1538"/>
         </scene>
         <!--App Icons-->
         <scene sceneID="IUl-Av-dWS">
@@ -1050,6 +1066,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="w2l-6Z-Ox9">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="gray_bg_color"/>
                                 <inset key="separatorInset" minX="96" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AppIconTableViewCell" editingAccessoryType="checkmark" rowHeight="80" id="heN-1J-RvS" customClass="AppIconTableViewCell" customModule="HCI" customModuleProvider="target">
@@ -1072,6 +1089,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" name="textfieldColor"/>
                                         <connections>
                                             <outlet property="iconTitile" destination="m4r-Ke-llq" id="vWt-hR-f6W"/>
                                             <outlet property="logoImageView" destination="iwo-41-SpG" id="mBS-bp-R2S"/>
@@ -1123,7 +1141,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uWk-wR-U3v" customClass="CustomTextField" customModule="HCI" customModuleProvider="target">
                                 <rect key="frame" x="20" y="179" width="374" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="whiteTextFieldColor"/>
+                                <color key="backgroundColor" name="textfieldColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="email"/>
                                 <userDefinedRuntimeAttributes>
@@ -1183,6 +1201,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" name="textfieldColor"/>
                                         <connections>
                                             <segue destination="eru-mM-Q94" kind="show" id="Bzw-ID-HOA"/>
                                         </connections>
@@ -1207,6 +1226,8 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" name="textfieldColor"/>
+                                        <inset key="separatorInset" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <connections>
                                             <segue destination="81J-HP-2aq" kind="show" id="C4e-Pb-7LB"/>
                                         </connections>
@@ -1227,6 +1248,8 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" name="textfieldColor"/>
+                                        <inset key="separatorInset" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <connections>
                                             <segue destination="bHQ-BD-uA0" kind="show" id="ejL-Je-4Uf"/>
                                         </connections>
@@ -1251,6 +1274,8 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" name="textfieldColor"/>
+                                        <inset key="separatorInset" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="fP6-8s-XD6" style="IBUITableViewCellStyleDefault" id="qcG-jE-oAK">
                                         <rect key="frame" x="20" y="365" width="374" height="43.5"/>
@@ -1268,6 +1293,8 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" name="textfieldColor"/>
+                                        <inset key="separatorInset" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="PTd-ex-JNN" style="IBUITableViewCellStyleDefault" id="SoA-Ru-WG8">
                                         <rect key="frame" x="20" y="408.5" width="374" height="43.5"/>
@@ -1285,6 +1312,8 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" name="textfieldColor"/>
+                                        <inset key="separatorInset" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -1306,6 +1335,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" name="textfieldColor"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -1327,6 +1357,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" name="textfieldColor"/>
                                         <connections>
                                             <segue destination="6lZ-oW-IyY" kind="show" id="Afp-XA-dER"/>
                                         </connections>
@@ -1351,6 +1382,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" name="textfieldColor"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -1372,6 +1404,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" name="textfieldColor"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -1381,7 +1414,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                             <outlet property="delegate" destination="dt1-6n-9HH" id="bUb-ur-riD"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Menu" id="ezQ-MY-WDI"/>
+                    <navigationItem key="navigationItem" title="Menu" largeTitleDisplayMode="always" id="ezQ-MY-WDI"/>
                     <connections>
                         <outlet property="emailLabel" destination="Muw-4S-in5" id="xWR-Wi-9xW"/>
                         <outlet property="nameLabel" destination="zsu-sx-XQG" id="8a4-xy-Fpf"/>
@@ -1399,6 +1432,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="insetGrouped" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="JsR-Xp-Tyk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="gray_bg_color"/>
                         <sections>
                             <tableViewSection headerTitle="select" id="pdd-2q-0Zr">
                                 <cells>
@@ -1418,6 +1452,8 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" name="textfieldColor"/>
+                                        <inset key="separatorInset" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" textLabel="UhI-Yf-Ha8" style="IBUITableViewCellStyleDefault" id="PbJ-ai-ja2">
                                         <rect key="frame" x="20" y="99" width="374" height="43.5"/>
@@ -1435,6 +1471,8 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" name="textfieldColor"/>
+                                        <inset key="separatorInset" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" textLabel="G0Q-R6-4pb" style="IBUITableViewCellStyleDefault" id="FVp-a0-QW0">
                                         <rect key="frame" x="20" y="142.5" width="374" height="43.5"/>
@@ -1452,6 +1490,8 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" name="textfieldColor"/>
+                                        <inset key="separatorInset" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -1481,7 +1521,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Block, Room No. (G723)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uq7-Dh-r24" customClass="CustomTextField" customModule="HCI" customModuleProvider="target">
                                 <rect key="frame" x="20" y="133" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="bg_Color"/>
+                                <color key="backgroundColor" name="textfieldColor"/>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                                 <userDefinedRuntimeAttributes>
@@ -1607,7 +1647,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7TS-G4-gug" customClass="CustomTextField" customModule="HCI" customModuleProvider="target">
                                 <rect key="frame" x="19" y="137" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="bg_Color"/>
+                                <color key="backgroundColor" name="textfieldColor"/>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                                 <userDefinedRuntimeAttributes>
@@ -1623,13 +1663,13 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bcA-YE-Ixm">
                                         <rect key="frame" x="4" y="4" width="366" height="207"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" name="bg_Color"/>
+                                        <color key="backgroundColor" name="textfieldColor"/>
                                         <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
-                                <color key="backgroundColor" name="bg_Color"/>
+                                <color key="backgroundColor" name="textfieldColor"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5ew-WB-JGf"/>
@@ -1760,10 +1800,6 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                     <segue destination="ykB-dN-0MR" kind="show" id="pWh-cb-kxa"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="getStartedIllustration2" translatesAutoresizingMaskIntoConstraints="NO" id="Q1E-Im-UtC">
-                                <rect key="frame" x="20" y="268" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="segment2" translatesAutoresizingMaskIntoConstraints="NO" id="2oi-tK-Aam">
                                 <rect key="frame" x="30" y="821" width="49" height="9"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1776,6 +1812,10 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="i" translatesAutoresizingMaskIntoConstraints="NO" id="qo0-9M-dgs">
+                                <rect key="frame" x="-33" y="101" width="348" height="408"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XwJ-dk-ATb"/>
                         <color key="backgroundColor" name="blueLiquidViewColor"/>
@@ -1833,10 +1873,6 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="getStartedIllustration" translatesAutoresizingMaskIntoConstraints="NO" id="9ip-qO-Ihv">
-                                <rect key="frame" x="20" y="268" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rG-fh-px2" customClass="RoundButton" customModule="HCI" customModuleProvider="target">
                                 <rect key="frame" x="337" y="800" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1857,6 +1893,10 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                     <segue destination="ykB-dN-0MR" kind="show" id="hYu-Mv-uFw"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="i" translatesAutoresizingMaskIntoConstraints="NO" id="b07-mV-GIC">
+                                <rect key="frame" x="-33" y="101" width="348" height="408"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Hp3-rT-feK"/>
                         <color key="backgroundColor" name="PinkLiquidViewColor"/>
@@ -1878,8 +1918,8 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                 <rect key="frame" x="0.0" y="376" width="414" height="520"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="verified.gif" translatesAutoresizingMaskIntoConstraints="NO" id="Nez-oM-a7D">
-                                        <rect key="frame" x="39" y="7" width="336" height="179"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="illustration.gif" translatesAutoresizingMaskIntoConstraints="NO" id="Nez-oM-a7D">
+                                        <rect key="frame" x="39" y="7" width="336" height="208"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Check your mail" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQd-K5-xAf">
@@ -1936,7 +1976,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d26-a5-XcD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2535" y="-693"/>
+            <point key="canvasLocation" x="2534.7826086956525" y="-693.08035714285711"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tT5-g7-4U7">
@@ -1982,10 +2022,6 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                     <segue destination="ykB-dN-0MR" kind="show" id="hki-nG-sD3"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="getStartedIllustration" translatesAutoresizingMaskIntoConstraints="NO" id="BFu-bL-PLy">
-                                <rect key="frame" x="20" y="268" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="segment1" translatesAutoresizingMaskIntoConstraints="NO" id="X6Y-Og-Mst">
                                 <rect key="frame" x="30" y="821" width="49" height="9"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1998,9 +2034,13 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="i" translatesAutoresizingMaskIntoConstraints="NO" id="BFu-bL-PLy">
+                                <rect key="frame" x="-33" y="101" width="348" height="408"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6kh-kU-MFZ"/>
-                        <color key="backgroundColor" name="whiteliquidViewColor"/>
+                        <color key="backgroundColor" name="gray_bg_color"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HUJ-16-T6I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2111,16 +2151,16 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         <image name="complaint" width="32" height="36"/>
         <image name="dashboard" width="14" height="13"/>
         <image name="fire.gif" width="800" height="600"/>
-        <image name="getStartedIllustration" width="4462" height="3040"/>
-        <image name="getStartedIllustration2" width="4462" height="3042"/>
         <image name="hlogo" width="4228" height="4068"/>
+        <image name="i" width="1714" height="1714"/>
+        <image name="illustration.gif" width="800" height="600"/>
         <image name="menu" width="17" height="8"/>
         <image name="placeholderImage" width="100" height="100"/>
         <image name="segment1" width="94" height="18"/>
         <image name="segment2" width="49" height="9"/>
         <image name="segment3" width="94" height="18"/>
         <image name="takepic" width="300" height="300"/>
-        <image name="verified.gif" width="726" height="726"/>
+        <image name="xmark.circle.fill" catalog="system" width="128" height="121"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -2149,7 +2189,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <color red="0.33300000429153442" green="0.3449999988079071" blue="0.9649999737739563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="gray_bg_color">
-            <color red="0.94900000095367432" green="0.94900000095367432" blue="0.96899998188018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="shadow_color">
             <color red="0.097999997437000275" green="0.097999997437000275" blue="0.097999997437000275" alpha="0.40000000596046448" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2158,13 +2198,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="textfieldColor">
-            <color red="0.92199999094009399" green="0.92199999094009399" blue="0.92199999094009399" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="whiteTextFieldColor">
-            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="whiteliquidViewColor">
-            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

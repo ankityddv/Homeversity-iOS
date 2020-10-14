@@ -34,7 +34,7 @@ class FluidCardView: UIView {
         let view = UIView()
         view.layer.cornerRadius = cornerRadius
         view.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
-        view.backgroundColor = UIColor(named: "bg_Color")
+        view.backgroundColor = UIColor(named: "textfieldColor")
         return view
     }()
 
@@ -42,13 +42,13 @@ class FluidCardView: UIView {
         let view = UIView()
         view.layer.cornerRadius = cornerRadius
         view.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
-        view.backgroundColor = UIColor(named: "bg_Color")
+        view.backgroundColor = UIColor(named: "textfieldColor")
         return view
     }()
 
     private lazy var overlay: UIView = {
         let view = UIView()
-        view.backgroundColor = UIColor(named: "bg_Color")
+        view.backgroundColor = UIColor(named: "textfieldColor")
         view.layer.cornerRadius = cornerRadius
         view.isHidden = true
         return view
