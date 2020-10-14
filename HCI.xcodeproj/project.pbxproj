@@ -383,8 +383,6 @@
 				BC586E4D251C80BB009230A1 /* ComplaintVC.swift */,
 				BCD97D7C253331BD00D4F505 /* ComplaintSubVC */,
 				BC586E47251C7CCD009230A1 /* CleanVC.swift */,
-				BC3834B4253718880005451A /* collVC.swift */,
-				BC3834AE253713A00005451A /* homeCVcell.swift */,
 				BC184B88251E4DF200B93D3F /* MenuTVC.swift */,
 				BC464AC52518C1ED00C9A1DF /* MenuSubVC */,
 			);
@@ -520,6 +518,8 @@
 				BC464ABF2518BA1500C9A1DF /* tncVC.swift */,
 				BC1A9DBA25320CC800368447 /* EmailsentVC.swift */,
 				BCE08570250BD7480035D2F7 /* CongratsVC.swift */,
+				BC3834B4253718880005451A /* collVC.swift */,
+				BC3834AE253713A00005451A /* homeCVcell.swift */,
 			);
 			path = "Suppporting VCs";
 			sourceTree = "<group>";
