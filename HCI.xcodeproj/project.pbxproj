@@ -62,6 +62,7 @@
 		BC7F2E982528359000F33581 /* AppIconTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7F2E972528359000F33581 /* AppIconTableViewCell.swift */; };
 		BC7F2EBF25283FB200F33581 /* AppIconVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7F2EBE25283FB100F33581 /* AppIconVC.swift */; };
 		BC9236012534531200BD9ECB /* EditProfileTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9236002534531200BD9ECB /* EditProfileTVC.swift */; };
+		BCACAFF2253749D700B2A95A /* LostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCACAFF1253749D700B2A95A /* LostVC.swift */; };
 		BCB658D12517E8DC00C7F36F /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB658D02517E8DC00C7F36F /* WidgetKit.framework */; };
 		BCB658D32517E8DC00C7F36F /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB658D22517E8DC00C7F36F /* SwiftUI.framework */; };
 		BCB658D62517E8DC00C7F36F /* WidgetModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB658D52517E8DC00C7F36F /* WidgetModule.swift */; };
@@ -79,6 +80,7 @@
 		BCD2B65825266ABA00220EEE /* FluidCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD2B65725266ABA00220EEE /* FluidCardView.swift */; };
 		BCD2B65E25266AC800220EEE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD2B65D25266AC800220EEE /* Extensions.swift */; };
 		BCE08571250BD7480035D2F7 /* CongratsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE08570250BD7480035D2F7 /* CongratsVC.swift */; };
+		BCE3E78025375956000C63CB /* HomeCVcell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE3E77F25375956000C63CB /* HomeCVcell1.swift */; };
 		D8497E72681341F41F8B17A9 /* Pods_HCI_HCIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49F74D2A192C8596AA8998FF /* Pods_HCI_HCIUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -188,6 +190,7 @@
 		BC7F2E972528359000F33581 /* AppIconTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconTableViewCell.swift; sourceTree = "<group>"; };
 		BC7F2EBE25283FB100F33581 /* AppIconVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconVC.swift; sourceTree = "<group>"; };
 		BC9236002534531200BD9ECB /* EditProfileTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileTVC.swift; sourceTree = "<group>"; };
+		BCACAFF1253749D700B2A95A /* LostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LostVC.swift; sourceTree = "<group>"; };
 		BCB658CF2517E8DC00C7F36F /* WidgetModuleExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetModuleExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCB658D02517E8DC00C7F36F /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		BCB658D22517E8DC00C7F36F /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -205,6 +208,7 @@
 		BCD2B65725266ABA00220EEE /* FluidCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FluidCardView.swift; sourceTree = "<group>"; };
 		BCD2B65D25266AC800220EEE /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		BCE08570250BD7480035D2F7 /* CongratsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratsVC.swift; sourceTree = "<group>"; };
+		BCE3E77F25375956000C63CB /* HomeCVcell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCVcell1.swift; sourceTree = "<group>"; };
 		BD9405541C58F571F7D6EB8D /* Pods_HCITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HCITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C19D882A7BD69DF80F2A1B6C /* Pods-HCITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HCITests.release.xcconfig"; path = "Target Support Files/Pods-HCITests/Pods-HCITests.release.xcconfig"; sourceTree = "<group>"; };
 		E961C51BD37AB39441E40E56 /* Pods-HCITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HCITests.debug.xcconfig"; path = "Target Support Files/Pods-HCITests/Pods-HCITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -378,6 +382,7 @@
 			isa = PBXGroup;
 			children = (
 				BCBA923C251695A70040FE24 /* HomeVC.swift */,
+				BCE3E77F25375956000C63CB /* HomeCVcell1.swift */,
 				BC586E41251C7ADE009230A1 /* DislodgeVC.swift */,
 				BC464AE52518CE1800C9A1DF /* DislodgeSubVC */,
 				BC586E4D251C80BB009230A1 /* ComplaintVC.swift */,
@@ -406,6 +411,7 @@
 			isa = PBXGroup;
 			children = (
 				BC464AE62518CE4300C9A1DF /* FoundVC.swift */,
+				BCACAFF1253749D700B2A95A /* LostVC.swift */,
 			);
 			path = DislodgeSubVC;
 			sourceTree = "<group>";
@@ -830,6 +836,7 @@
 				BC7CB22624ED8B6F007B5DB4 /* SignUpVC.swift in Sources */,
 				BC7F2E982528359000F33581 /* AppIconTableViewCell.swift in Sources */,
 				BC1A9DBB25320CC800368447 /* EmailsentVC.swift in Sources */,
+				BCACAFF2253749D700B2A95A /* LostVC.swift in Sources */,
 				BC464AC02518BA1500C9A1DF /* tncVC.swift in Sources */,
 				BCD2B64C25266A9800220EEE /* ExpandButton.swift in Sources */,
 				BC44AD50250BCEEE00475867 /* UIImage+Gif.swift in Sources */,
@@ -852,6 +859,7 @@
 				BC2FF4DB2525EC0800B18926 /* BubbleTabBarController.swift in Sources */,
 				BCD2B65825266ABA00220EEE /* FluidCardView.swift in Sources */,
 				BCD2B65225266AA900220EEE /* TimingFunction.swift in Sources */,
+				BCE3E78025375956000C63CB /* HomeCVcell1.swift in Sources */,
 				BC464AE72518CE4300C9A1DF /* FoundVC.swift in Sources */,
 				BCB658DC2517E8E000C7F36F /* WidgetModule.intentdefinition in Sources */,
 				BCD2B65E25266AC800220EEE /* Extensions.swift in Sources */,

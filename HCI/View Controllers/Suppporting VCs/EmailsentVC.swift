@@ -27,7 +27,7 @@ class EmailsentVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         gifView.loadGif(name: "illustration")
-        cardView.layer.cornerRadius = 20
+        cardView.layer.cornerRadius = 38
     }
 
 }

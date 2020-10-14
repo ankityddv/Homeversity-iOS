@@ -13,6 +13,8 @@ class DislodgeVC: UIViewController {
     @IBOutlet weak var foundBttn: UIButton!
     
     @IBAction func lostBttnTapped(_ sender: Any) {
+        let LostVC =  self.storyboard!.instantiateViewController(withIdentifier: "LostVC") as! LostVC
+        self.present(LostVC, animated: true, completion: nil)
     }
     @IBAction func foundBttnTapped(_ sender: Any) {
         let FoundVC =  self.storyboard!.instantiateViewController(withIdentifier: "FoundVC") as! FoundVC
