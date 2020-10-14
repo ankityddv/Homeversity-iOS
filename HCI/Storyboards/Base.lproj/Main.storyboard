@@ -6,6 +6,7 @@
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -570,7 +571,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2rl-CZ-e9V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4336" y="185"/>
+            <point key="canvasLocation" x="3568" y="185"/>
         </scene>
         <!--Dislodge-->
         <scene sceneID="Vvc-K3-9ZS">
@@ -634,7 +635,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PLG-dF-ROV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5938" y="-537"/>
+            <point key="canvasLocation" x="7757.971014492754" y="-537.05357142857144"/>
         </scene>
         <!--Lost-->
         <scene sceneID="rMf-uE-ZIf">
@@ -650,7 +651,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3tn-VJ-MXK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6619" y="-537"/>
+            <point key="canvasLocation" x="8439.1304347826099" y="-537.05357142857144"/>
         </scene>
         <!--Found-->
         <scene sceneID="cIG-W7-52e">
@@ -735,7 +736,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zfw-Xk-AvU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7313" y="-537"/>
+            <point key="canvasLocation" x="9131.8840579710159" y="-537.05357142857144"/>
         </scene>
         <!--Complain RegisteredVC-->
         <scene sceneID="E1x-8Z-phe">
@@ -1693,6 +1694,93 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             </objects>
             <point key="canvasLocation" x="5937.68115942029" y="184.82142857142856"/>
         </scene>
+        <!--Home-->
+        <scene sceneID="0yg-ZZ-wWP">
+            <objects>
+                <viewController id="Ggr-zU-wbU" customClass="collVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ta2-t6-8Um">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wdV-q7-jJ2">
+                                <rect key="frame" x="0.0" y="140" width="414" height="722"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="x4p-1O-yot">
+                                    <size key="itemSize" width="404" height="495"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="homeCVcell" id="sFf-0h-asP" customClass="homeCVcell" customModule="HCI" customModuleProvider="target">
+                                        <rect key="frame" x="5" y="0.0" width="404" height="495"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="hA3-nf-LEB">
+                                            <rect key="frame" x="0.0" y="0.0" width="404" height="495"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wBS-Am-69Z" customClass="ShadowView" customModule="HCI" customModuleProvider="target">
+                                                    <rect key="frame" x="27" y="50" width="350" height="395"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Se-DT-Dne">
+                                                            <rect key="frame" x="0.0" y="0.0" width="350" height="303"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                            <color key="value" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                            <real key="value" value="0.29999999999999999"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                            <real key="value" value="17"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <integer key="value" value="20"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                            <size key="value" width="0.0" height="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="customSize" width="404" height="495"/>
+                                        <connections>
+                                            <outlet property="cardView" destination="wBS-Am-69Z" id="DsB-Q4-2ZS"/>
+                                            <outlet property="displayImageView" destination="6Se-DT-Dne" id="eZ3-6X-4bt"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Ggr-zU-wbU" id="gYp-zJ-lNO"/>
+                                    <outlet property="delegate" destination="Ggr-zU-wbU" id="OC1-ya-aOy"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nVe-k2-CKK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wdV-q7-jJ2" firstAttribute="bottom" secondItem="nVe-k2-CKK" secondAttribute="bottom" id="2JM-Zl-YsR"/>
+                            <constraint firstItem="wdV-q7-jJ2" firstAttribute="centerX" secondItem="Ta2-t6-8Um" secondAttribute="centerX" id="PRh-tk-9aB"/>
+                            <constraint firstItem="wdV-q7-jJ2" firstAttribute="leading" secondItem="nVe-k2-CKK" secondAttribute="leading" id="wVz-sQ-C0z"/>
+                            <constraint firstItem="wdV-q7-jJ2" firstAttribute="top" secondItem="nVe-k2-CKK" secondAttribute="top" id="z9A-Mn-AT1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="NUD-Pu-INo"/>
+                    <connections>
+                        <outlet property="collectionView1" destination="wdV-q7-jJ2" id="iaz-75-iM0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="auA-u0-1UA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4726" y="-646"/>
+        </scene>
         <!--Bubble Tab Bar Controller-->
         <scene sceneID="92O-fK-Zrs">
             <objects>
@@ -1710,12 +1798,12 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                         <segue destination="4Bd-ht-OTr" kind="relationship" relationship="viewControllers" id="kBu-WM-42g"/>
                         <segue destination="0TT-2n-KvB" kind="relationship" relationship="viewControllers" id="dLy-Uh-dTO"/>
                         <segue destination="nnG-p5-lPC" kind="relationship" relationship="viewControllers" id="n1K-2W-lgj"/>
-                        <segue destination="SV0-Kd-fQl" kind="relationship" relationship="viewControllers" id="flD-5I-3mb"/>
+                        <segue destination="SV0-Kd-fQl" kind="relationship" relationship="viewControllers" id="Lx5-q0-3zg"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o9B-rT-eYp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5087" y="185"/>
+            <point key="canvasLocation" x="4577" y="185"/>
         </scene>
         <!--InitialVC-->
         <scene sceneID="7JJ-Nb-qtm">
@@ -2070,7 +2158,26 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Ue-vH-KlW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5937.68115942029" y="1537.5"/>
+            <point key="canvasLocation" x="5938" y="1538"/>
+        </scene>
+        <!--cv-->
+        <scene sceneID="DyQ-Yx-NLN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JX4-nr-CyJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="cv" image="menu" id="pQ5-pC-NvM"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="XmL-zC-0xt">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ggr-zU-wbU" kind="relationship" relationship="rootViewController" id="bgh-hU-vV2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o9M-qH-lxp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4058" y="-646"/>
         </scene>
     </scenes>
     <designables>
@@ -2078,28 +2185,28 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <size key="intrinsicContentSize" width="99" height="30"/>
         </designable>
         <designable name="1F4-U0-DcD">
-            <size key="intrinsicContentSize" width="62" height="24"/>
+            <size key="intrinsicContentSize" width="57" height="26"/>
         </designable>
         <designable name="1g5-Do-im0">
             <size key="intrinsicContentSize" width="295" height="115"/>
         </designable>
         <designable name="7TS-G4-gug">
-            <size key="intrinsicContentSize" width="46" height="18.5"/>
+            <size key="intrinsicContentSize" width="6" height="18.5"/>
         </designable>
         <designable name="7fx-gv-aY6">
-            <size key="intrinsicContentSize" width="74.5" height="18.5"/>
+            <size key="intrinsicContentSize" width="34.5" height="18.5"/>
         </designable>
         <designable name="7rc-q1-It8">
-            <size key="intrinsicContentSize" width="102.5" height="17"/>
+            <size key="intrinsicContentSize" width="62.5" height="17"/>
         </designable>
         <designable name="BRr-NM-Aca">
-            <size key="intrinsicContentSize" width="117.5" height="18.5"/>
+            <size key="intrinsicContentSize" width="77.5" height="18.5"/>
         </designable>
         <designable name="Hra-vs-hCh">
             <size key="intrinsicContentSize" width="73" height="34"/>
         </designable>
         <designable name="Ip2-Ap-IsL">
-            <size key="intrinsicContentSize" width="67" height="24"/>
+            <size key="intrinsicContentSize" width="62" height="26"/>
         </designable>
         <designable name="JdJ-Cp-ik1">
             <size key="intrinsicContentSize" width="64" height="34"/>
@@ -2114,7 +2221,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <size key="intrinsicContentSize" width="62" height="30"/>
         </designable>
         <designable name="Oj1-vv-TcY">
-            <size key="intrinsicContentSize" width="102.5" height="17"/>
+            <size key="intrinsicContentSize" width="62.5" height="17"/>
         </designable>
         <designable name="SUO-c7-DWS">
             <size key="intrinsicContentSize" width="109" height="30"/>
@@ -2126,16 +2233,16 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <size key="intrinsicContentSize" width="73" height="34"/>
         </designable>
         <designable name="h6G-LC-Iev">
-            <size key="intrinsicContentSize" width="74.5" height="18.5"/>
+            <size key="intrinsicContentSize" width="34.5" height="18.5"/>
         </designable>
         <designable name="iXK-RK-n71">
-            <size key="intrinsicContentSize" width="78" height="18.5"/>
+            <size key="intrinsicContentSize" width="38" height="18.5"/>
         </designable>
         <designable name="uWk-wR-U3v">
-            <size key="intrinsicContentSize" width="74.5" height="18.5"/>
+            <size key="intrinsicContentSize" width="34.5" height="18.5"/>
         </designable>
         <designable name="uq7-Dh-r24">
-            <size key="intrinsicContentSize" width="242.5" height="18.5"/>
+            <size key="intrinsicContentSize" width="202.5" height="18.5"/>
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
@@ -2198,7 +2305,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="textfieldColor">
-            <color red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.95300000905990601" green="0.95300000905990601" blue="0.95300000905990601" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
