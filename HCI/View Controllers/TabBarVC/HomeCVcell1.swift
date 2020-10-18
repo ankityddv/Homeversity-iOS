@@ -9,6 +9,7 @@ import UIKit
 
 class HomeCVcell1: UICollectionViewCell {
     
+    @IBOutlet weak var cardView: ShadowView!
     @IBOutlet weak var imageView1: UIImageView!
     @IBOutlet weak var headingLbl: UILabel!
     @IBOutlet weak var subHeadingLbl: UILabel!

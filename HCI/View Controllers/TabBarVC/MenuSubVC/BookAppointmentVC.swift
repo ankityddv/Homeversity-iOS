@@ -18,7 +18,7 @@ class BookAppointmentVC: UIViewController,FSCalendarDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        cardView.layer.cornerRadius = 38
+        cardView.layer.cornerRadius = 30
     }
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
         let formattor = DateFormatter()

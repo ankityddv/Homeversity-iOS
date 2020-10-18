@@ -15,7 +15,7 @@ class ComplainRegisteredVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         gifImageView.loadGif(name: "fire")
-        cardView.layer.cornerRadius = 38
+        cardView.layer.cornerRadius = 30
     }
 
 }

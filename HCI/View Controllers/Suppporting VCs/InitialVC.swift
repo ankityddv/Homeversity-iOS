@@ -20,8 +20,8 @@ class InitialVC: UIViewController {
             self.present(homeVC, animated: false, completion: nil)
           }
           else {
-            let GetStartedVC =  self.storyboard!.instantiateViewController(withIdentifier: "GetStartedVC") as! GetStartedVC
-            self.present(GetStartedVC, animated: false, completion: nil)
+            let OnboardingVC =  self.storyboard!.instantiateViewController(withIdentifier: "OnboardingVC") as! OnboardingVC
+            self.present(OnboardingVC, animated: true, completion: nil)
           }
         }
     }

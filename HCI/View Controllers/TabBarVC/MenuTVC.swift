@@ -90,19 +90,7 @@ class MenuTVC: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        /*
-        // MARK: - Profile Settings (SECTION 0)
-        if indexPath.section == 0 && indexPath.row == 0{
-            let EditProfileVC =  self.storyboard!.instantiateViewController(withIdentifier: "EditProfileVC") as! EditProfileVC
-            self.present(EditProfileVC, animated: true, completion: nil)
-        }
-         
-        // MARK: - General Settings (SECTION 1)
-        else if indexPath.section == 1 && indexPath.row == 0 {
-            let appIconsVC =  self.storyboard!.instantiateViewController(withIdentifier: "appicons") as! AppIconVC
-            self.present(appIconsVC, animated: true, completion: nil)
-        }
-         */
+
         
         // MARK: - Reach Us (SECTION 2)
         if indexPath.section == 2 && indexPath.row == 0 {
@@ -121,22 +109,15 @@ class MenuTVC: UITableViewController {
                 application.open(webURL as URL)
             }
         }
-        /*
-        // MARK: - Reset Password (SECTION 4)
-        else if indexPath.section == 4 && indexPath.row == 0{
-            let resetVC =  self.storyboard!.instantiateViewController(withIdentifier: "ResetVC") as! ResetVC
-            self.present(resetVC, animated: true, completion: nil)
-        }
-        */
         
-        // MARK: - Appointment Page (SECTION 5)
-        else if indexPath.section == 5 && indexPath.row == 0{
+        // MARK: - Appointment Page (SECTION 4)
+        else if indexPath.section == 4 && indexPath.row == 0{
             let BookAppointmentVC =  self.storyboard!.instantiateViewController(withIdentifier: "BookAppointmentVC") as! BookAppointmentVC
             self.present(BookAppointmentVC, animated: true, completion: nil)
         }
         
-        // MARK: - Sign Out (SECTION 6)
-        else if indexPath.section == 6 && indexPath.row == 0{
+        // MARK: - Sign Out (SECTION 5)
+        else if indexPath.section == 5 && indexPath.row == 0{
             
             if Auth.auth().currentUser != nil {
                 do {

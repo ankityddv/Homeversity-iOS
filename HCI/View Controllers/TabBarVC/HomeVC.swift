@@ -14,9 +14,9 @@ class HomeVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSour
     
     @IBOutlet weak var fluidCard: FluidCardView!
     
-    let imageArr = ["cv1","cv2","cv1","cv2"]
-    let headingArr = ["one","Two","one","Two"]
-    let subHeadingArr = ["Hmm","Okay","Hmm","Okay"]
+    let imageArr = ["girl1","girl2","girl3","girl4"]
+    let headingArr = ["Damn Bruh!","Lamao Two","YO my nigga ","ha bhai sahi h"]
+    let subHeadingArr = ["Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim vexqniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.","Okay","Hmm","Okay"]
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return imageArr.count
@@ -31,7 +31,7 @@ class HomeVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSour
         cell.headingLbl.text = headingArr[indexPath.row]
         cell.subHeadingLbl.text = subHeadingArr[indexPath.row]
         //add shadows
-        cell.imageView1.layer.cornerRadius = 13
+        cell.imageView1.layer.cornerRadius = 22.5
         cell.imageView1.clipsToBounds = true
         cell.imageView1.layer.masksToBounds = true
         return cell
@@ -65,7 +65,23 @@ class HomeVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSour
             let value = snapshot.value as? NSDictionary
             let username = value?["Name"] as? String ?? ""
             let bio = value?["Bio"] as? String ?? ""
-            //self.title = "Hi \(username)"
+            /*
+            var userDict: [String: Any] = [:]
+            let userkaName: String = "\(username)"
+            let age: Int = 25
+            let language: String = "en"
+
+            userDict = ["username": userkaName,
+                        "age": age,
+                        "language": language]
+
+            UserDefaults.standard.set(userDict, forKey: userkaName)
+            
+            let userData = UserDefaults.standard.dictionary(forKey: userkaName)
+            let ageData = userData!["age"] // 25
+            let languageData = userData!["language"] // en
+            
+            */
             self.navigationItem.titleView = self.setTitle(title: "Hi \(username)!", subtitle: "\(bio)")
         }) { (error) in
             print(error.localizedDescription)
