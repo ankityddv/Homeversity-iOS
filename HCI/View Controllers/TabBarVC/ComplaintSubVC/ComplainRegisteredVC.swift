@@ -11,6 +11,7 @@ class ComplainRegisteredVC: UIViewController {
     
     @IBOutlet weak var cardView: UIView!
     @IBOutlet weak var gifImageView: UIImageView!
+    @IBOutlet weak var displaytxtLbl: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()

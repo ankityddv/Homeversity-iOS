@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17503.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GEh-bp-roM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17503.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="z77-3Q-Pc6">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17502"/>
@@ -581,8 +581,8 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                         <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hlogo" translatesAutoresizingMaskIntoConstraints="NO" id="BT4-LC-Baj">
-                                <rect key="frame" x="128" y="148" width="159" height="115"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dislodge.gif" translatesAutoresizingMaskIntoConstraints="NO" id="BT4-LC-Baj">
+                                <rect key="frame" x="128" y="183" width="159" height="115"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Brs-NQ-jw1">
@@ -595,6 +595,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                 </state>
                                 <connections>
                                     <action selector="lostBttnTapped:" destination="4Bd-ht-OTr" eventType="touchUpInside" id="zJI-Ih-cYd"/>
+                                    <segue destination="gge-uK-8HY" kind="show" id="Uwt-VW-XXj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4z-3h-wdq">
@@ -607,6 +608,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                 </state>
                                 <connections>
                                     <action selector="foundBttnTapped:" destination="4Bd-ht-OTr" eventType="touchUpInside" id="NJJ-YC-xHW"/>
+                                    <segue destination="Da1-GR-PzX" kind="show" id="1mE-4F-bh1"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How can we help you today?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqA-Cf-R2E">
@@ -616,6 +618,14 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lost.gif" translatesAutoresizingMaskIntoConstraints="NO" id="nVA-tu-lwb">
+                                <rect key="frame" x="75" y="462" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="found.gif" translatesAutoresizingMaskIntoConstraints="NO" id="vvg-x9-0mN">
+                                <rect key="frame" x="260" y="462" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QfR-J1-5cv"/>
                         <color key="backgroundColor" name="gray_bg_color"/>
@@ -623,7 +633,10 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                     <navigationItem key="navigationItem" title="Dislodge" id="26Y-HH-IzK"/>
                     <connections>
                         <outlet property="foundBttn" destination="A4z-3h-wdq" id="6xU-dv-Y4w"/>
+                        <outlet property="foundImageVieww" destination="vvg-x9-0mN" id="8Yt-zf-uj5"/>
+                        <outlet property="imageVieww" destination="BT4-LC-Baj" id="rrj-ur-Ymq"/>
                         <outlet property="lostBttn" destination="Brs-NQ-jw1" id="ZXh-Kb-mIC"/>
+                        <outlet property="lostImageVieww" destination="nVA-tu-lwb" id="jrz-th-Z2B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PLG-dF-ROV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -635,11 +648,11 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <objects>
                 <viewController storyboardIdentifier="LostVC" hidesBottomBarWhenPushed="YES" id="R6M-8W-KPl" customClass="LostVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6ZS-yF-P73">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Ei-Cd-Red">
-                                <rect key="frame" x="20" y="363" width="374" height="215"/>
+                                <rect key="frame" x="20" y="438" width="374" height="215"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="V25-gS-7GH">
@@ -654,7 +667,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                 <color key="backgroundColor" name="textfieldColor"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bdP-eV-ycg">
-                                <rect key="frame" x="20" y="73" width="374" height="215"/>
+                                <rect key="frame" x="20" y="148" width="374" height="215"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kPH-ve-tjo">
@@ -669,21 +682,21 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                 <color key="backgroundColor" name="textfieldColor"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter the items you lost:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxW-uN-lf1">
-                                <rect key="frame" x="20" y="44" width="166" height="18"/>
+                                <rect key="frame" x="20" y="119" width="166" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98g-cw-QdU">
-                                <rect key="frame" x="20" y="334" width="83" height="18"/>
+                                <rect key="frame" x="20" y="409" width="83" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5f-6W-HpB" customClass="RoundBttn" customModule="TDCRoundButton">
-                                <rect key="frame" x="24" y="604" width="366" height="50"/>
+                                <rect key="frame" x="24" y="679" width="366" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="bttn_grad1"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -704,37 +717,29 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                         <viewLayoutGuide key="safeArea" id="5VW-g9-h9T"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Lost" id="rdU-Pb-z66"/>
+                    <navigationItem key="navigationItem" title="Lost" largeTitleDisplayMode="always" id="rdU-Pb-z66">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="ShA-cY-423">
+                            <color key="tintColor" name="appColor"/>
+                            <connections>
+                                <action selector="canceldidTap:" destination="R6M-8W-KPl" id="JAy-l4-1yT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3tn-VJ-MXK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7733" y="-520"/>
+            <point key="canvasLocation" x="8779.710144927536" y="-520.3125"/>
         </scene>
         <!--Found-->
         <scene sceneID="cIG-W7-52e">
             <objects>
-                <viewController storyboardIdentifier="FoundVC" hidesBottomBarWhenPushed="YES" id="zfw-xY-K8j" customClass="FoundVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FoundVC" modalPresentationStyle="formSheet" hidesBottomBarWhenPushed="YES" id="zfw-xY-K8j" customClass="FoundVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dRG-Wc-DcP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S10-vj-laK">
-                                <rect key="frame" x="20" y="363" width="374" height="215"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5OJ-OU-4tY">
-                                        <rect key="frame" x="4" y="4" width="366" height="207"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" name="textfieldColor"/>
-                                        <color key="textColor" systemColor="labelColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                </subviews>
-                                <color key="backgroundColor" name="textfieldColor"/>
-                            </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2ar-rW-j42">
-                                <rect key="frame" x="20" y="73" width="374" height="215"/>
+                                <rect key="frame" x="20" y="166" width="374" height="215"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="J37-W4-esr">
@@ -749,21 +754,21 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                 <color key="backgroundColor" name="textfieldColor"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter the items you found:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXr-Yq-LdF">
-                                <rect key="frame" x="20" y="44" width="181" height="18"/>
+                                <rect key="frame" x="20" y="137" width="181" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2E-rc-hQ2">
-                                <rect key="frame" x="20" y="334" width="83" height="18"/>
+                                <rect key="frame" x="20" y="427" width="83" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEm-so-Kch" customClass="RoundBttn" customModule="TDCRoundButton">
-                                <rect key="frame" x="24" y="604" width="366" height="50"/>
+                                <rect key="frame" x="24" y="697" width="366" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="bttn_grad1"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -777,23 +782,47 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="continueBttnTapped:" destination="vYy-Mo-TQ9" eventType="touchUpInside" id="QTH-II-Az4"/>
+                                    <action selector="continueDidTapped:" destination="zfw-xY-K8j" eventType="touchUpInside" id="shq-hO-ic2"/>
                                     <action selector="signUpBttn:" destination="ykB-dN-0MR" eventType="touchUpInside" id="a4L-br-DoX"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S10-vj-laK">
+                                <rect key="frame" x="20" y="453" width="374" height="215"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5OJ-OU-4tY">
+                                        <rect key="frame" x="4" y="4" width="366" height="207"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" name="textfieldColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" name="textfieldColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="d88-L9-JIs"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Found" id="sry-1T-ZJ7"/>
+                    <navigationItem key="navigationItem" title="Found" id="sry-1T-ZJ7">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="TNj-fI-XoA">
+                            <color key="tintColor" name="appColor"/>
+                            <connections>
+                                <action selector="canceldidTap:" destination="zfw-xY-K8j" id="wvu-ZE-hcW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="continueBttn" destination="cEm-so-Kch" id="NwM-Qe-LtY"/>
                         <outlet property="descriptionInputView" destination="S10-vj-laK" id="a6j-OI-BG3"/>
                         <outlet property="foundItemsInputView" destination="2ar-rW-j42" id="cQg-PS-dhw"/>
+                        <segue destination="7DX-nG-Xpb" kind="show" identifier="registered" id="Ebe-eb-eVF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zfw-Xk-AvU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8714" y="-520"/>
+            <point key="canvasLocation" x="10502.898550724638" y="-520.3125"/>
         </scene>
         <!--Complain RegisteredVC-->
         <scene sceneID="E1x-8Z-phe">
@@ -804,7 +833,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tsa-L7-RFd">
-                                <rect key="frame" x="6" y="339" width="403" height="458"/>
+                                <rect key="frame" x="6" y="344" width="403" height="458"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="COMPLAINT REGISTERED!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7by-RU-UjF">
@@ -828,12 +857,13 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                     <navigationItem key="navigationItem" id="AO5-Mb-gdD"/>
                     <connections>
                         <outlet property="cardView" destination="Tsa-L7-RFd" id="pgH-4G-doo"/>
+                        <outlet property="displaytxtLbl" destination="7by-RU-UjF" id="lYo-1P-lUe"/>
                         <outlet property="gifImageView" destination="rwt-Eu-QfJ" id="jcD-1S-nZB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LMu-48-fBl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7528.985507246377" y="184.82142857142856"/>
+            <point key="canvasLocation" x="7870" y="185"/>
         </scene>
         <!--HomeVC-->
         <scene sceneID="vcc-id-74Q">
@@ -843,11 +873,6 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                         <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1g5-Do-im0" customClass="FluidCardView" customModule="HCI">
-                                <rect key="frame" x="19" y="825" width="377" height="291"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Xlh-Ej-TEy">
                                 <rect key="frame" x="0.0" y="153" width="414" height="495"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -948,9 +973,6 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                         <color key="backgroundColor" name="gray_bg_color"/>
                     </view>
                     <navigationItem key="navigationItem" id="cvU-3z-B51"/>
-                    <connections>
-                        <outlet property="fluidCard" destination="1g5-Do-im0" id="qeg-Fl-JeQ"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4zM-nr-obx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1107,7 +1129,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NmC-hy-bhW">
-                                <rect key="frame" x="6" y="339" width="403" height="458"/>
+                                <rect key="frame" x="6" y="344" width="403" height="458"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mop-L4-nga" customClass="RoundBttn" customModule="TDCRoundButton">
@@ -1737,13 +1759,6 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                     <action selector="signUpBttn:" destination="ykB-dN-0MR" eventType="touchUpInside" id="bBJ-K1-Pgp"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SERVICE PROVIDER?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ogw-n2-ITq">
-                                <rect key="frame" x="20" y="371" width="180" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham" pointSize="16"/>
-                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HEo-UL-Eu1"/>
                         <color key="backgroundColor" name="gray_bg_color"/>
@@ -1841,114 +1856,6 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             </objects>
             <point key="canvasLocation" x="6847.826086956522" y="184.82142857142856"/>
         </scene>
-        <!--Home-->
-        <scene sceneID="0yg-ZZ-wWP">
-            <objects>
-                <viewController id="Ggr-zU-wbU" customClass="collVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ta2-t6-8Um">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wdV-q7-jJ2">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="x4p-1O-yot">
-                                    <size key="itemSize" width="404" height="495"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="homeCVcell" id="sFf-0h-asP" customClass="homeCVcell" customModule="HCI" customModuleProvider="target">
-                                        <rect key="frame" x="5" y="0.0" width="404" height="495"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="hA3-nf-LEB">
-                                            <rect key="frame" x="0.0" y="0.0" width="404" height="495"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wBS-Am-69Z" customClass="ShadowView" customModule="HCI" customModuleProvider="target">
-                                                    <rect key="frame" x="27" y="50" width="350" height="377"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Se-DT-Dne">
-                                                            <rect key="frame" x="0.0" y="0.0" width="350" height="303"/>
-                                                        </imageView>
-                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0JI-1x-xGP">
-                                                            <rect key="frame" x="0.0" y="308" width="350" height="87"/>
-                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim vexqniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                                            <color key="textColor" systemColor="labelColor"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                        </textView>
-                                                    </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                    <constraints>
-                                                        <constraint firstItem="0JI-1x-xGP" firstAttribute="top" secondItem="6Se-DT-Dne" secondAttribute="bottom" constant="5" id="uEd-0B-2b6"/>
-                                                    </constraints>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                                            <color key="value" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                                            <real key="value" value="0.29999999999999999"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                                            <real key="value" value="17"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                            <integer key="value" value="20"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
-                                                            <size key="value" width="0.0" height="0.0"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
-                                                </view>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="6Se-DT-Dne" secondAttribute="bottom" constant="142" id="6Ai-Ea-h7U"/>
-                                                <constraint firstItem="0JI-1x-xGP" firstAttribute="leading" secondItem="hA3-nf-LEB" secondAttribute="leading" constant="27" id="Bd7-dR-2Rq"/>
-                                                <constraint firstItem="0JI-1x-xGP" firstAttribute="centerX" secondItem="hA3-nf-LEB" secondAttribute="centerX" id="Ian-9o-Aa7"/>
-                                                <constraint firstItem="6Se-DT-Dne" firstAttribute="leading" secondItem="hA3-nf-LEB" secondAttribute="leading" constant="27" id="LKA-Yt-ytB"/>
-                                                <constraint firstAttribute="bottom" secondItem="0JI-1x-xGP" secondAttribute="bottom" constant="50" id="RKP-zo-F72"/>
-                                                <constraint firstAttribute="trailing" secondItem="6Se-DT-Dne" secondAttribute="trailing" constant="27" id="arf-du-6PQ"/>
-                                                <constraint firstItem="6Se-DT-Dne" firstAttribute="centerX" secondItem="hA3-nf-LEB" secondAttribute="centerX" id="fxO-D7-BIt"/>
-                                                <constraint firstAttribute="trailing" secondItem="0JI-1x-xGP" secondAttribute="trailing" constant="27" id="gJb-lS-OYN"/>
-                                                <constraint firstItem="6Se-DT-Dne" firstAttribute="top" secondItem="hA3-nf-LEB" secondAttribute="top" constant="50" id="vvW-fd-wmd"/>
-                                            </constraints>
-                                        </collectionViewCellContentView>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <size key="customSize" width="404" height="495"/>
-                                        <connections>
-                                            <outlet property="cardView" destination="wBS-Am-69Z" id="DsB-Q4-2ZS"/>
-                                            <outlet property="displayImageView" destination="6Se-DT-Dne" id="eZ3-6X-4bt"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
-                                <connections>
-                                    <outlet property="dataSource" destination="Ggr-zU-wbU" id="gYp-zJ-lNO"/>
-                                    <outlet property="delegate" destination="Ggr-zU-wbU" id="OC1-ya-aOy"/>
-                                </connections>
-                            </collectionView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="nVe-k2-CKK"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="wdV-q7-jJ2" firstAttribute="bottom" secondItem="nVe-k2-CKK" secondAttribute="bottom" id="2JM-Zl-YsR"/>
-                            <constraint firstItem="wdV-q7-jJ2" firstAttribute="centerX" secondItem="Ta2-t6-8Um" secondAttribute="centerX" id="PRh-tk-9aB"/>
-                            <constraint firstItem="wdV-q7-jJ2" firstAttribute="leading" secondItem="nVe-k2-CKK" secondAttribute="leading" id="wVz-sQ-C0z"/>
-                            <constraint firstItem="wdV-q7-jJ2" firstAttribute="top" secondItem="nVe-k2-CKK" secondAttribute="top" id="z9A-Mn-AT1"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Home" id="NUD-Pu-INo"/>
-                    <connections>
-                        <outlet property="collectionView1" destination="wdV-q7-jJ2" id="iaz-75-iM0"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="auA-u0-1UA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4133" y="-1215"/>
-        </scene>
         <!--Bubble Tab Bar Controller-->
         <scene sceneID="92O-fK-Zrs">
             <objects>
@@ -1973,27 +1880,6 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             </objects>
             <point key="canvasLocation" x="4577" y="185"/>
         </scene>
-        <!--InitialVC-->
-        <scene sceneID="7JJ-Nb-qtm">
-            <objects>
-                <viewController storyboardIdentifier="InitialVC" id="GEh-bp-roM" customClass="InitialVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="NAg-Tq-2cM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HOMEVERSITY" translatesAutoresizingMaskIntoConstraints="NO" id="9wH-rw-64v">
-                                <rect key="frame" x="87" y="384" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="6t8-hi-zN9"/>
-                        <color key="backgroundColor" name="appColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="k1f-gg-teN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2326" y="-693"/>
-        </scene>
         <!--OnboardingVC-->
         <scene sceneID="exH-0t-pDO">
             <objects>
@@ -2015,6 +1901,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="continueBttnTapped:" destination="O6a-Sh-BBD" eventType="touchUpInside" id="9Rz-wD-Rhu"/>
                                     <segue destination="z77-3Q-Pc6" kind="show" id="g42-tJ-nJ5"/>
                                 </connections>
                             </button>
@@ -2022,44 +1909,44 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                 <rect key="frame" x="30" y="196" width="354" height="272"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hahaha really?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRw-bU-5kE">
-                                        <rect key="frame" x="106" y="55" width="112" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Voice controlled." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRw-bU-5kE">
+                                        <rect key="frame" x="106" y="55" width="128" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, " textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehP-oc-36Q">
-                                        <rect key="frame" x="106" y="84" width="205" height="33"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You can control the app with your voice and ask it to do work for you." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehP-oc-36Q">
+                                        <rect key="frame" x="106" y="84" width="222" height="33"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, " textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Xc-VL-Qoa">
-                                        <rect key="frame" x="106" y="184" width="205" height="33"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ha bro sahi h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U59-Lw-awe">
-                                        <rect key="frame" x="106" y="155" width="100" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Security" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U59-Lw-awe">
+                                        <rect key="frame" x="106" y="155" width="63" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="book" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="F7d-Bn-ZiE">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="speaker.zzz" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="F7d-Bn-ZiE">
                                         <rect key="frame" x="43" y="70" width="30" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="tintColor" name="appColor"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pencil" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ETn-rD-hUE">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lock.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ETn-rD-hUE">
                                         <rect key="frame" x="43" y="165" width="30" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="tintColor" name="appColor"/>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="We save almost nothing on our servers, all your data is encrypted." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Xc-VL-Qoa">
+                                        <rect key="frame" x="106" y="184" width="222" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
@@ -2100,7 +1987,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kg0-g5-wRc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1523.1884057971015" y="-693.08035714285711"/>
+            <point key="canvasLocation" x="-1443" y="-693"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="pdQ-gs-Am6">
@@ -2263,7 +2150,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xS1-jx-4IM">
-                                <rect key="frame" x="6" y="339" width="403" height="458"/>
+                                <rect key="frame" x="6" y="344" width="403" height="458"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="illustration.gif" translatesAutoresizingMaskIntoConstraints="NO" id="Nez-oM-a7D">
@@ -2420,25 +2307,6 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             </objects>
             <point key="canvasLocation" x="5938" y="1538"/>
         </scene>
-        <!--cv-->
-        <scene sceneID="DyQ-Yx-NLN">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JX4-nr-CyJ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="cv" image="menu" id="pQ5-pC-NvM"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="XmL-zC-0xt">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Ggr-zU-wbU" kind="relationship" relationship="rootViewController" id="bgh-hU-vV2"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="o9M-qH-lxp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3467" y="-1215"/>
-        </scene>
         <!--Home-->
         <scene sceneID="2rL-Rc-1Ic">
             <objects>
@@ -2539,6 +2407,44 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             </objects>
             <point key="canvasLocation" x="5937.68115942029" y="870.53571428571422"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nGZ-nQ-mFd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gge-uK-8HY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="CyH-6M-4f4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Cnt-tB-kmT">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="R6M-8W-KPl" kind="relationship" relationship="rootViewController" id="iNg-lV-shL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZzF-Bo-AQw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7869.5652173913049" y="-520.3125"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Vgl-GZ-d5k">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="formSheet" id="Da1-GR-PzX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="4Wo-pg-elG"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8dh-hj-Stj">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zfw-xY-K8j" kind="relationship" relationship="rootViewController" id="lcp-HQ-nlQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ACw-v2-W2v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9592.753623188406" y="-520.3125"/>
+        </scene>
     </scenes>
     <designables>
         <designable name="0c8-LA-nF8">
@@ -2548,16 +2454,16 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <size key="intrinsicContentSize" width="62" height="24"/>
         </designable>
         <designable name="7TS-G4-gug">
-            <size key="intrinsicContentSize" width="6" height="18.5"/>
+            <size key="intrinsicContentSize" width="46" height="18.5"/>
         </designable>
         <designable name="7fx-gv-aY6">
-            <size key="intrinsicContentSize" width="34.5" height="18.5"/>
+            <size key="intrinsicContentSize" width="74.5" height="18.5"/>
         </designable>
         <designable name="7rc-q1-It8">
-            <size key="intrinsicContentSize" width="62.5" height="17"/>
+            <size key="intrinsicContentSize" width="102.5" height="17"/>
         </designable>
         <designable name="BRr-NM-Aca">
-            <size key="intrinsicContentSize" width="77.5" height="18.5"/>
+            <size key="intrinsicContentSize" width="117.5" height="18.5"/>
         </designable>
         <designable name="F0t-yq-Avm">
             <size key="intrinsicContentSize" width="54" height="30"/>
@@ -2581,7 +2487,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <size key="intrinsicContentSize" width="62" height="30"/>
         </designable>
         <designable name="Oj1-vv-TcY">
-            <size key="intrinsicContentSize" width="62.5" height="17"/>
+            <size key="intrinsicContentSize" width="102.5" height="17"/>
         </designable>
         <designable name="SUO-c7-DWS">
             <size key="intrinsicContentSize" width="109" height="30"/>
@@ -2596,16 +2502,16 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <size key="intrinsicContentSize" width="73" height="34"/>
         </designable>
         <designable name="h6G-LC-Iev">
-            <size key="intrinsicContentSize" width="34.5" height="18.5"/>
+            <size key="intrinsicContentSize" width="74.5" height="18.5"/>
         </designable>
         <designable name="iXK-RK-n71">
-            <size key="intrinsicContentSize" width="38" height="18.5"/>
+            <size key="intrinsicContentSize" width="78" height="18.5"/>
         </designable>
         <designable name="uWk-wR-U3v">
-            <size key="intrinsicContentSize" width="34.5" height="18.5"/>
+            <size key="intrinsicContentSize" width="74.5" height="18.5"/>
         </designable>
         <designable name="uq7-Dh-r24">
-            <size key="intrinsicContentSize" width="202.5" height="18.5"/>
+            <size key="intrinsicContentSize" width="242.5" height="18.5"/>
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
@@ -2614,9 +2520,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
     <color key="tintColor" name="Black"/>
     <resources>
         <image name="BG_Image upload" width="1245" height="963"/>
-        <image name="HOMEVERSITY" width="2454" height="107"/>
         <image name="Twitter" width="23" height="17"/>
-        <image name="book" catalog="system" width="128" height="102"/>
         <image name="chevron.right" catalog="system" width="96" height="128"/>
         <image name="clock" catalog="system" width="128" height="121"/>
         <image name="clock" width="20" height="19"/>
@@ -2625,21 +2529,24 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         <image name="clran" width="16" height="19"/>
         <image name="complaint" width="32" height="36"/>
         <image name="dashboard" width="14" height="13"/>
+        <image name="dislodge.gif" width="362" height="300"/>
         <image name="fire.gif" width="800" height="600"/>
+        <image name="found.gif" width="306" height="300"/>
         <image name="gift" catalog="system" width="128" height="124"/>
         <image name="girl1" width="307" height="307"/>
-        <image name="hlogo" width="4228" height="4068"/>
         <image name="i" width="1714" height="1714"/>
         <image name="illustration.gif" width="800" height="600"/>
+        <image name="lock.circle" catalog="system" width="128" height="121"/>
         <image name="lock.rotation" catalog="system" width="128" height="110"/>
+        <image name="lost.gif" width="266" height="300"/>
         <image name="mail.stack" catalog="system" width="128" height="122"/>
         <image name="menu" width="17" height="8"/>
         <image name="paperplane" catalog="system" width="128" height="118"/>
-        <image name="pencil" catalog="system" width="128" height="113"/>
         <image name="placeholderImage" width="100" height="100"/>
         <image name="segment1" width="94" height="18"/>
         <image name="segment2" width="49" height="9"/>
         <image name="segment3" width="94" height="18"/>
+        <image name="speaker.zzz" catalog="system" width="128" height="85"/>
         <image name="takepic" width="300" height="300"/>
         <image name="xmark.circle.fill" catalog="system" width="128" height="121"/>
         <namedColor name="AccentColor">

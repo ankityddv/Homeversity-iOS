@@ -13,11 +13,19 @@ class FoundVC: UIViewController {
     @IBOutlet weak var descriptionInputView: UIView!
     @IBOutlet weak var continueBttn: UIButton!
     
+    @IBAction func canceldidTap(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func continueDidTapped(_ sender: Any) {
+        let ComplainRegisteredVC =  self.storyboard!.instantiateViewController(withIdentifier: "ComplainRegisteredVC") as! ComplainRegisteredVC
+        self.present(ComplainRegisteredVC, animated: true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         foundItemsInputView.layer.cornerRadius = 15
         descriptionInputView.layer.cornerRadius = 15
-        continueBttn.layer.cornerRadius = 13
+        self.isModalInPresentation = true
     }
     
     // MARK: - Code below this is for hiding keyboard

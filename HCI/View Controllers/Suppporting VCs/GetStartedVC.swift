@@ -39,6 +39,13 @@ class GetStartedVC: LiquidSwipeContainerController, LiquidSwipeContainerDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         datasource = self
+        userLoggedIn()
+        //Set Up Heptic touch quick actions on home page
+        let firstIcon = UIApplicationShortcutIcon(type: UIApplicationShortcutIcon.IconType.update)
+                let firstItem = UIApplicationShortcutItem(type: "jhcbjh", localizedTitle: "Room Clean", localizedSubtitle: nil, icon: firstIcon, userInfo: nil)
+        let secondIcon = UIApplicationShortcutIcon(type: UIApplicationShortcutIcon.IconType.invitation)
+                let secondItem = UIApplicationShortcutItem(type: "jhcbjh", localizedTitle: "Complain", localizedSubtitle: nil, icon: secondIcon, userInfo: nil)
+                UIApplication.shared.shortcutItems = [firstItem,secondItem]
     }
 
     func numberOfControllersInLiquidSwipeContainer(_ liquidSwipeContainer: LiquidSwipeContainerController) -> Int {
@@ -51,6 +58,19 @@ class GetStartedVC: LiquidSwipeContainerController, LiquidSwipeContainerDataSour
     
     override var prefersStatusBarHidden: Bool{
         return true
+    }
+    
+    func userLoggedIn(){
+        Auth.auth().addStateDidChangeListener { auth, user in
+          if user != nil {
+            let homeVC =  self.storyboard!.instantiateViewController(withIdentifier: "tab_bar") as! BubbleTabBarController
+            self.present(homeVC, animated: false, completion: nil)
+          }
+          else {
+            let OnboardingVC =  self.storyboard!.instantiateViewController(withIdentifier: "OnboardingVC") as! OnboardingVC
+            self.present(OnboardingVC, animated: true, completion: nil)
+          }
+        }
     }
     
 }
