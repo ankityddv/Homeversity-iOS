@@ -119,13 +119,3 @@ class HomeVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSour
         }
 
 }
-extension UIView {
-
-    func addShadow() {
-        layer.shadowColor = UIColor.black.cgColor
-        layer.shadowOffset = CGSize(width: 0, height: 0)
-        layer.shadowOpacity = 0.5
-        layer.shadowRadius = 5
-        clipsToBounds = false
-    }
-}

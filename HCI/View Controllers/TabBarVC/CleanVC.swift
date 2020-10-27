@@ -11,6 +11,10 @@ class CleanVC: UIViewController {
 
     @IBOutlet weak var continueBttn: UIButton!
     
+    @IBAction func continueBttnTapped(_ sender: Any) {
+        let ComplainRegisteredVC =  self.storyboard!.instantiateViewController(withIdentifier: "ComplainRegisteredVC") as! ComplainRegisteredVC
+        self.present(ComplainRegisteredVC, animated: true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         continueBttn.layer.cornerRadius = 13

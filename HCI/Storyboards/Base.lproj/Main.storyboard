@@ -829,7 +829,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <objects>
                 <viewController storyboardIdentifier="ComplainRegisteredVC" hidesBottomBarWhenPushed="YES" id="7DX-nG-Xpb" customClass="ComplainRegisteredVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gke-xV-vov">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tsa-L7-RFd">
@@ -1145,6 +1145,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="continueTapped:" destination="pu6-0g-0j1" eventType="touchUpInside" id="1af-iq-aVG"/>
+                                            <segue destination="7DX-nG-Xpb" kind="show" id="tqF-Vr-Twi"/>
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Luc-Xa-aqn" customClass="FSCalendar">
@@ -1755,6 +1756,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="verticalGradient" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="continueBttnTapped:" destination="nnG-p5-lPC" eventType="touchUpInside" id="oD5-J8-hMX"/>
                                     <action selector="continueBttnTapped:" destination="vYy-Mo-TQ9" eventType="touchUpInside" id="uds-av-RP0"/>
                                     <action selector="signUpBttn:" destination="ykB-dN-0MR" eventType="touchUpInside" id="bBJ-K1-Pgp"/>
                                 </connections>
@@ -2515,6 +2517,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
+        <segue reference="tqF-Vr-Twi"/>
         <segue reference="hki-nG-sD3"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" name="Black"/>
