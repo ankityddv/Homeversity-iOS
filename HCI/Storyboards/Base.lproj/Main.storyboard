@@ -123,7 +123,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" name="textfieldColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardAppearance="alert" secureTextEntry="YES" textContentType="password"/>
+                                        <textInputTraits key="textInputTraits" keyboardAppearance="alert" textContentType="password"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRad">
                                                 <real key="value" value="13"/>
@@ -296,7 +296,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" name="textfieldColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                        <textInputTraits key="textInputTraits" textContentType="password"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRad">
                                                 <real key="value" value="13"/>
@@ -816,6 +816,8 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                     <connections>
                         <outlet property="continueBttn" destination="cEm-so-Kch" id="NwM-Qe-LtY"/>
                         <outlet property="descriptionInputView" destination="S10-vj-laK" id="a6j-OI-BG3"/>
+                        <outlet property="descriptionLbl" destination="5OJ-OU-4tY" id="56z-1u-FGO"/>
+                        <outlet property="foundItem" destination="J37-W4-esr" id="syn-6Y-lkE"/>
                         <outlet property="foundItemsInputView" destination="2ar-rW-j42" id="cQg-PS-dhw"/>
                         <segue destination="7DX-nG-Xpb" kind="show" identifier="registered" id="Ebe-eb-eVF"/>
                     </connections>
@@ -829,7 +831,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <objects>
                 <viewController storyboardIdentifier="ComplainRegisteredVC" hidesBottomBarWhenPushed="YES" id="7DX-nG-Xpb" customClass="ComplainRegisteredVC" customModule="HCI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gke-xV-vov">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tsa-L7-RFd">
@@ -1852,6 +1854,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                         <outlet property="complainTextView" destination="bcA-YE-Ixm" id="bjC-2D-6we"/>
                         <outlet property="complainView" destination="5ls-ar-Osf" id="qzH-rq-QYI"/>
                         <outlet property="proceedBttn" destination="1F4-U0-DcD" id="xmN-BP-5EU"/>
+                        <outlet property="titletextField" destination="7TS-G4-gug" id="OXT-ZY-B9h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ebV-Ta-1cx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1894,7 +1897,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                 <rect key="frame" x="20" y="718" width="374" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="appColor"/>
-                                <state key="normal" title="Cotinue">
+                                <state key="normal" title="Continue">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -1973,7 +1976,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QtW-W0-l8c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2326.0869565217395" y="21.428571428571427"/>
+            <point key="canvasLocation" x="-2306" y="-132"/>
         </scene>
         <!--Get StartedVC-->
         <scene sceneID="eZK-Ab-U8f">
@@ -2042,9 +2045,9 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iT1-B4-IfE">
-                                <rect key="frame" x="30" y="629" width="293" height="106"/>
+                                <rect key="frame" x="30" y="629" width="317" height="106"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Get some color inspiration with Color Hunt's pink palettes collection and find the perfect scheme for your design or art project</string>
+                                <string key="text">Wondering what's for lunch today? But too lazy to ask in the mess? Click here to find out the menu for each and every meal of each and every day.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -2103,9 +2106,9 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WSD-b3-7xS">
-                                <rect key="frame" x="30" y="629" width="293" height="106"/>
+                                <rect key="frame" x="30" y="629" width="298" height="106"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Get some color inspiration with Color Hunt's pink palettes collection and find the perfect scheme for your design or art project</string>
+                                <string key="text">Even though you have everything at your touch.. We make your safety our utmost priority, that means following the rules for a fulfilling experience.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -2263,10 +2266,10 @@ Everything you do is saved to your iCloud and is synced across your devices usin
                                 <rect key="frame" x="30" y="821" width="49" height="9"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lCW-WR-wwN">
-                                <rect key="frame" x="30" y="629" width="293" height="106"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lCW-WR-wwN">
+                                <rect key="frame" x="30" y="629" width="319" height="106"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Get some color inspiration with Color Hunt's pink palettes collection and find the perfect scheme for your design or art project</string>
+                                <string key="text">Our hostel is equipped with each and every facility and now... All of those facilities at your fingerprints.. Swipe to avail the best at your comfort!</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -2462,13 +2465,13 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <size key="intrinsicContentSize" width="74.5" height="18.5"/>
         </designable>
         <designable name="7rc-q1-It8">
-            <size key="intrinsicContentSize" width="102.5" height="17"/>
+            <size key="intrinsicContentSize" width="102.5" height="18.5"/>
         </designable>
         <designable name="BRr-NM-Aca">
             <size key="intrinsicContentSize" width="117.5" height="18.5"/>
         </designable>
         <designable name="F0t-yq-Avm">
-            <size key="intrinsicContentSize" width="54" height="30"/>
+            <size key="intrinsicContentSize" width="62" height="30"/>
         </designable>
         <designable name="Hra-vs-hCh">
             <size key="intrinsicContentSize" width="73" height="34"/>
@@ -2489,7 +2492,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
             <size key="intrinsicContentSize" width="62" height="30"/>
         </designable>
         <designable name="Oj1-vv-TcY">
-            <size key="intrinsicContentSize" width="102.5" height="17"/>
+            <size key="intrinsicContentSize" width="102.5" height="18.5"/>
         </designable>
         <designable name="SUO-c7-DWS">
             <size key="intrinsicContentSize" width="109" height="30"/>
@@ -2517,7 +2520,7 @@ Everything you do is saved to your iCloud and is synced across your devices usin
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="tqF-Vr-Twi"/>
+        <segue reference="Ebe-eb-eVF"/>
         <segue reference="hki-nG-sD3"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" name="Black"/>
