@@ -14,7 +14,6 @@
 		BC184B89251E4DF200B93D3F /* MenuTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC184B88251E4DF200B93D3F /* MenuTVC.swift */; };
 		BC1A9DB52531FF1500368447 /* ResetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1A9DB42531FF1500368447 /* ResetVC.swift */; };
 		BC1A9DBB25320CC800368447 /* EmailsentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1A9DBA25320CC800368447 /* EmailsentVC.swift */; };
-		BC1D7AC624ED9EE100D432B1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC1D7AC524ED9EE100D432B1 /* GoogleService-Info.plist */; };
 		BC2FF4DB2525EC0800B18926 /* BubbleTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2FF4D72525EC0800B18926 /* BubbleTabBarController.swift */; };
 		BC2FF4DC2525EC0800B18926 /* CBTabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2FF4D92525EC0800B18926 /* CBTabBarButton.swift */; };
 		BC2FF4DD2525EC0800B18926 /* BubbleTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2FF4DA2525EC0800B18926 /* BubbleTabBar.swift */; };
@@ -59,6 +58,7 @@
 		BC7CB24424ED8B70007B5DB4 /* HCIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7CB24324ED8B70007B5DB4 /* HCIUITests.swift */; };
 		BC7F2E982528359000F33581 /* AppIconTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7F2E972528359000F33581 /* AppIconTableViewCell.swift */; };
 		BC7F2EBF25283FB200F33581 /* AppIconVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7F2EBE25283FB100F33581 /* AppIconVC.swift */; };
+		BC81ADDB25518EF000ECE7F6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC81ADDA25518EF000ECE7F6 /* GoogleService-Info.plist */; };
 		BC9236012534531200BD9ECB /* EditProfileTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9236002534531200BD9ECB /* EditProfileTVC.swift */; };
 		BCACAFF2253749D700B2A95A /* LostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCACAFF1253749D700B2A95A /* LostVC.swift */; };
 		BCB658D12517E8DC00C7F36F /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB658D02517E8DC00C7F36F /* WidgetKit.framework */; };
@@ -128,7 +128,6 @@
 		BC184B88251E4DF200B93D3F /* MenuTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTVC.swift; sourceTree = "<group>"; };
 		BC1A9DB42531FF1500368447 /* ResetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetVC.swift; sourceTree = "<group>"; };
 		BC1A9DBA25320CC800368447 /* EmailsentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailsentVC.swift; sourceTree = "<group>"; };
-		BC1D7AC524ED9EE100D432B1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BC2FF4D72525EC0800B18926 /* BubbleTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BubbleTabBarController.swift; path = CustomTabBar/BubbleTabBarController.swift; sourceTree = SOURCE_ROOT; };
 		BC2FF4D82525EC0800B18926 /* CBFlashyTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBFlashyTabBarController.h; path = CustomTabBar/CBFlashyTabBarController.h; sourceTree = SOURCE_ROOT; };
 		BC2FF4D92525EC0800B18926 /* CBTabBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CBTabBarButton.swift; path = CustomTabBar/CBTabBarButton.swift; sourceTree = SOURCE_ROOT; };
@@ -163,7 +162,6 @@
 		BC586E47251C7CCD009230A1 /* CleanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanVC.swift; sourceTree = "<group>"; };
 		BC586E4D251C80BB009230A1 /* ComplaintVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplaintVC.swift; sourceTree = "<group>"; };
 		BC586E53251C828B009230A1 /* ComplainRegisteredVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplainRegisteredVC.swift; sourceTree = "<group>"; };
-		BC58A1E7252F630B006C46D0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BC68BE842528760A009FB20A /* BookAppointmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAppointmentVC.swift; sourceTree = "<group>"; };
 		BC7CB21E24ED8B6F007B5DB4 /* HCI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HCI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC7CB22124ED8B6F007B5DB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -181,6 +179,7 @@
 		BC7CB24524ED8B70007B5DB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC7F2E972528359000F33581 /* AppIconTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconTableViewCell.swift; sourceTree = "<group>"; };
 		BC7F2EBE25283FB100F33581 /* AppIconVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconVC.swift; sourceTree = "<group>"; };
+		BC81ADDA25518EF000ECE7F6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "HCI/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		BC9236002534531200BD9ECB /* EditProfileTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileTVC.swift; sourceTree = "<group>"; };
 		BCACAFF1253749D700B2A95A /* LostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LostVC.swift; sourceTree = "<group>"; };
 		BCB658CF2517E8DC00C7F36F /* WidgetModuleExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetModuleExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -408,7 +407,6 @@
 				BC7CB22124ED8B6F007B5DB4 /* AppDelegate.swift */,
 				BC7CB22324ED8B6F007B5DB4 /* SceneDelegate.swift */,
 				BC7CB22A24ED8B6F007B5DB4 /* Assets.xcassets */,
-				BC58A1E7252F630B006C46D0 /* GoogleService-Info.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -445,7 +443,7 @@
 				BC3FF4E1252F5F6C0033D2F3 /* Custom Files */,
 				BC58A1E6252F630A006C46D0 /* Supporting Files */,
 				BC7CB22F24ED8B6F007B5DB4 /* Info.plist */,
-				BC1D7AC524ED9EE100D432B1 /* GoogleService-Info.plist */,
+				BC81ADDA25518EF000ECE7F6 /* GoogleService-Info.plist */,
 			);
 			path = HCI;
 			sourceTree = "<group>";
@@ -660,10 +658,10 @@
 				BC398C74252F35400013D0A6 /* pridehlogo3.png in Resources */,
 				BC398C6F252F35400013D0A6 /* rainbowlogo.png in Resources */,
 				BC13481A2536136D0013B6C1 /* illustration.gif in Resources */,
-				BC1D7AC624ED9EE100D432B1 /* GoogleService-Info.plist in Resources */,
 				BC398C72252F35400013D0A6 /* pridehlogo1.png in Resources */,
 				BC7CB22B24ED8B6F007B5DB4 /* Assets.xcassets in Resources */,
 				BC7CB22924ED8B6F007B5DB4 /* Main.storyboard in Resources */,
+				BC81ADDB25518EF000ECE7F6 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1034,7 +1032,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = tdc.HCI;
+				PRODUCT_BUNDLE_IDENTIFIER = tdc.homeversity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1055,7 +1053,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = tdc.HCI;
+				PRODUCT_BUNDLE_IDENTIFIER = tdc.homeversity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1068,6 +1066,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JL7UZ93S3L;
 				INFOPLIST_FILE = HCITests/Info.plist;
@@ -1091,6 +1090,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JL7UZ93S3L;
 				INFOPLIST_FILE = HCITests/Info.plist;
@@ -1113,6 +1113,7 @@
 			baseConfigurationReference = 7B5FC1C5230A0A5F37EA9C2E /* Pods-HCI-HCIUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JL7UZ93S3L;
 				INFOPLIST_FILE = HCIUITests/Info.plist;
@@ -1134,6 +1135,7 @@
 			baseConfigurationReference = 4A8F4CBE337A6F6FB5876F18 /* Pods-HCI-HCIUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JL7UZ93S3L;
 				INFOPLIST_FILE = HCIUITests/Info.plist;
@@ -1164,7 +1166,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = tdc.HCI.WidgetModule;
+				PRODUCT_BUNDLE_IDENTIFIER = tdc.homeversity.WidgetModule;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -1186,7 +1188,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = tdc.HCI.WidgetModule;
+				PRODUCT_BUNDLE_IDENTIFIER = tdc.homeversity.WidgetModule;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;

@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>300317099884-h84odd1lnile11la76bn5mt13tmiacut.apps.googleusercontent.com</string>
+	<string>646644879360-6rb6f9dt1j99sdlfr5t8vlvip7v90o1n.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.300317099884-h84odd1lnile11la76bn5mt13tmiacut</string>
+	<string>com.googleusercontent.apps.646644879360-6rb6f9dt1j99sdlfr5t8vlvip7v90o1n</string>
 	<key>API_KEY</key>
-	<string>AIzaSyBz2Z2Vs_1dLthl2OwhYtG0PtgwD2a4CZs</string>
+	<string>AIzaSyAiGqoRwOzj5pZt8yRAkivJKqnX2BLfrXo</string>
 	<key>GCM_SENDER_ID</key>
-	<string>300317099884</string>
+	<string>646644879360</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>tdc.HCI</string>
+	<string>tdc.homeversity</string>
 	<key>PROJECT_ID</key>
-	<string>hci-app-ee33e</string>
+	<string>homeversity-4c37b</string>
 	<key>STORAGE_BUCKET</key>
-	<string>hci-app-ee33e.appspot.com</string>
+	<string>homeversity-4c37b.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,8 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:300317099884:ios:b667d19274ef5f5afb5549</string>
+	<string>1:646644879360:ios:c014efd50da3e9825c48e5</string>
 	<key>DATABASE_URL</key>
-	<string>https://hci-app-ee33e.firebaseio.com</string>
+	<string>https://homeversity-4c37b.firebaseio.com</string>
 </dict>
 </plist>
