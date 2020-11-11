@@ -42,7 +42,7 @@ To get started and run the app, you need to follow these simple steps:
 5. Download "GoogleService-Info.plist" file and add to the project. Make sure file name is "GoogleService-Info.plist".
 6. Go to [Firebase Console](https://console.firebase.google.com), select your project, choose "Authentication" from left menu, select "SIGN-IN METHOD" and enable "Email/Password" option.
 7. Open the terminal, navigate to project folder and run "pod install". 
-8. You're all set! Run Quick Chat on your iPhone or the iOS Simulator.
+8. You're all set! Run Homeversity on your iPhone or the iOS Simulator.
 
 
 ## Compatibility
@@ -53,7 +53,7 @@ Homeversity is compatible with iOS 14.0+.
 
 ## Author
 
-* [Ankit Yadav](https://www.instagram.com/thedrunkcoder/)
+* [Ankit Yadav](https://www.instagram.com/ankityddv/)
 
 ## License
 
@@ -67,4 +67,4 @@ Install pods after downloading this project to your system and test :)
 
 ## Current Status
 
-Under development.
+Finished.
