@@ -61,6 +61,11 @@ Copyright 2020 Ankit Yadav.
 
 Licensed under MIT License: https://opensource.org/licenses/MIT
 
+## Video Demo and stakeholders analysis
+
+Hostel Service Information System (Voice Control) – Homeversity | Human Computer Interaction
+https://youtu.be/KLOGUhUbQBQ
+
 ## Note
 
 Install pods after downloading this project to your system and test :)
