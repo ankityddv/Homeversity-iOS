@@ -20,8 +20,8 @@ Your following questions are answered in the project:
 
 1. How to make a Login and singup page with Firebase?
 2. How to upload a profile picture, name and mobile number?
-3. How to hide a keyboard when touched out of keyboard?
-4. How to custome animated your views, Textfileds and other elements when keyboard is pushed?
+3. How to hide a keyboard when touched outside of keyboard?
+4. How to custom animate your views, Textfileds and other elements when keyboard is pushed?
 5. How to make a custom loader with GIF?
 6. How to load a GIF in a image View?
 7. How to design a custom TextField?
