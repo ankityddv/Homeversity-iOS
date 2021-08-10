@@ -1,7 +1,7 @@
 # Homeversity
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/Cuberto/liquid-swipe/master/LICENSE)
-[![Swift 4.2](https://img.shields.io/badge/Swift-4.2-green.svg?style=flat)](https://developer.apple.com/swift/)
+[![Swift 5](https://img.shields.io/badge/Swift-4.2-green.svg?style=flat)](https://developer.apple.com/swift/)
 
 (HCI Project)
 Developed the application as a project for HCI. 
@@ -47,7 +47,7 @@ To get started and run the app, you need to follow these simple steps:
 
 ## Compatibility
 
-This project is written in Swift 6.0 for the application part and a little bit knowledge of SwiftUI for the widgets part, requires Xcode 12.0 to build and run.
+This project is written in Swift 5 for the application part and a little bit knowledge of SwiftUI for the widgets part, requires Xcode 12.0 to build and run.
 
 Homeversity is compatible with iOS 14.0+.
 
